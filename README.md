@@ -16,6 +16,9 @@ I can use:
 This command was used to create this alias:
 > alias up="uv run python"
 
+To add a library, instead of pip install, we use
+> uv add library
+
 ### Git commands
 Checks status.
 > git status
