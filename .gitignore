@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Exclude specific large file
+rixvox-alignments.parquet
