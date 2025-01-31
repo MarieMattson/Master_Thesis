@@ -1,0 +1,26 @@
+// Top 10 most statements during the debate?
+MATCH (p:Person)-[:STATED]->(s)
+WITH p, COUNT(s) AS StatementCount
+ORDER BY StatementCount DESC
+LIMIT 10
+RETURN p.name as Name, StatementCount as Statements, p.party as Party
+
+// Amount of speakers for each party
+MATCH (party:Party)<-[:BELONGS_TO]-(person:Person)
+RETURN party.name AS Party, COUNT(person) AS MemberCount
+ORDER BY MemberCount DESC
+
+// Retrieve all statements from a person
+MATCH (person:Person)-[s:STATED]->(statement:Statement)
+WHERE person.name = "Bengt Sjönell"
+RETURN person as Person, statement as Statement
+
+//Match all statements that start with "Herr talman"
+MATCH (person:Person)-[s:STATED]->(statement)
+WHERE statement.text STARTS WITH "Herr talman"
+RETURN person as Person, statement as Statement
+
+//Match all statements that do not start with "Herr talman"
+MATCH (person:Person)-[:STATED]->(statement)
+WHERE NOT statement.text STARTS WITH "Herr talman"
+RETURN person as Person, statement as Statement
