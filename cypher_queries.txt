@@ -1,3 +1,9 @@
+//Creation of kg:
+CREATE ({text: "str", start_segment: "float", 
+end_segment: "float", protocol_id: "string"})
+<-[:STATED]-({name: "str", party: "str", gender: "str"})
+-[:BELONGS_TO]->({name: "str"})
+
 // Top 10 most statements during the debate?
 MATCH (p:Person)-[:STATED]->(s)
 WITH p, COUNT(s) AS StatementCount
