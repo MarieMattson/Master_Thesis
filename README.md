@@ -11,13 +11,13 @@ To get it to work, open this config file:
 
 And make sure this line is uncommented:
 
-'''ini
-\# With default configuration Neo4j only accepts local connections.
+```ini
+# With default configuration Neo4j only accepts local connections.
 
-\# To accept non-local connections, uncomment this line:
+# To accept non-local connections, uncomment this line:
 
 server.default_listen_address=0.0.0.0
-'''
+```
 
 > sudo systemctl restart neo4j.service 
 
