@@ -52,7 +52,7 @@ def insert_data_into_neo4j(df):
 
 if __name__ == "__main__":
     test_connection()  # Should print: Hello, Neo4j!
-    file_path = "data_import/data/filtered_riksdag.csv"
+    file_path = "data/filtered_riksdag.csv"
     df = load_csv(file_path)
     insert_data_into_neo4j(df)
     print("Data successfully imported into Neo4j!")
