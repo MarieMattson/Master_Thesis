@@ -7,13 +7,11 @@ Before you can use Neo4j on the wsl, you must install it on the wsl. Follow this
 > https://www.techrepublic.com/article/how-to-install-neo4j-ubuntu-server/ 
 
 To get it to work, open this config file:
-'''console
-sudo nano /etc/neo4j/neo4j.conf 
-'''
+> sudo nano /etc/neo4j/neo4j.conf
 
 And make sure this line is uncommented:
 
-'''
+'''ini
 \# With default configuration Neo4j only accepts local connections.
 
 \# To accept non-local connections, uncomment this line:
