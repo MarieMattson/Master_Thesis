@@ -14,8 +14,10 @@ sudo nano /etc/neo4j/neo4j.conf
 And make sure this line is uncommented:
 
 '''
-/# With default configuration Neo4j only accepts local connections.
-/# To accept non-local connections, uncomment this line:
+\# With default configuration Neo4j only accepts local connections.
+
+\# To accept non-local connections, uncomment this line:
+
 server.default_listen_address=0.0.0.0
 '''
 
