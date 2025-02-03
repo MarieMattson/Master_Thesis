@@ -36,6 +36,8 @@ def insert_data_into_neo4j(df):
                 session.run(
                     """
                     MERGE (p:Person {name: $name, party: $party, gender: $gender})
+                    MERGE (party:Party {partyName: $party})
+                    MERGE (p)-[:BELONGS_TO]->(party)
                     CREATE (s:Statement {text: $text})
                     MERGE (p)-[:STATED]->(s)
                     """,

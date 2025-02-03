@@ -1,8 +1,18 @@
 //Creation of kg:
-CREATE ({text: "str", start_segment: "float", 
-end_segment: "float", protocol_id: "string"})
-<-[:STATED]-({name: "str", party: "str", gender: "str"})
--[:BELONGS_TO]->({name: "str"})
+"""
+MERGE (p:Person {name: $name, party: $party, gender: $gender})
+MERGE (party:Party {partyName: $party})
+MERGE (p)-[:BELONGS_TO]->(party)
+CREATE (s:Statement {text: $text})
+MERGE (p)-[:STATED]->(s)
+""",
+#id=row["id"],
+name=row["name"],
+party=row["party"],
+gender=row["gender"],
+#start_segment=row["start_segment"],
+#end_segment=row["end_segment"],
+text=row["text"]
 
 // Top 10 most statements during the debate?
 MATCH (p:Person)-[:STATED]->(s)
