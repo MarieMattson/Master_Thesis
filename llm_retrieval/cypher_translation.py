@@ -7,8 +7,6 @@ import requests
 
 from llm_retrieval.openai_parses import OpenAIResponse
 
-print("translate")
-
 def translate(query: str)->str:
     api_key = os.getenv("OPEN_API_KEY")
     if not api_key:
@@ -45,7 +43,6 @@ def translate(query: str)->str:
 
     response = requests.post(url, headers=headers, json=body)
 
-    #print(response.json())
     parsed_response = OpenAIResponse(**response.json())
     if len(parsed_response.choices) == 0:
         raise Exception("No answer")

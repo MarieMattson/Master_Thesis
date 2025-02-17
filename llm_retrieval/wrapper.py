@@ -8,13 +8,11 @@ import argparse
 from llm_retrieval.cypher_translation import translate
 from llm_retrieval.node_retrieval import retrieve_node
 
-def wrapper(query:str)->list[str]:
+def wrapper(query:str)-> tuple[str, list[str]]:
     try:
-        print("hello")
         cypher_query = translate(query)
-        print(cypher_query)
-        names = retrieve_node(cypher_query)
-        print(names)
+        nodes = retrieve_node(cypher_query)
+        return cypher_query, nodes    
     except Exception as e:
         print(f"Something went wrong: {e}")
 

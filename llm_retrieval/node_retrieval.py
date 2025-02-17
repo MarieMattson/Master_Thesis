@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from loguru import logger
 from neo4j import GraphDatabase
 
-print("retrieval")
 
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
@@ -22,8 +21,9 @@ def retrieve_node(query:str)->list[str]:
         with driver.session() as session:
                 result = session.run(query)
                 nodes = [record.data() for record in result]
-                names = [entry['p.name'] for entry in nodes] # names = [entry['Person']['name'] for entry in nodes]
-                return names
+                return nodes
+                #names = [entry['p.name'] for entry in nodes] # names = [entry['Person']['name'] for entry in nodes]
+                #return names
     finally:
         driver.close()
 

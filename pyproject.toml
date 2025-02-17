@@ -15,6 +15,7 @@ dependencies = [
     "pydantic>=2.10.5",
     "python-dotenv>=1.0.1",
     "torch>=2.5.1",
+    "yfiles-jupyter-graphs-for-neo4j>=1.6.0",
 ]
 
 [dependency-groups]
