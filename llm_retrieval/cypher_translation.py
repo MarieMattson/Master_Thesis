@@ -24,8 +24,19 @@ def translate(query: str)->str:
             "messages": [
             {
                 "role": 'system',
-                "content": 'You are a useful assistant for analysing text.'
-            },
+                "content": "Översätt användarens fråga till en cypher query för att söka i en Neo4j-databas med rikstdagsdebatter. Exempel på noder: " +
+                            "(:Person {gender: 'man', name: 'John Eriksson', party: 'Centerpartiet'}), " +
+                            "(:Party {partyName: 'Centerpartiet'}), " +
+                            "(:Statement {text: 'Herr talman! ...'}). " +
+                            "Exempel på relationer: " +
+                            "'Person' -[:BELONGS_TO]-> 'Party', " +
+                            "'Person' -[:STATED]-> 'Statement'. " +
+                            "Returnera endast Cypher query, inget annat."+
+                            "Returnera endast name och gender, inga andra properties"+
+                            "Här är ett exempel på en bra query:"+
+                            "MATCH (p:Person)-[:BELONGS_TO]->(party:Party {partyName: 'Centerpartiet'})"+ 
+                            "RETURN p.name, p.gender"
+                            },
             { "role": 'user', "content": query }
             ],
             "max_tokens": 100, # Adjust the token limit as needed

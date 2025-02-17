@@ -22,11 +22,10 @@ def retrieve_node(query:str)->list[str]:
         with driver.session() as session:
                 result = session.run(query)
                 nodes = [record.data() for record in result]
-                names = [entry['person']['name'] for entry in nodes]
+                names = [entry['p.name'] for entry in nodes] # names = [entry['Person']['name'] for entry in nodes]
                 return names
     finally:
         driver.close()
 
 if __name__ == "__main__":
-    retrieve_node('MATCH (p:Party {partyName: "Centerpartiet"})-[r:BELONGS_TO]-(person:Person) RETURN p, r, person')
-    
+    print(retrieve_node('MATCH (person:Person)-[:BELONGS_TO]->(party:Party {partyName: "Centerpartiet"}) RETURN person.name, person.gender'))

@@ -1,0 +1,50 @@
+// Finns det några socialdemokrater som delar samma förnamn?
+MATCH (p:Party {partyName: "Socialdemokraterna"})-[:BELONGS_TO]->(person:Person)
+WITH person.name AS firstName, count(person) AS nameCount
+WHERE nameCount > 1
+RETURN firstName, nameCount
+
+// Vilket parti har minst antal deltagare i debatten, och vilket har flest?
+MATCH (person:Person)-[:BELONGS_TO]->(party:Party)
+WITH party.partyName AS partyName, count(person) AS participants
+ORDER BY participants ASC
+RETURN partyName, participants
+LIMIT 1
+
+UNION
+
+MATCH (person:Person)-[:BELONGS_TO]->(party:Party)
+WITH party.partyName AS partyName, count(person) AS participants
+ORDER BY participants DESC
+RETURN partyName, participants
+LIMIT 1
+
+
+// Vem har flest inlägg i debatten och vilket parti tillhör personen?
+MATCH (person:Person)-[:BELONGS_TO]->(party:Party)
+WITH person, party.partyName AS partyName, count(person) AS postCount
+ORDER BY postCount DESC
+LIMIT 1
+RETURN person.name, partyName, postCount
+
+
+// Vilket parti har flest kvinnor i debatten, och hur många kvinnor respektive män har de?
+MATCH (person:Person)-[:BELONGS_TO]->(party:Party)
+WHERE person.gender = 'woman'
+WITH party.partyName AS partyName, count(person) AS womenCount
+ORDER BY womenCount DESC
+LIMIT 1
+WITH partyName, womenCount
+MATCH (person:Person)-[:BELONGS_TO]->(party:Party)
+WHERE person.gender = 'man'
+WITH partyName, womenCount, count(person) AS menCount
+RETURN partyName, womenCount, menCount
+
+
+// Finns det något parti som inte har några kvinnliga deltagare i debatten?
+MATCH (party:Party)
+WHERE NOT EXISTS {
+    MATCH (party)-[:BELONGS_TO]->(person:Person)
+    WHERE person.gender = 'woman'
+}
+RETURN party.partyName
