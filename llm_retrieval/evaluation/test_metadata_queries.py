@@ -26,10 +26,10 @@ def process_query(natural_language_query: str, cypher_query: str):
         result = run_query(cypher_query)
         llm_cypher_query, llm_result = wrapper(natural_language_query)
 
-        print(f" Expected Cypher Query:\n{cypher_query.strip()}")
-        print(f" Generated Cypher Query:\n{llm_cypher_query.strip()}")
-        print(f" Neo4j Response: {result}")
-        print(f" LLM Response: {llm_result}")
+        print(f"Expected Cypher Query:\n{cypher_query.strip()}")
+        print(f"Generated Cypher Query:\n{llm_cypher_query.strip()}")
+        print(f"Neo4j Response: {result}")
+        print(f"LLM Response: {llm_result}")
         print("-" * 80)
     except Exception as e:
         print(f"Something went wrong: {e}")
