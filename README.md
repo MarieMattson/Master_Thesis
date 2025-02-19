@@ -19,13 +19,26 @@ And make sure this line is uncommented:
 server.default_listen_address=0.0.0.0
 ```
 
+To make the Langchain connection work, this line also has to changed and uncommented in the config:
+```ìni
+#dbms.security.procedures.unrestricted=my.extensions.example,my.procedures.*
+
+Must be changed to 
+dbms.security.procedures.unrestricted=apoc.coll.*,apoc.load.*,gds.*,apoc.*
+
+And the line below it, which likely says :
+dbms.security.procedures.allowlist=apoc.coll.*,apoc.load.*,gds.*
+Must be changed to:
+dbms.security.procedures.allowlist=apoc.coll.*,apoc.load.*,gds.*,apoc.*
+```
+
 > sudo systemctl restart neo4j.service 
 
 The neo4j server should start when wsl is started. However, if it does not, try this:
 > sudo systemctl start neo4j.service 
 
 To acces the GUI of neo4j, the easiest thing is to open it in browser. Use this url:
-> http://localhost:7474/ 
+> http://localhost:7474/
 
 ### UV
 Virtual enviroment. It looks like a normal folder. If *uv* is added before a command, it is done in the virtual envirioment. This is how it is initailised:

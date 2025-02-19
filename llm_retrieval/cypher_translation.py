@@ -3,17 +3,36 @@ input: natural language query
 output: cypher query
 '''
 import os
-import requests
-from langchain.chat_models import ChatOpenAI
-from langchain.schema import SystemMessage, HumanMessage
-from langchain.prompts import PromptTemplate
-from langchain.chat_models import init_chat_model
-from langchain_openai import OpenAIEmbeddings
+from dotenv import load_dotenv
+#import requests
+#from langchain.chat_models import ChatOpenAI
+#from langchain.schema import SystemMessage, HumanMessage
+#from langchain.prompts import PromptTemplate
+#from langchain.chat_models import init_chat_model
+#from langchain_openai import OpenAI, OpenAIEmbeddings
+#from langchain_community.chat_models import ChatOpenAI
 
-from llm_retrieval.openai_parses import OpenAIResponse
+# Might need in the node retrieval file?
+from langchain_neo4j import Neo4jGraph
 
-llm = init_chat_model("gpt-4o", model_provider="openai")
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+load_dotenv()
+NEO4J_URI = os.getenv("NEO4J_URI")
+NEO4J_USER = os.getenv("NEO4J_USER")
+NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
+print(NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER)
+
+graph = Neo4jGraph(url=NEO4J_URI, username=NEO4J_USER, password=NEO4J_PASSWORD)
+
+graph.query("MATCH (p:Person) WHERE p.name = 'Gunnar Sträng' RETURN p")
+
+graph.refresh_schema()
+print(graph.schema)
+
+ 
+"""from llm_retrieval.openai_parses import OpenAIResponse
+
+llm = ChatOpenAI("gpt-4o", model_provider="openai")
+#embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
 
 prompt_template = PromptTemplate(
@@ -114,4 +133,4 @@ def translate(query: str)->str:
 
 if __name__ == "__main__":
     response = translate("Vad är Frankrikes huvudstad?")
-    print(response)
+    print(response)"""
