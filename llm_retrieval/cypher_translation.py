@@ -4,29 +4,28 @@ output: cypher query
 '''
 import os
 from dotenv import load_dotenv
-#import requests
-#from langchain.chat_models import ChatOpenAI
-#from langchain.schema import SystemMessage, HumanMessage
-#from langchain.prompts import PromptTemplate
-#from langchain.chat_models import init_chat_model
-#from langchain_openai import OpenAI, OpenAIEmbeddings
-#from langchain_community.chat_models import ChatOpenAI
-
-# Might need in the node retrieval file?
-from langchain_neo4j import Neo4jGraph
+from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
-NEO4J_USER = os.getenv("NEO4J_USER")
+NEO4J_USERNAME = os.getenv("NEO4J_USER")
 NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
-print(NEO4J_URI, NEO4J_PASSWORD, NEO4J_USER)
+OPEN_API_KEY = os.getenv("OPEN_API_KEY")
+graph = Neo4jGraph()
 
-graph = Neo4jGraph(url=NEO4J_URI, username=NEO4J_USER, password=NEO4J_PASSWORD)
-
-graph.query("MATCH (p:Person) WHERE p.name = 'Gunnar Sträng' RETURN p")
+print(graph.query("MATCH (p:Person) WHERE p.name = 'Gunnar Sträng' RETURN p AS Person"))
 
 graph.refresh_schema()
-print(graph.schema)
+enhanced_graph = Neo4jGraph(enhanced_schema=True)
+print(enhanced_graph)
+
+llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPEN_API_KEY)
+chain = GraphCypherQAChain.from_llm(
+    graph=enhanced_graph, llm=llm, verbose=True, allow_dangerous_requests=True
+)
+response = chain.invoke({"query": "Vilket parti har minst antal deltagare i debatten, och vilket har flest?"})
+print(response)
 
  
 """from llm_retrieval.openai_parses import OpenAIResponse
