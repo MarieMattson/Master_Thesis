@@ -7,9 +7,6 @@ import argparse
 
 from llm_retrieval.cypher_translation import translate
 from llm_retrieval.node_retrieval import retrieve_node
-#from langchain_neo4j import Neo4jGraph
-
-#graph = Neo4jGraph()
 
 def wrapper(query:str)-> tuple[str, list[str]]:
     try:
