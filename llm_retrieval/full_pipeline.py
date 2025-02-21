@@ -9,6 +9,7 @@ NEO4J_USERNAME = os.getenv("NEO4J_USER")
 NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 graph = Neo4jGraph()
+print(graph.schema)
 
 graph.refresh_schema()
 enhanced_graph = Neo4jGraph(enhanced_schema=True)
