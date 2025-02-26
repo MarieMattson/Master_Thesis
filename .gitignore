@@ -12,3 +12,4 @@ wheels/
 # Exclude specific large file
 rixvox-alignments.parquet
 .env
+dataset.json.gz
