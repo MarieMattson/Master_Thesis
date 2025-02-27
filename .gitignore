@@ -14,4 +14,4 @@ rixvox-alignments.parquet
 .env
 filtered_riksdag.json
 temp/
-dataset.csv
+full_dataset.csv
