@@ -21,6 +21,9 @@ class Speaker(BaseModel):
         # Remove " replik" at the end if present
         value = re.sub(r'\s*replik$', '', value)
 
+        # Remove anything inside parentheses at the end of the name
+        value = re.sub(r'\s*\(.*\)$', '', value)
+
         return value
 
 input_file = '/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json' 
