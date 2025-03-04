@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "colorama>=0.4.6",
+    "community>=1.0.0b1",
     "datasets==2.20.0",
     "faiss-cpu>=1.10.0",
     "ijson>=3.3.0",

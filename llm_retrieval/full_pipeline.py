@@ -1,3 +1,4 @@
+"""THIS IS A MESS! DON'T LOOK AT IT!"""
 import os
 from IPython import embed
 from dotenv import load_dotenv
@@ -6,7 +7,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.schema import SystemMessage, HumanMessage
 import numpy as np
 from colorama import Fore, Style
-
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 load_dotenv()
@@ -24,9 +25,10 @@ llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPENAI_API_KEY)
 chain = GraphCypherQAChain.from_llm(
     graph=enhanced_graph, 
     llm=llm, 
-    verbose=True, 
+    verbose=False, 
     allow_dangerous_requests=True,
     return_intermediate_steps=True)
+
 
 
 system_message = SystemMessage(
@@ -52,60 +54,53 @@ system_message = SystemMessage(
         MATCH (a)-[:HAS_CHUNK]->(c:Chunk)
         MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"})
         RETURN a.anforande_text, c.text, c.chunk_id
-
-        The knowledge graph has the following properties:
-        Node properties:
-        - **Chunk**
-        - `text`: STRING Example: "Det var dagens sista fråga. Jag vill tacka de närv"
-        - `chunk_index`: INTEGER Min: 0, Max: 0
-        - `chunk_id`: STRING Example: "d15dc718-661c-4d1b-9d5c-a3e4370e1713"
-        - **Protokoll**
-        - `dok_hangar_id`: STRING Example: "2804730"
-        - `dok_rm`: STRING Available options: ['2012/13']
-        - `dok_datum`: STRING Example: "2012-09-18 00:00:00"
-        - `dok_id`: STRING Example: "H0091"
-        - `dok_titel`: STRING Example: "Riksdagens protokoll 2012/13:1 Tisdagen den 18 sep"
-        - **Debatt**
-        - `avsnittsrubrik`: STRING Example: "Parentation"
-        - `kammaraktivitet`: STRING Example: "Unknown"
-        - **Talare**
-        - `name`: STRING Example: "ANDERS BORG"
-        - `party`: STRING Available options: ['Unknown', 'S', 'MP', 'M', 'FP', 'C', 'KD', 'SD', 'V']
-        - **Anforande**
-        - `replik`: STRING Example: "N"
-        - `anforande_nummer`: STRING Example: "1"
-        - `intressent_id`: STRING Example: "0000000000000"
-        - `underrubrik`: STRING Example: "Unknown"
-        - `rel_dok_id`: STRING Example: "Unknown"
-        - `anforande_text`: STRING Example: "  Ärade riksdagsledamöter! Jag vill hälsa er välko"
-        - `anforande_id`: STRING Example: "B46BE744-50D8-469A-A297-AC6EB328EBEB"
-        Relationship properties:
-        The relationships:
-        (:Debatt)-[:DOCUMENTED_IN]->(:Protokoll)
-        (:Talare)-[:DELTAR_I]->(:Debatt)
-        (:Talare)-[:HALLER]->(:Anforande)
-        (:Anforande)-[:HAS_CHUNK]->(:Chunk) 
     """
 )
 
-
 def generate_cypher_query(user_query):
     """Uses LangChain's QA Chain to generate a Cypher query to get relevant nodes."""
+    print("User query:", user_query)
+    
+    # Ensure chain.invoke() returns a response (even if it's an error message)
+    response = chain.invoke({"query": user_query}) 
+    
+    # Print the full response to see the structure
+    print("Response:", response)
+    
+    # Check if the expected 'intermediate_steps' exists in the response
+    if "intermediate_steps" in response and len(response["intermediate_steps"]) > 0:
+        cypher_query = response["intermediate_steps"][0]["query"]
+        print("Cypher query:", cypher_query)
+        return cypher_query
+    else:
+        print("Error: No intermediate steps found in response")
+        return None
+    
+def generate_cypher_query(user_query):
+    """Uses LangChain's QA Chain to generate a Cypher query to get relevant nodes."""
+    print(user_query)
     response = chain.invoke({"query": user_query, "messages": [system_message, HumanMessage(content=user_query)]})
+
+    print(response)
     cypher_query = response["intermediate_steps"][0]["query"]
+    print(cypher_query)
     return cypher_query
 
-def get_relevant_nodes(cypher_query):
+def query_graph(cypher_query):
     """Runs the Cypher query in Neo4j and retrieves relevant nodes (chunks of text)."""
     result = graph.query(cypher_query)
-    return result  # This contains the chunks from Jessica Polfjärd's speeches
+    return result
 
 def perform_semantic_search(query_text, relevant_nodes, top_k=6):
-    """Performs vector search only on the retrieved nodes."""
+    """
+    output:
+    [{'a.anforande_text': '\r\nHerr talman! Jag träffade i förra veckan.....', 
+    'c.chunk_id': '71799eeb-0b67-41d9-8a62-5ee46656b4df', 
+    'c.embedding': [0.004316803999245167, 0.004593313671648502,.....]}]
+    """
 
     # Generate embedding for the query (Fixed this line)
     embedding = embeddings.embed_query(query_text)  # Directly returns a list
-
 
     # Prepare embedding search within the filtered nodes
     chunk_ids = [node.get("chunk_id") or node.get("c.chunk_id") for node in relevant_nodes if node.get("chunk_id") or node.get("c.chunk_id")]
@@ -137,8 +132,11 @@ if __name__ == "__main__":
     print("🔍 Generated Cypher Query:\n", cypher_query)
 
     # Step 2: Run Cypher query to get relevant nodes
-    relevant_nodes = get_relevant_nodes(cypher_query)
+    relevant_nodes = query_graph(cypher_query)
     print("📌 Retrieved relevant nodes:", len(relevant_nodes))
+
+    # Step 3: Filter nodes to get the embeddings
+    #relevant_nodes = filter_nodes(relevant_nodes)
 
     # Step 3: Perform semantic search within retrieved nodes
     refined_results = perform_semantic_search(query, relevant_nodes)
@@ -157,7 +155,7 @@ if __name__ == "__main__":
     #response = chain.invoke({"query": query, "messages": [system_message, HumanMessage(content=query)]})
 
     #print(response)
-    '''print("="*30, "Semantic search", "="*30)
+    print("="*30, "Semantic search", "="*30)
 
     # Step 1: Convert the user query into an embedding
     embedded_query = embeddings.embed_query(query)
@@ -205,18 +203,18 @@ if __name__ == "__main__":
 
     # Step 4: Pass the relevant texts and query to LangChain for detailed response
     relevant_texts = [text for text, _ in nodes_with_scores[:5]]  # Taking top 5 nodes as context
-    #response = chain.invoke({
-    #    "query": query, 
-    #    "messages": [
-    #        system_message, 
-    #        HumanMessage(content=query), 
-    #        HumanMessage(content=" ".join(relevant_texts))  # Passing the relevant chunk texts as context
-    #    ]
-    #})
+    response = chain.invoke({
+        "query": query, 
+        "messages": [
+            system_message, 
+            HumanMessage(content=query), 
+            HumanMessage(content=" ".join(relevant_texts))  # Passing the relevant chunk texts as context
+        ]
+    })
 
     # Print the final response with visual separation and color
-    #print("="*30, "Response from LangChain", "="*30)
-    #print(Fore.GREEN + Style.BRIGHT + "="*50)
-    #print(Fore.YELLOW + "Generated Response:")
-    #print(Fore.CYAN + Style.BRIGHT + response['result'])
-    #print(Fore.GREEN + "="*50 + Style.RESET_ALL)'''
+    print("="*30, "Response from LangChain", "="*30)
+    print(Fore.GREEN + Style.BRIGHT + "="*50)
+    print(Fore.YELLOW + "Generated Response:")
+    print(Fore.CYAN + Style.BRIGHT + response['result'])
+    print(Fore.GREEN + "="*50 + Style.RESET_ALL)
