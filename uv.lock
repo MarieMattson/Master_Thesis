@@ -3179,6 +3179,7 @@ dependencies = [
     { name = "sentence-transformers" },
     { name = "tenacity" },
     { name = "textblob" },
+    { name = "transformers" },
     { name = "yfiles-jupyter-graphs-for-neo4j" },
 ]
 
@@ -3214,6 +3215,7 @@ requires-dist = [
     { name = "sentence-transformers", specifier = ">=3.4.1" },
     { name = "tenacity", specifier = "!=8.4.0" },
     { name = "textblob", specifier = "==0.18.0.post0" },
+    { name = "transformers", specifier = ">=4.49.0" },
     { name = "yfiles-jupyter-graphs-for-neo4j", specifier = ">=1.6.0" },
 ]
 

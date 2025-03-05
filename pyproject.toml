@@ -30,6 +30,7 @@ dependencies = [
     "sentence-transformers>=3.4.1",
     "tenacity!=8.4.0",
     "textblob==0.18.0.post0",
+    "transformers>=4.49.0",
     "yfiles-jupyter-graphs-for-neo4j>=1.6.0",
 ]
 
