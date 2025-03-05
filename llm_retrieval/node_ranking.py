@@ -6,7 +6,8 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from loguru import logger
 from neo4j import GraphDatabase
 import numpy as np
-import sklearn.metrics.pairwise 
+import sklearn.metrics.pairwise
+from llm_retrieval.node_retrieval import retrieve_node
 
 
 load_dotenv()
@@ -37,17 +38,6 @@ embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 #)
 
 
-def retrieve_node(query:str)->list[str]:
-    logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
-    driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
-    try:
-        with driver.session() as session:
-                result = session.run(query)
-                nodes = [record.data() for record in result]
-                return nodes
-    finally:
-        driver.close()
-
 
 def rank_nodes_by_similarity(query_text: str, retrieved_nodes: list[dict], top_k=6) -> list[dict]:
     """Rank retrieved nodes based on cosine similarity with the user query."""
@@ -77,9 +67,9 @@ def print_ranked_nodes(ranked_nodes):
 
         print(f"🔹 **Result {i}**")
         print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
-        print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")  # Show only first 300 chars
-        print(f"📜 **Chunk Text:** {node['c.text'][:300]}...")  # Show only first 300 chars
-        print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  # Print similarity score with 4 decimals
+        print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")
+        print(f"📜 **Chunk Text:** {node['c.text']}...")
+        print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  
         print("-" * 80) 
 
 if __name__ == "__main__":
@@ -99,4 +89,5 @@ if __name__ == "__main__":
     retrieved_nodes = retrieve_node(cypher_query)
 
     ranked_nodes = rank_nodes_by_similarity(query_text= user_query, retrieved_nodes=retrieved_nodes)
+    print(ranked_nodes)
     print_ranked_nodes(ranked_nodes=ranked_nodes)

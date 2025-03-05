@@ -5,7 +5,7 @@ output: node
 
 import argparse 
 
-from llm_retrieval.cypher_translation import translate
+from llm_retrieval.old.cypher_translation import translate
 from llm_retrieval.node_retrieval import retrieve_node
 
 def wrapper(query:str)-> tuple[str, list[str]]:
