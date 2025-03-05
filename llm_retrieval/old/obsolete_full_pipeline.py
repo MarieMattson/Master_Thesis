@@ -25,9 +25,10 @@ llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPENAI_API_KEY)
 chain = GraphCypherQAChain.from_llm(
     graph=enhanced_graph, 
     llm=llm, 
-    verbose=False, 
+    verbose=True, 
     allow_dangerous_requests=True,
-    return_intermediate_steps=True)
+    return_intermediate_steps=True,
+    validate_cypher=True)
 
 
 
@@ -35,9 +36,11 @@ system_message = SystemMessage(
     content="""
         You're job is to respond to user queries about a debate from the Swedish parliament (riksdagen).
         The query and data will be in Swedish. 
-        When generating a query, it must not be too specific. 
-        For example, If asked about what Eva Flyborg said about a certain topic,
+        The cypher query should consist of two parts:
+        First you should filter out everything that is relevant for the speaker,
+        for example, If asked about what Eva Flyborg said about a certain topic,
         You may retrieve all nodes related to Eva Flyborg.
+        Second, you shold filter out the nodes that have the highest similarity score to the user query        
         Also note that speakers's name are in caps, like "EVA FLYBORG"
 
         **Requirements:**
@@ -56,6 +59,28 @@ system_message = SystemMessage(
         RETURN a.anforande_text, c.text, c.chunk_id
     """
 )
+'''system_message = SystemMessage(
+    content = """
+            You are a useful cypher query assistant     
+            Your task is to generate a valid cypher query based on the user input
+            Only return the Cypher query. Do not run the query!
+            
+            **Requirements:**
+            - Only return a valid Cypher query—no explanations or summaries.
+            - The speaker's name will be in uppercase with a party label (e.g., "JESSICA POLFJÄRD (M)").
+            - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
+            - The Protokoll ID will be provided (e.g., "H00998").
+            - **Output ONLY the Cypher query.**
+            - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
+    
+                
+            Example Cypher query format:
+            MATCH (t:Talare {name: "EVA FLYBORG (FP)"}) 
+            MATCH (t)-[:HALLER]->(a:Anforande) 
+            MATCH (a)-[:HAS_CHUNK]->(c:Chunk)
+            MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"})
+            RETURN a.anforande_text, c.text, c.chunk_id     
+        """)'''
 
 def generate_cypher_query(user_query):
     """Uses LangChain's QA Chain to generate a Cypher query to get relevant nodes."""
@@ -76,7 +101,7 @@ def generate_cypher_query(user_query):
         print("Error: No intermediate steps found in response")
         return None
     
-def generate_cypher_query(user_query):
+'''def generate_cypher_query(user_query):
     """Uses LangChain's QA Chain to generate a Cypher query to get relevant nodes."""
     print(user_query)
     response = chain.invoke({"query": user_query, "messages": [system_message, HumanMessage(content=user_query)]})
@@ -89,7 +114,7 @@ def generate_cypher_query(user_query):
 def query_graph(cypher_query):
     """Runs the Cypher query in Neo4j and retrieves relevant nodes (chunks of text)."""
     result = graph.query(cypher_query)
-    return result
+    return result'''
 
 def perform_semantic_search(query_text, relevant_nodes, top_k=6):
     """
@@ -122,7 +147,7 @@ if __name__ == "__main__":
     query = (
         """
         Hur argumenterar JESSICA POLFJÄRD för sänkt restaurangmoms och fler jobb 
-        i debatten från Protokoll H00998? Du MÅSTE returnera a.anforande_text, c.text, c.chunk_id, chunk.embedding!
+        i debatten från Protokoll H00998? Du MÅSTE returnera a.anforande_text, c.text, c.chunk_id!
         Generera en Cypher query som begränsar till den specifika debatten 
         och den aktuella talarens anförande, men undvik för många filter.
         """)   

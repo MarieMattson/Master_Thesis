@@ -74,7 +74,7 @@ def get_filtered_semantic_matches(query_text, top_k=6):
     RETURN node.text AS text, node.chunk_id AS chunk_id, score
     """, {"embedding": embedding, "top_k": top_k, "metadata_filter": metadata_filter})
 
-    return result
+    return result 
 
 
 

@@ -1,4 +1,5 @@
-"""This works the best so far, idk why. However it does not implement my embeddings."""
+"""This works the best so far, idk why. However it does not implement my embeddings.
+   This performs the full pipeline, and was basically impossible to adjust the different steps"""
 import os
 from dotenv import load_dotenv
 from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
@@ -22,4 +23,4 @@ chain = GraphCypherQAChain.from_llm(
 if __name__ == "__main__":
     response = chain.invoke({"query": "Vad tycker BIRGITTA OHLSSON om skatt?"})
 
-    print(response)
+    print(response) 

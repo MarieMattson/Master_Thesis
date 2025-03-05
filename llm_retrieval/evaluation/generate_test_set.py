@@ -11,13 +11,12 @@ from huggingface_hub import InferenceClient
 
 from datasets import load_dataset
 
-# Load dataset from a directory containing JSON files
 dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json")
 dataset = dataset.filter(lambda x: x["dok_id"] == "H00998")
 
 pd.set_option("display.max_colwidth", None)
 notebook_login()
-#ds = datasets.load_dataset("m-ric/huggingface_doc", split="train")
+
 langchain_docs = [
     LangchainDocument(page_content=doc["anforandetext"], metadata={"source": doc["dok_id"]}) 
     for doc in tqdm(dataset["train"])

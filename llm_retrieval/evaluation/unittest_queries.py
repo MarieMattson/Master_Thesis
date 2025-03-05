@@ -1,6 +1,6 @@
 import json
 from llm_retrieval import node_retrieval
-from llm_retrieval.full_pipeline import chain
+from llm_retrieval.obsolete_full_pipeline import chain
 import os
 import unittest
 from dotenv import load_dotenv
