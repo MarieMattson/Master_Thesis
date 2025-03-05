@@ -3,44 +3,66 @@ input: natural language query
 output: cypher query
 '''
 import os
+from dotenv import load_dotenv
+from langchain_neo4j import Neo4jGraph
+from langchain_openai import ChatOpenAI
 import requests
 
 from llm_retrieval.openai_parses import OpenAIResponse
 
-print("translate")
+
+load_dotenv()
+NEO4J_URI = os.getenv("NEO4J_URI")
+NEO4J_USERNAME = os.getenv("NEO4J_USER")
+NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+graph = Neo4jGraph()
+
+graph.refresh_schema()
+enhanced_graph = Neo4jGraph(enhanced_schema=True)
+
 
 def translate(query: str)->str:
-    api_key = os.getenv("OPEN_API_KEY")
-    if not api_key:
-        raise Exception("Sorry, not allowed to access chatbot...")
     url = "https://api.openai.com/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
+        "Authorization": f"Bearer {OPENAI_API_KEY}"
     }
+    system_prompt = """
+                    You're job is to respond to user queries about a debate from the Swedish parliament (riksdagen).
+                    The query and data will be in Swedish. 
+                    You should filter out everything that is relevant for the speaker,
+                    for example, If asked about what Eva Flyborg said about a certain topic,
+                    You may retrieve all nodes related to Eva Flyborg.
+                    Second, you shold filter out the nodes that have the highest similarity score to the user query        
+                    Also note that speakers's name are in caps, like "EVA FLYBORG"
 
-    body= {
-            "model": 'gpt-4o-mini', # Use the appropriate model
+                    **Graph Schema:**
+                    {enhanced_graph}
+
+                    **Requirements:**
+                    - Only return a valid Cypher query—no explanations or summaries.
+                    - The speaker's name will be in uppercase with a party label (e.g., "JESSICA POLFJÄRD (M)").
+                    - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
+                    - The Protokoll ID will be provided (e.g., "H00998").
+                    - **Output ONLY the Cypher query.**
+                    - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
+
+                    Example Cypher query format:
+                    MATCH (t:Talare {name: "EVA FLYBORG"}) 
+                    MATCH (t)-[:HALLER]->(a:Anforande) 
+                    MATCH (a)-[:HAS_CHUNK]->(c:Chunk)
+                    MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"})
+                    RETURN a.anforande_text, c.text, c.chunk_id
+                    """
+    body = {
+            "model": 'gpt-4o',
             "messages": [
-            {
-                "role": 'system',
-                "content": "Översätt användarens fråga till en cypher query för att söka i en Neo4j-databas med rikstdagsdebatter. Exempel på noder: " +
-                            "(:Person {gender: 'man', name: 'John Eriksson', party: 'Centerpartiet'}), " +
-                            "(:Party {partyName: 'Centerpartiet'}), " +
-                            "(:Statement {text: 'Herr talman! ...'}). " +
-                            "Exempel på relationer: " +
-                            "'Person' -[:BELONGS_TO]-> 'Party', " +
-                            "'Person' -[:STATED]-> 'Statement'. " +
-                            "Returnera endast Cypher query, inget annat."+
-                            "Returnera endast name och gender, inga andra properties"+
-                            "Här är ett exempel på en bra query:"+
-                            "MATCH (p:Person)-[:BELONGS_TO]->(party:Party {partyName: 'Centerpartiet'})"+ 
-                            "RETURN p.name, p.gender"
-                            },
-            { "role": 'user', "content": query }
+                {"role": 'system', "content": system_prompt},
+                {"role": 'user', "content": query}
             ],
-            "max_tokens": 100, # Adjust the token limit as needed
-            "temperature": 0.7 # Adjust the creativity level as needed
+            "max_tokens": 150,
+            "temperature": 0
         }
 
     response = requests.post(url, headers=headers, json=body)
@@ -54,5 +76,12 @@ def translate(query: str)->str:
 
 
 if __name__ == "__main__":
-    response = translate("Vad är Frankrikes huvudstad?")
+    user_query = (
+        """
+        Hur argumenterar JESSICA POLFJÄRD för sänkt restaurangmoms och fler jobb 
+        i debatten från Protokoll H00998? Du MÅSTE returnera a.anforande_text, c.text, c.chunk_id och c.embedding!
+        Generera en Cypher query som begränsar till den specifika debatten 
+        och den aktuella talarens anförande, men undvik för många filter.
+        """) 
+    response = translate(user_query)
     print(response)

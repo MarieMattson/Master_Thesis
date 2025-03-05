@@ -26,4 +26,11 @@ def retrieve_node(query:str)->list[str]:
         driver.close()
 
 if __name__ == "__main__":
-    print(retrieve_node('MATCH (person:Person)-[:BELONGS_TO]->(party:Party {partyName: "Centerpartiet"}) RETURN person.name, person.gender'))
+    cypher_query ="""
+                MATCH (t:Talare {name: "JESSICA POLFJÄRD"}) 
+                MATCH (t)-[:HALLER]->(a:Anforande) 
+                MATCH (a)-[:HAS_CHUNK]->(c:Chunk)
+                MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H00998"})
+                RETURN a.anforande_text, c.text, c.chunk_id, c.embedding        
+                """
+    print(retrieve_node(cypher_query))
