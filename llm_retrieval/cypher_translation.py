@@ -41,19 +41,17 @@ def translate(query: str)->str:
                     {enhanced_graph}
 
                     **Requirements:**
+                    - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
+                    - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
                     - Only return a valid Cypher query—no explanations or summaries.
-                    - The speaker's name will be in uppercase with a party label (e.g., "JESSICA POLFJÄRD (M)").
+                    - The speaker's name will be in uppercase with a party label (e.g., "JESSICA POLFJÄRD").
                     - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
                     - The Protokoll ID will be provided (e.g., "H00998").
                     - **Output ONLY the Cypher query.**
                     - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
 
                     Example Cypher query format:
-                    MATCH (t:Talare {name: "EVA FLYBORG"}) 
-                    MATCH (t)-[:HALLER]->(a:Anforande) 
-                    MATCH (a)-[:HAS_CHUNK]->(c:Chunk)
-                    MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"})
-                    RETURN a.anforande_text, c.text, c.chunk_id
+                    MATCH (t:Talare {name: "EVA FLYBORG"}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"}) RETURN a.anforande_text, c.text, c.chunk_id
                     """
     body = {
             "model": 'gpt-4o',

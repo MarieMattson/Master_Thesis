@@ -14,12 +14,13 @@ NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
 NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
 
-def retrieve_node(query:str)->list[str]:
+def retrieve_node(cypher_query:str)->list[str]:
     logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
+    cypher_query = cypher_query.replace('\n', ' ')
     try:
         with driver.session() as session:
-                result = session.run(query)
+                result = session.run(cypher_query)
                 nodes = [record.data() for record in result]
                 return nodes
     finally:

@@ -22,27 +22,9 @@ enhanced_graph = Neo4jGraph(enhanced_schema=True)
 llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPENAI_API_KEY)
 embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
-# Define system message for GraphCypherQAChain
-#system_message = SystemMessage(
-#    content="""
-#            Your job is to rank nodes that are retrieved from a Neo4j database.
-#            The data is transcribed debates from the Swedish parliament (Riksdagen).
-#            You will be provided with a list of nodes with the following structure:
-#            {'a.anforande_text': '\r\nHerr talman! Jag tänkte börja med att berätta hur...', 
-#            'c.chunk_id': 'f28fefb8-ffeb-4ed9-a9da-4f0e7d356784', 
-#            'c.embedding': [-0.008256875909864902, -0.01081767026335001, -0.019462913274765015....]}
-#            Your job is to respond to user queries about Swedish parliamentary debates.
-#            The data is in Swedish, and queries should not be overly specific.
-#            Ensure the responses are relevant based on both structured Cypher queries and vector search results.
-#            """
-#)
-
-
-
 def rank_nodes_by_similarity(query_text: str, retrieved_nodes: list[dict], top_k=6) -> list[dict]:
     """Rank retrieved nodes based on cosine similarity with the user query."""
     
-    # Generate embedding for the query
     query_embedding = np.array(embedding.embed_query(query_text)).reshape(1, -1)
 
     ranked_nodes = []
@@ -53,10 +35,8 @@ def rank_nodes_by_similarity(query_text: str, retrieved_nodes: list[dict], top_k
             similarity = sklearn.metrics.pairwise.cosine_similarity(query_embedding, chunk_embedding)
             ranked_nodes.append((node, similarity))
 
-    # Sort nodes by similarity score in descending order
     ranked_nodes = sorted(ranked_nodes, key=lambda x: x[1], reverse=True)
 
-    # Return top-k results
     return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
 
 def print_ranked_nodes(ranked_nodes):

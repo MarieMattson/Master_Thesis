@@ -27,7 +27,7 @@ embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
 
 
-def generate_response(ranked_nodes, user_query, top_k=3):
+def response_generation(ranked_nodes, user_query, top_k=3):
     
     top_nodes = ranked_nodes[:top_k]
     
@@ -40,7 +40,6 @@ def generate_response(ranked_nodes, user_query, top_k=3):
         prompt += f"📜 **Chunk Text:** {node['c.text']}...\n" 
         prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
     prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
-    print(prompt)
     response = llm.invoke([HumanMessage(content=prompt)])
     
     return response.content
@@ -61,6 +60,6 @@ if __name__ == "__main__":
                 """
     retrieved_nodes = retrieve_node(cypher_query)
     ranked_nodes = rank_nodes_by_similarity(query_text= user_query, retrieved_nodes=retrieved_nodes)
-    response = generate_response(ranked_nodes, user_query)
+    response = response_generation(ranked_nodes, user_query)
     print("\nGenerated Response:")
     print(response)
