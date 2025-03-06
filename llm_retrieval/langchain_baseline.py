@@ -17,7 +17,7 @@ enhanced_graph = Neo4jGraph(enhanced_schema=True)
 
 llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPEN_API_KEY)
 chain = GraphCypherQAChain.from_llm(
-    graph=enhanced_graph, llm=llm, verbose=True, allow_dangerous_requests=True)
+    graph=enhanced_graph, llm=llm, verbose=True, allow_dangerous_requests=True, validate_cypher=True)
 
 
 if __name__ == "__main__":

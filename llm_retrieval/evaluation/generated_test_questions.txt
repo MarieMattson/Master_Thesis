@@ -1,0 +1,27 @@
+"meta/llama3-1-405b-instruct-v1:0":
+{"generated_text":
+"\n\nFråga: Tror Anders Borg att den ekonomiska politiken har fungerat bra i Sverige under den 
+senaste tiden? 
+\n\nSvar: Ja, Anders Borg menar att regeringens ekonomiska politik har fungerat bra i Sverige under den senaste 
+tiden. Han nämner att Sverige har haft bättre tillväxt, högre reallöner, starkare konsumtionsutveckling, hög 
+sysselsättningsgrad och låg långtidsarbetslöshet jämfört med nästan alla industriländer. Han anser att detta beror 
+på den samlade ekonomiska politiken som regeringen har bedrivit, som har präglats av ansvar, arbete och kunskap. 
+Han nämner också att jobbskatteavdrag, förändringar i socialförsäkringen, nystartsjobb och förändringar av 
+arbetsmarknadspolitiken har bidragit till det goda resultatet.",
+
+"message":[{"role":"user","message":"","tools":null,"tool_calls":null},{"role":"assistant","message":"\n\nFråga: Tror Anders Borg att den ekonomiska politiken har fungerat bra i Sverige under den senaste tiden? \n\nSvar: Ja, Anders Borg menar att regeringens ekonomiska politik har fungerat bra i Sverige under den senaste tiden. Han nämner att Sverige har haft bättre tillväxt, högre reallöner, starkare konsumtionsutveckling, hög sysselsättningsgrad och låg långtidsarbetslöshet jämfört med nästan alla industriländer. Han anser att detta beror på den samlade ekonomiska politiken som regeringen har bedrivit, som har präglats av ansvar, arbete och kunskap. Han nämner också att jobbskatteavdrag, förändringar i socialförsäkringen, nystartsjobb och förändringar av arbetsmarknadspolitiken har bidragit till det goda resultatet.","tools":null,"tool_calls":[]}],"status":"success","usage":{"completion_tokens":228,"prompt_tokens":1408,"total_tokens":1636,"completion_tokens_details":null,"prompt_tokens_details":null},"cost":0.01113856}}
+
+{"deepseek/DeepSeek-V3":
+{"generated_text":"
+**Fråga:** Vad är Anders Borgs huvudargument för att Sveriges ekonomiska politik har fungerat väl under 
+den globala recessionen?
+\n\n**Svar:** Anders Borg hävdar att Sveriges ekonomiska politik har fungerat väl eftersom landet har presterat 
+bättre än de flesta andra industriländer under den globala recessionen. Han pekar på faktorer som högre tillväxt, 
+högre reallöner, starkare konsumtionsutveckling, hög sysselsättningsgrad och låg långtidsarbetslöshet. Dessutom har 
+inkomstskillnaderna inte ökat lika mycket som i andra länder, och andelen människor som lever med låg materiell 
+standard har minskat. Borg menar att detta beror på en samlad ekonomisk politik som präglas av ansvar, arbete och 
+kunskap, samt reformer som jobbskatteavdrag, förändringar i socialförsäkringen och arbetsmarknadspolitiken, samt 
+förbättringar av företagsklimatet genom skattesänkningar.",
+
+
+"message":[{"role":"user","message":"","tools":null,"tool_calls":null},{"role":"assistant","message":"**Fråga:** Vad är Anders Borgs huvudargument för att Sveriges ekonomiska politik har fungerat väl under den globala recessionen?\n\n**Svar:** Anders Borg hävdar att Sveriges ekonomiska politik har fungerat väl eftersom landet har presterat bättre än de flesta andra industriländer under den globala recessionen. Han pekar på faktorer som högre tillväxt, högre reallöner, starkare konsumtionsutveckling, hög sysselsättningsgrad och låg långtidsarbetslöshet. Dessutom har inkomstskillnaderna inte ökat lika mycket som i andra länder, och andelen människor som lever med låg materiell standard har minskat. Borg menar att detta beror på en samlad ekonomisk politik som präglas av ansvar, arbete och kunskap, samt reformer som jobbskatteavdrag, förändringar i socialförsäkringen och arbetsmarknadspolitiken, samt förbättringar av företagsklimatet genom skattesänkningar.","tools":null,"tool_calls":[]}],"status":"success","usage":{"completion_tokens":250,"prompt_tokens":2832,"total_tokens":3082,"completion_tokens_details":null,"prompt_tokens_details":null},"cost":0.0038525}}
