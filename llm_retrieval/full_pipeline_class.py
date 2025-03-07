@@ -8,9 +8,6 @@ import numpy as np
 import requests
 import sklearn
 from langchain_core.messages import HumanMessage, SystemMessage
-
-
-
 from llm_retrieval.openai_parses import OpenAIResponse
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
@@ -34,7 +31,7 @@ class GraphRAG():
         self.embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
         
-    def translate(self, query: str)->str:
+    def translate_to_cypher(self, query: str)->str:
         system_prompt = """
                         You're job is to respond to user queries about a debate from the Swedish parliament (riksdagen).
                         The query and data will be in Swedish. 
@@ -78,7 +75,7 @@ class GraphRAG():
         return parsed_response.choices[0].message.content
     
     @staticmethod
-    def retrieve_node(cypher_query:str)->list[str]:
+    def retrieve_nodes(cypher_query:str)->list[str]:
         logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
         driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
         cypher_query = cypher_query.replace('\n', ' ')
@@ -122,7 +119,7 @@ class GraphRAG():
             print("-" * 80) 
 
 
-    def response_generation(self, ranked_nodes, user_query, top_k=3):
+    def generate_response(self, ranked_nodes, user_query, top_k=3):
         
         top_nodes = ranked_nodes[:top_k]
         
@@ -151,11 +148,11 @@ if __name__ == "__main__":
         """) 
         
     print("Translating user query into Cypher query...")
-    cypher_query = graph_rag.translate(user_query)
+    cypher_query = graph_rag.translate_to_cypher(user_query)
     print("Generated Cypher Query:", cypher_query)
 
     print("\nRetrieving nodes from Neo4j...")
-    retrieved_nodes = graph_rag.retrieve_node(cypher_query)
+    retrieved_nodes = graph_rag.retrieve_nodes(cypher_query)
     print(f"Retrieved {len(retrieved_nodes)} nodes.")
 
     print("\nRanking nodes by similarity...")
@@ -165,5 +162,5 @@ if __name__ == "__main__":
     graph_rag.print_ranked_nodes(ranked_nodes)
 
     print("\nGenerating final response...")
-    final_response = graph_rag.response_generation(ranked_nodes, user_query)
+    final_response = graph_rag.generate_response(ranked_nodes, user_query)
     print("\nFinal Response:\n", final_response)
