@@ -15,7 +15,6 @@ NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
 NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 graph = Neo4jGraph()
-
 graph.refresh_schema()
 enhanced_graph = Neo4jGraph(enhanced_schema=True)
 
@@ -76,7 +75,7 @@ class GraphRAG():
     
     @staticmethod
     def retrieve_nodes(cypher_query:str)->list[str]:
-        logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
+        #logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
         driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
         cypher_query = cypher_query.replace('\n', ' ')
         try:
@@ -105,7 +104,7 @@ class GraphRAG():
         return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
 
     @staticmethod
-    def print_ranked_nodes(ranked_nodes):
+    def print_ranked_nodes(ranked_nodes:list[dict]):
         """Print ranked nodes in a readable format without embeddings."""
         for i, item in enumerate(ranked_nodes, start=1):
             node = item["node"]
@@ -119,7 +118,7 @@ class GraphRAG():
             print("-" * 80) 
 
 
-    def generate_response(self, ranked_nodes, user_query, top_k=3):
+    def generate_response(self, ranked_nodes:list[dict], user_query:str, top_k=3):
         
         top_nodes = ranked_nodes[:top_k]
         
