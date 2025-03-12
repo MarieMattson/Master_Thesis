@@ -41,12 +41,11 @@ def insert_data_into_neo4j(data):
 
                     MERGE (t:Talare {name: $talare, party: COALESCE($parti, 'Unknown')})
 
-                    MERGE (a:Anforande {anforande_id: $anforande_id, anforande_nummer: $anforande_nummer, replik: $replik, anforande_text: $anforande_text, intressent_id: $intressent_id, rel_dok_id: COALESCE($rel_dok_id, 'Unknown'), underrubrik: COALESCE($underrubrik, 'Unknown')})
+                    MERGE (a:Anforande {anforande_id: $anforande_id, anforande_nummer: $anforande_nummer, replik: $replik, anforande_text: $anforande_text, intressent_id: COALESCE($intressent_id, 'Unknown'), rel_dok_id: COALESCE($rel_dok_id, 'Unknown'), underrubrik: COALESCE($underrubrik, 'Unknown')})
 
                     MERGE (d)-[:DOCUMENTED_IN]->(p)
                     MERGE (t)-[:DELTAR_I]->(d)
                     MERGE (t)-[:HALLER]->(a)
-                    
                     """,
                     dok_hangar_id=row["dok_hangar_id"],
                     dok_id=row["dok_id"],
@@ -70,7 +69,7 @@ def insert_data_into_neo4j(data):
 
 if __name__ == "__main__":
     test_connection()  # Should print: Hello, Neo4j!
-    file_path = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
+    file_path = "/mnt/c/Users/User/thesis/data_import/exp1/filtered_riksdag_exp1.json"
     data = load_json(file_path)
     insert_data_into_neo4j(data)
     print("Data successfully imported into Neo4j!")
