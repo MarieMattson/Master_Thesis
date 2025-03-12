@@ -12,6 +12,7 @@ wheels/
 # Exclude specific large file
 rixvox-alignments.parquet
 .env
+old_filtered_riksdag.json
 filtered_riksdag.json
 temp/
 full_dataset.csv

@@ -10,7 +10,7 @@ NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 graph = Neo4jGraph()
 
-graph.refresh_schema()
+graph.refresh_schema() 
 enhanced_graph = Neo4jGraph(enhanced_schema=True)
 
 llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPEN_API_KEY)

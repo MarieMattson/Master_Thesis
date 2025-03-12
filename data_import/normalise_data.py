@@ -11,8 +11,8 @@ class Speaker(BaseModel):
         titles = [
             "Statsrådet", "Utbildningsminister", "Kultur- och idrottsminister",
             "Socialminister", "Finansminister", "Justitieminister", "Försvarsminister",
-            "Minister", "Talmannen"
-        ]
+            "Minister", "Kulturministern", "Justitie- och inrikesministern", "Statsministern", 
+        "Infrastrukturministern", "Klimat- och miljöministern", "Näringsministern"]
         
         # Remove any title at the start of the name
         pattern = r'^(?:' + '|'.join(titles) + r')\s+'
@@ -26,8 +26,8 @@ class Speaker(BaseModel):
 
         return value
 
-input_file = '/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json' 
-output_file = '/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json'  
+input_file = "/mnt/c/Users/User/thesis/data_import/exp1/filtered_riksdag_exp1.json"
+output_file = "/mnt/c/Users/User/thesis/data_import/exp1/filtered_riksdag_exp1.json"  
 
 with open(input_file, 'r', encoding='utf-8') as f:
     data = json.load(f)
