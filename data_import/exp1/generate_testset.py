@@ -1,109 +1,149 @@
-import os
-import random
-from dotenv import load_dotenv
-from flask import message_flashed
-from langchain_openai import ChatOpenAI
 import requests
-from sklearn.conftest import dataset_fetchers
-import torch
-import transformers
-from tqdm.auto import tqdm
-import pandas as pd
-from typing import Optional, List, Tuple
 import json
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.docstore.document import Document as LangchainDocument
-from huggingface_hub import notebook_login
+import os
+from dotenv import load_dotenv
 from datasets import load_dataset
 
+# Load environment variables
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-N_GENERATIONS = 10  # Generate only 10 QA couples here for cost and time considerations
-dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json", split=None)
-dataset = dataset.filter(lambda x: x["dok_id"] == "H90968")
+N_GENERATIONS = 5  # Generate only 5 QA pairs for cost and time considerations
+dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/exp1/even_more_filtered_riksdag.json", split="train")
+#dataset = dataset.filter(lambda x: x["dok_id"] in ["H90968", "H90982"])
 url = "https://api.openai.com/v1/chat/completions"
 
+# Check the available columns (this will give you an idea of the structure)
+print(dataset.column_names)
 
-system_prompt ="""
-                Your task is to write a factoid question and an answer given a context in Swedish.
-                The data is from the Swedish parliament (Riksdagen).
-                You must generate factually correct question-anwer pairs in Swedish.
-                The questions must be about the contents of the debate.
-                One example may be "Hur argumenterar Anders Borg om restuarangmoms?".
-                
-                Your factoid question should be answerable with a specific, concise piece of factual information from the context.
-                Your factoid question should be formulated in the same style as questions users could ask in a search engine.
-                This means that your factoid question MUST NOT mention something like "according to the passage" or "context".
+# System prompt for OpenAI
+system_prompt = """
+                Your task is to generate factoid question-answer pairs in **Swedish**, based on **spoken statements ("anforandetext") from debates in the Swedish parliament (Riksdagen).** 
 
-                Provide your answer as follows:
+                ### **Important Instructions**
+                - Each **factoid question** must:
+                - Be written in **natural Swedish**, as if a user were searching online.
+                - Be **factually correct** and based on actual statements made in the debate.
+                - **Not mention metadata fields** like "systemdatum", "anforande_id", or dataset structure.
+                - **Focus on arguments and discussions** from members of parliament.
+                - Be **specific** and answerable with a **concise, factual response**.
 
-                Output:::
-                Factoid question: (your factoid question)
-                Answer: (your answer to the factoid question)
+                - Each **answer** must:
+                - Provide a **concise and factual** response based on the debate text.
+                - Be **directly supported** by a quoted excerpt from "anforandetext."
 
-                The context will be provided\n
-                Output:::
+                ---
+
+                ### **Output Format**
+                Each factoid QA pair must follow this exact structure:
+
+                Factoid question: (Your generated factoid question)
+                Answer: (Your factually correct answer based on the context)
+                Context: (The "anforande_id" that supports your answer)
+
+                Examples:
+                Factoid question: Hur argumenterar Anders Borg om restaurangmomsen?
+                Answer: Anders Borg menar att sänkt restaurangmoms leder till fler jobb inom restaurangbranschen.
+                Context: "59a228e8-3dc6-ec11-9170-0090facf175a"
+
+                Factoid question: Hur debatterar Vänsterpartiet om vinster i välfärden?
+                Answer: Vänsterpartiet argumenterar för att vinster i välfärden bör begränsas för att säkerställa att skattepengar går till omsorg och utbildning, inte till privata aktörer.
+                Context: "5aa228e8-3dc6-ec11-9170-0090facf175a"
+
+                ### **🚫 Avoid These Mistakes**
+                ❌ **DO NOT generate questions about dataset structure** (e.g., "Vad betyder anforande_nummer?")  
+                ❌ **DO NOT write any additional text except what is instructed above** (e.g., "Här kommer frågor om...")  
+                ❌ **DO NOT create vague or opinion-based questions** (e.g., "Vad tycker folk om skatter?")  
                 """
-
-
-body = {
-        "model": 'gpt-4o',
+def generate_qa_from_openai(context, anforande_id, bonus_prompt):
+    body = {
+        "model": "gpt-4o",
         "messages": [
-            {"role": 'system', "content": system_prompt},
-            {"role": 'user', "content": query}
+            {"role": "system", "content": bonus_prompt+system_prompt},
+            {"role": "user", "content": f"Context:\n{context}"}
         ],
-        "max_tokens": 150,
+        "max_tokens": 500,
         "temperature": 0
     }
 
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {OPENAI_API_KEY}"
+    }
 
-
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {OPENAI_API_KEY}"
-}
-llm = ChatOpenAI(model="gpt-4")
-
-
-
-# Function to request EdenAI and process the response
-def generate_qa_from_openai():
-    response = requests.post(url, json=payload, headers=headers)
+    response = requests.post(url, json=body, headers=headers)
 
     if response.status_code == 200:
         data = response.json()
-        qa_pairs = []
+        response_text = data["choices"][0]["message"]["content"]
 
-        # Assuming the response contains a list of QAs in 'answers'
-        for item in data.get("answers", []):
-            question = item.get("factoid question")
-            answer = item.get("answer")
-            qa_pairs.append({
-                "question": question,
-                "answer": answer,
-                "source_doc": "Riksdagen",  # You can modify this if you want a different source
-            })
-        
-        return qa_pairs
+        # Split the response into lines
+        qa_lines = response_text.strip().split("\n")
+
+        # Check if there are at least two lines for a question and an answer
+        if len(qa_lines) >= 2:
+            question_line = qa_lines[0].replace("Factoid question:", "").strip()
+            answer_line = qa_lines[1].replace("Answer:", "").strip()
+
+            # Return a single question-answer pair
+            return {"question": question_line, "answer": answer_line, "source_doc": anforande_id}
+        else:
+            return None
     else:
-        print("Error with EdenAI API request:", response.text)
-        return []
+        print("Error:", response.text)
+        return None
 
-# Generate QA pairs from EdenAI
-print(f"Generating {N_GENERATIONS} QA pairs...")
+qa_results=list()
+for example in dataset:
+    anforandetext = example["anforandetext"]
+    anforande_id = example["anforande_id"]
+    theme = example["avsnittsrubrik"]
+    speaker = example["talare"]
+    party = example["parti"]
 
-# Get the generated QA pairs
-outputs_edenai = generate_qa_from_edenai()
+    prompt_addon = f"""
+                    Generate a question-answer pair based on this statement by {speaker} from the party {party}
+                    From the debate about {theme}.
 
-# Print the first N_GENERATIONS results
-for idx, qa_pair in enumerate(outputs_edenai[:N_GENERATIONS]):
+                    Start the question like this:
+                    "Vad säger {speaker} om..." or "Hur argumenterar {speaker} för..."
+
+                    And always start the response by mentioning {speaker}'s name.
+
+                    ALWAYS write both a question and an answer!!
+                    """
+    
+    qa_pair = generate_qa_from_openai(anforandetext,anforande_id,prompt_addon)
+
+    
+    # Save the question with relevant information (e.g., id, speaker)
+    qa_results.append({
+        "anforande_id": example["anforande_id"],
+        "dok_id": example["dok_id"],
+        "talare": example["talare"],
+        "question": qa_pair["question"],
+        "answer": qa_pair["answer"],
+        "context": anforandetext
+    })
+
+# Print results (for verification)
+for idx, qa_pair in enumerate(qa_results):
     print(f"QA Pair {idx + 1}:")
     print(f"Question: {qa_pair['question']}")
     print(f"Answer: {qa_pair['answer']}")
-    print(f"Source: {qa_pair['source_doc']}")
+    print(f"Source: {qa_pair['context']}")
     print()
 
 '''
+
+
+Use for future prompting for getting other kinds of questions
+                Comparison questions or yes/no questions
+                For example: "Tycker Carl Bildt att arbetsgivaravgiten ska höjas?"
+                Temporal or time related questions:
+                For example: "Vad argumenterade Jonas Sjöstedt för i maj 2018?"
+                And null questions, meaning questions that cannot be answered given the database:
+                For example: "Vad tycker Johan Pehrsson om vargjakt?"
+
 previous_history = [
     {"role": "user", "message": """Generate a question-answer pair in Swedish based on what Anders Borg says in the context below.
 
