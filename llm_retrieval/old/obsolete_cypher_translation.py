@@ -8,7 +8,7 @@ from langchain_neo4j import Neo4jGraph
 from langchain_openai import ChatOpenAI
 import requests
 
-from llm_retrieval.openai_parses import OpenAIResponse
+from llm_retrieval.old.openai_parses import OpenAIResponse
 
 
 load_dotenv()

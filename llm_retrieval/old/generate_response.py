@@ -1,13 +1,16 @@
+"""Potential improvement:
+    If no response is found, it should be possible to have it generate a response based on other 
+    people's statements. This could be useful if no response is found directly in the speakers anforanden.
+    However, this should be clearly separated and the system should make it clear from which part the response comes.
+"""
 import os
 from dotenv import load_dotenv
-from langchain_neo4j import Neo4jGraph
 from langchain.schema import SystemMessage, HumanMessage
+from langchain_neo4j import Neo4jGraph
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-from loguru import logger
-from neo4j import GraphDatabase
-import numpy as np
-import sklearn.metrics.pairwise
-from llm_retrieval.node_retrieval import retrieve_node
+
+from llm_retrieval.old.node_ranking import rank_nodes_by_similarity
+from llm_retrieval.old.node_retrieval import retrieve_node
 
 
 load_dotenv()
@@ -22,35 +25,24 @@ enhanced_graph = Neo4jGraph(enhanced_schema=True)
 llm = ChatOpenAI(model="gpt-4o", temperature=0, openai_api_key=OPENAI_API_KEY)
 embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
-def rank_nodes_by_similarity(query_text: str, retrieved_nodes: list[dict], top_k=6) -> list[dict]:
-    """Rank retrieved nodes based on cosine similarity with the user query."""
+
+
+def response_generation(ranked_nodes, user_query, top_k=3):
     
-    query_embedding = np.array(embedding.embed_query(query_text)).reshape(1, -1)
-
-    ranked_nodes = []
-    for node in retrieved_nodes:
-        chunk_embedding = node.get('c.embedding', None)
-        if chunk_embedding:
-            chunk_embedding = np.array(chunk_embedding).reshape(1,-1)
-            similarity = sklearn.metrics.pairwise.cosine_similarity(query_embedding, chunk_embedding)
-            ranked_nodes.append((node, similarity))
-
-    ranked_nodes = sorted(ranked_nodes, key=lambda x: x[1], reverse=True)
-
-    return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
-
-def print_ranked_nodes(ranked_nodes):
-    """Print ranked nodes in a readable format without embeddings."""
-    for i, item in enumerate(ranked_nodes, start=1):
+    top_nodes = ranked_nodes[:top_k]
+    
+    prompt = f"User query: {user_query}\n\nBased on the ranked debate chunks, generate a relevant response to the user query using the following information You must respond in Swedish:\n\n"
+    for i, item in enumerate(top_nodes, start=1):
         node = item["node"]
-        score = item["score"]
-
-        print(f"🔹 **Result {i}**")
-        print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
-        print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")
-        print(f"📜 **Chunk Text:** {node['c.text']}...")
-        print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  
-        print("-" * 80) 
+        prompt += f"\n🔹 **Result {i}:**\n"
+        prompt += f"📌 **Chunk ID:** {node['c.chunk_id']}\n"
+        prompt += f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...\n"
+        prompt += f"📜 **Chunk Text:** {node['c.text']}...\n" 
+        prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
+    prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
+    response = llm.invoke([HumanMessage(content=prompt)])
+    
+    return response.content
 
 if __name__ == "__main__":
     user_query = """
@@ -67,7 +59,7 @@ if __name__ == "__main__":
                 RETURN a.anforande_text, c.text, c.chunk_id, c.embedding        
                 """
     retrieved_nodes = retrieve_node(cypher_query)
-
     ranked_nodes = rank_nodes_by_similarity(query_text= user_query, retrieved_nodes=retrieved_nodes)
-    print(ranked_nodes)
-    print_ranked_nodes(ranked_nodes=ranked_nodes)
+    response = response_generation(ranked_nodes, user_query)
+    print("\nGenerated Response:")
+    print(response)

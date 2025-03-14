@@ -1,7 +1,7 @@
 from neo4j import GraphDatabase
 import os
 from dotenv import load_dotenv
-from llm_retrieval.wrapper import wrapper
+from llm_retrieval.old.wrapper import wrapper
 
 load_dotenv()
 

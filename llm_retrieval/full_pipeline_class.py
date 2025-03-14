@@ -8,7 +8,7 @@ import numpy as np
 import requests
 import sklearn
 from langchain_core.messages import HumanMessage, SystemMessage
-from llm_retrieval.openai_parses import OpenAIResponse
+from llm_retrieval.old.openai_parses import OpenAIResponse
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")

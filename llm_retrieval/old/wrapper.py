@@ -5,10 +5,10 @@ output: node
 
 import argparse 
 
-from llm_retrieval.generate_response import response_generation
-from llm_retrieval.cypher_translation import translate
-from llm_retrieval.node_ranking import rank_nodes_by_similarity
-from llm_retrieval.node_retrieval import retrieve_node
+from llm_retrieval.old.generate_response import response_generation
+from llm_retrieval.old.cypher_translation import translate
+from llm_retrieval.old.node_ranking import rank_nodes_by_similarity
+from llm_retrieval.old.node_retrieval import retrieve_node
 
 def wrapper(query:str)-> tuple[str, list[str]]:
     try:

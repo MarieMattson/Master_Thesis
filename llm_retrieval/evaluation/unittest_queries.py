@@ -1,5 +1,5 @@
 import json
-from llm_retrieval import node_retrieval
+from llm_retrieval.old import node_retrieval
 from llm_retrieval.obsolete_full_pipeline import chain
 import os
 import unittest
@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from langchain_neo4j import GraphCypherQAChain, Neo4jGraph
 from langchain_openai import ChatOpenAI
 
-from llm_retrieval.node_retrieval import retrieve_node
+from llm_retrieval.old.node_retrieval import retrieve_node
 
 load_dotenv()
 
