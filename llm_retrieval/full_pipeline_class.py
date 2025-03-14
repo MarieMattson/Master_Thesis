@@ -16,8 +16,8 @@ NEO4J_PASSWORD =  os.getenv("NEO4J_PASSWORD")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 graph = Neo4jGraph()
 graph.refresh_schema()
-enhanced_graph = Neo4jGraph(enhanced_schema=True)
-
+enhanced_graph = graph.get_structured_schema #Neo4jGraph(enhanced_schema=True)
+print(enhanced_graph)
 
 class GraphRAG():
     def __init__(self):
@@ -31,30 +31,27 @@ class GraphRAG():
 
         
     def translate_to_cypher(self, query: str)->str:
-        system_prompt = """
-                        You're job is to respond to user queries about a debate from the Swedish parliament (riksdagen).
+        system_prompt = f"""
+                        You are a useful assistans whose job is to generate cypher queries based on user queries about debates from the Swedish parliament (riksdagen).
                         The query and data will be in Swedish. 
-                        You should filter out everything that is relevant for the speaker,
-                        for example, If asked about what Eva Flyborg said about a certain topic,
-                        You may retrieve all nodes related to Eva Flyborg.
-                        Second, you shold filter out the nodes that have the highest similarity score to the user query        
-                        Also note that speakers's name are in caps, like "EVA FLYBORG"
 
                         **Graph Schema:**
                         {enhanced_graph}
 
                         **Requirements:**
+                        - Only use metadata in your cypher queries, not the contents of the anforande_text
                         - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
                         - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
                         - Only return a valid Cypher query—no explanations or summaries.
-                        - The speaker's name will be in uppercase with a party label (e.g., "JESSICA POLFJÄRD").
                         - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
-                        - The Protokoll ID will be provided (e.g., "H00998").
                         - **Output ONLY the Cypher query.**
                         - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
 
+                        You should filter out everything that is relevant for the speaker,
+                        for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
+
                         Example Cypher query format:
-                        MATCH (t:Talare {name: "EVA FLYBORG"}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll {dok_id: "H0091"}) RETURN a.anforande_text, c.text, c.chunk_id
+                        MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id
                         """
         body = {
                 "model": 'gpt-4o',
@@ -137,15 +134,38 @@ class GraphRAG():
 
 if __name__ == "__main__":
     graph_rag = GraphRAG()
+    system_prompt = f"""
+                        You are a useful assistans whose job is to generate cypher queries based on user queries about debates from the Swedish parliament (riksdagen).
+                        The query and data will be in Swedish. 
+
+                        **Graph Schema:**
+                        {enhanced_graph}
+
+                        **Requirements:**
+                        - Only use metadata in your cypher queries, not the contents of the anforande_text
+                        - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
+                        - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
+                        - Only return a valid Cypher query—no explanations or summaries.
+                        - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
+                        - **Output ONLY the Cypher query.**
+                        - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
+
+                        You should filter out everything that is relevant for the speaker,
+                        for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
+
+                        Example Cypher query format:
+                        MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id
+                        """
+    print(system_prompt)
 
     user_query = (
         """
-        Hur argumenterar JESSICA POLFJÄRD för sänkt restaurangmoms och fler jobb 
+        Hur argumenterar Jessica Polfjärd för sänkt restaurangmoms och fler jobb 
         i debatten från Protokoll H00998? Du MÅSTE returnera a.anforande_text, c.text, c.chunk_id och c.embedding!
         Generera en Cypher query som begränsar till den specifika debatten 
         och den aktuella talarens anförande, men undvik för många filter.
         """) 
-        
+    '''    
     print("Translating user query into Cypher query...")
     cypher_query = graph_rag.translate_to_cypher(user_query)
     print("Generated Cypher Query:", cypher_query)
@@ -163,3 +183,4 @@ if __name__ == "__main__":
     print("\nGenerating final response...")
     final_response = graph_rag.generate_response(ranked_nodes, user_query)
     print("\nFinal Response:\n", final_response)
+'''

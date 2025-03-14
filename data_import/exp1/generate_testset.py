@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 from datasets import load_dataset
 
-# Load environment variables
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 N_GENERATIONS = 5  # Generate only 5 QA pairs for cost and time considerations
@@ -12,10 +11,7 @@ dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/
 #dataset = dataset.filter(lambda x: x["dok_id"] in ["H90968", "H90982"])
 url = "https://api.openai.com/v1/chat/completions"
 
-# Check the available columns (this will give you an idea of the structure)
-print(dataset.column_names)
 
-# System prompt for OpenAI
 system_prompt = """
                 Your task is to generate factoid question-answer pairs in **Swedish**, based on **spoken statements ("anforandetext") from debates in the Swedish parliament (Riksdagen).** 
 
@@ -92,7 +88,7 @@ def generate_qa_from_openai(context, anforande_id, bonus_prompt):
         print("Error:", response.text)
         return None
 
-qa_results=list()
+qa_results = list()
 for example in dataset:
     anforandetext = example["anforandetext"]
     anforande_id = example["anforande_id"]
@@ -112,27 +108,19 @@ for example in dataset:
                     ALWAYS write both a question and an answer!!
                     """
     
-    qa_pair = generate_qa_from_openai(anforandetext,anforande_id,prompt_addon)
+    qa_pair = generate_qa_from_openai(anforandetext, anforande_id, prompt_addon)
 
-    
-    # Save the question with relevant information (e.g., id, speaker)
-    qa_results.append({
-        "anforande_id": example["anforande_id"],
-        "dok_id": example["dok_id"],
-        "talare": example["talare"],
-        "question": qa_pair["question"],
-        "answer": qa_pair["answer"],
-        "context": anforandetext
-    })
+    if qa_pair:
+        qa_results.append({
+            "anforande_id": example["anforande_id"],
+            "dok_id": example["dok_id"],
+            "talare": example["talare"],
+            "question": qa_pair["question"],
+            "answer": qa_pair["answer"],
+            "context": anforandetext
+        })
 
-# Print results (for verification)
-for idx, qa_pair in enumerate(qa_results):
-    print(f"QA Pair {idx + 1}:")
-    print(f"Question: {qa_pair['question']}")
-    print(f"Answer: {qa_pair['answer']}")
-    print(f"Source: {qa_pair['context']}")
-    print()
-
+print(json.dumps(qa_results, ensure_ascii=False, indent=2))
 '''
 
 
