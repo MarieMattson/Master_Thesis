@@ -2,6 +2,7 @@ import os
 import random
 from dotenv import load_dotenv
 from flask import message_flashed
+from langchain_openai import ChatOpenAI
 import requests
 from sklearn.conftest import dataset_fetchers
 import torch
@@ -19,11 +20,11 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 N_GENERATIONS = 10  # Generate only 10 QA couples here for cost and time considerations
 dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json", split=None)
-dataset = dataset.filter(lambda x: x["dok_id"] == "H00998")
-url = "https://api.edenai.run/v2/text/chat"
+dataset = dataset.filter(lambda x: x["dok_id"] == "H90968")
+url = "https://api.openai.com/v1/chat/completions"
 
 
-global_message ="""
+system_prompt ="""
                 Your task is to write a factoid question and an answer given a context in Swedish.
                 The data is from the Swedish parliament (Riksdagen).
                 You must generate factually correct question-anwer pairs in Swedish.
@@ -45,28 +46,28 @@ global_message ="""
                 """
 
 
-payload = {
-    "providers": "openai/gpt-4o", #"deepseek/DeepSeek-V3", #"meta/llama3-1-405b-instruct-v1:0",
-    "response_as_dict": True,
-    "attributes_as_list": False,
-    "show_base_64": True,
-    "show_original_response": False,
-    "temperature": 0,
-    "max_tokens": 4096,
-    "tool_choice": "auto",
-    "previous_history": dataset,
-    "chatbot_global_action": global_message
-}
+body = {
+        "model": 'gpt-4o',
+        "messages": [
+            {"role": 'system', "content": system_prompt},
+            {"role": 'user', "content": query}
+        ],
+        "max_tokens": 150,
+        "temperature": 0
+    }
+
+
 
 headers = {
-    "Authorization": f"Bearer {OPENAI_API_KEY}",
-    "accept": "application/json",
-    "content-type": "application/json"
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {OPENAI_API_KEY}"
 }
+llm = ChatOpenAI(model="gpt-4")
+
 
 
 # Function to request EdenAI and process the response
-def generate_qa_from_edenai():
+def generate_qa_from_openai():
     response = requests.post(url, json=payload, headers=headers)
 
     if response.status_code == 200:
