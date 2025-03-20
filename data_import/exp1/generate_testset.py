@@ -116,7 +116,7 @@ for example in dataset:
             "dok_id": example["dok_id"],
             "talare": example["talare"],
             "question": qa_pair["question"],
-            "answer": qa_pair["answer"],
+            "answer": qa_pair["answer"], 
             "context": anforandetext
         })
 
