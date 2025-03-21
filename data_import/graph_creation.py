@@ -69,7 +69,7 @@ def insert_data_into_neo4j(data):
 
 if __name__ == "__main__":
     test_connection()  # Should print: Hello, Neo4j!
-    file_path = "/mnt/c/Users/User/thesis/data_import/exp1/filtered_riksdag_exp1.json"
+    file_path = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag_exp1.json"
     data = load_json(file_path)
     insert_data_into_neo4j(data)
     print("Data successfully imported into Neo4j!")

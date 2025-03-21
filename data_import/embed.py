@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
+import hashlib
 
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
@@ -19,6 +20,11 @@ text_splitter = CharacterTextSplitter(
     chunk_size=1500,   # Max 1500 characters per chunk
     chunk_overlap=200  # 200 characters overlap to maintain context
 )
+
+
+def generate_chunk_id(anforande_id, chunk_index):
+    return hashlib.md5(f"{anforande_id}-{chunk_index}".encode()).hexdigest()
+
 
 def fetch_all_anforande():
     with driver.session() as session:
@@ -45,21 +51,22 @@ def fetch_all_anforande():
 def store_chunks_in_neo4j(anforande_id, chunks):
     with driver.session() as session:
         for i, chunk in enumerate(chunks):
-            embedding = embeddings_model.embed_query(chunk)  # Generate embedding
-            
+            embedding = embeddings_model.embed_query(chunk) 
+            chunk_id = generate_chunk_id(anforande_id, i)
+
             session.run(
                 """
                 MATCH (a:Anforande {anforande_id: $anforande_id})
-                CREATE (c:Chunk {
-                    chunk_id: apoc.create.uuid(),
-                    chunk_index: $chunk_index,
-                    text: $text,
-                    embedding: $embedding
-                })
+                MERGE (c:Chunk {chunk_id: $chunk_id})
+                ON CREATE SET c.chunk_index = $chunk_index, 
+                c.text = $text, 
+                c.embedding = $embedding,
+                c.anforande_id = $anforande_id
                 MERGE (a)-[:HAS_CHUNK]->(c)
                 """,
                 anforande_id=anforande_id,
                 chunk_index=i,
+                chunk_id=chunk_id,
                 text=chunk,
                 embedding=embedding
             )
@@ -79,63 +86,3 @@ else:
     print("All chunks stored successfully.")
 
 driver.close()
-
-
-'''
-def fetch_anforande_for_protokoll(dok_id):
-    with driver.session() as session:
-        result = session.run(
-            """
-            MATCH (p:Protokoll {dok_id: $dok_id})
-            OPTIONAL MATCH (d:Debatt)-[:DOCUMENTED_IN]->(p)
-            OPTIONAL MATCH (t:Talare)-[:DELTAR_I]->(d)
-            OPTIONAL MATCH (t)-[:HALLER]->(a:Anforande)
-            RETURN a.anforande_id, a.anforande_text
-            """,
-            dok_id=dok_id,
-        )
-        return [
-            {"anforande_id": record["a.anforande_id"], "text": record["a.anforande_text"]}
-            for record in result if record["a.anforande_id"] and record["a.anforande_text"]
-        ]
-
-def store_chunks_in_neo4j(anforande_id, chunks):
-    with driver.session() as session:
-        for i, chunk in enumerate(chunks):
-            embedding = embeddings_model.embed_query(chunk)  # Generate embedding
-            
-            session.run(
-                """
-                MATCH (a:Anforande {anforande_id: $anforande_id})
-                CREATE (c:Chunk {
-                    chunk_id: apoc.create.uuid(),
-                    chunk_index: $chunk_index,
-                    text: $text,
-                    embedding: $embedding
-                })
-                MERGE (a)-[:HAS_CHUNK]->(c)
-                """,
-                anforande_id=anforande_id,
-                chunk_index=i,
-                text=chunk,
-                embedding=embedding
-            )
-
-# Run for a specific Protokoll (e.g., H00998)
-#DOK_ID = "H00998"
-
-data = fetch_anforande_for_protokoll(DOK_ID)
-if not data:
-    print(f"No speeches found for Protokoll {DOK_ID}.")
-else:
-    print(f"Found {len(data)} Anforande(s) for Protokoll {DOK_ID}.")
-
-    for item in data:
-        chunks = text_splitter.split_text(item["text"])
-        print(f"Generated {len(chunks)} chunks for Anforande {item['anforande_id']}.")
-        store_chunks_in_neo4j(item["anforande_id"], chunks)
-
-    print(f"All chunks stored successfully for Protokoll {DOK_ID}.")
-
-driver.close()
-'''

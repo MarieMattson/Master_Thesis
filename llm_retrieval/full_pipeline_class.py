@@ -108,7 +108,7 @@ class GraphRAG():
             score = item["score"]
 
             print(f"🔹 **Result {i}**")
-            print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
+            #print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
             print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")
             print(f"📜 **Chunk Text:** {node['c.text']}...")
             print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  
@@ -123,7 +123,7 @@ class GraphRAG():
         for i, item in enumerate(top_nodes, start=1):
             node = item["node"]
             prompt += f"\n🔹 **Result {i}:**\n"
-            prompt += f"📌 **Chunk ID:** {node['c.chunk_id']}\n"
+            #prompt += f"📌 **Chunk ID:** {node['c.chunk_id']}\n"
             prompt += f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...\n"
             prompt += f"📜 **Chunk Text:** {node['c.text']}...\n" 
             prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
@@ -165,7 +165,7 @@ if __name__ == "__main__":
         Generera en Cypher query som begränsar till den specifika debatten 
         och den aktuella talarens anförande, men undvik för många filter.
         """) 
-    '''    
+      
     print("Translating user query into Cypher query...")
     cypher_query = graph_rag.translate_to_cypher(user_query)
     print("Generated Cypher Query:", cypher_query)
@@ -183,4 +183,3 @@ if __name__ == "__main__":
     print("\nGenerating final response...")
     final_response = graph_rag.generate_response(ranked_nodes, user_query)
     print("\nFinal Response:\n", final_response)
-'''
