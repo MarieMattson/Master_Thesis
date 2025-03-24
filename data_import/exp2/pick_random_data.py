@@ -11,7 +11,7 @@ with open(input_file, "r", encoding="utf-8") as file:
 doc_list = ["H90968", "H90982"]
 data = [entry for entry in data if entry.get("dok_id") in doc_list]
 
-n = 30
+n = 40
 random_entries = random.sample(data, n)
 
 with open(output_file, "w", encoding="utf-8") as file:

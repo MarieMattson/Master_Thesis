@@ -10,9 +10,11 @@
             "answer": "Magdalena Andersson klargör att det svenska biståndet till Ryssland inte går till den ryska staten eller den politiska ledningen, utan till civilsamhällesorganisationer vars medlemmar riskerar långa fängelsestraff för att de protesterar mot kriget. Hon betonar att Sverige ska fortsätta stödja dessa organisationer, inklusive människorättsorganisationer och fria medier i Ryssland."
         },
         "human_annotator":{
-            "question":"reasonable",
-            "answer":"reasonable",
+            "reasonable_question": "yes",
             "context":["2696d4d6-ccd6-ec11-9170-0090facf175a"]
+        },
+        "LLM_annotator":{
+            "reasonable_question": "yes"
         }
     },
     {
