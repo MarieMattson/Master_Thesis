@@ -176,6 +176,32 @@ class QueryGenerator:
         
         return self._query_llm(entry, prompt, qa_type)
     
+    def generate_qa_temporal(self, entry):
+        qa_type = "generate_qa_temporal"
+        prompt = f"""
+                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
+
+                    Based on the following speech, create a question that asks about the person's ({entry['talare']}) position based on the speech during a specific time {entry["dok_datum"]}.
+                    The must be possible to answer with a yes/no answer (e.g., "Vad sade {entry['talare']} om x under {entry["dok_datum"]}?").  
+                    When writing responses to the questions, provide a yes/no answer as well as additional information.
+
+                    
+                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
+                    In the data, the date is written as numbers, but in your questions, it **must be written out**.
+                    For example, 2022-03-16 00:00:00 should be written as "i mars 2022"
+
+                    ### Speech ###
+                    {entry['anforandetext']}
+                    ##################
+
+                    **Output format:**  
+                    {{
+                        "question": "<Generated question in Swedish>",
+                        "answer": "<Generated answer based on the speech in Swedish>"
+                    }}
+                    """
+        
+        return self._query_llm(entry, prompt, qa_type)
 
 
 
@@ -214,7 +240,9 @@ class QueryGenerator:
     
     def format_output(self, entry, qa_pair, qa_type):
         return {
+            "dok_id": entry.get("dok_id", ""),
             "avsnittsrubrik": entry.get("avsnittsrubrik", ""),
+            "dok_datum": entry.get("dok_datum", ""),
             "anforande_id": entry.get("anforande_id", ""),
             "anforandetext": entry.get("anforandetext", ""),
             "talare": entry.get("talare", ""),
@@ -244,10 +272,11 @@ if __name__ == "__main__":
     ratios = {
         "generate_qa_inference_person": 0.2,
         "generate_qa_inference_party": 0.2,
-        "generate_qa_comparison_person_yes": 0.15,
-        "generate_qa_comparison_person_no": 0.15,
-        "generate_qa_comparison_party_yes": 0.15,
-        "generate_qa_comparison_party_no": 0.15
+        "generate_qa_comparison_person_yes": 0.12,
+        "generate_qa_comparison_person_no": 0.12,
+        "generate_qa_comparison_party_yes": 0.12,
+        "generate_qa_comparison_party_no": 0.12,
+        "generate_qa_temporal": 0.12
     }
 
     for anforande in data:
@@ -272,6 +301,8 @@ if __name__ == "__main__":
             qa_pair = QG.generate_qa_comparison_party_yes(anforande)
         elif query_type == "generate_qa_comparison_party_no":
             qa_pair = QG.generate_qa_comparison_party_no(anforande)
+        elif query_type == "generate_qa_temporal":
+            qa_pair = QG.generate_qa_temporal(anforande)
 
 
         if qa_pair:
