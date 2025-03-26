@@ -8,16 +8,19 @@
         "talare": "Kerstin Lundgren",
         "parti": "C",
         "qa_pair": {
-            "question": "Vad är Centerpartiets position i frågan om kärnvapenförbud och NPT?",
-            "answer": "Centerpartiet anser att en förbudskonvention inte är en väg framåt när det gäller kärnvapenfrågor. De ser det inte som en god lösning och menar att det endast tjänar de som vill driva plakatpolitik. Istället betonar Centerpartiet att NPT (icke-spridningsavtalet) är vägen framåt, förutsatt att det håller."
+            "answer": "Centerpartiet anser att en förbudskonvention inte är en väg framåt när det gäller kärnvapenfrågor. De ser det inte som en god lösning och menar att det endast tjänar de som vill driva plakatpolitik. Istället betonar Centerpartiet att NPT (icke-spridningsavtalet) är vägen framåt, förutsatt att det håller.",
+            "question": "Vad är Centerpartiets position i frågan om kärnvapenförbud och NPT?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["3d96d4d6-ccd6-ec11-9170-0090facf175a", "3f96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -29,16 +32,18 @@
         "talare": "Mikael Damsgaard",
         "parti": "M",
         "qa_pair": {
-            "question": "Vad är Moderaternas position i frågan om användningen av rättsintyg från Rättsmedicinalverket?",
-            "answer": "Moderaterna är bekymrade över den kraftiga minskningen av rättsintyg utfärdade av Rättsmedicinalverket och anser att det är viktigt att polis och åklagare i högre grad beställer rättsintyg och kroppsundersökningar för att förbättra bevisunderlaget i rättsprocesser, särskilt i ärenden som rör sexualbrott och våld i nära relationer."
+            "answer": "Moderaterna är bekymrade över den kraftiga minskningen av rättsintyg utfärdade av Rättsmedicinalverket och anser att det är viktigt att polis och åklagare i högre grad beställer rättsintyg och kroppsundersökningar för att förbättra bevisunderlaget i rättsprocesser, särskilt i ärenden som rör sexualbrott och våld i nära relationer.",
+            "question": "Vad är Moderaternas position i frågan om användningen av rättsintyg från Rättsmedicinalverket?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["43a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -50,16 +55,18 @@
         "talare": "Morgan Johansson",
         "parti": "S",
         "qa_pair": {
-            "question": "Stödde Morgan Johansson den nya lagstiftningen för krigsmaterielexport i februari tjugohundratjugotvå?",
-            "answer": "Ja, Morgan Johansson nämnde att det råder stor politisk enighet kring den nya lagstiftningen för krigsmaterielexport."
+            "answer": "Ja, Morgan Johansson nämnde att det råder stor politisk enighet kring den nya lagstiftningen för krigsmaterielexport.",
+            "question": "Stödde Morgan Johansson den nya lagstiftningen för krigsmaterielexport i februari tjugohundratjugotvå?"
         },
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["58a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "58a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -71,16 +78,18 @@
         "talare": "Sofia Damm",
         "parti": "KD",
         "qa_pair": {
-            "question": "Uttryckte Sofia Damm oro över Sveriges beroende av rysk gas i mars 2022?",
-            "answer": "Ja, Sofia Damm uttryckte oro över Sveriges beroende av rysk gas och ifrågasatte om det är rimligt att Sverige, med goda förutsättningar att vara självförsörjande på ren el, importerar dyr och smutsig el under vissa perioder."
+            "answer": "Ja, Sofia Damm uttryckte oro över Sveriges beroende av rysk gas och ifrågasatte om det är rimligt att Sverige, med goda förutsättningar att vara självförsörjande på ren el, importerar dyr och smutsig el under vissa perioder.",
+            "question": "Uttryckte Sofia Damm oro över Sveriges beroende av rysk gas i mars 2022?"
         },
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["1596d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "1596d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -92,16 +101,16 @@
         "talare": "Markus Selin",
         "parti": "S",
         "qa_pair": {
-            "question": "Anser Markus Selin att Sverigedemokraternas hållning till ålen är motsägelsefull?",
-            "answer": "Ja, Markus Selin anser att Sverigedemokraternas hållning till ålen är motsägelsefull. Han påpekar att deras ställningstaganden varierar och att de har gjort uttalanden som är inkonsekventa, särskilt i relation till ålfiskets påverkan och vattenkraftverkens inverkan på ålbeståndet."
+            "answer": "Ja, Markus Selin anser att Sverigedemokraternas hållning till ålen är motsägelsefull. Han påpekar att deras ställningstaganden varierar och att de har gjort uttalanden som är inkonsekventa, särskilt i relation till ålfiskets påverkan och vattenkraftverkens inverkan på ålbeståndet.",
+            "question": "Anser Markus Selin att Sverigedemokraternas hållning till ålen är motsägelsefull?"
         },
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
-            "reasonable_question": "n",
-            "context": []
+            "context": [],
+            "reasonable_question": "n"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nNo"
         }
     },
     {
@@ -113,16 +122,21 @@
         "talare": "Magdalena Andersson",
         "parti": "S",
         "qa_pair": {
-            "question": "Anser Magdalena Andersson att det är viktigt att minska beroendet av rysk gas?",
-            "answer": "Ja, Magdalena Andersson anser att det är viktigt att minska beroendet av rysk gas. Hon betonar att det är en sårbarhet både klimatmässigt och säkerhetspolitiskt och att det är viktigt att hitta andra leverantörer av gas för att minska detta beroende."
+            "answer": "Ja, Magdalena Andersson anser att det är viktigt att minska beroendet av rysk gas. Hon betonar att det är en sårbarhet både klimatmässigt och säkerhetspolitiskt och att det är viktigt att hitta andra leverantörer av gas för att minska detta beroende.",
+            "question": "Anser Magdalena Andersson att det är viktigt att minska beroendet av rysk gas?"
         },
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["0496d4d6-ccd6-ec11-9170-0090facf175a", "0e96d4d6-ccd6-ec11-9170-0090facf175a","1296d4d6-ccd6-ec11-9170-0090facf175a", "1e96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "0e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -134,16 +148,22 @@
         "talare": "Ardalan Shekarabi",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad är Socialdemokraternas position i frågan om höjning av pensionsavgiften?",
-            "answer": "Socialdemokraterna anser att en höjning av pensionsavgiften är nödvändig för att visa respekt för pensionärerna och för att upprätthålla legitimiteten för det svenska pensionssystemet."
+            "answer": "Socialdemokraterna anser att en höjning av pensionsavgiften är nödvändig för att visa respekt för pensionärerna och för att upprätthålla legitimiteten för det svenska pensionssystemet.",
+            "question": "Vad är Socialdemokraternas position i frågan om höjning av pensionsavgiften?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["3fa228e8-3dc6-ec11-9170-0090facf175a", "40a228e8-3dc6-ec11-9170-0090facf175a", "42a228e8-3dc6-ec11-9170-0090facf175a", "65a228e8-3dc6-ec11-9170-0090facf175a","66a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "3fa228e8-3dc6-ec11-9170-0090facf175a",
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "42a228e8-3dc6-ec11-9170-0090facf175a",
+                "65a228e8-3dc6-ec11-9170-0090facf175a",
+                "66a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""        
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -155,16 +175,19 @@
         "talare": "Ola Möller",
         "parti": "S",
         "qa_pair": {
-            "question": "Stödde Ola Möller återinförandet av revisionsplikten i februari tjugohundratjugotvå?",
-            "answer": "Ja, Ola Möller uttryckte stöd för att återinföra revisionsplikten i februari tjugohundratjugotvå. Han påpekade att majoriteten av företagen inte har en revisor eftersom revisionsplikten är slopad, och han ifrågasatte hur information ska begäras ut om det inte finns någon revisor."
+            "answer": "Ja, Ola Möller uttryckte stöd för att återinföra revisionsplikten i februari tjugohundratjugotvå. Han påpekade att majoriteten av företagen inte har en revisor eftersom revisionsplikten är slopad, och han ifrågasatte hur information ska begäras ut om det inte finns någon revisor.",
+            "question": "Stödde Ola Möller återinförandet av revisionsplikten i februari tjugohundratjugotvå?"
         },
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["99a228e8-3dc6-ec11-9170-0090facf175a", "94a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "99a228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -176,16 +199,16 @@
         "talare": "FÖRSTE VICE TALMANNEN",
         "parti": "FÖRSTE VICE TALMANNEN",
         "qa_pair": {
-            "question": "Anser FÖRSTE VICE TALMANNEN att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor?",
-            "answer": "Ja, FÖRSTE VICE TALMANNEN anser att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor, eftersom det nämns att han besvarar såväl allmänpolitiska frågor som frågor inom sitt eget ansvarsområde."
+            "answer": "Ja, FÖRSTE VICE TALMANNEN anser att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor, eftersom det nämns att han besvarar såväl allmänpolitiska frågor som frågor inom sitt eget ansvarsområde.",
+            "question": "Anser FÖRSTE VICE TALMANNEN att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor?"
         },
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
-            "reasonable_question": "n",
-            "context": []
+            "context": [],
+            "reasonable_question": "n"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -197,16 +220,19 @@
         "talare": "Håkan Svenneling",
         "parti": "V",
         "qa_pair": {
-            "question": "Vad säger Håkan Svenneling om Sveriges beslut att ge vapenstöd till Ukraina?",
-            "answer": "Håkan Svenneling anser att det är viktigt att diskutera de säkerhetspolitiska riskerna med att ge vapenstöd till Ukraina. Han betonar att det är hans ansvar som ledamot av Sveriges riksdag och dess utrikesutskott att resonera kring dessa frågor. Han menar inte att det är fel att ge stöd till Ukraina, men han vill att Sverige alltid ska vara kritiska mot brott mot mänskliga rättigheter."
+            "answer": "Håkan Svenneling anser att det är viktigt att diskutera de säkerhetspolitiska riskerna med att ge vapenstöd till Ukraina. Han betonar att det är hans ansvar som ledamot av Sveriges riksdag och dess utrikesutskott att resonera kring dessa frågor. Han menar inte att det är fel att ge stöd till Ukraina, men han vill att Sverige alltid ska vara kritiska mot brott mot mänskliga rättigheter.",
+            "question": "Vad säger Håkan Svenneling om Sveriges beslut att ge vapenstöd till Ukraina?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["4896d4d6-ccd6-ec11-9170-0090facf175a", "5196d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -218,16 +244,18 @@
         "talare": "Lawen Redar",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad säger Lawen Redar om vikten av oberoende medier i krigets Ukraina?",
-            "answer": "Lawen Redar betonar vikten av fria och oberoende medier, utrikeskorrespondenter och krigskorrespondenter som förser allmänheten med information om kriget i Ukraina. Hon lyfter fram att dessa aktörer är avgörande för att vi ska få kunskap om situationen, eftersom de arbetar i allmänhetens och sanningens tjänst. Hon nämner också att det finns över 2 000 utrikeskorrespondenter i Ukraina, men att ukrainska journalister ofta saknar erfarenhet av att rapportera från krig, vilket gör stödet för skyddsutrustning och teknisk utrustning viktigt."
+            "answer": "Lawen Redar betonar vikten av fria och oberoende medier, utrikeskorrespondenter och krigskorrespondenter som förser allmänheten med information om kriget i Ukraina. Hon lyfter fram att dessa aktörer är avgörande för att vi ska få kunskap om situationen, eftersom de arbetar i allmänhetens och sanningens tjänst. Hon nämner också att det finns över 2 000 utrikeskorrespondenter i Ukraina, men att ukrainska journalister ofta saknar erfarenhet av att rapportera från krig, vilket gör stödet för skyddsutrustning och teknisk utrustning viktigt.",
+            "question": "Vad säger Lawen Redar om vikten av oberoende medier i krigets Ukraina?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["6f96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "6f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "Content rejected due to policy violation."
         }
     },
     {
@@ -239,16 +267,20 @@
         "talare": "Larry Söder",
         "parti": "KD",
         "qa_pair": {
-            "question": "Anser Larry Söder att regelbördan och kostnaden för svenska företag bör minska?",
-            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han betonar vikten av att vara konkurrenskraftiga och föreslår att om en ny regel införs, bör två tas bort för att minska regelbördan."
+            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han betonar vikten av att vara konkurrenskraftiga och föreslår att om en ny regel införs, bör två tas bort för att minska regelbördan.",
+            "question": "Anser Larry Söder att regelbördan och kostnaden för svenska företag bör minska?"
         },
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["9da228e8-3dc6-ec11-9170-0090facf175a", "9fa228e8-3dc6-ec11-9170-0090facf175a", "9ba228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -260,16 +292,18 @@
         "talare": "Mattias Vepsä",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad är Socialdemokraternas position i frågan om sjukförsäkringens reformer och rehabilitering?",
-            "answer": "Socialdemokraterna anser att sjukförsäkringen är en viktig del av välfärden och betonar vikten av att den ger ekonomisk trygghet vid sjukdom. De har arbetat för att höja taket i sjukpenningen och förbättra ekonomin för sjukskrivna, samt ändrat regelverket för att minska utförsäkringar. Partiet betonar behovet av förebyggande arbete och rehabilitering för att minska sjukfrånvaron och öka jämlikheten i samhället. De stödjer regeringens svar på Riksrevisionens rapport men står bakom sina reservationer och vill fortsätta reformarbetet för att förbättra sjukförsäkringen."
+            "answer": "Socialdemokraterna anser att sjukförsäkringen är en viktig del av välfärden och betonar vikten av att den ger ekonomisk trygghet vid sjukdom. De har arbetat för att höja taket i sjukpenningen och förbättra ekonomin för sjukskrivna, samt ändrat regelverket för att minska utförsäkringar. Partiet betonar behovet av förebyggande arbete och rehabilitering för att minska sjukfrånvaron och öka jämlikheten i samhället. De stödjer regeringens svar på Riksrevisionens rapport men står bakom sina reservationer och vill fortsätta reformarbetet för att förbättra sjukförsäkringen.",
+            "question": "Vad är Socialdemokraternas position i frågan om sjukförsäkringens reformer och rehabilitering?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["18a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "18a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -281,16 +315,18 @@
         "talare": "Maria Nilsson",
         "parti": "L",
         "qa_pair": {
-            "question": "Vad säger Maria Nilsson om yrkeshögskolans roll på den svenska arbetsmarknaden?",
-            "answer": "Maria Nilsson betonar att yrkeshögskolan har en avgörande roll att spela på den svenska arbetsmarknaden, särskilt för att möta behovet av kompetens i så kallade bristyrken som kräver eftergymnasial utbildning men inte nödvändigtvis en akademisk examen. Hon framhåller att yrkeshögskolan fungerar bra idag och att den har en hög genomströmning och attraktivitet, vilket leder till att personer som går yrkeshögskolan kommer i relevant arbete. Hon understryker också vikten av att fortsätta utveckla och förbättra yrkeshögskolan för att motverka den kompetensbrist som finns."
+            "answer": "Maria Nilsson betonar att yrkeshögskolan har en avgörande roll att spela på den svenska arbetsmarknaden, särskilt för att möta behovet av kompetens i så kallade bristyrken som kräver eftergymnasial utbildning men inte nödvändigtvis en akademisk examen. Hon framhåller att yrkeshögskolan fungerar bra idag och att den har en hög genomströmning och attraktivitet, vilket leder till att personer som går yrkeshögskolan kommer i relevant arbete. Hon understryker också vikten av att fortsätta utveckla och förbättra yrkeshögskolan för att motverka den kompetensbrist som finns.",
+            "question": "Vad säger Maria Nilsson om yrkeshögskolans roll på den svenska arbetsmarknaden?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["87a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "87a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -302,16 +338,20 @@
         "talare": "Larry Söder",
         "parti": "KD",
         "qa_pair": {
-            "question": "Vad säger Larry Söder om effekten av nya regler på svenska företag?",
-            "answer": "Larry Söder uttrycker att nya regler slår mot företag och minskar deras konkurrenskraft gentemot andra europeiska företag. Han nämner att pålagorna på svenska företag beräknas uppgå till 1 miljard kronor om året, vilket tynger företagarna och ökar regelbördan."
+            "answer": "Larry Söder uttrycker att nya regler slår mot företag och minskar deras konkurrenskraft gentemot andra europeiska företag. Han nämner att pålagorna på svenska företag beräknas uppgå till 1 miljard kronor om året, vilket tynger företagarna och ökar regelbördan.",
+            "question": "Vad säger Larry Söder om effekten av nya regler på svenska företag?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["9da228e8-3dc6-ec11-9170-0090facf175a", "9fa228e8-3dc6-ec11-9170-0090facf175a", "9ba228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -323,16 +363,18 @@
         "talare": "Angelika Bengtsson",
         "parti": "SD",
         "qa_pair": {
-            "question": "Vad är Sverigedemokraternas position i frågan om granskningsnämndens uppdrag och public service?",
-            "answer": "Sverigedemokraterna anser att det finns en diskrepans mellan vad allmänheten tror att granskningsnämnden granskar och vad den faktiskt granskar. De vill att granskningsnämnden ska ha i uppdrag att dubbelkolla och kontrollera fakta för att öka tilliten till public service. De menar att det är ett problem om faktafel inte granskas och att detta påverkar förtroendet för public service."
+            "answer": "Sverigedemokraterna anser att det finns en diskrepans mellan vad allmänheten tror att granskningsnämnden granskar och vad den faktiskt granskar. De vill att granskningsnämnden ska ha i uppdrag att dubbelkolla och kontrollera fakta för att öka tilliten till public service. De menar att det är ett problem om faktafel inte granskas och att detta påverkar förtroendet för public service.",
+            "question": "Vad är Sverigedemokraternas position i frågan om granskningsnämndens uppdrag och public service?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["7496d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -344,16 +386,19 @@
         "talare": "Jens Holm",
         "parti": "V",
         "qa_pair": {
-            "question": "Vad säger Jens Holm om utsläppsminskningen från vägtransporterna?",
-            "answer": "Jens Holm uttrycker oro över att utsläppen från vägtransporterna endast minskade med 0,3 procent förra året, vilket han anser är alldeles för lite för att nå målet om en 70-procentig minskning till 2030. Han ifrågasätter om klimat- och miljöministern är nöjd med denna statistik."
+            "answer": "Jens Holm uttrycker oro över att utsläppen från vägtransporterna endast minskade med 0,3 procent förra året, vilket han anser är alldeles för lite för att nå målet om en 70-procentig minskning till 2030. Han ifrågasätter om klimat- och miljöministern är nöjd med denna statistik.",
+            "question": "Vad säger Jens Holm om utsläppsminskningen från vägtransporterna?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["2fa228e8-3dc6-ec11-9170-0090facf175a", "31a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "31a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -365,16 +410,19 @@
         "talare": "Håkan Svenneling",
         "parti": "V",
         "qa_pair": {
-            "question": "Vad är Vänsterpartiets position i frågan om vapenleveranser?",
-            "answer": "Vänsterpartiet har tidigare haft en egen reservation om pansarskotten men har nu beslutat att de kan tänka sig att stödja framtida vapenleveranser. De betonar vikten av att förslag om vapenleveranser ska komma genom propositioner från regeringen och inte genom utskottsinitiativ, för att säkerställa en korrekt process i riksdagen."
+            "answer": "Vänsterpartiet har tidigare haft en egen reservation om pansarskotten men har nu beslutat att de kan tänka sig att stödja framtida vapenleveranser. De betonar vikten av att förslag om vapenleveranser ska komma genom propositioner från regeringen och inte genom utskottsinitiativ, för att säkerställa en korrekt process i riksdagen.",
+            "question": "Vad är Vänsterpartiets position i frågan om vapenleveranser?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["4896d4d6-ccd6-ec11-9170-0090facf175a", "5196d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -386,16 +434,18 @@
         "talare": "Roland Utbult",
         "parti": "KD",
         "qa_pair": {
-            "question": "Anser Kristdemokraterna att public service-avgiften bör sänkas om intäkterna ökar?",
-            "answer": "Ja, Kristdemokraterna anser att public service-avgiften bör sänkas om intäkterna ökar. De menar att public service-avgiften behöver balanseras årligen för att undvika ett alltför stort överskott på public service-kontot, och om fler kommer i arbete och intäkterna ökar, bör avgiften sänkas."
+            "answer": "Ja, Kristdemokraterna anser att public service-avgiften bör sänkas om intäkterna ökar. De menar att public service-avgiften behöver balanseras årligen för att undvika ett alltför stort överskott på public service-kontot, och om fler kommer i arbete och intäkterna ökar, bör avgiften sänkas.",
+            "question": "Anser Kristdemokraterna att public service-avgiften bör sänkas om intäkterna ökar?"
         },
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["6996d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "6996d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -407,16 +457,18 @@
         "talare": "Yasmine Eriksson",
         "parti": "SD",
         "qa_pair": {
-            "question": "Vad säger Yasmine Eriksson om den illegala införseln av hundar till Sverige?",
-            "answer": "Yasmine Eriksson säger att smuggling av hundar till Sverige är en lukrativ affär för kriminella, men att det sker på djurens bekostnad. Hon påpekar att valpar ofta kommer från valpfabriker där de lever under miserabla förhållanden och att den illegala införseln av hundar har ökat, enligt Tullverkets siffror. Hon uttrycker oro över att denna verksamhet fortsätter trots pågående arbete för att motverka den."
+            "answer": "Yasmine Eriksson säger att smuggling av hundar till Sverige är en lukrativ affär för kriminella, men att det sker på djurens bekostnad. Hon påpekar att valpar ofta kommer från valpfabriker där de lever under miserabla förhållanden och att den illegala införseln av hundar har ökat, enligt Tullverkets siffror. Hon uttrycker oro över att denna verksamhet fortsätter trots pågående arbete för att motverka den.",
+            "question": "Vad säger Yasmine Eriksson om den illegala införseln av hundar till Sverige?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["45a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -428,16 +480,22 @@
         "talare": "Olle Thorell",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad är Socialdemokraternas position i frågan om Sveriges roll i att lindra det humanitära lidandet i Ukraina och dess grannländer?",
-            "answer": "Socialdemokraterna betonar vikten av att tänka på efterspelet av den nuvarande krisen och att de åtgärder som vidtas nu kommer att påverka framtida läkande, ansvarsutkrävande och återuppbyggnad. De är också intresserade av att utveckla Sveriges roll i att lindra det humanitära lidandet som orsakas av krigsbrott och övergrepp i Ukraina och dess grannländer."
+            "answer": "Socialdemokraterna betonar vikten av att tänka på efterspelet av den nuvarande krisen och att de åtgärder som vidtas nu kommer att påverka framtida läkande, ansvarsutkrävande och återuppbyggnad. De är också intresserade av att utveckla Sveriges roll i att lindra det humanitära lidandet som orsakas av krigsbrott och övergrepp i Ukraina och dess grannländer.",
+            "question": "Vad är Socialdemokraternas position i frågan om Sveriges roll i att lindra det humanitära lidandet i Ukraina och dess grannländer?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["0496d4d6-ccd6-ec11-9170-0090facf175a", "1a96d4d6-ccd6-ec11-9170-0090facf175a", "1c96d4d6-ccd6-ec11-9170-0090facf175a", "2496d4d6-ccd6-ec11-9170-0090facf175a", "2396d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "1a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1c96d4d6-ccd6-ec11-9170-0090facf175a",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a",
+                "2396d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -449,16 +507,18 @@
         "talare": "Ilona Szatmari Waldau",
         "parti": "V",
         "qa_pair": {
-            "question": "Anser Ilona Szatmari Waldau att EU bör bistå länder utanför EU med medicinsk och ekonomisk hjälp?",
-            "answer": "Ja, Ilona Szatmari Waldau uttrycker en oro för Moldaviens situation och undrar om EU kommer att bistå länder utanför EU, vilket indikerar att hon anser att sådant stöd är viktigt."
+            "answer": "Ja, Ilona Szatmari Waldau uttrycker en oro för Moldaviens situation och undrar om EU kommer att bistå länder utanför EU, vilket indikerar att hon anser att sådant stöd är viktigt.",
+            "question": "Anser Ilona Szatmari Waldau att EU bör bistå länder utanför EU med medicinsk och ekonomisk hjälp?"
         },
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["1396d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -470,16 +530,19 @@
         "talare": "Rasmus Ling",
         "parti": "MP",
         "qa_pair": {
-            "question": "Vad säger Rasmus Ling om regeringens ansvar i den aktuella situationen?",
-            "answer": "Rasmus Ling uttrycker att regeringen måste agera och protestera mot det som sker eftersom situationen är akut och pågår just nu. Han betonar att det är viktigt att agera innan det är för sent och hoppas att Annika Strandhäll och regeringen kan agera skyndsamt."
+            "answer": "Rasmus Ling uttrycker att regeringen måste agera och protestera mot det som sker eftersom situationen är akut och pågår just nu. Han betonar att det är viktigt att agera innan det är för sent och hoppas att Annika Strandhäll och regeringen kan agera skyndsamt.",
+            "question": "Vad säger Rasmus Ling om regeringens ansvar i den aktuella situationen?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["3ba228e8-3dc6-ec11-9170-0090facf175a", "3da228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "3ba228e8-3dc6-ec11-9170-0090facf175a",
+                "3da228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -491,16 +554,16 @@
         "talare": "Jeanette Gustafsdotter",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad säger Jeanette Gustafsdotter om varför hon inte läser allt som skrivits om henne?",
-            "answer": "Jeanette Gustafsdotter säger att hon inte läser allt som skrivits om henne för att inte tappa fokus på sitt uppdrag, vilket är att motverka att det demokratiska samtalet drunknar i hat och hot, att säkra att kulturen finns över hela landet för alla oavsett bakgrund, och att stödja starka, fria, oberoende medier."
+            "answer": "Jeanette Gustafsdotter säger att hon inte läser allt som skrivits om henne för att inte tappa fokus på sitt uppdrag, vilket är att motverka att det demokratiska samtalet drunknar i hat och hot, att säkra att kulturen finns över hela landet för alla oavsett bakgrund, och att stödja starka, fria, oberoende medier.",
+            "question": "Vad säger Jeanette Gustafsdotter om varför hon inte läser allt som skrivits om henne?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "n",
-            "context": []
+            "context": [],
+            "reasonable_question": "n"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nNo"
         }
     },
     {
@@ -512,16 +575,18 @@
         "talare": "Julia Kronlid",
         "parti": "SD",
         "qa_pair": {
-            "question": "Anser Sverigedemokraterna att de genomförda förändringarna på området för förebyggande sjukpenning är tillräckliga?",
-            "answer": "Nej, Sverigedemokraterna anser att de genomförda förändringarna på området för förebyggande sjukpenning inte är tillräckliga och att de kommer i senaste laget. De ser allvarligt på de brister som framkommit och anser att ytterligare åtgärder behövs."
+            "answer": "Nej, Sverigedemokraterna anser att de genomförda förändringarna på området för förebyggande sjukpenning inte är tillräckliga och att de kommer i senaste laget. De ser allvarligt på de brister som framkommit och anser att ytterligare åtgärder behövs.",
+            "question": "Anser Sverigedemokraterna att de genomförda förändringarna på området för förebyggande sjukpenning är tillräckliga?"
         },
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["1aa228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "1aa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -533,16 +598,18 @@
         "talare": "Josefin Malmqvist",
         "parti": "M",
         "qa_pair": {
-            "question": "Vad säger Josefin Malmqvist om yrkeshögskolans roll på den svenska arbetsmarknaden?",
-            "answer": "Josefin Malmqvist betonar att yrkeshögskolan spelar en väldigt viktig roll på den svenska arbetsmarknaden. Hon framhåller att yrkeshögskolan har byggts ut kraftigt sedan 2009 och att den visar mycket goda resultat, med omkring nio av tio som går ut i arbete efter avslutad utbildning. Hon anser att yrkeshögskolan är avgörande för att säkerställa att utbildningen matchar behoven på arbetsmarknaden, vilket är en grundförutsättning för Sveriges tillväxt och konkurrenskraft på lång sikt."
+            "answer": "Josefin Malmqvist betonar att yrkeshögskolan spelar en väldigt viktig roll på den svenska arbetsmarknaden. Hon framhåller att yrkeshögskolan har byggts ut kraftigt sedan 2009 och att den visar mycket goda resultat, med omkring nio av tio som går ut i arbete efter avslutad utbildning. Hon anser att yrkeshögskolan är avgörande för att säkerställa att utbildningen matchar behoven på arbetsmarknaden, vilket är en grundförutsättning för Sveriges tillväxt och konkurrenskraft på lång sikt.",
+            "question": "Vad säger Josefin Malmqvist om yrkeshögskolans roll på den svenska arbetsmarknaden?"
         },
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["89a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "89a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     },
     {
@@ -554,16 +621,20 @@
         "talare": "Jeanette Gustafsdotter",
         "parti": "S",
         "qa_pair": {
-            "question": "Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?",
-            "answer": "Socialdemokraterna fokuserar på att få ut kris- och återstartsmedlen samt att snabbt sätta ihop remissvaren. Den exakta formen för detta arbete är ännu inte klar, men partiet förväntar sig att återkomma med mer information och ser fram emot en fortsatt dialog med Christer Nylander."
+            "answer": "Socialdemokraterna fokuserar på att få ut kris- och återstartsmedlen samt att snabbt sätta ihop remissvaren. Den exakta formen för detta arbete är ännu inte klar, men partiet förväntar sig att återkomma med mer information och ser fram emot en fortsatt dialog med Christer Nylander.",
+            "question": "Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?"
         },
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
-            "reasonable_question": "y",
-            "context": ["26a228e8-3dc6-ec11-9170-0090facf175a", "38a228e8-3dc6-ec11-9170-0090facf175a", "3aa228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "y"
         },
         "LLM_annotator": {
-            "reasonable_question": ""
+            "reasonable_question": "\n\nYes"
         }
     }
 ]
