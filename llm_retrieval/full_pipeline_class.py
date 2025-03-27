@@ -32,27 +32,40 @@ class GraphRAG():
         
     def translate_to_cypher(self, query: str)->str:
         system_prompt = f"""
-                        You are a useful assistans whose job is to generate cypher queries based on user queries about debates from the Swedish parliament (riksdagen).
-                        The query and data will be in Swedish. 
+        You are a useful assistans whose job is to generate cypher queries based on user queries about debates from the Swedish parliament (riksdagen).
+        The query and data will be in Swedish. 
 
-                        **Graph Schema:**
-                        {enhanced_graph}
+        **Graph Schema:**
+        {enhanced_graph}
 
-                        **Requirements:**
-                        - Only use metadata in your cypher queries, not the contents of the anforande_text
-                        - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
-                        - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
-                        - Only return a valid Cypher query—no explanations or summaries.
-                        - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
-                        - **Output ONLY the Cypher query.**
-                        - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
+        **Requirements:**
+        - Only use metadata in your cypher queries, not the contents of the anforande_text
+        - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
+        - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
+        - Only return a valid Cypher query—no explanations or summaries.
+        - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
+        - **Output ONLY the Cypher query.**
+        - You must **ALWAYS** include the `a.anforande_text, c.text, c.chunk_id, c.embedding` in the `RETURN` clause!. 
+        
+        You should filter out everything that is relevant for the speaker or party,
+        for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
+        
+        The question and answer will be written in **Swedish**.
+        In the data, the party association is written as the short form, but in the questions, they **will be written out**.
+        **ALWAYS use the short form when querying the database**
+        M: Moderaterna, S: Socialdemokraterna, SD: Sverigedemokraterna, C: Centerpartiet, V: Vänsterpartiet, L: Liberalerna, KD: Kristdemokraterna, MP: Miljöpartiet de Gröna
 
-                        You should filter out everything that is relevant for the speaker,
-                        for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
+        If the questions ask about a specific time period, the month will be written out, like "februari 2022" or "december 2019"
+        However in the data, dates are written like 2022-05-23".
+        Dates are **ONLY** a property in the protocol node 
 
-                        Example Cypher query format:
-                        MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id
-                        """
+
+        Example Cypher query format:
+        To retrieve all speeches from a person: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a party: MATCH (t:Talare {{party: "M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a person during a particular month: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a party during a particular month: MATCH (t:Talare{{party:"M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
+        """
         body = {
                 "model": 'gpt-4o',
                 "messages": [
@@ -72,7 +85,6 @@ class GraphRAG():
     
     @staticmethod
     def retrieve_nodes(cypher_query:str)->list[str]:
-        #logger.info("Connecting to Neo4j at {} as {}",NEO4J_URI,NEO4J_USERNAME)
         driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD))
         cypher_query = cypher_query.replace('\n', ' ')
         try:
@@ -93,8 +105,12 @@ class GraphRAG():
             chunk_embedding = node.get('c.embedding', None)
             if chunk_embedding:
                 chunk_embedding = np.array(chunk_embedding).reshape(1,-1)
-                similarity = sklearn.metrics.pairwise.cosine_similarity(query_embedding, chunk_embedding)
+                similarity = sklearn.metrics.pairwise.cosine_similarity(query_embedding, chunk_embedding).tolist()
                 ranked_nodes.append((node, similarity))
+            if chunk_embedding is None:
+                logger.warning(f"Missing embedding for node: {node['c.chunk_id']}")
+                continue
+
 
         ranked_nodes = sorted(ranked_nodes, key=lambda x: x[1], reverse=True)
 
@@ -136,6 +152,7 @@ if __name__ == "__main__":
     graph_rag = GraphRAG()
     system_prompt = f"""
                         You are a useful assistans whose job is to generate cypher queries based on user queries about debates from the Swedish parliament (riksdagen).
+                        The Cypher query will be used to query and external database.
                         The query and data will be in Swedish. 
 
                         **Graph Schema:**
@@ -148,22 +165,21 @@ if __name__ == "__main__":
                         - Only return a valid Cypher query—no explanations or summaries.
                         - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
                         - **Output ONLY the Cypher query.**
-                        - When generating the query, you must always include the `chunk_id` in the `RETURN` clause, along with the `text` and `anforande_text` of the nodes. 
+                        - When generating the query, you must always include the `c.anforande_id, a.anforande_text, c.text, c.embeddin` in the `RETURN` clause
 
-                        You should filter out everything that is relevant for the speaker,
+                        You should filter out everything that is relevant for the speaker or party
                         for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
+                        If asked about the stance of Moderaterna in a certain topic, you should return everything from M (Moderaterna) 
 
                         Example Cypher query format:
                         MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id
+                        MATCH (t:Talare {{party: "M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id
                         """
     print(system_prompt)
 
     user_query = (
         """
-        Hur argumenterar Jessica Polfjärd för sänkt restaurangmoms och fler jobb 
-        i debatten från Protokoll H00998? Du MÅSTE returnera a.anforande_text, c.text, c.chunk_id och c.embedding!
-        Generera en Cypher query som begränsar till den specifika debatten 
-        och den aktuella talarens anförande, men undvik för många filter.
+        Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?
         """) 
       
     print("Translating user query into Cypher query...")

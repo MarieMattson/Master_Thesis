@@ -32,16 +32,16 @@ def insert_data_into_neo4j(data):
     try:
         with driver.session() as session:
             for row in data:
-                session.run(
-                    """
+                session.run("""
                     MERGE (p:Protokoll {dok_hangar_id: $dok_hangar_id, dok_id: $dok_id})
-                    SET p.dok_titel = $dok_titel, p.dok_rm = $dok_rm, p.dok_datum = $dok_datum
+                    ON CREATE SET p.dok_titel = $dok_titel, p.dok_rm = $dok_rm, p.dok_datum = $dok_datum
 
                     MERGE (d:Debatt {avsnittsrubrik: $avsnittsrubrik, kammaraktivitet: COALESCE($kammaraktivitet, 'Unknown')})
 
                     MERGE (t:Talare {name: $talare, party: COALESCE($parti, 'Unknown')})
 
-                    MERGE (a:Anforande {anforande_id: $anforande_id, anforande_nummer: $anforande_nummer, replik: $replik, anforande_text: $anforande_text, intressent_id: COALESCE($intressent_id, 'Unknown'), rel_dok_id: COALESCE($rel_dok_id, 'Unknown'), underrubrik: COALESCE($underrubrik, 'Unknown')})
+                    MERGE (a:Anforande {anforande_id: $anforande_id, anforande_nummer: $anforande_nummer})
+                    ON CREATE SET a.replik = $replik, a.anforande_text = $anforande_text
 
                     MERGE (d)-[:DOCUMENTED_IN]->(p)
                     MERGE (t)-[:DELTAR_I]->(d)
@@ -64,6 +64,7 @@ def insert_data_into_neo4j(data):
                     rel_dok_id=row["rel_dok_id"],
                     underrubrik=row["underrubrik"]
                 )
+
     finally:
         driver.close()
 

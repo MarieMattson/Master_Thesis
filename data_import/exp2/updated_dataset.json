@@ -17,10 +17,15 @@
                 "3d96d4d6-ccd6-ec11-9170-0090facf175a",
                 "3f96d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -40,10 +45,15 @@
             "context": [
                 "43a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -63,10 +73,15 @@
             "context": [
                 "58a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -86,10 +101,15 @@
             "context": [
                 "1596d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -107,10 +127,15 @@
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
             "context": [],
-            "reasonable_question": "n"
+            "reasonable_question": "No"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nNo"
+            "reasonable_question": "No"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -133,10 +158,15 @@
                 "1296d4d6-ccd6-ec11-9170-0090facf175a",
                 "1e96d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -160,10 +190,15 @@
                 "65a228e8-3dc6-ec11-9170-0090facf175a",
                 "66a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -184,10 +219,15 @@
                 "99a228e8-3dc6-ec11-9170-0090facf175a",
                 "94a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -205,10 +245,15 @@
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
             "context": [],
-            "reasonable_question": "n"
+            "reasonable_question": "No"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -229,10 +274,15 @@
                 "4896d4d6-ccd6-ec11-9170-0090facf175a",
                 "5196d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -252,10 +302,15 @@
             "context": [
                 "6f96d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
             "reasonable_question": "Content rejected due to policy violation."
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -277,10 +332,15 @@
                 "9fa228e8-3dc6-ec11-9170-0090facf175a",
                 "9ba228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -300,10 +360,15 @@
             "context": [
                 "18a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -323,10 +388,15 @@
             "context": [
                 "87a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -348,10 +418,15 @@
                 "9fa228e8-3dc6-ec11-9170-0090facf175a",
                 "9ba228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -371,10 +446,15 @@
             "context": [
                 "7496d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -395,10 +475,15 @@
                 "2fa228e8-3dc6-ec11-9170-0090facf175a",
                 "31a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -419,10 +504,15 @@
                 "4896d4d6-ccd6-ec11-9170-0090facf175a",
                 "5196d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -442,10 +532,15 @@
             "context": [
                 "6996d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -465,10 +560,15 @@
             "context": [
                 "45a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -492,10 +592,15 @@
                 "2496d4d6-ccd6-ec11-9170-0090facf175a",
                 "2396d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -515,10 +620,15 @@
             "context": [
                 "1396d4d6-ccd6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -539,10 +649,15 @@
                 "3ba228e8-3dc6-ec11-9170-0090facf175a",
                 "3da228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -560,10 +675,15 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "context": [],
-            "reasonable_question": "n"
+            "reasonable_question": "No"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nNo"
+            "reasonable_question": "No"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -583,10 +703,15 @@
             "context": [
                 "1aa228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -606,10 +731,15 @@
             "context": [
                 "89a228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     },
     {
@@ -631,10 +761,15 @@
                 "38a228e8-3dc6-ec11-9170-0090facf175a",
                 "3aa228e8-3dc6-ec11-9170-0090facf175a"
             ],
-            "reasonable_question": "y"
+            "reasonable_question": "Yes"
         },
         "LLM_annotator": {
-            "reasonable_question": "\n\nYes"
+            "reasonable_question": "Yes"
+        },
+        "RAG_pipeline": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
         }
     }
 ]
