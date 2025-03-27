@@ -27,17 +27,14 @@ for entry in dataset:
         print("Final Response:", final_response)
 
         entry["RAG_pipeline"]["answer"] = final_response.strip()
-        entry["RAG_pipeline"]["context"] = [node["node"]["c.text"] for node in ranked_nodes]
+        entry["RAG_pipeline"]["context"] = [node["node"]["a.anforande_id"] for node in ranked_nodes]
         entry["RAG_pipeline"]["cypher_query"] = cypher_query
     
     except Exception as e:
-        # Log the error but continue processing the next entry
         print(f"⚠️ Error processing entry: {question}")
-        print(traceback.format_exc())  # Prints detailed error traceback
+        print(traceback.format_exc())
 
-
-
-with open("rag_output_exp1.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/rag_output_exp1.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
 print("\nProcessing complete! Results saved to rag_output_exp1.json.")

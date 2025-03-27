@@ -66,7 +66,7 @@
         "parti": "S",
         "qa_pair": {
             "answer": "Ja, Morgan Johansson nämnde att det råder stor politisk enighet kring den nya lagstiftningen för krigsmaterielexport.",
-            "question": "Stödde Morgan Johansson den nya lagstiftningen för krigsmaterielexport i februari tjugohundratjugotvå?"
+            "question": "Stödde Morgan Johansson den nya lagstiftningen för krigsmaterielexport i februari 2022?"
         },
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
@@ -210,8 +210,8 @@
         "talare": "Ola Möller",
         "parti": "S",
         "qa_pair": {
-            "answer": "Ja, Ola Möller uttryckte stöd för att återinföra revisionsplikten i februari tjugohundratjugotvå. Han påpekade att majoriteten av företagen inte har en revisor eftersom revisionsplikten är slopad, och han ifrågasatte hur information ska begäras ut om det inte finns någon revisor.",
-            "question": "Stödde Ola Möller återinförandet av revisionsplikten i februari tjugohundratjugotvå?"
+            "answer": "Ja, Ola Möller uttryckte stöd för att återinföra revisionsplikten i februari 2022. Han påpekade att majoriteten av företagen inte har en revisor eftersom revisionsplikten är slopad, och han ifrågasatte hur information ska begäras ut om det inte finns någon revisor.",
+            "question": "Stödde Ola Möller återinförandet av revisionsplikten i februari 2022?"
         },
         "qa_type": "generate_qa_temporal",
         "human_annotator": {

@@ -45,8 +45,9 @@ class GraphRAG():
         - Only return a valid Cypher query—no explanations or summaries.
         - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
         - **Output ONLY the Cypher query.**
-        - You must **ALWAYS** include the `a.anforande_text, c.text, c.chunk_id, c.embedding` in the `RETURN` clause!. 
-        
+        - You must **ALWAYS** include the `a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id` in the `RETURN` clause!. 
+        - You must always RETURN DISTINCT to avoid duplicates
+
         You should filter out everything that is relevant for the speaker or party,
         for example, If asked about what Eva Flyborg said about a certain topic you may retrieve all nodes related to Eva Flyborg.
         
@@ -61,10 +62,10 @@ class GraphRAG():
 
 
         Example Cypher query format:
-        To retrieve all speeches from a person: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
-        To retrieve all speeches from a party: MATCH (t:Talare {{party: "M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
-        To retrieve all speeches from a person during a particular month: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
-        To retrieve all speeches from a party during a particular month: MATCH (t:Talare{{party:"M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a person: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a party: MATCH (t:Talare {{party: "M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a person during a particular month: MATCH (t:Talare {{name: "Eva Flyborg"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding
+        To retrieve all speeches from a party during a particular month: MATCH (t:Talare{{party:"M"}}) MATCH (t)-[:HALLER]->(a:Anforande) MATCH (a)-[:HAS_CHUNK]->(c:Chunk) MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) WHERE p.dok_datum CONTAINS "2020-01" RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding
         """
         body = {
                 "model": 'gpt-4o',
