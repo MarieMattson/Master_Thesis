@@ -1,6 +1,9 @@
 import json
 from sklearn.metrics import precision_score, recall_score, f1_score
 
+# Set the value of k
+k = 6  # You can change this to any desired value
+
 # Load the dataset
 with open("/mnt/c/Users/User/thesis/data_import/rag_output_exp1.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
@@ -15,7 +18,10 @@ recall_at_k_scores = []
 # Iterate through the dataset
 for entry in dataset:
     gold_standard = set(entry["human_annotator"]["context"])  # Relevant document IDs
-    retrieved_docs = set(entry["RAG_pipeline"]["context"])  # Retrieved document IDs
+    retrieved_docs = list(entry["RAG_pipeline"]["context"])  # Retrieved document IDs (as a list to slice)
+
+    # Take the top-k retrieved documents
+    retrieved_docs = set(retrieved_docs[:k])
 
     # Get all unique document IDs (union of both sets)
     all_docs = gold_standard.union(retrieved_docs)
@@ -62,5 +68,5 @@ avg_recall_at_k = sum(recall_at_k_scores) / len(recall_at_k_scores)
 print(f"Average Precision: {avg_precision:.4f}")
 print(f"Average Recall: {avg_recall:.4f}")
 print(f"Average F1-score: {avg_f1:.4f}")
-print(f"Average Precision@K: {avg_precision_at_k:.4f}")
-print(f"Average Recall@K: {avg_recall_at_k:.4f}")
+print(f"Average Precision@{k}: {avg_precision_at_k:.4f}")
+print(f"Average Recall@{k}: {avg_recall_at_k:.4f}")

@@ -620,15 +620,6 @@ wheels = [
 ]
 
 [[package]]
-name = "diskcache"
-version = "5.6.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3f/21/1c1ffc1a039ddcc459db43cc108658f32c57d271d7289a2794e401d0fdb6/diskcache-5.6.3.tar.gz", hash = "sha256:2c3a3fa2743d8535d832ec61c2054a1641f41775aa7c556758a109941e33e4fc", size = 67916 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/3f/27/4570e78fc0bf5ea0ca45eb1de3818a23787af9b390c0b0a0033a1b8236f9/diskcache-5.6.3-py3-none-any.whl", hash = "sha256:5e31b2d5fbad117cc363ebaf6b689474db18a1f6438bc82358b024abd4c2ca19", size = 45550 },
-]
-
-[[package]]
 name = "display"
 version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2741,6 +2732,14 @@ wheels = [
 ]
 
 [[package]]
+name = "pysbd"
+version = "0.3.4"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/48/0a/c99fb7d7e176f8b176ef19704a32e6a9c6aafdf19ef75a187f701fc15801/pysbd-0.3.4-py3-none-any.whl", hash = "sha256:cd838939b7b0b185fcf86b0baf6636667dfb6e474743beeff878e9f42e022953", size = 71082 },
+]
+
+[[package]]
 name = "pysubs2"
 version = "1.8.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2930,12 +2929,11 @@ wheels = [
 
 [[package]]
 name = "ragas"
-version = "0.2.14"
+version = "0.1.14"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
     { name = "datasets" },
-    { name = "diskcache" },
     { name = "langchain" },
     { name = "langchain-community" },
     { name = "langchain-core" },
@@ -2944,12 +2942,12 @@ dependencies = [
     { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.2.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "openai" },
-    { name = "pydantic" },
+    { name = "pysbd" },
     { name = "tiktoken" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4d/33/e001b7ad7aa755f526630df38c8ed4d454e1a027d79a6cb5592990dbcad1/ragas-0.2.14.tar.gz", hash = "sha256:a438d93cee9eccdcfb749ab741cb36438ab69e8903684b6fb39ad24b6241d1cb", size = 40204156 }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/d3/71835d6503da8ce1a5382bef7008f89dc26490c668956a0057e55fa072c1/ragas-0.1.14.tar.gz", hash = "sha256:06141497aaf2151a1b403aaadb80009af43228acec9126a78ba8bf44110ed75d", size = 4136198 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/56/17/825a8bed3780261bf6179f216a2b33250ad8ef372f944b399cc591f8cb1f/ragas-0.2.14-py3-none-any.whl", hash = "sha256:874ebe9f4e04d83f88b7fded35cc2fe849e7dec2cff824db39c686faca8bb6e2", size = 187224 },
+    { url = "https://files.pythonhosted.org/packages/58/aa/5fe89fa3eff15e89245650c2fb4986d0f248850c566c37040fd02ad1a3ce/ragas-0.1.14-py3-none-any.whl", hash = "sha256:064f3a906bafff2c04035f3c60bf78136be7e8d949ba244cb5da699b746027fa", size = 163892 },
 ]
 
 [[package]]
@@ -3470,7 +3468,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.10.5" },
     { name = "pytest", specifier = ">=8.3.5" },
     { name = "python-dotenv", specifier = "==1.0.1" },
-    { name = "ragas", specifier = ">=0.2.14" },
+    { name = "ragas", specifier = "==0.1.14" },
     { name = "sentence-transformers", specifier = ">=3.4.1" },
     { name = "tenacity", specifier = "!=8.4.0" },
     { name = "textblob", specifier = "==0.18.0.post0" },
