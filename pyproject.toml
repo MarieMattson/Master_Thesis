@@ -34,6 +34,7 @@ dependencies = [
     "textblob==0.18.0.post0",
     "transformers>=4.49.0",
     "unstructured>=0.14.8",
+    "weaviate-client[embedded]>=4.11.3",
     "yfiles-jupyter-graphs-for-neo4j>=1.6.0",
 ]
 
