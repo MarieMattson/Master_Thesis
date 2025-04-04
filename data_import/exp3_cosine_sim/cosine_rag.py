@@ -1,29 +1,39 @@
+import enum
 import json
 import os
 import faiss
 import numpy as np
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.docstore.document import Document
+from langchain_core.messages import HumanMessage, SystemMessage
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 class CosineRAG:
-    def __init__(self, data_path, api_key=None, chunk_size=500, chunk_overlap=50):
-        self.data_path = data_path
+    def __init__(self, data_path=None, api_key=None, chunk_size=500, chunk_overlap=50):
+        self.data_path = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag_exp1.json"
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         self.embedding_model = OpenAIEmbeddings(openai_api_key=self.api_key)
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
+        self.llm = ChatOpenAI(model="gpt-4")
         
         self.documents = []
         self.anforande_ids = []
         self.embeddings = []
         self.index = None
 
-        if os.path.exists("/mnt/c/Users/User/thesis/faiss_index.bin"):
+        self.url = "https://api.openai.com/v1/chat/completions"
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {OPENAI_API_KEY}"
+        }
+
+        if os.path.exists("/mnt/c/Users/User/thesis/data_import/exp3_cosine_sim/index/faiss_index.bin"):
             print("Loading existing FAISS index...")
-            self.index = faiss.read_index("faiss_index.bin")
-            self.anforande_ids = np.load("/mnt/c/Users/User/thesis/anforande_ids.npy", allow_pickle=True)
-            self.documents = np.load("/mnt/c/Users/User/thesis/documents.npy", allow_pickle=True)
+            self.index = faiss.read_index("/mnt/c/Users/User/thesis/data_import/exp3_cosine_sim/index/faiss_index.bin")
+            self.anforande_ids = np.load("/mnt/c/Users/User/thesis/data_import/exp3_cosine_sim/index/anforande_ids.npy", allow_pickle=True)
+            self.documents = np.load("/mnt/c/Users/User/thesis/data_import/exp3_cosine_sim/index/documents.npy", allow_pickle=True)
         else:
             # Load data and process if no index exists
             print("Creating new FAISS index...")
@@ -73,7 +83,7 @@ class CosineRAG:
         np.save("documents.npy", np.array(self.documents))
 
 
-    def retrieve(self, query, top_k=3):
+    def retrieve(self, query, top_k=6):
         """Retrieve the top k most similar documents for a given query."""
         query_embedding = np.array([self.embedding_model.embed_query(query)]).astype("float32")
         distances, indices = self.index.search(query_embedding, top_k)
@@ -86,11 +96,20 @@ class CosineRAG:
             doc = self.documents[idx]
             results.append((anforande_id, doc, similarity))
         return results
+    
+    def generate_response(self, top_matches, user_query=str):
+        prompt = f"User query: {user_query}\n\nBased on the ranked debate chunks, generate a relevant response to the user query using the following information You must respond in Swedish:\n\n"
+        for i, (anforande_id, anforande_text, score) in enumerate(top_matches):
+            prompt += f"\n🔹 **Result {i}:**\n"
+            prompt += f"🗣 **Anförande Text:** {anforande_text}...\n"
+            prompt += f"⭐ **Similarity Score:** {score:.4f}\n"
+        prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
+        response = self.llm.invoke([HumanMessage(content=prompt)])
 
+        return response.content
 
-# Example usage
 if __name__ == "__main__":
-    data_path = "/mnt/c/Users/User/thesis/data_import/exp3_cosine_sim/mini_riksdag_wo_bio.json"
+    data_path = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag_exp1.json"
     riksdag = CosineRAG(data_path)
     
     query = "Vad tycker Per Bolund om vindkraft?"
@@ -100,3 +119,7 @@ if __name__ == "__main__":
     for anforande_id, match, score in top_matches:
         print(f"Anförande ID: {anforande_id} | Similarity: {score:.4f}")
         print(f"Document: {match[:200]}...\n")
+
+    response = riksdag.generate_response(top_matches, query)
+    print("\n🧠 Genererat Svar:\n")
+    print(response)

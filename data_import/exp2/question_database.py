@@ -3,7 +3,7 @@ import traceback
 from llm_retrieval.full_pipeline_class import GraphRAG
 
 graph_rag = GraphRAG()
-with open("/mnt/c/Users/User/thesis/data_import/exp2/updated_dataset.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 
@@ -26,15 +26,15 @@ for entry in dataset:
         final_response = graph_rag.generate_response(ranked_nodes, user_query)
         print("Final Response:", final_response)
 
-        entry["RAG_pipeline"]["answer"] = final_response.strip()
-        entry["RAG_pipeline"]["context"] = [node["node"]["a.anforande_id"] for node in ranked_nodes]
-        entry["RAG_pipeline"]["cypher_query"] = cypher_query
+        entry["graph_RAG"]["answer"] = final_response.strip()
+        entry["graph_RAG"]["context"] = [node["node"]["a.anforande_id"] for node in ranked_nodes]
+        entry["graph_RAG"]["cypher_query"] = cypher_query
     
     except Exception as e:
         print(f"⚠️ Error processing entry: {question}")
         print(traceback.format_exc())
 
-with open("/mnt/c/Users/User/thesis/data_import/rag_output_exp1.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset_exp2.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
-print("\nProcessing complete! Results saved to rag_output_exp1.json.")
+print("\nProcessing complete! Results saved to rag_output_exp2.json.")

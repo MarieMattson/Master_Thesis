@@ -14,10 +14,28 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["3d96d4d6-ccd6-ec11-9170-0090facf175a", "3f96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Centerpartiet har uttryckt att de inte anser att en förbudskonvention är en väg framåt i frågan om kärnvapen. De menar att detta inte är en lösning, utan snarare ett politiskt utspel som inte stöds av de faktiska kärnvapenmakterna. Centerpartiet pekar på att ingen av kärnvapenmakterna deltar i förbudskonventionen, inklusive Storbritannien och Frankrike. \n\nIstället ser Centerpartiet NPT (Icke-spridningsavtalet om kärnvapen) som den rätta vägen framåt. De anser att det är det centrala spåret för att arbeta mot en värld utan kärnvapen och massförstörelsevapen, trots att vi inte är där ännu. De betonar att ingenting från Sveriges sida får bidra till att skapa osäkerhet för Sverige, och att svensk säkerhet alltid måste prioriteras först.",
+            "context": [
+                "5296d4d6-ccd6-ec11-9170-0090facf175a",
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "4596d4d6-ccd6-ec11-9170-0090facf175a",
+                "4f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3a96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -35,10 +53,27 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["43a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Moderaterna har uttryckt oro över att användningen av rättsintyg från Rättsmedicinalverket har minskat under det senaste decenniet. De menar att dessa rättsintyg ofta utgör viktig bevisning i rättegångar, speciellt i ärenden som handlar om sexualbrott och våld i nära relationer. Moderaterna menar att det har blivit vanligare att polis och åklagare enbart använder sig av patientjournaler som skadedokumentation, vilket de anser ger ett sämre underlag i rättsprocessen. De vill därför att justitie- och inrikesministern vidtar åtgärder för att fler rättsintyg och kroppsundersökningar beställs från Rättsmedicinalverket i framtiden.",
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a",
+                "450d7667-bb23-ed11-9178-901b0e9b71a8",
+                "a80c7667-bb23-ed11-9178-901b0e9b71a8",
+                "13a228e8-3dc6-ec11-9170-0090facf175a",
+                "4961bc67-3143-ed11-9177-901b0eac4c70",
+                "14a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -56,10 +91,27 @@
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["58a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "58a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Basert på debattbitarna verkar det som att Morgan Johansson stöder den nya lagstiftningen för krigsmaterielexport. Han framhäver att det finns en ansvarig myndighet, ISP, som granskar exporten i enlighet med denna lagstiftning. Han noterar också att det råder stor politisk enighet kring den nya lagstiftningen. Samtidigt poängterar han att det i slutänden är myndigheten som beslutar vilken export som kan ske. Han nämner inget specifikt om den nya lagstiftningen i februari 2022, men det kan antas att hans uppfattning inte har ändrats dramatiskt sedan dess.",
+            "context": [
+                "57a228e8-3dc6-ec11-9170-0090facf175a",
+                "58a228e8-3dc6-ec11-9170-0090facf175a",
+                "1996d4d6-ccd6-ec11-9170-0090facf175a",
+                "0796d4d6-ccd6-ec11-9170-0090facf175a",
+                "4396d4d6-ccd6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -77,10 +129,27 @@
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["1596d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "1596d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Sofia Damm har inte direkt uttryckt oro över Sveriges beroende av rysk gas i mars 2022 enligt anförandetexten. Men det framgick att det finns en allmän oro och diskussion kring Europas beroende av rysk gas. Flera talare betonade vikten av att minska detta beroende, både för miljöns skull och för att minska finansieringen av kriget i Ukraina. Det fanns även en diskussion om att Sverige bör driva på för ett totalstopp av importen av rysk energi inom hela EU. Det framhölls även att Sverige har potential att utöka sin egen energiproduktion, särskilt med havsbaserad vindkraft.",
+            "context": [
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1196d4d6-ccd6-ec11-9170-0090facf175a",
+                "1d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -102,6 +171,21 @@
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, det verkar som att åtminstone en talare i debatten, som talade om fiskeripolitik, tycker att Sverigedemokraternas hållning till ålen är motsägelsefull. Talaren lyfter fram att Sverigedemokraterna för knappt två år sedan röstade för ett tillkännagivande till regeringen angående värnandet av de småskaliga vattenkraftverken och ville se att många nedlagda kraftstationer skulle återupptas. Samtidigt påstår de i en reservation att ålfisket som nu finns kvar har en försumbar påverkan på ålbeståndet, men skriver också att ett stort problem är ål som inte kan passera vattenkraftverk. Detta tycks vara motsägelsefullt, eftersom vattenkraftverk är kända för att hindra ålens passage. Så utifrån debatten kan man dra slutsatsen att det finns åtminstone vissa som anser att Sverigedemokraternas hållning till ålen är motsägelsefull.",
+            "context": [
+                "4a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "210d7667-bb23-ed11-9178-901b0e9b71a8",
+                "3796d4d6-ccd6-ec11-9170-0090facf175a",
+                "ab0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "9d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -119,10 +203,30 @@
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["0496d4d6-ccd6-ec11-9170-0090facf175a", "0e96d4d6-ccd6-ec11-9170-0090facf175a","1296d4d6-ccd6-ec11-9170-0090facf175a", "1e96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "0e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, enligt Magdalena Andersson är det viktigt att minska beroendet av rysk gas. Hon framhåller att detta beroende utgör en sårbarhet både ur klimat- och säkerhetspolitisk synvinkel. Dock menar hon att det kanske inte är de länder som är minst beroende av rysk gas som ska leda kampanjen för ett totalstopp, eftersom det kan ha en motverkande effekt. Hon anser vidare att det är viktigt att hitta andra leverantörer av gas för att minska beroendet av rysk gas och att vi i Europa behöver utveckla energislag som vi kan producera själva, såsom havsbaserad vindkraft. Hon understryker också att Sverige är ett land som exporterar mycket el, vilket minskar andra länders beroende av rysk gas och olja.",
+            "context": [
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1196d4d6-ccd6-ec11-9170-0090facf175a",
+                "1596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1696d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -140,10 +244,31 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["3fa228e8-3dc6-ec11-9170-0090facf175a", "40a228e8-3dc6-ec11-9170-0090facf175a", "42a228e8-3dc6-ec11-9170-0090facf175a", "65a228e8-3dc6-ec11-9170-0090facf175a","66a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "3fa228e8-3dc6-ec11-9170-0090facf175a",
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "42a228e8-3dc6-ec11-9170-0090facf175a",
+                "65a228e8-3dc6-ec11-9170-0090facf175a",
+                "66a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
-            "reasonable_question": ""        
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Socialdemokraterna har uttryckt stöd för att höja pensionsavgiften för att kunna fortsätta höja pensionerna. De betonar vikten av att visa respekt för svenska pensionärer, inte bara genom ord, utan också genom konkreta åtgärder som pensionshöjningar. De har redan vidtagit flera åtgärder för att höja pensionerna, inklusive införandet av ett pensionstillägg och ett förslag om ett garantitillägg. De ser en höjning av pensionsavgiften som en metod för att skapa förutsättningar för att fortsätta höja pensionerna på lång sikt. Denna fråga hanteras av Pensionsgruppen, och Socialdemokraterna uttrycker förhoppningar om att uppnå politisk enighet i denna fråga.",
+            "context": [
+                "6461bc67-3143-ed11-9177-901b0eac4c70",
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "6361bc67-3143-ed11-9177-901b0eac4c70",
+                "5a61bc67-3143-ed11-9177-901b0eac4c70",
+                "66a228e8-3dc6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -161,10 +286,28 @@
         "qa_type": "generate_qa_temporal",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["99a228e8-3dc6-ec11-9170-0090facf175a", "94a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "99a228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Baserat på de angivna debattavsnitten hittar jag ingen specifik information om Ola Möllers ståndpunkt angående återinförandet av revisionsplikten i februari 2022. Debatterna verkar snarare fokusera på olika aspekter av företagsreglering och digital lagring av information, men det finns ingen uttrycklig hänvisning till Ola Möllers åsikter om revisionsplikten. Jag rekommenderar att du söker mer specifik information eller direkt kontaktar Ola Möller för att få en klar förståelse för hans ståndpunkt i denna fråga.",
+            "context": [
+                "9aa228e8-3dc6-ec11-9170-0090facf175a",
+                "96a228e8-3dc6-ec11-9170-0090facf175a",
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "8f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "8396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -186,6 +329,21 @@
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor. Han hanterar både frågor av allmänpolitiskt slag och ämnen som faller inom hans ansvarsområde, enligt protokollet från den 17 februari 2021/22:68.",
+            "context": [
+                "22a228e8-3dc6-ec11-9170-0090facf175a",
+                "2ba228e8-3dc6-ec11-9170-0090facf175a",
+                "49a228e8-3dc6-ec11-9170-0090facf175a",
+                "43a228e8-3dc6-ec11-9170-0090facf175a",
+                "dc0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "db0c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -203,10 +361,28 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["4896d4d6-ccd6-ec11-9170-0090facf175a", "5196d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Håkan Svennelings åsikter om Sveriges beslut att ge vapenstöd till Ukraina är inte tydligt specificerade i de tillgängliga debattutdrag. Det framgår dock att det har ställts frågor till honom om han och Vänsterpartiet skulle vara villiga att ge vapenstöd till Ukraina. Det nämns även att Sverige har stöttat Ukraina militärt, både genom den europeiska fredsfaciliteten och genom bilateralt stöd, vilket inkluderar leverans av vapen. Men det är oklart om Svenneling direkt har kommenterat eller uttryckt sin ståndpunkt om dessa specifika åtgärder.",
+            "context": [
+                "4796d4d6-ccd6-ec11-9170-0090facf175a",
+                "0596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1996d4d6-ccd6-ec11-9170-0090facf175a",
+                "4096d4d6-ccd6-ec11-9170-0090facf175a",
+                "5396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -224,10 +400,20 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["6f96d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "6f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -245,10 +431,29 @@
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["9da228e8-3dc6-ec11-9170-0090facf175a", "9fa228e8-3dc6-ec11-9170-0090facf175a", "9ba228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han har uttryckt att svenska företag behöver vara konkurrenskraftiga, och att varje ny regel som införs bör följas av att två existerande regler tas bort för att minska regelbördan. Han har också nämnt att kostnaderna för nya regler har ökat under den nuvarande regeringen, vilket han anser påverkar svenska företags konkurrenskraft negativt.",
+            "context": [
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a",
+                "45e4860e-ccd6-ec11-9170-0090facf175a",
+                "9ea228e8-3dc6-ec11-9170-0090facf175a",
+                "27a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -266,10 +471,20 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["18a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "18a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -287,10 +502,20 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["87a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "87a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -308,10 +533,29 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["9da228e8-3dc6-ec11-9170-0090facf175a", "9fa228e8-3dc6-ec11-9170-0090facf175a", "9ba228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Larry Söder uttrycker oro över effekterna av nya regler på svenska företag. Han menar att nya regler kan slå hårt mot företag och till och med leda till företags konkurs. Han påpekar att detta minskar svenska företags konkurrenskraft jämfört med andra europeiska företag, och uppskattar att kostnaden för nya regler för svenska företag kan uppgå till 1 miljard om året. \n\nSöder ger exempel på personalliggare som ökar regelbördan för företag, och menar att dessa regler kan vara bra för vissa branscher, som byggbranschen, men kanske inte för alla. Han uppmanar till försiktighet och eftertanke kring vilka regler som faktiskt bidrar till att ta bort de värsta problemen utan att lägga mer kostnader på företag som sköter sig. \n\nSöder argumenterar för att svenska företag som sköter sig ska ha möjlighet att konkurrera med andra företag i Europa. Han påpekar också att han inte ser någon pågående liberaliseringsvåg och att det kan vara bra att ta bort två regler när man inför en ny, för att minska regelbördan för svenska företag.",
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a",
+                "9ea228e8-3dc6-ec11-9170-0090facf175a",
+                "45e4860e-ccd6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "96a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -329,10 +573,27 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["7496d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Sverigedemokraterna har uttryckt en önskan om att förändra granskningsnämndens uppdrag och public service. De menar att det finns en diskrepans mellan vad allmänheten uppfattar att granskningsnämnden granskar och vad den faktiskt granskar. Sverigedemokraterna vill att granskningsnämndens uppdrag ska inkludera att dubbelkolla och kontrollera fakta i program som sänds på public service. De menar att detta skulle öka tilliten till public service, vilket de ser som ett problem då en del av befolkningen idag inte har förtroende för public service. Det är dock viktigt att notera att det finns olika åsikter om detta inom partiet och de har ändrat sin ståndpunkt över tid.",
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a",
+                "7096d4d6-ccd6-ec11-9170-0090facf175a",
+                "6e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6996d4d6-ccd6-ec11-9170-0090facf175a",
+                "7596d4d6-ccd6-ec11-9170-0090facf175a",
+                "6b96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -350,10 +611,28 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["2fa228e8-3dc6-ec11-9170-0090facf175a", "31a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "31a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Jens Holm anser att utsläppsminskningarna från vägtransporterna inte är tillräckliga. Han betonar att dessa minskningar till största delen är en effekt av pandemin snarare än av medvetna insatser för att minska utsläppen. Holm kritiserar regeringen för att ha subventionerat flygtrafiken med 16 miljarder kronor, medan järnvägstransporterna inte har fått motsvarande stöd. Han frågar vad regeringen planerar att göra för att främja mer hållbara transportalternativ. Dessutom påpekar han att vi behöver minska utsläppen från transportsektorn med minst 70 procent till 2030, vilket är ett ambitiöst mål med tanke på att vi bara har åtta år kvar. Han föreslår bland annat statlig medfinansiering till kollektivtrafiken, ökade satsningar på elektrifiering av fordonsflottan och en vägslitageavgift på de tunga transporterna för att flytta över transporter från väg till järnväg.",
+            "context": [
+                "31a228e8-3dc6-ec11-9170-0090facf175a",
+                "30a228e8-3dc6-ec11-9170-0090facf175a",
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "19e4860e-ccd6-ec11-9170-0090facf175a",
+                "01e4860e-ccd6-ec11-9170-0090facf175a",
+                "1be4860e-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -371,10 +650,28 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["4896d4d6-ccd6-ec11-9170-0090facf175a", "5196d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Vänsterpartiets position i frågan om vapenleveranser är inte explicit framställd i de tillgängliga debattbitarna. Utifrån den information som finns, verkar det som att Vänsterpartiet har uttryckt kritik mot vissa säkerhets- och försvarspolitiska åtgärder, men det är inte klart hur detta gäller vapenleveranser specifikt. Det nämns att partiet har varit skeptiskt till Nato och frågat om Sverige bör avsluta bilaterala avtal med stater som har kärnvapen. Men det är osäkert hur dessa synpunkter relaterar till deras ståndpunkt om vapenleveranser. För att få en mer exakt bild av Vänsterpartiets position i denna fråga, rekommenderas det att söka mer specifik information eller kontakta partiet direkt.",
+            "context": [
+                "5296d4d6-ccd6-ec11-9170-0090facf175a",
+                "dd0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "4596d4d6-ccd6-ec11-9170-0090facf175a",
+                "12a228e8-3dc6-ec11-9170-0090facf175a",
+                "2a61bc67-3143-ed11-9177-901b0eac4c70",
+                "4196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -392,10 +689,27 @@
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["6996d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "6996d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Kristdemokraterna har inte direkt uttryckt en ståndpunkt om att public service-avgiften bör sänkas om intäkterna ökar. De diskuterar dock frågor om skatt och hur skattemedel bör användas. De betonar också vikten av att skattesänkningar riktas till dem med lägst inkomst. När det gäller public service, fokuserar diskussionerna främst på dess roll och effektivitet, snarare än specifika finansieringsfrågor. Det verkar finnas en önskan om en mer effektiv och fokuserad public service som levererar kvalitativ samhällsinformation. Men det finns ingen direkt koppling i debatten mellan ökade intäkter och en eventuell sänkning av public service-avgiften.",
+            "context": [
+                "7396d4d6-ccd6-ec11-9170-0090facf175a",
+                "5e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7696d4d6-ccd6-ec11-9170-0090facf175a",
+                "5b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6c96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -413,10 +727,27 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["45a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Yasmine Eriksson har uttryckt oro över den illegala införseln av hundar till Sverige. Hon påpekar att detta är en lukrativ affär för kriminella, som ofta utnyttjar hundar från valpfabriker där de lever under då",
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a",
+                "0e0d7667-bb23-ed11-9178-901b0e9b71a8",
+                "46a228e8-3dc6-ec11-9170-0090facf175a",
+                "2a61bc67-3143-ed11-9177-901b0eac4c70",
+                "1396d4d6-ccd6-ec11-9170-0090facf175a",
+                "180d7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -434,10 +765,24 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["0496d4d6-ccd6-ec11-9170-0090facf175a", "1a96d4d6-ccd6-ec11-9170-0090facf175a", "1c96d4d6-ccd6-ec11-9170-0090facf175a", "2496d4d6-ccd6-ec11-9170-0090facf175a", "2396d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "1a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1c96d4d6-ccd6-ec11-9170-0090facf175a",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a",
+                "2396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -455,10 +800,27 @@
         "qa_type": "generate_qa_comparison_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["1396d4d6-ccd6-ec11-9170-0090facf175a"]
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Basert på debattstykkene, ser det ut til at det er en diskusjon om EU bør bistå land utenfor EU med medisinsk og økonomisk hjelp. I debatten nevnes det at det er uklart om EU vil bistå land utenfor EU, eller om det bare er EU-land som vil bli bistått med medisinsk og økonomisk hjelp. Det er også en pågående diskusjon om hvordan bistand blir håndtert av forskjellige instanser, og hvordan denne hjelpen kan fordeles mer effektivt. Det er imidlertid ingen klar konklusjon i debatten om EU bør bistå land utenfor EU medisinsk og økonomisk. Dette er et komplekst spørsmål som krever ytterligere diskusjon og vurdering.",
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a",
+                "3161bc67-3143-ed11-9177-901b0eac4c70",
+                "2b61bc67-3143-ed11-9177-901b0eac4c70",
+                "2261bc67-3143-ed11-9177-901b0eac4c70",
+                "3561bc67-3143-ed11-9177-901b0eac4c70",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -476,10 +838,28 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["3ba228e8-3dc6-ec11-9170-0090facf175a", "3da228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "3ba228e8-3dc6-ec11-9170-0090facf175a",
+                "3da228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Rasmus Ling har uttryckt sin oro över hur regeringen hanterar den aktuella situationen. Han har kritiserat regeringen för att de inte tagit tillräckligt ansvar för landets ekonomi och för att de inte agerat tillräckligt snabbt mot problem som skjutningar och otrygghet. Han har även pekat på att regeringen inte har tagit ansvar för att hjälpa de familjer som upplevt oro under de senaste åtta åren.\n\nLing har också uttryckt sin oro över bränslepriserna i Sverige, och menar att de ligger långt över priserna i jämförbara länder. Han anser att detta har fått konsekvenser för företag och människors möjligheter att leva på landsbygden och att regeringen borde tänka om.\n\nSlutligen, Ling kritiserar regeringen för att de inte har tagit tillräckligt ansvar för att hjälpa och stödja människor som behöver det, och menar att om man inte lär sig att ta ansvar kommer samma problem att upprepas om och om igen. Han innefattar denna syn i hans syn på att Moderaterna tar ansvar för ekonomin och kommer att ta ansvar för alla de förslag de lägger fram.",
+            "context": [
+                "8096d4d6-ccd6-ec11-9170-0090facf175a",
+                "e20c7667-bb23-ed11-9178-901b0e9b71a8",
+                "3f0d7667-bb23-ed11-9178-901b0e9b71a8",
+                "d90c7667-bb23-ed11-9178-901b0e9b71a8",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "2fe4860e-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -501,6 +881,21 @@
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Jeanette Gustafsdotter har uttryckt att anledningen till att hon inte läser allt som skrivits om henne är för att hon inte vill förlora fokus på sitt uppdrag. Hon menar att om hon skulle lägga tid och energi på allt som skrivs om henne, riskerar hon att tappa styrfarten på de viktiga frågor hon har tagit sig an att hantera. Dessa frågor innefattar att motverka att det demokratiska samtalet drunknar i hat och hot, att säkerställa att kulturen finns tillgänglig över hela landet för alla oavsett bakgrund, och att stötta starka, fria, oberoende medier.",
+            "context": [
+                "24a228e8-3dc6-ec11-9170-0090facf175a",
+                "d90c7667-bb23-ed11-9178-901b0e9b71a8",
+                "50e4860e-ccd6-ec11-9170-0090facf175a",
+                "64e4860e-ccd6-ec11-9170-0090facf175a",
+                "4de4860e-ccd6-ec11-9170-0090facf175a",
+                "d00c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -518,10 +913,20 @@
         "qa_type": "generate_qa_comparison_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["1aa228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "1aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -539,10 +944,20 @@
         "qa_type": "generate_qa_inference_person",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["89a228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "89a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     },
     {
@@ -560,10 +975,29 @@
         "qa_type": "generate_qa_inference_party",
         "human_annotator": {
             "reasonable_question": "y",
-            "context": ["26a228e8-3dc6-ec11-9170-0090facf175a", "38a228e8-3dc6-ec11-9170-0090facf175a", "3aa228e8-3dc6-ec11-9170-0090facf175a"]
+            "context": [
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
         },
         "LLM_annotator": {
             "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen är inte tydligt uttalad i de rankade debattstyckena. Dock framhåller de vikten av att stödja samhället under krisen, och har gått fram med förslag om stödpaket på 20 miljarder för att hantera den akuta situationen. Vidare verkar de vara inriktade på att sätta ihop remissvaren så fort som möjligt efter att ha fått ut kris- och återstartsmedlen. Förutom detta, betonar Socialdemokraterna vikten av att stöden inte ska förvärra beroendet av icke-förnybara energikällor och att de som mest behöver stödet ska kunna få det. Notera dock att detta svar är baserat på tillgänglig information och kan inte ge en heltäckande bild av Socialdemokraternas position.",
+            "context": [
+                "8096d4d6-ccd6-ec11-9170-0090facf175a",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "0b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "56e4860e-ccd6-ec11-9170-0090facf175a",
+                "5796d4d6-ccd6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "",
+            "context": ""
         }
     }
 ]

@@ -1,0 +1,1192 @@
+[
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Vissa säkerhetspolitiska frågor",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "3f96d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Tvåspårspolitiken får inte innebära en bild av att vi har gemensamma intressen här. Vi har hela tiden haft diskussioner om vad vi har för gemensamma intressen med Ryssland när vi pratar energifrågor. De vill sälja, och de vill se till att energi används för att påverka. Vad har vi för gemensamma intressen med dem när vi vill övergå till att ha en annan hållning?</p><p>Man måste vara tydlig med att det här inte är två olika spår. Det är en viktig signalfråga att inte göra mänskliga rättigheter till ett enskilt spår och demokrati och allt annat till ett annat spår. De hör ihop och måste gå hand i hand om de ska få effekt.</p><p>En annan del i diskussionen om kärnvapenfrågorna och kärnvapenförbud är att vi inte uppfattar att en förbudskonvention är en väg framåt. Det är inte en väg framåt. Det är inte en god lösning på något annat än möjligen för dem som vill driva plakatpolitik. Det vi ser är att det inte är en enda av kärnvapenmakterna som deltar - vare sig Storbritannien eller Frankrike, om vi tar de EU-nära, men inte heller de andra stora eller de som inte har erkänt att de har kärnvapen.</p><p>Fru talman! I dag ser vi hur Putin hotar med att använda kärnvapen. Han hotade efter Krim med att han var beredd att använda kärnvapen om han inte fick igenom det han ville där. Nu hotar han igen. Jag har inte hört vare sig Putin, Lavrov eller någon annan säga: Vi har ju en kärnvapenkonvention som förbjuder oss att använda kärnvapen.</p><p>Det är inte en väg framåt. Försök att se att det är NPT som är vägen framåt - om den håller!</p>",
+        "talare": "Kerstin Lundgren",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Vad är Centerpartiets position i frågan om kärnvapenförbud och NPT?",
+            "answer": "Centerpartiet anser att en förbudskonvention inte är en väg framåt när det gäller kärnvapenfrågor. De ser det inte som en god lösning och menar att det endast tjänar de som vill driva plakatpolitik. Istället betonar Centerpartiet att NPT (icke-spridningsavtalet) är vägen framåt, förutsatt att det håller."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Centerpartiet har uttryckt att de inte anser att en förbudskonvention är en väg framåt i frågan om kärnvapen. De menar att detta inte är en lösning, utan snarare ett politiskt utspel som inte stöds av de faktiska kärnvapenmakterna. Centerpartiet pekar på att ingen av kärnvapenmakterna deltar i förbudskonventionen, inklusive Storbritannien och Frankrike. \n\nIstället ser Centerpartiet NPT (Icke-spridningsavtalet om kärnvapen) som den rätta vägen framåt. De anser att det är det centrala spåret för att arbeta mot en värld utan kärnvapen och massförstörelsevapen, trots att vi inte är där ännu. De betonar att ingenting från Sveriges sida får bidra till att skapa osäkerhet för Sverige, och att svensk säkerhet alltid måste prioriteras först.",
+            "context": [
+                "5296d4d6-ccd6-ec11-9170-0090facf175a",
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "4596d4d6-ccd6-ec11-9170-0090facf175a",
+                "4f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3a96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Centerpartiet tycks ha en tydlig ståndpunkt i frågan om kärnvapenförbud och NPT (Icke-spridningsavtalet). De anser inte att en förbudskonvention är en väg framåt, och ser det mer som ett verktyg för plakatpolitik än en effektiv lösning. Centerpartiet uppfattar att ingen av kärnvapenmakterna deltar i denna konvention, inklusive stora spelare som Storbritannien och Frankrike. De framhåller att det är NPT som är vägen framåt, förutsatt att det håller.\n\nFör Centerpartiet är svensk säkerhet av första prioritet. De uttrycker också en önskan om en värld utan kärnvapen och massförstörelsevapen, men erkänner att vi inte befinner oss i den situationen för närvarande. Därför ser de NPT som det centrala spåret för Sverige, eftersom det inkluderar kärnvapenstaterna.",
+            "context": [
+                "3f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "3d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "4596d4d6-ccd6-ec11-9170-0090facf175a",
+                "a0a228e8-3dc6-ec11-9170-0090facf175a",
+                "b70c7667-bb23-ed11-9178-901b0e9b71a8",
+                "4961bc67-3143-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"C\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "43a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Frågestund</p><p>Fru talman! Väl utförda rättsintyg utgör ofta viktig bevisning i rättegångar.</p><p>Dessvärre har antalet rättsintyg som utförs av Rättsmedicinalverket minskat kraftigt det senaste decenniet. Antalet rättsintyg utfärdade av Rättsmedicinalverket som baseras på kroppsundersökningar har halverats sedan Morgan Johansson tillträdde som justitieminister, från 2 487 år 2014 till 1 243 förra året.</p><p>Det har i stället blivit vanligare att polis och åklagare enbart använder sig av patientjournaler som skadedokumentation, vilket inte minst i ärenden som handlar om sexualbrott och våld i nära relationer ofta ger ett betydligt sämre underlag i rättsprocessen.</p><p>Jag vill därför fråga justitie- och inrikesminister Morgan Johansson vilka åtgärder han avser att vidta för att polis och åklagare i framtiden ska beställa fler rättsintyg och kroppsundersökningar från Rättsmedicinalverket.</p>",
+        "talare": "Mikael Damsgaard",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad är Moderaternas position i frågan om användningen av rättsintyg från Rättsmedicinalverket?",
+            "answer": "Moderaterna är bekymrade över den kraftiga minskningen av rättsintyg utfärdade av Rättsmedicinalverket och anser att det är viktigt att polis och åklagare i högre grad beställer rättsintyg och kroppsundersökningar för att förbättra bevisunderlaget i rättsprocesser, särskilt i ärenden som rör sexualbrott och våld i nära relationer."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Moderaterna har uttryckt oro över att användningen av rättsintyg från Rättsmedicinalverket har minskat under det senaste decenniet. De menar att dessa rättsintyg ofta utgör viktig bevisning i rättegångar, speciellt i ärenden som handlar om sexualbrott och våld i nära relationer. Moderaterna menar att det har blivit vanligare att polis och åklagare enbart använder sig av patientjournaler som skadedokumentation, vilket de anser ger ett sämre underlag i rättsprocessen. De vill därför att justitie- och inrikesministern vidtar åtgärder för att fler rättsintyg och kroppsundersökningar beställs från Rättsmedicinalverket i framtiden.",
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a",
+                "450d7667-bb23-ed11-9178-901b0e9b71a8",
+                "a80c7667-bb23-ed11-9178-901b0e9b71a8",
+                "13a228e8-3dc6-ec11-9170-0090facf175a",
+                "4961bc67-3143-ed11-9177-901b0eac4c70",
+                "14a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Moderaterna anser att användningen av rättsintyg från Rättsmedicinalverket är viktiga och utgör ofta en central del av bevisningen i rättegångar. De har uttryckt oro över att antalet rättsintyg som utfärdas av Rättsmedicinalverket har minskat kraftigt under det senaste decenniet. De har även påpekat att det har blivit allt vanligare att polis och åklagare endast använder patientjournaler som skadedokumentation, vilket enligt dem kan ge ett sämre underlag i rättsprocessen, särskilt i ärenden som rör sexualbrott och våld i nära relationer. Därför har de frågat justitie- och inrikesminister om vilka åtgärder han avser att vidta för att fler rättsintyg och kroppsundersökningar ska beställas från Rättsmedicinalverket i framtiden.",
+            "context": [
+                "43a228e8-3dc6-ec11-9170-0090facf175a",
+                "450d7667-bb23-ed11-9178-901b0e9b71a8",
+                "13a228e8-3dc6-ec11-9170-0090facf175a",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6696d4d6-ccd6-ec11-9170-0090facf175a",
+                "2a61bc67-3143-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"M\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "58a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Om det är lagstiftningen för vapen och annan materiel som kan användas dubbelt som Håkan Svenneling är ute efter finns det en ansvarig myndighet, ISP, som granskar detta i enlighet med den lagstiftning Sverige har för krigsmaterielexport och andra produkter. Det råder stor politisk enighet kring denna nya lagstiftning.</p><p>Jag kan gärna titta närmare på just detta fall, men det är i slutänden myndigheten som beslutar vilken export som kan ske.</p><p>När det gäller Gambia och den pågående rättsprocessen ber jag att få hänvisa till utrikesministern. Jag har inte den detaljkunskapen och ska inte ens försöka svara på frågan. Ledamoten får återkomma i särskild ordning till utrikesministern.</p>",
+        "talare": "Morgan Johansson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Stödde Morgan Johansson den nya lagstiftningen för krigsmaterielexport i februari tjugohundratjugotvå?",
+            "answer": "Ja, Morgan Johansson nämnde att det råder stor politisk enighet kring den nya lagstiftningen för krigsmaterielexport."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "58a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Basert på debattbitarna verkar det som att Morgan Johansson stöder den nya lagstiftningen för krigsmaterielexport. Han framhäver att det finns en ansvarig myndighet, ISP, som granskar exporten i enlighet med denna lagstiftning. Han noterar också att det råder stor politisk enighet kring den nya lagstiftningen. Samtidigt poängterar han att det i slutänden är myndigheten som beslutar vilken export som kan ske. Han nämner inget specifikt om den nya lagstiftningen i februari 2022, men det kan antas att hans uppfattning inte har ändrats dramatiskt sedan dess.",
+            "context": [
+                "57a228e8-3dc6-ec11-9170-0090facf175a",
+                "58a228e8-3dc6-ec11-9170-0090facf175a",
+                "1996d4d6-ccd6-ec11-9170-0090facf175a",
+                "0796d4d6-ccd6-ec11-9170-0090facf175a",
+                "4396d4d6-ccd6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Baserat på de tillgängliga debattbitarna, framgår det inte tydligt om Morgan Johansson stödde den nya lagstiftningen för krigsmaterielexport i februari 2022. Han nämner att det råder stor politisk enighet kring den nya lagstiftningen och att det är en ansvarig myndighet, ISP, som granskar detta i enlighet med den lagstiftning Sverige har för krigsmaterielexport. Men han ger inget direkt uttalande om sitt personliga stöd för denna lagstiftning. För mer specifik information rekommenderar jag att direkt kontakta Morgan Johansson eller söka efter mer specifika uttalanden från honom angående denna fråga.",
+            "context": [
+                "58a228e8-3dc6-ec11-9170-0090facf175a",
+                "64a228e8-3dc6-ec11-9170-0090facf175a",
+                "62a228e8-3dc6-ec11-9170-0090facf175a",
+                "46a228e8-3dc6-ec11-9170-0090facf175a",
+                "5ca228e8-3dc6-ec11-9170-0090facf175a",
+                "34a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Morgan Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-02\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1596d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Det har nu gått tre veckor sedan Putin brutalt raserade den världsordning som vi vant oss vid. Det är tre veckor sedan de strukturer som uppstod efter andra världskriget, för att vi skulle kunna leva i fred och frihet, slogs sönder. I tre veckor har modiga ukrainare kämpat för sina liv, för sin frihet och, fru talman, för allas vår frihet.</p><p>EU måste fortsätta att visa ledarskap när det gäller ytterligare sanktioner, när det gäller mer stöttning med vapen och försvarsmateriel och när det gäller mottagandet av dem som nu flyr för sina liv. Och EU måste bryta sitt beroende av rysk gas. Vi kan exempelvis se till oss själva och ifrågasätta om det är rimligt att ett land som Sverige, med goda förutsättningar att vara självförsörjande på ren el, under perioder importerar dyr och smutsig el. I Sverige har vi förlorat delar av en planerbar elproduktion, vilket ökar behovet av att importera el från Europa, som i sin tur importerar gas från Ryssland.</p><p>Repower EU-planen, som presenteras av kommissionen i maj, kommer att vara otroligt viktig. Statsministern har sagt att Sverige har varit pådrivande i diskussionerna om hur man ska minska beroendet av rysk olja och gas. Men hur har Sverige varit pådrivande? Jag tänker exempelvis på bioenergin från skogen. I kommissionens meddelande om Repower EU nämns inte bioenergin från skogen över huvud taget. Kommer Sverige att säkerställa att skogen blir en del av lösningen när EU ställer om för att bryta sitt beroende?</p>",
+        "talare": "Sofia Damm",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Uttryckte Sofia Damm oro över Sveriges beroende av rysk gas i mars 2022?",
+            "answer": "Ja, Sofia Damm uttryckte oro över Sveriges beroende av rysk gas och ifrågasatte om det är rimligt att Sverige, med goda förutsättningar att vara självförsörjande på ren el, importerar dyr och smutsig el under vissa perioder."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "1596d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Sofia Damm har inte direkt uttryckt oro över Sveriges beroende av rysk gas i mars 2022 enligt anförandetexten. Men det framgick att det finns en allmän oro och diskussion kring Europas beroende av rysk gas. Flera talare betonade vikten av att minska detta beroende, både för miljöns skull och för att minska finansieringen av kriget i Ukraina. Det fanns även en diskussion om att Sverige bör driva på för ett totalstopp av importen av rysk energi inom hela EU. Det framhölls även att Sverige har potential att utöka sin egen energiproduktion, särskilt med havsbaserad vindkraft.",
+            "context": [
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1196d4d6-ccd6-ec11-9170-0090facf175a",
+                "1d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Ja, i mars 2022 uttryckte Sofia Damm oro över Sveriges beroende av rysk gas. Hon påpekade att det är nödvändigt för EU och Sverige att bryta detta beroende. Hon framhöll vikten av att Sverige, som har goda förutsättningar att vara självförsörjande på ren el, ifrågasätter sin import av dyr och smutsig el. Sofia Damm nämnde också möjligheten att använda skogen för bioenergi som ett alternativ till rysk gas.",
+            "context": [
+                "1596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1796d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Sofia Damm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-03\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Fiskeripolitik",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "9d96d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Fiskeripolitik</p><p>Fru talman! Sverigedemokraternas hållning till ålen är en totalt motsägelsefull historia. Det verkar vara dagsformen som avgör. Låt mig få exemplifiera, fru talman. Försök att hänga med nu!</p><p>För knappt två år sedan röstade Sverigedemokraterna inte bara för ett tillkännagivande till regeringen angående värnandet av de småskaliga vattenkraftverken, utan Sverigedemokraterna ville även genom en reservation se att många nedlagda kraftstationer skulle återupptas. Under punkt 4 - om att bevara ålen - i dagens betänkande reserverar sig Sverigedemokraterna. Med texten i reservation 6 lyckas de i samma avsnitt med konststycket att påstå att \"ålfiske som nu finns kvar har alltså en försumbar påverkan på ålbeståndet\". Samtidigt skriver de att ett \"stort problem i sammanhanget är ål som inte kan passera vattenkraftverk\". </p><p>Sverigedemokraterna ställde sig i höstas även kritiska till EU:s ramdirektiv för vatten i ett tillkännagivande till regeringen och ställde sig därmed viljelösa inför exempelvis krav på vår vattenmiljö, vandringsvägar och vår ål som vandringsfisk. </p><p>Det befaras nu att endast 1 procent av ålen vandrar tillbaka från svenska vatten för lek jämfört med 1950-talet. Samtidigt skriver Sverigedemokraterna i dag att ålfisket är försumbart. </p><p>Hur kan 172 000 kilo ål som fiskades i Sverige i fjol eller 2 ½ miljon kilo som fiskats de senaste tio åren vara försumbara?</p>",
+        "talare": "Markus Selin",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Markus Selin att Sverigedemokraternas hållning till ålen är motsägelsefull?",
+            "answer": "Ja, Markus Selin anser att Sverigedemokraternas hållning till ålen är motsägelsefull. Han påpekar att deras ställningstaganden varierar och att de har gjort uttalanden som är inkonsekventa, särskilt i relation till ålfiskets påverkan och vattenkraftverkens inverkan på ålbeståndet."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "n",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, det verkar som att åtminstone en talare i debatten, som talade om fiskeripolitik, tycker att Sverigedemokraternas hållning till ålen är motsägelsefull. Talaren lyfter fram att Sverigedemokraterna för knappt två år sedan röstade för ett tillkännagivande till regeringen angående värnandet av de småskaliga vattenkraftverken och ville se att många nedlagda kraftstationer skulle återupptas. Samtidigt påstår de i en reservation att ålfisket som nu finns kvar har en försumbar påverkan på ålbeståndet, men skriver också att ett stort problem är ål som inte kan passera vattenkraftverk. Detta tycks vara motsägelsefullt, eftersom vattenkraftverk är kända för att hindra ålens passage. Så utifrån debatten kan man dra slutsatsen att det finns åtminstone vissa som anser att Sverigedemokraternas hållning till ålen är motsägelsefull.",
+            "context": [
+                "4a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "210d7667-bb23-ed11-9178-901b0e9b71a8",
+                "3796d4d6-ccd6-ec11-9170-0090facf175a",
+                "ab0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "9d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Ja, Markus Selin anser att Sverigedemokraternas hållning till ålen är motsägelsefull. Han påpekar att Sverigedemokraterna för knappt två år sedan röstade för ett tillkännagivande till regeringen om värnandet av småskalig vattenkraft, men nu reserverar sig mot punkten om att bevara ålen. Selin kritiserar också Sverigedemokraternas påstående om att det nuvarande ålfisket har en försumbar påverkan på ålbeståndet, samtidigt som de erkänner att ett stort problem är ålar som inte kan passera vattenkraftverk. Han ifrågasätter hur 172 000 kilo ål som fiskades i Sverige förra året, eller 2,5 miljoner kilo som fiskats de senaste tio åren, kan betraktas som försumbara. Han ser detta som ett tecken på Sverigedemokraternas motsägelsefulla ståndpunkt.",
+            "context": [
+                "9d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "9b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "9896d4d6-ccd6-ec11-9170-0090facf175a",
+                "9496d4d6-ccd6-ec11-9170-0090facf175a",
+                "9696d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Markus Selin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Som jag har svarat tidigare: För att komma framåt i frågan vad gäller beroendet av den ryska gasen är jag inte säker på att det är de länder som är minst beroende av den ryska gasen som ska driva på för ett totalstopp. Jag är rädd att detta skulle kunna få motsatt effekt, nämligen att länder slår bakut. Med detta sagt är vi från svensk sida väldigt tydliga i diskussionerna om att det är en sårbarhet att det är på det här sättet, både klimatmässigt och säkerhetspolitiskt, och att man behöver ställa om.</p><p>Jag tycker att det arbete som kommissionen gör för att hitta andra leverantörer av gas är viktigt. Då löser man inte miljöproblemen, men däremot minskar man beroendet av den ryska gasen, som hjälper till att finansiera kriget. Detta är viktigt.</p><p>Därutöver är det helt avgörande att vi i Europa bygger ut importoberoende energislag, där den havsbaserade vindkraften har en otroligt stor potential, inte minst när den kan kombineras med vätgaslagring. Här behöver vi från svensk sida fortsätta att driva på i Europa men självklart också göra vår hemläxa genom att bygga ut mer vindkraft. Där vet jag att Miljöpartiet är en viktig politisk aktör i Sverige.</p>",
+        "talare": "Magdalena Andersson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Magdalena Andersson att det är viktigt att minska beroendet av rysk gas?",
+            "answer": "Ja, Magdalena Andersson anser att det är viktigt att minska beroendet av rysk gas. Hon betonar att det är en sårbarhet både klimatmässigt och säkerhetspolitiskt och att det är viktigt att hitta andra leverantörer av gas för att minska detta beroende."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "0e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, enligt Magdalena Andersson är det viktigt att minska beroendet av rysk gas. Hon framhåller att detta beroende utgör en sårbarhet både ur klimat- och säkerhetspolitisk synvinkel. Dock menar hon att det kanske inte är de länder som är minst beroende av rysk gas som ska leda kampanjen för ett totalstopp, eftersom det kan ha en motverkande effekt. Hon anser vidare att det är viktigt att hitta andra leverantörer av gas för att minska beroendet av rysk gas och att vi i Europa behöver utveckla energislag som vi kan producera själva, såsom havsbaserad vindkraft. Hon understryker också att Sverige är ett land som exporterar mycket el, vilket minskar andra länders beroende av rysk gas och olja.",
+            "context": [
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1196d4d6-ccd6-ec11-9170-0090facf175a",
+                "1596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1696d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Ja, Magdalena Andersson anser att det är viktigt att minska beroendet av rysk gas. Hon uttrycker att Sverige är mycket tydliga i diskussionerna om att det är en sårbarhet att vara beroende av rysk gas, både ur ett klimat- och säkerhetspolitiskt perspektiv. Andersson betonar även vikten av att hitta andra leverantörer av gas för att minska detta beroende. Dessutom menar hon att det är avgörande att Europa utvecklar energislag som är oberoende av import, och nämner specifikt havsbaserad vindkraft som ett område med stor potential. Hon understryker även Sveriges roll som en stor nettoexportör av grön el, vilket bidrar till att minska andra länders beroende av rysk gas och olja.",
+            "context": [
+                "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1296d4d6-ccd6-ec11-9170-0090facf175a",
+                "1696d4d6-ccd6-ec11-9170-0090facf175a",
+                "2696d4d6-ccd6-ec11-9170-0090facf175a",
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "2096d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Magdalena Andersson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "42a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Det är precis därför som en höjning av lägstanivån genom införandet av ett garantitillägg måste följas av en höjning av de allmänna pensionerna, som bygger på livsinkomsten.</p><p>En höjning av pensionsavgiften, alltså avsättningarna till det allmänna pensionssystemet, är en förutsättning för att vi ska kunna visa respekt för våra pensionärer och en förutsättning för legitimiteten för det svenska pensionssystemet.</p><p>(Applåder)</p>",
+        "talare": "Ardalan Shekarabi",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad är Socialdemokraternas position i frågan om höjning av pensionsavgiften?",
+            "answer": "Socialdemokraterna anser att en höjning av pensionsavgiften är nödvändig för att visa respekt för pensionärerna och för att upprätthålla legitimiteten för det svenska pensionssystemet."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "3fa228e8-3dc6-ec11-9170-0090facf175a",
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "42a228e8-3dc6-ec11-9170-0090facf175a",
+                "65a228e8-3dc6-ec11-9170-0090facf175a",
+                "66a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Socialdemokraterna har uttryckt stöd för att höja pensionsavgiften för att kunna fortsätta höja pensionerna. De betonar vikten av att visa respekt för svenska pensionärer, inte bara genom ord, utan också genom konkreta åtgärder som pensionshöjningar. De har redan vidtagit flera åtgärder för att höja pensionerna, inklusive införandet av ett pensionstillägg och ett förslag om ett garantitillägg. De ser en höjning av pensionsavgiften som en metod för att skapa förutsättningar för att fortsätta höja pensionerna på lång sikt. Denna fråga hanteras av Pensionsgruppen, och Socialdemokraterna uttrycker förhoppningar om att uppnå politisk enighet i denna fråga.",
+            "context": [
+                "6461bc67-3143-ed11-9177-901b0eac4c70",
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "6361bc67-3143-ed11-9177-901b0eac4c70",
+                "5a61bc67-3143-ed11-9177-901b0eac4c70",
+                "66a228e8-3dc6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Socialdemokraterna har tagit ställning för en höjning av avsättningarna till det allmänna pensionssystemet. De tror att detta kommer att skapa förutsättningar för att kunna fortsätta höja pensionerna långsiktigt. De har redan vidtagit flera steg för att höja pensionerna, inklusive införandet av pensionstillägget och ett förslag om ett garantitillägg som skulle gynna de fattigaste pensionärerna. Runt 1 miljon svenska pensionärer har fått höjd pension genom dessa åtgärder. Socialdemokraterna menar att det är viktigt att fortsätta höja pensionerna och att Sverige, som ett av världens rikaste länder, inte ska ha fattigpensionärer. Denna fråga hanteras av Pensionsgruppen och Socialdemokraterna hoppas på att kunna nå politisk enighet så att pensionsavgiften kan höjas.",
+            "context": [
+                "40a228e8-3dc6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8",
+                "66a228e8-3dc6-ec11-9170-0090facf175a",
+                "42a228e8-3dc6-ec11-9170-0090facf175a",
+                "5c61bc67-3143-ed11-9177-901b0eac4c70",
+                "3fa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "99a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nej, Mikael Eskilandersson, jag förstår att du inte förstår problemet om du tror att informationen på en hårddisk försvinner för att du slår en yxa i den. Rättsforensisk teknik gör det i dag ganska lätt att hämta information från både det ena och det andra skadade i den digitala infrastrukturen, så det tror jag inte är något större problem.</p><p>Mikael Eskilandersson är inte medveten om hur det fungerar när man gör en husrannsakan. Det är inte så att den som är misstänkt för brott har tid att elda upp några papper i en papperskorg och stå och vissla medan polisen går igenom lägenheten, utan det är snabba ryck. Man går in och säkrar de fysiska bevis man behöver, och det är där hela poängen ligger.</p><p>Om det är i en molntjänst och man gör en husrannsakan och ska ha tag i inloggningsuppgifter eller liknande måste man först knäcka en kryptering, och om den misstänkte har en kollega eller liknande som är inblandad kan den snabbt gå in och radera uppgifter. Det är därför man häktar folk och de inte får lov att kontakta omvärlden och sådana saker. Men jag förstår att Mikael Eskilandersson inte har koll på de här sakerna.</p><p>Jag har en annan fråga, fru talman. I Sverigedemokraternas skrivning står det att informationen ska begäras ut om revisor begär det. Men i majoriteten av alla företag finns det ingen revisor eftersom revisionsplikten är slopad. Vi vill återinföra den nu. Men vilken revisor ska begära ut informationen om det inte finns någon revisor? I de flesta fall rimmar det väldigt illa.</p><p>När det gäller brott mot bokföringslagen är det dessutom så att det är en individ som blir dömd för att inte ha lämnat över bokföringen medan alla de bakom det som står i räkenskaperna - för även ett kriminellt växlingskontor har koll på sina pengar; det kan jag lova Mikael Eskilandersson - kommer undan. Man skickar fram en som tar smällen, och sedan kommer resten undan. Det är därför vi behöver säkra de fysiska räkenskaperna.</p>",
+        "talare": "Ola Möller",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Stödde Ola Möller återinförandet av revisionsplikten i februari tjugohundratjugotvå?",
+            "answer": "Ja, Ola Möller uttryckte stöd för att återinföra revisionsplikten i februari tjugohundratjugotvå. Han påpekade att majoriteten av företagen inte har en revisor eftersom revisionsplikten är slopad, och han ifrågasatte hur information ska begäras ut om det inte finns någon revisor."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "99a228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Baserat på de angivna debattavsnitten hittar jag ingen specifik information om Ola Möllers ståndpunkt angående återinförandet av revisionsplikten i februari 2022. Debatterna verkar snarare fokusera på olika aspekter av företagsreglering och digital lagring av information, men det finns ingen uttrycklig hänvisning till Ola Möllers åsikter om revisionsplikten. Jag rekommenderar att du söker mer specifik information eller direkt kontaktar Ola Möller för att få en klar förståelse för hans ståndpunkt i denna fråga.",
+            "context": [
+                "9aa228e8-3dc6-ec11-9170-0090facf175a",
+                "96a228e8-3dc6-ec11-9170-0090facf175a",
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "8f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "8396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Baseras på den information som finns tillgänglig, verkar Ola Möller ha stött återinförandet av revisionsplikten i februari 2022. Han diskuterade vikten av att ha fysiska räkenskaper tillgängliga för husrannsakan, och nämnde att i majoriteten av alla företag finns det ingen revisor eftersom revisionsplikten är slopad. Han uttalade att \"vi vill återinföra den nu\", vilket tyder på att han stöder återinförandet av revisionsplikten.",
+            "context": [
+                "94a228e8-3dc6-ec11-9170-0090facf175a",
+                "97a228e8-3dc6-ec11-9170-0090facf175a",
+                "99a228e8-3dc6-ec11-9170-0090facf175a",
+                "9ea228e8-3dc6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a",
+                "330d7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ola Möller\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-02\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "22a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Frågestund</p><p>Jag vill hälsa statsråden välkomna. Frågor besvaras av justitie- och inrikesminister Morgan Johansson, statsrådet Ardalan Shekarabi, klimat- och miljöminister Annika Strandhäll och kulturminister Jeanette Gustafsdotter.</p><p>En fråga ska vara av övergripande och allmänpolitiskt slag eller avse ett ämne som faller inom statsrådets ansvarsområde och rör dennes tjänsteutövning. Justitie- och inrikesminister Morgan Johansson besvarar såväl allmänpolitiska frågor som frågor inom sitt eget ansvarsområde.</p>",
+        "talare": "FÖRSTE VICE TALMANNEN",
+        "parti": "FÖRSTE VICE TALMANNEN",
+        "qa_pair": {
+            "question": "Anser FÖRSTE VICE TALMANNEN att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor?",
+            "answer": "Ja, FÖRSTE VICE TALMANNEN anser att justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor, eftersom det nämns att han besvarar såväl allmänpolitiska frågor som frågor inom sitt eget ansvarsområde."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "n",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, justitie- och inrikesminister Morgan Johansson kan besvara allmänpolitiska frågor. Han hanterar både frågor av allmänpolitiskt slag och ämnen som faller inom hans ansvarsområde, enligt protokollet från den 17 februari 2021/22:68.",
+            "context": [
+                "22a228e8-3dc6-ec11-9170-0090facf175a",
+                "2ba228e8-3dc6-ec11-9170-0090facf175a",
+                "49a228e8-3dc6-ec11-9170-0090facf175a",
+                "43a228e8-3dc6-ec11-9170-0090facf175a",
+                "dc0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "db0c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Justitie- och inrikesminister Morgan Johansson har i tidigare debatter visat att han kan besvara olika typer av allmänpolitiska frågor. Hans svar har inkluderat diskussioner om brottsbekämpning, rättsväsendets ansvar och upprättelse i fall där myndigheterna gör fel. Han har även diskuterat finansieringen av polisen och betydelsen av samarbete mellan olika myndigheter och aktörer i samhället för att bekämpa brottslighet. Så ja, första vice talman, minister Morgan Johansson kan besvara allmänpolitiska frågor.",
+            "context": [
+                "56a228e8-3dc6-ec11-9170-0090facf175a",
+                "44a228e8-3dc6-ec11-9170-0090facf175a",
+                "4aa228e8-3dc6-ec11-9170-0090facf175a",
+                "5ea228e8-3dc6-ec11-9170-0090facf175a",
+                "64a228e8-3dc6-ec11-9170-0090facf175a",
+                "58a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Morgan Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Vissa säkerhetspolitiska frågor",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "5196d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nej, jag sprider inte något ryskt narrativ. Nej, jag tycker inte att Ukraina ska betala något slags rättmätigt pris. Detta är Putins krig. Det är hans fel att kriget har startat. Skulden ligger bara hos honom, och jag hoppas innerligt att vi en dag får döma den jäkeln i den internationella kriminaldomstolen för brott mot mänskliga rättigheter. Det hoppas jag att Joar och jag får se innan vi en dag lämnar detta jordeliv.</p><p>Med detta sagt är det viktigt att se att man måste kunna prata om vad olika typer av bedömningar får för säkerhetspolitiska konsekvenser för Sverige. Jag tyckte att det beslut som denna riksdag fattade medan jag låg på sjukhus gick för snabbt och byggde på ett för dåligt underlag när det gällde de säkerhetspolitiska aspekterna. Jag hoppas att vi inte kommer att fatta fler beslut som har stor säkerhetspolitisk betydelse för Sverige på grund av ett utskottsinitiativ från fem ledamöter i finansutskottet.</p><p>Att resonera kring vad det innebär när vi ger vapenstöd till Ukraina, som befinner sig i krig, och vilka säkerhetspolitiska risker det medför tycker jag är mitt ansvar som ledamot av Sveriges riksdag och dess utrikesutskott. Därmed inte sagt att jag tycker att det är fel eller att jag inte tycker att vi ska ge allt stöd till Ukraina. Vi ska alltid förhålla oss tydligt kritiska till brott mot mänskliga rättigheter.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Vissa säkerhets-politiska frågor</p><p>Jag menar att man absolut kan vara kritisk till brott mot mänskliga rättigheter men fortfarande anse att vi ska vara en militärt alliansfri stat. Man kan ändå kritisera alla brott mot mänskliga rättigheter, oavsett av vem de begås, var de sker och med vilka motiv. Det tänker jag göra mot president Putin varje dag som han begår sådana brott. Det är skillnad, och det är viktigt att komma ihåg.</p><p>Därför hoppas jag att vi har tydliga säkerhetspolitiska diskussioner under de säkerhetspolitiska samtal som startar i morgon och att detta leder till att tydliggöra Sveriges säkerhetspolitiska linje.</p>",
+        "talare": "Håkan Svenneling",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Vad säger Håkan Svenneling om Sveriges beslut att ge vapenstöd till Ukraina?",
+            "answer": "Håkan Svenneling anser att det är viktigt att diskutera de säkerhetspolitiska riskerna med att ge vapenstöd till Ukraina. Han betonar att det är hans ansvar som ledamot av Sveriges riksdag och dess utrikesutskott att resonera kring dessa frågor. Han menar inte att det är fel att ge stöd till Ukraina, men han vill att Sverige alltid ska vara kritiska mot brott mot mänskliga rättigheter."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Håkan Svennelings åsikter om Sveriges beslut att ge vapenstöd till Ukraina är inte tydligt specificerade i de tillgängliga debattutdrag. Det framgår dock att det har ställts frågor till honom om han och Vänsterpartiet skulle vara villiga att ge vapenstöd till Ukraina. Det nämns även att Sverige har stöttat Ukraina militärt, både genom den europeiska fredsfaciliteten och genom bilateralt stöd, vilket inkluderar leverans av vapen. Men det är oklart om Svenneling direkt har kommenterat eller uttryckt sin ståndpunkt om dessa specifika åtgärder.",
+            "context": [
+                "4796d4d6-ccd6-ec11-9170-0090facf175a",
+                "0596d4d6-ccd6-ec11-9170-0090facf175a",
+                "1a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1996d4d6-ccd6-ec11-9170-0090facf175a",
+                "4096d4d6-ccd6-ec11-9170-0090facf175a",
+                "5396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Håkan Svenneling har uttryckt vissa farhågor kring Sveriges beslut att ge vapenstöd till Ukraina. Han anser att beslutet fattades för snabbt och att det saknade tillräckligt underlag när det gällde de säkerhetspolitiska aspekterna. Han menar att det är viktigt att diskutera vad det innebär att ge vapenstöd till ett land som befinner sig i krig och vilka säkerhetspolitiska risker det kan medföra för Sverige. Samtidigt påpekar han att det inte bör tolkas som att han är emot att ge stöd till Ukraina. Han betonar att han fördömer kriget i Ukraina och hoppas att sanktionerna mot Ryssland kommer att leda till förhandlingar och ett slut på det mänskliga lidandet. Han tror också att Sverige bör fortsätta att vara militärt alliansfritt, men att det är bra att ha militära samarbeten, särskilt med Finland.",
+            "context": [
+                "4096d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a",
+                "4696d4d6-ccd6-ec11-9170-0090facf175a",
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "2596d4d6-ccd6-ec11-9170-0090facf175a",
+                "4296d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Håkan Svenneling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Radio och tv i allmänhetens tjänst",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "6f96d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Sveriges Radios utrikeskorrespondent Nils Horner var en röst jag ofta lyssnade till. Hans rapporteringar om utvecklingen i Irak och Afghanistan hade till och med min pappas godkännande. Min pappa sa: \"Han förstår Mellanöstern.\"</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>Att skildra komplexa konflikter opartiskt och sakligt, med stor integritet och kunskap och samtidigt ge lyssnarna en bildlig uppfattning av en helt annan kontext och dess utveckling, maktsfär och människor är en oerhörd uppgift. Horner var på så sätt en mästare, en hes röst som näst intill dagligen med inlevelse och känsla gav oss lyssnare en redogörelse för den politiska utvecklingen i en annan del av världen och förde denna närmare Sverige.</p><p>Jag minns morgonen nyheten kom om att Nils Horner hade mördats på en öppen gata i Kabul i Afghanistan. Jag ringde min pappa som hade hört samma nyhet i bilen på vägen till jobbet. Efter många års lyssnande var det som om vi hade förlorat en vän, en som var på plats i alla dessa krigshärdar och som kunde berätta hur det var. I år har det gått åtta år sedan han mördades.</p><p>Fru talman! 2018 års korrespondenttrainee i Nils Horners anda heter Lubna El-Shanti. Hon är numera Sveriges Radios Östersjökorrespondent och den röst vi näst intill dagligen hör från staden Lviv i krigets Ukraina. Redan i våras rapporterade hon om den ryska arméns truppförflyttningar mot Ukrainas gräns med stridsfordon, artilleri och soldater via Belarus.</p><p>Trots flera år av bevakning av det spända läget och djup kunskapsinsikt om utvecklingen i östra Europa reflekterade hon i sin senaste utrikeskrönika över att hon för första gången i sin journalistiska gärning måste ha låtit känslan vinna över förnuftet. Samtidigt som alla varningar fanns var det nämligen som om ingen journalist kunde förlika sig med tanken att ett fullskaligt krig skulle kunna bryta ut mitt i Europa.</p><p>Fru talman! I morgon passerar kriget sin tredje vecka, och reportagen inifrån är förödande. De handlar om skyddsrum, flyglarm innan bomberna faller över städerna, familjer som tar farväl, söner och pappor som blir kvar, överfyllda tågstationer som tar civila till Polen, ukrainare i utlandet som kommer tillbaka för att strida, omringade städer som saknar vatten, el och mat, nationalteatern som nu har blivit en hjälpcentral, kulturarvsföremål som bärs ned i källargångar och barnsjukhus och förlossningsavdelningar som beskjuts. Det handlar också om det kanske mest gripande av alla reportage: rädslan för att biologiska och kemiska vapen ska användas mot befolkningen.</p><p>Kunskapen om allt det här har vi eftersom informationen når oss, eftersom det finns fria och oberoende medier, utrikeskorrespondenter, krigskorrespondenter, kameramän, journalister och mediehus vars utgångspunkt i arbetet är att vara i allmänhetens och sanningens tjänst.</p><p>Enligt Reportrar utan gränser befinner sig över 2 000 utrikeskorrespondenter i Ukraina. Många av dessa har skyddsutrustning och erfarenheter av krigshärdar. Men det har inte ukrainska journalister vars verklighet har förändrats över en natt. De flesta lokala reportrarna i landet har ingen som helst erfarenhet av att rapportera från krig. Reportrar utan gränser och Svenska Journalistförbundet manar därför till ökat stöd för att köpa in skyddsvästar, hjälmar, första hjälpen-paket, satellittelefoner och annan teknisk utrustning, så att arbetet kan fortgå. </p><p>Hittills har fyra radio- och tv-master skjutits ned. Två har övertagits av ryska krigförare. Journalister har blivit mördade, och utländska journalister har blivit beskjutna i krigets Ukraina. För varje dag som går blir det svårare att få tillgång till information och allt farligare att verka där som korrespondent.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>Angreppen på civila ökar. Över 6 miljoner människor är nu internflyktingar i sitt eget land. Och över 2 miljoner, framför allt kvinnor och barn, har lämnat landet.</p><p>Mitt i allt detta råder en annan verklighet i Ryssland. Där stryps nu all information och medierapportering om kriget i Ukraina. Den mest drastiska åtgärden är den lag som den ryska duman antog den 4 mars som innebär att den som ens nämner kriget riskerar fängelse i upp till 15 år. Därför går det inte längre för utländska medier att verka på plats. De inhemska fria medierna kvävs nu helt. Och den breda allmänheten får sin information från statlig tv, som styrs och ägs av regimen eller regimvänliga. Även sociala medier i Ryssland är till stor del propagandistiska och kontrollerade. I flera led har de också i dagarna stängts ned.</p><p>För att nå fram görs ändå insatser. Självständiga journalister och medborgare bloggar med risk för sina liv, och utländska medier skriver reportage på ryska. Ett hedervärt exempel är Dagens Nyheter som tillsammans med danska Politiken och finska Helsingin Sanomat översätter nyhetsartiklarna om krigets Ukraina till ryska. Alla försök att nå fram och för att stävja medieisoleringen i Ryssland kommer att vara nödvändiga.</p><p>Fru talman! Det här är den sista debatten om public service-frågor kulturutskottet har i kammaren för denna mandatperiod. Vi har under mandatperioden haft en emellanåt högljudd debatt om public services roll och syfte, dess finansiering och kulturuppdrag. Vissa politiska företrädare har gått så pass långt att de har uttryckt att de helt vill avskaffa bolagens verksamhet medan tre borgerliga partier vill minska bolagens ekonomiska anslag.</p><p>Att den kritiken kvarstår i vissa motioner i det här betänkandet visar på en tondövhet inför den här nya säkerhetssituationen. Att över huvud taget ställa krav på nedmontering av public service när den oberoende nyhetsförmedlingen behöver stärkas är enligt min mening under all kritik.</p><p>Det har aldrig i modern tid varit viktigare med medieaktörer i allmänhetens tjänst som är partipolitiskt och kommersiellt oberoende, som når ut till alla, som har hög legitimitet hos allmänheten och som har starka resurser genom en stabil finansiering. Parlamentariska public service-kommittén uttryckte tidigare att public service är en \"kollektiv nyttighet som gynnar alla medborgare, oavsett om utbudet konsumeras eller inte\".</p><p>Att bolagen ingår i totalförsvaret och har beredskapsuppdrag som innebär att de ska kunna fortsätta bedriva verksamhet i händelse av krig och svåra påfrestningar på samhället är några av de beslut vi fattade i det nya sändningstillståndet, och det har tjänat vårt samhälle väl.</p><p>Regeringens och Folkhälsomyndighetens presskonferenser under pandemin och numera Försvarsmaktens information till allmänheten når den breda allmänheten via just public service.</p><p>Fru talman! Få områden kan mäta sig med den kolossala omställning som mediesektorn har genomgått de senaste 15 åren. Globaliseringen och den internationella konkurrensen innebär i dag att svenska medieaktörers konkurrenter är globala streamningstjänster, sökmotorer, onlineplattformar och medieaktörer med världsomspännande muskler. Tendensen är större uppköp, som innebär större marknadsandelar och tydligare konsolidering, samt dyrare programproduktioner.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>Skyddar man inte de ekonomiska förutsättningarna för tidningsbranschen i Sverige eller svensk public service är det marknadsandelar som äts upp i den globala konkurrensen av globala aktörer. Att minska anslagen till svensk public service betyder därmed inte att andra svenska medieaktörer gynnas, snarare minskar svenskspråkiga medier som har att bevaka och spegla Sverige totalt sett.</p><p>Det som främst gör att public service-bolagen har ett högt förtroende hos den breda allmänheten är deras breda innehållsuppdrag. De har till uppgift att göra sig relevanta för alla.</p><p>Moderaternas mediepolitiska motion anger att de vill ha en ny budget och beredningsprocess där man inför varje nytt sändningstillstånd ålägger programbolagen att redovisa reducerad anslagsnivå för verksamheten. </p><p>Sverigedemokraternas mediepolitiska motion uttrycker att kostnaderna för public service ska minska.</p><p>Vi socialdemokrater är av uppfattningen att svenskspråkiga och minoritetsspråkiga medier som speglar Sverige behöver stärkas i konkurrensen med globala aktörer. Det nya säkerhetspolitiska läget borde också mana till viss eftertänksamhet vad gäller förslag som dessa.</p><p>Ett annat förslag som väcker en del frågetecken är Moderaternas förslag om att införa regelbundna helhetsgranskningar av programverksamheten inom granskningsnämnden av fristående aktörer. Idéen om regelbundna granskningar går emot själva tanken om att granskningar av program ska ske i efterhand och aldrig bidra till påverkan av innehållet i förväg. Detta gäller även Sverigedemokraternas tidigare förslag om att inrätta ett vetenskapsråd. Det har i nuvarande motion dock tagits bort, och man betonar att en granskning ska ske i efterhand. Man har tydligen tagit till sig av den allmänna kritiken. </p><p>I stället fokuserar Sverigedemokraterna på att utveckla exponeringen av rättelser, och man vill att bolagen ska införa ett program där ansvarig redaktör ska gå igenom vad som har gått fel. Är man av uppfattningen att politiken ska hålla armlängds avstånd till programinnehållet bör man verkligen se över sådana förslag.</p><p>Fru talman! Denna vår genomförs halvtidsavstämningen med Kulturdepartementet, och redan nu kan vi konstatera att efterlevnaden av riksdagens beslut om sändningstillståndets inriktning genererat en positiv utveckling. </p><p>År 2015 hade SVT 27 lokala redaktioner. Nu går man mot 50 stycken i hela landet. </p><p>Sveriges Radio satsar massivt på popup-redaktioner som nu möjliggör bevakning i Sveriges alla kommuner. </p><p>Utbildningsradions roll har fördjupats ytterligare då man har bistått utbildningsväsendet under pandemin med digital undervisning, nu också i kommunikationen med barn och unga vad gäller att förstå den säkerhetspolitiska utvecklingen. Därtill har man utökat utbudet av nyhets- och kulturprogram för teckenspråkstalande och minoritetsgrupper.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>För en månad sedan tog kulturministern emot den statliga offentliga utredningen om innehållsvillkor på internet för public service. Den redogör för hur bolagens programutbud på internet ska omfattas av innehållsvillkoren, såsom granskning, under resterande delen av tillståndsperioden, vilket utskottet länge efterfrågat. Utredningen har även sett över möjligheten att ändra i befintlig ordning för beslut vid förhandsprövning av nya tjänster. </p><p>För närvarande ska det slutliga beslutet fattas av regeringen, vilket ett enigt utskott har tyckt är problematiskt. Utredningen föreslår att beslutet i stället ska fattas av Myndigheten för press, radio och tv och att det ska kunna överklagas. Lagändringarna föreslås träda i kraft den 1 juli 2023, förutsatt att riksdagen beslutar om de grundlagsändringar som krävs.</p><p>Med det sagt tycker jag att man kan summera denna mandatperiods politiska arbete för att främja ett starkt, oberoende och relevant svenskt public service i allmänhetens tjänst ganska väl. Oavsett vad Sverigedemokraternas ledamot Angelika Bengtsson uttrycker tycks också förtroendet falla ut väl. </p><p>Enligt SOM-institutets undersökning för 2020 anser hela 77 procent att de har ett högt förtroende för SVT och 71 procent att de har det för Sveriges Radio. Hela 65 procent anser att public service i hög grad är väl värt priset. </p><p>Avslutningsvis, fru talman, kommer nästa kulturutskott att få fatta beslut om ett nytt sändningstillstånd och ny medelstilldelning till public service. Jag hoppas att det kommer att ske med en fördjupad insikt om globaliseringens, digitaliseringens och teknikutvecklingens inverkan på mediemarknaden och med en ökad förståelse av hur viktig oberoende och saklig information är i en tid av krigföring och destabilisering och hur det möjliggörs genom desinformation och propaganda.</p><p>Jag vill sända ett särskilt tack till de journalister, utrikeskorrespondenter och krigskorrespondenter som förser oss med sanningen i en tid då den medvetet utmanas.</p><p>Med det sagt ställer jag mig bakom förslaget i motionsbetänkandet och önskar avslag på samtliga reservationer.</p><p>(Applåder)</p>",
+        "talare": "Lawen Redar",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad säger Lawen Redar om vikten av oberoende medier i krigets Ukraina?",
+            "answer": "Lawen Redar betonar vikten av fria och oberoende medier, utrikeskorrespondenter och krigskorrespondenter som förser allmänheten med information om kriget i Ukraina. Hon lyfter fram att dessa aktörer är avgörande för att vi ska få kunskap om situationen, eftersom de arbetar i allmänhetens och sanningens tjänst. Hon nämner också att det finns över 2 000 utrikeskorrespondenter i Ukraina, men att ukrainska journalister ofta saknar erfarenhet av att rapportera från krig, vilket gör stödet för skyddsutrustning och teknisk utrustning viktigt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "6f96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Lawen Redar betonar vikten av fria och oberoende medier, särskilt i krigets Ukraina. Hon framhåller att vi får kännedom om den förödande situationen i landet tack vare journalister och utrikeskorrespondenter, som med risk för sina liv rapporterar om händelserna på plats. Hon påpekar också hur farligt det blir för dessa korrespondenter att verka i Ukraina för varje dag som går. \n\nI Ryssland, däremot, märker hon en total censur av alla nyheter och medierapporteringar om kriget i Ukraina, vilket leder till att den ryska allmänheten bara får information från statlig tv och regimvänliga källor. Trots detta gör självständiga journalister och medborgare allt de kan för att nå ut med sanningen, ofta med livet som insats. \n\nRedar kritiserar förslag om att minska anslagen till public service, särskilt i ljuset av det nya säkerhetspolitiska läget. Hon menar att oberoende och saklig information är viktigare än någonsin. Hon understryker också att public service är en \"kollektiv nyttighet som gynnar alla medborgare\", och att det har aldrig i modern tid varit viktigare med medieaktörer i allmänhetens tjänst som är partipolitiskt och kommersiellt oberoende. Slutligen ger hon ett särskilt tack till de journalister och korrespondenter som förser oss med sanningen i en tid då den medvetet utmanas.",
+            "context": [
+                "6f96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7196d4d6-ccd6-ec11-9170-0090facf175a",
+                "7396d4d6-ccd6-ec11-9170-0090facf175a",
+                "7596d4d6-ccd6-ec11-9170-0090facf175a",
+                "7796d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Lawen Redar\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "9fa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag kan än en gång säga att Ola Möller borde ta en diskussion med Näringslivets Regelnämnd. Där finns statistik som visar att kostnaden för de nya reglerna minskade under alliansregeringen. Men under er regering har den ökat med 1 miljard om året.</p><p>De kostnaderna läggs ju någonstans. Det är den sista kunden som måste betala alla kostnader för varan. I dagens läge, när e-handeln är så pass stor, betyder det att Ola Möller och jag, som kunder, kan handla från en ehandel i Tyskland i stället för i Sverige. Det betyder att vi driver svenska företag i botten och utomlands om vi inte försöker få dem konkurrenskraftiga.</p><p>Jag ska ta ett exempel som Ola Möller kan ta med sig. Kemikalieskatten som Ola Möllers parti införde gör att svenska företag som bedriver ehandel är tvungna att antingen skapa ett lager någonstans i övriga Europa eller lägga ned sin verksamhet. Över 1 000 sysselsättningstillfällen har försvunnit från Sverige på grund av kemikalieskatten, som inte har räddat miljön ett enda dyft eftersom vi faktiskt köper varorna från Tyskland, Italien eller England i dag.</p><p>Jag menar att vi måste se på helheten men också ha för ögonen att om vi sätter in en regel, som kan vara av godo, måste vi ta bort två för att minska regelbördan för svenska företag. Vi måste vara konkurrenskraftiga. Målsättningen måste vara att regelbördan och kostnaden för den ska minska för svenska företag.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Associationsrätt</p><p>Vår svenska regering, med näringsministern i spetsen, sa den 22 september precis samma sak som jag, men Ola Möller har uppenbarligen en annan uppfattning än sitt eget parti.</p>",
+        "talare": "Larry Söder",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Anser Larry Söder att regelbördan och kostnaden för svenska företag bör minska?",
+            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han betonar vikten av att vara konkurrenskraftiga och föreslår att om en ny regel införs, bör två tas bort för att minska regelbördan."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han har uttryckt att svenska företag behöver vara konkurrenskraftiga, och att varje ny regel som införs bör följas av att två existerande regler tas bort för att minska regelbördan. Han har också nämnt att kostnaderna för nya regler har ökat under den nuvarande regeringen, vilket han anser påverkar svenska företags konkurrenskraft negativt.",
+            "context": [
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a",
+                "45e4860e-ccd6-ec11-9170-0090facf175a",
+                "9ea228e8-3dc6-ec11-9170-0090facf175a",
+                "27a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Ja, Larry Söder anser att regelbördan och kostnaden för svenska företag bör minska. Han har uttryckt oro över att kostnaderna för nya regler har ökat under nuvarande regering, vilket han menar leder till minskad konkurrenskraft för svenska företag. Söder argumenterar för att varje ny regel som införs bör balanseras med att ta bort två befintliga regler för att minska regelbördan. Han tror också att detta skulle underlätta för svenska företag att konkurrera på en internationell nivå.",
+            "context": [
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "a3a228e8-3dc6-ec11-9170-0090facf175a",
+                "90a228e8-3dc6-ec11-9170-0090facf175a",
+                "520d7667-bb23-ed11-9178-901b0e9b71a8",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Larry Söder\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Riksrevisionens rapport om Försäkringskassans arbete med att förebygga sjukskrivning",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "18a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! En viktig del i arbetet för att hjälpa fler långtidssjuka att komma tillbaka i arbete och att bli friska är rehabilitering. Nu debatterar vi Riksrevisionens rapport om Försäkringskassans arbete med att förebygga sjukskrivning. I rapporten framgår det att det finns ett behov av att göra mer för att förstärka det förebyggande och rehabiliterande arbetet.</p><p>Jag instämmer därför i utskottets uppfattning om att arbetsplatsinriktat rehabiliteringsstöd och förebyggande sjukpenning är viktiga verktyg för att uppnå målet om att frånvaron från arbete på grund av sjukdom ska ligga på en långsiktig och stabil låg nivå.</p><p>Men även om vi välkomnar den breda uppslutningen i utskottet om att det är viktigt med förebyggande arbete anser vi att regeringens svar på skrivelsen är tillräckligt. Vi socialdemokrater står därför bakom våra reservationer, men för tids vinning yrkar jag bifall endast till reservation 1.</p><p>Sjukförsäkringen ska ge trygghet vid sjukdom. Vi betalar in vår premie när vi arbetar. Om vi drabbas av sjukdom ska vi under tiden det tar att komma tillbaka vara skyddade ekonomiskt och ha rätt till stöd och insatser för att så snabbt som möjligt återfå vår arbetsförmåga.</p><p>Olycka och sjukdom kan drabba oss alla. Men samtidigt vet vi att det är fler kortutbildade som drabbas av långtidssjukdom. Det är fler kvinnor som drabbas, och de drabbas i högre utsträckning än män. När sjukförsäkringen inte fungerar, när människor inte ges rätt till den ekonomiska trygghet de betalar för eller när rätt stöd uteblir, bidrar detta till ökad ojämlikhet och otrygghet i samhället.</p><p>Reformtakten i sjukförsäkringen är hög. Vi vill ha ordning och reda. Därför måste vi ta tillbaka den demokratiska kontrollen i välfärden, och det gäller givetvis också i sjukförsäkringen.</p><p>Under mandatperioden har flera steg tagits som nu ger effekt. Vi har höjt taket i sjukpenningen och förbättrat ekonomin för sjukskrivna. Det förstärker den viktiga inkomstbortfallsprincipen och stärker tilltron till försäkringen.</p><p>I mars för ett år sedan ändrade vi regelverket för prövning vid dag 180. Bara för några veckor sedan rapporterade Försäkringskassan att andelen utförsäkringar efter sex månaders sjukskrivning har minskat betydligt under föregående år. När fler ges möjlighet att stanna kvar i sjukförsäkringen ökar också möjligheten till rehabilitering och att få bli frisk.</p><p>I dagarna träder andra viktiga förändringar i regelverket i kraft som också kommer att bidra till att öka fokus på rehabilitering. Det kommer att bli enklare att få sjukpenning och rehabilitering efter 365 dagar. Det handlar om att fler ska få genomföra sin rehabilitering för att få komma tillbaka till arbetet. Det är en seger för såväl individen som samhället.</p><p>Timanställda ska ha rätt till sjukpenning. Det är en grupp som trots att de många gånger betalar in premien inte kvalificeras till sjukförsäkringen. Den omfattar många kvinnor som jobbar inom vård och omsorg, i butik eller i hotell- och restaurangbranschen.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rap-port om Försäkrings-kassans arbete med att förebygga sjuk-skrivning</p><p>Trots att vi nu håller högt tempo i förändringsarbetet måste vi göra mer för att det förebyggande arbetet och rehabiliteringen ska fungera bättre. Utskottet väljer att föreslå ett antal tillkännagivanden i detta ärende. Vi menar att det arbete som redan är igång måste fortsätta och att utskottet riskerar att slå in öppna dörrar.</p><p>Regeringen har förtydligat Försäkringskassans arbete med att förebygga sjukskrivning genom att tydliggöra detta i myndighetens regleringsbrev 2021. Försäkringskassan ska fokusera på förebyggande insatser och tidigare rehabiliteringsinsatser, och det ska ske bättre samordning.</p><p>I höstas tog regeringen emot utredningen <em>En sjukförsäkring med prevention, rehabi</em><em>li</em><em>tering och trygghet</em>, med förslag om en ny förmån: preventionsersättning. Det är en förmån som ska kunna beviljas en försäkrad som gör inkomstförlust för att genomgå en förebyggande medicinsk eller arbetslivsinriktad åtgärd i syfte att förkorta sjukdomstid eller förhindra nedsatt arbetsförmåga på grund av sjukdom.</p><p>Andra viktiga förslag i samma utredning handlar om Försäkringskassans ansvar att föra statistik och ett förtydligat ansvar för sitt samordningsuppdrag genom att man ska ta fram en plan för återgång i arbete och rehabilitering inom 60 dagar vid sjukdomsfall.</p><p>Vidare analyserar Statskontoret Försäkringskassans arbete med hur man följer upp och mäter ändamålsenligt för att kunna se till att de försäkrade får den hjälp som de har rätt till. Det uppdraget ska delredovisas senare i vår i mars och vara klart nästa år. Vi menar att det är avgörande att vi kommer vidare med analysarbetet och att vi fortsätter att bereda de färdigutredda förslag som finns framför oss.</p><p>Fru talman! Låt oss erkänna: Vår sjukförsäkring har inte fungerat tillräckligt bra de senaste åren. Många har på grund av hårda regelverk och snäva tolkningar av de regelverken drabbats hårt. Vi har under lång tid fått ta del av berättelser där människor blir sjukare i kontakten med myndigheterna. I flera utredningar och analyser de senaste åren går det att se att det är regelverken som gör det svårt att arbeta förebyggande och rehabiliterande.</p><p>För oss socialdemokrater är sjukförsäkringen en viktig del av vår välfärd. Om man inte får rätt stöd och insatser riskerar man att drabbas ekonomiskt men framför allt mänskligt. Den som är sjuk ska känna sig trygg med att sjukförsäkringen fungerar, och fattigdom gör absolut ingen frisk.</p><p>Den här debatten handlar om det förebyggande och om rehabilitering. Men det går inte att frikoppla det från helheten. Vi har de senaste åren påbörjat ett arbete med att laga sjukförsäkringen så att människor får det de betalar för.</p><p>Det handlar om respekt. Vi vet att om vår välfärd sviker drabbas människor som redan har det hårt och tufft. En fungerande rehabilitering och en trygg sjukförsäkring är därför nödvändiga delar om man har som mål att öka jämlikheten i samhället.</p><p>(Applåder)</p>",
+        "talare": "Mattias Vepsä",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad är Socialdemokraternas position i frågan om sjukförsäkringens reformer och rehabilitering?",
+            "answer": "Socialdemokraterna anser att sjukförsäkringen är en viktig del av välfärden och betonar vikten av att den ger ekonomisk trygghet vid sjukdom. De har arbetat för att höja taket i sjukpenningen och förbättra ekonomin för sjukskrivna, samt ändrat regelverket för att minska utförsäkringar. Partiet betonar behovet av förebyggande arbete och rehabilitering för att minska sjukfrånvaron och öka jämlikheten i samhället. De stödjer regeringens svar på Riksrevisionens rapport men står bakom sina reservationer och vill fortsätta reformarbetet för att förbättra sjukförsäkringen."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "18a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Socialdemokraterna ser rehabilitering som en viktig del i arbetet för att hjälpa långtidssjuka att återvända till arbetslivet och bli friska. De stödjer arbetsplatsinriktat rehabiliteringsstöd och förebyggande sjukpenning som viktiga verktyg för att hålla sjukfrånvaron på en långsiktigt låg nivå. \n\nDe har också yrkat bifall till reservation 1, vilket innebär att de står bakom sina reservationer men för närvarande endast yrkar bifall till den första. De anser att sjukförsäkringen ska ge trygghet vid sjukdom och att de som drabbas av sjukdom ska vara ekonomiskt skyddade och ha rätt till stöd och insatser för att så snabbt som möjligt återfå sin arbetsförmåga.\n\nSocialdemokraterna har tagit flera steg under mandatperioden för att förbättra sjukförsäkringen, bland annat genom att höja taket i sjukpenningen och förbättra ekonomin för sjukskrivna. De har även ändrat regelverket för prövning vid dag 180, vilket har minskat andelen utförsäkringar efter sex månaders sjukskrivning.\n\nRegeringen har också tagit emot en utredning med förslag om en ny förmån, preventionsersättning, som ska kunna beviljas för att genomgå en förebyggande medicinsk eller arbetslivsinriktad åtgärd i syfte att förkorta sjukdomstid eller förhindra nedsatt arbetsförmåga på grund av sjukdom. \n\nSammanfattningsvis är Socialdemokraternas position att sjukförsäkringssystemet behöver reformeras och förstärkas för att bättre kunna stödja och rehabilitera långtidssjuka, med en stark inriktning mot att förebygga sjukskrivning och förbättra rehabiliteringsinsatser.",
+            "context": [
+                "18a228e8-3dc6-ec11-9170-0090facf175a",
+                "8296d4d6-ccd6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8",
+                "5c61bc67-3143-ed11-9177-901b0eac4c70",
+                "4ca228e8-3dc6-ec11-9170-0090facf175a",
+                "5ca228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Riksrevisionens rapport om yrkeshögskolan",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "87a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag får väl också instämma i Niels Paarup-Petersens kärleksförklaring till yrkeshögskolan, men jag är ju en mer tillknäppt person, så jag avstår från handhjärtat i talarstolen.</p><p>Fru talman! Vi vet ju alla att vi har stora problem med kompetensförsörjningen på den svenska arbetsmarknaden. Det finns en rad så kallade bristyrken och arbetsgivare som praktiskt taget skriker efter kompetens. Många av dessa så kallade bristyrken är icke-akademikeryrken samtidigt som det är yrken som kräver eftergymnasial utbildning. Här har yrkeshögskolan en avgörande roll att spela, men då krävs att det är en yrkeshögskola som fungerar på bästa möjliga sätt. </p><p>Det är mycket som fungerar bra i dag. Det visar inte minst Riksrevisionens skrivelse. Men låt oss uppehålla oss lite kort vid vad det är Riksrevisionen har granskat. Jo, det är om yrkeshögskolan lever upp till, som det fint heter, riksdagens intentioner om yrkeshögskoleutbildningar som svarar mot arbetslivets behov, att de håller hög kvalitet och att statens stöd fördelas på ett effektivt sätt. Det är väldigt byråkratiskt på många sätt, men man ska inte underskatta byråkratin. </p><p>Jag är också en stark förespråkare av sans och balans i en politisk debatt. Därför ska det understrykas att Riksrevisionen i huvudsak är positiv i sin rapport: I stort lever yrkeshögskolan upp till syftet och intentionen. Men som vi har hört här tidigare finns det ett antal rekommendationer för att ytterligare stärka denna utbildningsform och därmed också på sikt stärka svensk arbetsmarknad och se till att fler kommer i arbete.</p><p>Det är framför allt rekommendationen till Myndigheten för yrkeshögskolan som vi liberaler anser att regeringen bör agera kraftfullare på. Därför yrkar jag bifall till reservation 1.</p><p>Denna fråga handlar om att säkerställa att det inte förekommer jävssituationer och att handläggningsprocesser kännetecknas av likvärdighet.</p><p>Fru talman! Likvärdighet är ett ord som används ofta och med rätta i den politiska debatten om skolan. Här handlar det om att elever såväl som utbildningsanordnare ska få samma möjligheter, samma svar och samma chans att följa sina processer och veta vad som gäller oavsett handläggare eller ort.</p><p>Riksrevisionen påpekar att MYH har många uppdrag genom att myndigheten beviljar statsbidrag, utövar tillsyn, samverkar med arbetslivet och även är stödjande och rådgivande gentemot utbildningsanordnare. Det är därför särskilt viktigt att myndigheten har struktur för att upprätthålla sitt oberoende i uppdraget och därmed också alla misstankar om jäv. Ytterst handlar det om att upprätthålla den höga legitimitet som yrkeshögskolan har i dag, både gentemot studenter, arbetsgivare och utbildningsanordnare.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rapport om yrkeshögskolan</p><p>Fru talman! Liberalerna har länge och aktivt arbetat för utökade satsningar på yrkeshögskolan. Vi tror att detta är en väldigt bra form - ett mellanting mellan den akademiska utbildningen och den gymnasiala utbildningen. Svenskt utbildningsväsen har saknat det segment som yrkeshögskolan utgör, inte minst eftersom många yrken går mot att kräva ytterligare utbildning förutom gymnasieexamen, samtidigt som många yrken fortfarande inte kräver en längre akademisk utbildning och heller inte ska göra det. </p><p>Yrkeshögskolan är ett värdefullt komplement i den flora av utbildningar som finns i svenskt utbildningsväsen. Den måste få fortsätta utvecklas och förbättras. Det finns många fördelar som yrkeshögskolan är i dag. Detta har vi pekat på. Den har en hög genomströmning och hög attraktivitet, och personer som går yrkeshögskolan kommer i arbete - i relevant arbete. Det sistnämnda kan inte nog understrykas. </p><p>Med detta sagt måste vi fortsätta arbeta för en högkvalitativ yrkeshögskola som borgar för en arbetsmarknad som både matchar och motverkar den kompetensbrist vi i dag ser. Jag yrkar bifall till reservation 1.</p><p>(Applåder)</p>",
+        "talare": "Maria Nilsson",
+        "parti": "L",
+        "qa_pair": {
+            "question": "Vad säger Maria Nilsson om yrkeshögskolans roll på den svenska arbetsmarknaden?",
+            "answer": "Maria Nilsson betonar att yrkeshögskolan har en avgörande roll att spela på den svenska arbetsmarknaden, särskilt för att möta behovet av kompetens i så kallade bristyrken som kräver eftergymnasial utbildning men inte nödvändigtvis en akademisk examen. Hon framhåller att yrkeshögskolan fungerar bra idag och att den har en hög genomströmning och attraktivitet, vilket leder till att personer som går yrkeshögskolan kommer i relevant arbete. Hon understryker också vikten av att fortsätta utveckla och förbättra yrkeshögskolan för att motverka den kompetensbrist som finns."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "87a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Maria Nilsson erkänner att yrkeshögskolan spelar en avgörande roll på den svenska arbetsmarknaden, speciellt när det kommer till att täcka kompetensbrist inom vissa yrken. Hon framhåller att yrkeshögskolan är ett värdefullt komplement till andra utbildningsformer och fyller en viktig lucka mellan akademisk och gymnasial utbildning. Nilsson betonar också att yrkeshögskolan har en hög genomströmning och attraktivitet, och att de som går yrkeshögskolan ofta får relevanta jobb. Hon menar dock att det behövs mer arbete för att fortsätta utveckla och förbättra yrkeshögskolan och för att säkerställa en högkvalitativ yrkeshögskola som kan möta och motverka den rådande kompetensbristen.",
+            "context": [
+                "87a228e8-3dc6-ec11-9170-0090facf175a",
+                "1996d4d6-ccd6-ec11-9170-0090facf175a",
+                "1b96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Maria Nilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "9da228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag skulle önska att Ola Möller tar sig en liten tur i Stockholm och tittar på näringslivets regelverk. Det kan förklara ganska tydligt för Ola Möller hur nya regler slår mot företag och slår ut företag. Det betyder också att svenska företag får mindre konkurrenskraft gentemot andra europeiska företag. De räknar med att pålagorna på svenska företag kommer att uppgå till 1 miljard om året.</p><p>När det gäller en del saker kan man fundera på om de är bra eller dåliga. Ta personalliggare, till exempel, som ökar regelbördan rätt mycket för företag. I vissa fall är det väldigt bra, inom byggbranschen, till exempel. Men man vill också gå vidare och införa detta för andra typer av verksamheter, som kanske inte har samma behov som byggbranschen.</p><p>Detta är regelverk som tynger våra företagare. Man måste vara aktsam. Vilka regler är det som faktiskt hjälper oss att ta bort de värsta utan att göra så att vi skuldbelägger eller lägger mer kostnader på dem som sköter sig? Jag menar att vi ska ha bra svenska företag. De företag som sköter sig ska också ha möjlighet att konkurrera med de andra företagen i Europa.</p><p>Jag kan inte se att det pågår någon liberaliseringsvåg, som Ola Möller säger i talarstolen, eller att det är av ondo att kanske ta bort två regler när man inför en ny, för att minska regelbördan för svenska företag.</p><p>Sedan har vi problem i en del svenska företag, och dem ska vi hjälpas åt med. Men jag tror att Ola Möller gör sig själv en otjänst om han tror att alla svenska företag är fiender, i stället för att ta tag i dem som faktiskt gör något som vi inte vill ha i Sverige.</p>",
+        "talare": "Larry Söder",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Vad säger Larry Söder om effekten av nya regler på svenska företag?",
+            "answer": "Larry Söder uttrycker att nya regler slår mot företag och minskar deras konkurrenskraft gentemot andra europeiska företag. Han nämner att pålagorna på svenska företag beräknas uppgå till 1 miljard kronor om året, vilket tynger företagarna och ökar regelbördan."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Larry Söder uttrycker oro över effekterna av nya regler på svenska företag. Han menar att nya regler kan slå hårt mot företag och till och med leda till företags konkurs. Han påpekar att detta minskar svenska företags konkurrenskraft jämfört med andra europeiska företag, och uppskattar att kostnaden för nya regler för svenska företag kan uppgå till 1 miljard om året. \n\nSöder ger exempel på personalliggare som ökar regelbördan för företag, och menar att dessa regler kan vara bra för vissa branscher, som byggbranschen, men kanske inte för alla. Han uppmanar till försiktighet och eftertanke kring vilka regler som faktiskt bidrar till att ta bort de värsta problemen utan att lägga mer kostnader på företag som sköter sig. \n\nSöder argumenterar för att svenska företag som sköter sig ska ha möjlighet att konkurrera med andra företag i Europa. Han påpekar också att han inte ser någon pågående liberaliseringsvåg och att det kan vara bra att ta bort två regler när man inför en ny, för att minska regelbördan för svenska företag.",
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9ca228e8-3dc6-ec11-9170-0090facf175a",
+                "9ea228e8-3dc6-ec11-9170-0090facf175a",
+                "45e4860e-ccd6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "96a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Larry Söder uttrycker oro över effekten av nya regler på svenska företag. Han menar att nya regler kan slå hårt mot företag och till och med stänga ner dem. Detta leder i sin tur till att svenska företag blir mindre konkurrenskraftiga jämfört med andra europeiska företag, särskilt eftersom dessa regler kan innebära extra kostnader upp till 1 miljard kronor per år. \n\nLarry Söder påpekar också att det finns vissa regler, som exempelvis personalliggare, som kan vara bra i vissa branscher men inte nödvändigtvis i andra. Han menar att dessa regler tynger företagarna och att man bör vara försiktig med vilka regler som faktiskt hjälper till att eliminera de värsta utan att belasta de som sköter sig. \n\nHan argumenterar för att varje gång en ny regel införs bör två regler tas bort för att minska regelbördan för svenska företag. Han understryker att målet bör vara att minska regelbördan och kostnaden för svenska företag för att de ska kunna vara konkurrenskraftiga.",
+            "context": [
+                "9da228e8-3dc6-ec11-9170-0090facf175a",
+                "9fa228e8-3dc6-ec11-9170-0090facf175a",
+                "a3a228e8-3dc6-ec11-9170-0090facf175a",
+                "9ba228e8-3dc6-ec11-9170-0090facf175a",
+                "90a228e8-3dc6-ec11-9170-0090facf175a",
+                "520d7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Larry Söder\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Radio och tv i allmänhetens tjänst",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "7496d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag känner mig nödgad att gå upp här i debatten. Jag tror helt ärligt att Lawen Redar har missförstått stycket om granskningsnämnden.</p><p>Hon menar att det är vi som ska granska det som fälls. Jag kan dementera det. Det stämmer inte. Det är inte vi politiker och riksdagsledamöter som ska granska det som fälls i granskningsnämnden. Det vi vill är att tillsätta ett organ.</p><p>Det har framkommit att det råder en diskrepans mellan det som allmänheten uppfattar att granskningsnämnden granskar och vad den faktiskt granskar. Det är här vi vill rätta till felet, om jag får uttrycka mig så.</p><p>Det är ett problem att människor tror att man granskar faktafel. Om det senare framkommer att det var ett faktafel i ett program som sedan inte fälldes är det ett problem anser vi.</p><p>Det handlar återigen om misstro och tillit till public service. Granskningsnämnden menar i dag att det inte är dess uppgift att dubbelkolla och kontrollera fakta. Vi menar att det bör ingå i dess uppdrag. Det är vad vi vill lägga till i granskningsnämndens uppdrag.</p><p>Vi kan tala om tillit. Man kan vända på de siffror som Lawen Redar nämnde. Det är 23 procent som i dag inte har förtroende för public service. Det är 35 procent som anser att det inte är värt priset.</p><p>Om man inte känner tillit, varför ska vi då ha public service? Det är väl någonstans grundbulten att man ska känna tillit till det. Då måste man säkerställa att publiken känner tillit till public service.</p>",
+        "talare": "Angelika Bengtsson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Vad är Sverigedemokraternas position i frågan om granskningsnämndens uppdrag och public service?",
+            "answer": "Sverigedemokraterna anser att det finns en diskrepans mellan vad allmänheten tror att granskningsnämnden granskar och vad den faktiskt granskar. De vill att granskningsnämnden ska ha i uppdrag att dubbelkolla och kontrollera fakta för att öka tilliten till public service. De menar att det är ett problem om faktafel inte granskas och att detta påverkar förtroendet för public service."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Sverigedemokraterna har uttryckt en önskan om att förändra granskningsnämndens uppdrag och public service. De menar att det finns en diskrepans mellan vad allmänheten uppfattar att granskningsnämnden granskar och vad den faktiskt granskar. Sverigedemokraterna vill att granskningsnämndens uppdrag ska inkludera att dubbelkolla och kontrollera fakta i program som sänds på public service. De menar att detta skulle öka tilliten till public service, vilket de ser som ett problem då en del av befolkningen idag inte har förtroende för public service. Det är dock viktigt att notera att det finns olika åsikter om detta inom partiet och de har ändrat sin ståndpunkt över tid.",
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a",
+                "7096d4d6-ccd6-ec11-9170-0090facf175a",
+                "6e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6996d4d6-ccd6-ec11-9170-0090facf175a",
+                "7596d4d6-ccd6-ec11-9170-0090facf175a",
+                "6b96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Sverigedemokraterna har uttryckt att de vill se en förändring i granskningsnämndens uppdrag. De anser att det råder en diskrepans mellan vad allmänheten tror att granskningsnämnden granskar och vad den faktiskt granskar. Sverigedemokraterna vill att nämnden ska ha uppdraget att dubbelkolla och kontrollera fakta, något som de anser saknas idag. Detta ses som en del av deras bredare syn på public service, där de uttrycker att de vill ha en smalare och mer effektiv public service. De anser även att det finns ett behov av att öka förtroendet för public service, särskilt bland deras väljare, som de menar har ett lägre förtroende för public service och medier.",
+            "context": [
+                "7496d4d6-ccd6-ec11-9170-0090facf175a",
+                "6b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6796d4d6-ccd6-ec11-9170-0090facf175a",
+                "7696d4d6-ccd6-ec11-9170-0090facf175a",
+                "ac0c7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "2fa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Frågestund</p><p>Fru talman! Jag har en fråga till klimatminister Annika Strandhäll.</p><p>Vi behöver minska utsläppen från transportsektorn med minst 70 procent till 2030. Det är bara åtta år kvar till dess. Häromdagen kom Trafikverket med ny statistik om utsläppen från våra vägtransporter. De minskade med bara 0,3 procent i fjol. Det är alldeles för lite. Är klimat- och miljöministern nöjd med statistiken?</p><p>Man kan tänka sig statlig medfinansiering till kollektivtrafiken, ökade satsningar på elektrifiering av fordonsflottan och en vägslitageavgift på de tunga transporterna för att flytta över transporter från väg till järnväg.</p><p>Jag vill veta vad klimat- och miljöministern tänker göra för att vi snabbt ska minska utsläppen från vägtransporterna så att vi når vårt klimatmål till 2030. Det måste väl ändå vara planen?</p>",
+        "talare": "Jens Holm",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Vad säger Jens Holm om utsläppsminskningen från vägtransporterna?",
+            "answer": "Jens Holm uttrycker oro över att utsläppen från vägtransporterna endast minskade med 0,3 procent förra året, vilket han anser är alldeles för lite för att nå målet om en 70-procentig minskning till 2030. Han ifrågasätter om klimat- och miljöministern är nöjd med denna statistik."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "31a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Jens Holm anser att utsläppsminskningarna från vägtransporterna inte är tillräckliga. Han betonar att dessa minskningar till största delen är en effekt av pandemin snarare än av medvetna insatser för att minska utsläppen. Holm kritiserar regeringen för att ha subventionerat flygtrafiken med 16 miljarder kronor, medan järnvägstransporterna inte har fått motsvarande stöd. Han frågar vad regeringen planerar att göra för att främja mer hållbara transportalternativ. Dessutom påpekar han att vi behöver minska utsläppen från transportsektorn med minst 70 procent till 2030, vilket är ett ambitiöst mål med tanke på att vi bara har åtta år kvar. Han föreslår bland annat statlig medfinansiering till kollektivtrafiken, ökade satsningar på elektrifiering av fordonsflottan och en vägslitageavgift på de tunga transporterna för att flytta över transporter från väg till järnväg.",
+            "context": [
+                "31a228e8-3dc6-ec11-9170-0090facf175a",
+                "30a228e8-3dc6-ec11-9170-0090facf175a",
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "19e4860e-ccd6-ec11-9170-0090facf175a",
+                "01e4860e-ccd6-ec11-9170-0090facf175a",
+                "1be4860e-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Jens Holm uttrycker oro över att utsläppen från transportsektorn inte minskar tillräckligt snabbt. Han påpekar att vi behöver minska utsläppen från denna sektor med minst 70 procent till 2030, men att utsläppen från vägtransporter endast minskade med 0,3 procent förra året. Holm föreslår statlig medfinansiering till kollektivtrafiken, ökade satsningar på elektrifiering av fordonsflottan och en vägslitageavgift på de tunga transporterna för att flytta över transporter från väg till järnväg. Han uttrycker även kritik mot att regeringen har subventionerat flygtrafiken, medan järnvägstransporterna inte fått motsvarande stöd.",
+            "context": [
+                "2fa228e8-3dc6-ec11-9170-0090facf175a",
+                "31a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Jens Holm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Vissa säkerhetspolitiska frågor",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "4896d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Det är bedrövligt att den svenska högern inte klarar av att ha någon form av kritik mot Nato. Man hoppas trofast på ett svenskt Natomedlemskap och ser inte de problem som finns med de beslut som Nato har fattat under de senaste 20-30 åren. Vi hade kunnat vara i en annan situation än den vi i dag är i. Med det sagt är det Putin som är ansvarig för det här kriget. Det är hans fel, och det är han som ska ha skulden för det, inte Nato.</p><p>Kerstin Lundgren ställde en fråga om Vänsterpartiets syn på vapenleveranser. Jag håller med om att det inte har varit helt tydligt. Vi valde att ha en egen reservation om pansarskotten när vi röstade om detta i riksdagen för två veckor sedan. Jag kunde tyvärr inte själv närvara eftersom jag låg på sjukhus. Partistyrelsen valde dock dagen efter att rösta för att vi kan tänka oss att stödja framtida vapenleveranser. </p><p>Vi kommer att analysera de förslag som jag hoppas kommer till riksdagens bord genom propositioner från regeringen och inte genom utskottsinitiativ och de snabba vägar som man tog senast. Det undergräver vår garanti om riksdagen inte får tillräckligt bra processer för att kunna diskutera, fatta beslut och ha en medial debatt om de förslag som regeringen lägger på riksdagens bord. Här var det ju fem ledamöter från finansutskottet som lade fram förslaget på riksdagens bord. Jag tycker inte att det är riktigt konstitutionellt rätt. Jag hoppas att det blir en bättre ordning nästa gång.</p>",
+        "talare": "Håkan Svenneling",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Vad är Vänsterpartiets position i frågan om vapenleveranser?",
+            "answer": "Vänsterpartiet har tidigare haft en egen reservation om pansarskotten men har nu beslutat att de kan tänka sig att stödja framtida vapenleveranser. De betonar vikten av att förslag om vapenleveranser ska komma genom propositioner från regeringen och inte genom utskottsinitiativ, för att säkerställa en korrekt process i riksdagen."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "5196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Vänsterpartiets position i frågan om vapenleveranser är inte explicit framställd i de tillgängliga debattbitarna. Utifrån den information som finns, verkar det som att Vänsterpartiet har uttryckt kritik mot vissa säkerhets- och försvarspolitiska åtgärder, men det är inte klart hur detta gäller vapenleveranser specifikt. Det nämns att partiet har varit skeptiskt till Nato och frågat om Sverige bör avsluta bilaterala avtal med stater som har kärnvapen. Men det är osäkert hur dessa synpunkter relaterar till deras ståndpunkt om vapenleveranser. För att få en mer exakt bild av Vänsterpartiets position i denna fråga, rekommenderas det att söka mer specifik information eller kontakta partiet direkt.",
+            "context": [
+                "5296d4d6-ccd6-ec11-9170-0090facf175a",
+                "dd0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "4596d4d6-ccd6-ec11-9170-0090facf175a",
+                "12a228e8-3dc6-ec11-9170-0090facf175a",
+                "2a61bc67-3143-ed11-9177-901b0eac4c70",
+                "4196d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Vänsterpartiet har inte varit helt tydliga i sin position gällande vapenleveranser. De röstade dock för en reservation om pansarskotten när frågan kom upp i riksdagen. Partistyrelsen har därefter bestämt att de kan tänka sig att stödja framtida vapenleveranser. De planerar att analysera framtida förslag som kommer till riksdagen för att göra ett mer informerat beslut.",
+            "context": [
+                "4896d4d6-ccd6-ec11-9170-0090facf175a",
+                "12a228e8-3dc6-ec11-9170-0090facf175a",
+                "4696d4d6-ccd6-ec11-9170-0090facf175a",
+                "b40c7667-bb23-ed11-9178-901b0e9b71a8",
+                "dc0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "5d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Radio och tv i allmänhetens tjänst",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "6996d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag börjar med att yrka bifall till Kristdemokraternas reservationer nummer 4 och 10.</p><p>Jag hade ett intressant samtal på resan hit i dag. Det var en forskare som berättade att han och några av hans kollegor hade diskuterat situationen i Ukraina, där Rysslands övergrepp vittnar om totalitära makters övergrepp på folk och där man stryper nyhetsförmedlingen så att den passar in i den situation man har skapat. Slutsatsen i samtalet var väldigt intressant, tycker jag, för den blev att det kanske inte är så dumt att man i riksdagen håller på och käbblar, som han uttryckte det, lite grann - eller ibland ganska mycket. Att man ibland käbblar lite grann betyder att man har ett fritt tänk och får ge uttryck för det man tänker och tror på.</p><p>Jag blev glad när jag hörde detta. Demokratin har sina brister, men den frustration vi kan känna när saker och ting tar tid behöver inte vara av ondo. Eller som Cornelis skrev om demokratin i en av sina visor - jag är ju ett Cornelisfan: För var dag blir den bättre, men bra lär den aldrig bli. Vi jobbar på det hela tiden.</p><p>Vi debatterar nu radio och tv i allmänhetens tjänst. Ibland kan det kanske också ses som käbbel. Men för demokratins skull önskar jag inget annat än att få uttrycka och ifrågasätta det jag vill.</p><p>Sveriges Television, Sveriges Radio och Utbildningsradion har detta uppdrag i allmänhetens tjänst. Det har de fått av oss folkvalda, i första hand fram till 2025. Det är inte makten som ska granska medierna, utan det är medierna som ska granska makten. Det är vad demokrati handlar om i det här sammanhanget. Därför är frågan om armlängds avstånd viktig. Politiker ska hålla sig borta från tv-tablån - det är i alla fall min absoluta uppfattning.</p><p>Fru talman! Nästa sändningstillstånd för de tre public service-bolagen påbörjas 2026. Det sändningstillståndet varar i åtta år. Det är ganska lång tid. Eftersom det handlar om skattepengar är det vårt ansvar att se över hur dessa pengar används. Varje person som är i arbete och har fyllt 18 bidrar ju.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>Vi tycker att public service-avgiften behöver balanseras årligen så att det inte byggs upp ett alltför stort överskott på det så kallade public service-kontot. Om vi tänker oss att fler i vårt land kommer i arbete ökar ju intäkterna. I ett sådant läge är det viktigt att kontot balanseras, och resultatet av det borde bli att public service-avgiften sänks.</p><p>Vi kristdemokrater kommer i alla fall att aktivt delta i att se över inriktningen för nästa sändningstillstånd. Det är både ansvarsfullt, viktigt och demokratiskt. Vi vill se en parlamentarisk kommitté som är med och tar ställning i de frågor som kommit upp inför nästa sändningstillstånd och som ser vilka tillägg som kan komma i fråga.</p><p>Vi minns hur det var inför 2020-2025, alltså det sändningstillstånd som nu pågår, då flera tillägg till själva uppdraget kom till. Till exempel skulle svagt bevakade områden stärkas. De nationella minoritetsspråken skulle stärkas. Beredskapsuppdraget skulle moderniseras. Omfattningen av bland annat syn- och teckenspråkstolkning hos SVT och UR skulle öka. Det handlade också om distribution på andra plattformar.</p><p>För att stärka public services legitimitet över tid menar vi att uppdraget behöver smalnas av jämfört med i dag och ges ett huvudsakligt fokus på samhällsinformation, oberoende och saklig nyhetsförmedling nationellt och regionalt och därutöver, som vi kallar det, ett högkvalitativt kulturutbud.</p><p>Public service har en väldigt viktig roll att spela vad gäller att tillhandahålla en allsidig och opartisk nyhetsverksamhet som inte minst tillgodoser de särskilda behov som finns hos vissa målgrupper som barn och unga, personer med funktionsnedsättning och även minoritetsgrupper. Public service fyller också en väldigt viktig funktion som förmedlare av samhällsinformation. Det gäller i vardagen men ännu mer i svåra tider som i kris eller i krig.</p><p>Någonting som vi har sett över tid och som jag tror att de flesta av oss är oroliga för är att den mediala närvaron utanför storstäderna fortsätter att ha det tufft. Den minskar. För att möta den utvecklingen har vi kristdemokrater sagt att vi ser ett värde i att public service stärker sin regionala nyhetsbevakning, vilket också till viss del sker som ett resultat av de senaste tilläggen till uppdraget.</p><p>När vi säger att vi vill smalna av public service är det för att beskriva det uppdrag som vi anser bör vara i fokus för public service. I uppdraget står det bland annat att programutbudet i hög grad ska präglas av folkbildning. Nöjesproduktioner kan kommersiella aktörer sköta minst lika bra. Det är min bestämda övertygelse att en avsmalning av uppdraget också kommer att stärka public services legitimitet över tid. Det gör det förhoppningsvis också möjligt att sänka public service-avgiften.</p><p>Fru talman! Det fanns en bred samsyn i riksdagen om innevarande sändningstillstånds huvuduppdrag, alltså att erbjuda ett mångsidigt programutbud som omfattar såväl det breda utbudet som mer särpräglade programtyper tillsammans med verksamhetens viktiga roll för grävande journalistik och att granska samhällets makthavare. Det är nämligen inte makten som ska granska medierna, utan det är medierna som ska granska makten.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Radio och tv i allmän-hetens tjänst</p><p>Men låt oss inte sluta att fritt diskutera och möta och mäta våra olika åsikter! Det är en del av demokratin, och vi kristdemokrater vill vara en aktiv del i den processen. Om någon skulle få för sig att kalla detta för käbbel må det vara hänt. Käbbel har för mig fått en helt ny innebörd efter den resa jag gjorde hit i dag. Käbbel behöver inte vara av ondo, mina vänner, och är inte oviktigt i en demokrati. Den som är rädd för att man lyfter olika åsikter bör kanske fundera på hur alternativet ser ut.</p><p>(Applåder)</p>",
+        "talare": "Roland Utbult",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Anser Kristdemokraterna att public service-avgiften bör sänkas om intäkterna ökar?",
+            "answer": "Ja, Kristdemokraterna anser att public service-avgiften bör sänkas om intäkterna ökar. De menar att public service-avgiften behöver balanseras årligen för att undvika ett alltför stort överskott på public service-kontot, och om fler kommer i arbete och intäkterna ökar, bör avgiften sänkas."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "6996d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Kristdemokraterna har inte direkt uttryckt en ståndpunkt om att public service-avgiften bör sänkas om intäkterna ökar. De diskuterar dock frågor om skatt och hur skattemedel bör användas. De betonar också vikten av att skattesänkningar riktas till dem med lägst inkomst. När det gäller public service, fokuserar diskussionerna främst på dess roll och effektivitet, snarare än specifika finansieringsfrågor. Det verkar finnas en önskan om en mer effektiv och fokuserad public service som levererar kvalitativ samhällsinformation. Men det finns ingen direkt koppling i debatten mellan ökade intäkter och en eventuell sänkning av public service-avgiften.",
+            "context": [
+                "7396d4d6-ccd6-ec11-9170-0090facf175a",
+                "5e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7696d4d6-ccd6-ec11-9170-0090facf175a",
+                "5b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6c96d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Kristdemokraterna anser att public service-avgiften bör balanseras årligen för att förhindra att det byggs upp ett alltför stort överskott på det så kallade public service-kontot. De menar att om fler människor i Sverige kommer i arbete, vilket leder till ökade intäkter, bör kontot balanseras, vilket borde resultera i att public service-avgiften sänks. Vidare anser partiet att public service bör ha ett huvudsakligt fokus på samhällsinformation, oberoende och saklig nyhetsförmedling nationellt och regionalt samt ett högkvalitativt kulturutbud. De menar att en avsmalning av uppdraget kan stärka public services legitimitet över tid och möjliggöra en sänkning av public service-avgiften.",
+            "context": [
+                "5e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "7296d4d6-ccd6-ec11-9170-0090facf175a",
+                "6996d4d6-ccd6-ec11-9170-0090facf175a",
+                "21e4860e-ccd6-ec11-9170-0090facf175a",
+                "7096d4d6-ccd6-ec11-9170-0090facf175a",
+                "f20c7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "45a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Min fråga går till justitie- och inrikesministern. Att smuggla in hundar till Sverige kan vara en mycket lukrativ affär för kriminella, men det sker på djurens bekostnad. Inte sällan kommer valparna från valpfabriker där de lever under miserabla förhållanden. Detta var ett problem redan före coronapandemin, men tyvärr framgår det tydligt av Tullverkets siffror att den illegala införseln av hundar ökar. De kommer in i Sverige genom att de antingen hålls gömda i transporterna eller har förfalskade papper eller genom att man rent av chansar och hoppas på att inte fastna i en kontroll.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Frågestund</p><p>Trots att arbetet pågår för att motverka hundsmugglingen fortsätter denna illegala verksamhet. Av statistiken att döma ser den ut att öka. Min fråga till Morgan Johansson är därför om ministern menar att de åtgärder som finns i dag är tillräckliga. När kan vi i så fall få se ett slut på denna handel?</p>",
+        "talare": "Yasmine Eriksson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Vad säger Yasmine Eriksson om den illegala införseln av hundar till Sverige?",
+            "answer": "Yasmine Eriksson säger att smuggling av hundar till Sverige är en lukrativ affär för kriminella, men att det sker på djurens bekostnad. Hon påpekar att valpar ofta kommer från valpfabriker där de lever under miserabla förhållanden och att den illegala införseln av hundar har ökat, enligt Tullverkets siffror. Hon uttrycker oro över att denna verksamhet fortsätter trots pågående arbete för att motverka den."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Yasmine Eriksson har uttryckt oro över den illegala införseln av hundar till Sverige. Hon påpekar att detta är en lukrativ affär för kriminella, som ofta utnyttjar hundar från valpfabriker där de lever under då",
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a",
+                "0e0d7667-bb23-ed11-9178-901b0e9b71a8",
+                "46a228e8-3dc6-ec11-9170-0090facf175a",
+                "2a61bc67-3143-ed11-9177-901b0eac4c70",
+                "1396d4d6-ccd6-ec11-9170-0090facf175a",
+                "180d7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Yasmine Eriksson uttrycker stark oro över den illegala införseln av hundar till Sverige. Hon menar att denna verksamhet inte bara är lukrativ för kriminella, men sker också på bekostnad av djurens välmående. Ofta kommer dessa hundar från valpfabriker där de lever under mycket dåliga förhållanden. Hon påpekar att problemet har ökat under coronapandemin, och att hundarna ofta smugglas in genom att gömmas i transporter, med förfalskade papper eller genom att man chansar på att inte bli upptäckt i en kontroll. Trots pågående arbete för att motverka hundsmugglingen, fortsätter denna illegala verksamhet och Eriksson ifrågasätter om de nuvarande åtgärderna är tillräckliga. Hon uppmanar justitie- och inrikesministern att agera för att stoppa denna handel.",
+            "context": [
+                "45a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Yasmine Eriksson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "2396d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag tackar statsministern för det mycket tydliga svaret.</p><p>Det gläder mig att vi också tänker på efterspelet. Nu är vi mitt uppe i detta fruktansvärda, men de saker vi gör nu kommer att avgöra hur läkande, ansvarsutkrävande och återuppbyggnad kommer att ske. Det gläder mig att de planerna finns.</p><p>Jag skulle vilja passa på att fråga statsministern om hon kan utveckla något om de krigsbrott och övergrepp som nu sker, det lidande som de för med sig, de oerhörda humanitära kriser som vi ser spelas upp framför våra ögon i Ukraina och alltmer i grannländer när flyktingvågen blir allt större. Vad kan Sverige göra för att lindra det hjärtskärande lidande vi alla ser?</p>",
+        "talare": "Olle Thorell",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad är Socialdemokraternas position i frågan om Sveriges roll i att lindra det humanitära lidandet i Ukraina och dess grannländer?",
+            "answer": "Socialdemokraterna betonar vikten av att tänka på efterspelet av den nuvarande krisen och att de åtgärder som vidtas nu kommer att påverka framtida läkande, ansvarsutkrävande och återuppbyggnad. De är också intresserade av att utveckla Sveriges roll i att lindra det humanitära lidandet som orsakas av krigsbrott och övergrepp i Ukraina och dess grannländer."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "0496d4d6-ccd6-ec11-9170-0090facf175a",
+                "1a96d4d6-ccd6-ec11-9170-0090facf175a",
+                "1c96d4d6-ccd6-ec11-9170-0090facf175a",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a",
+                "2396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Socialdemokraterna ser allvarligt på situationen i Ukraina och tar ställning för att Sverige ska spela en aktiv roll i att lindra det humanitära lidandet. De erkänner Rysslands invasion som en orsak till de massiva flyktingströmmarna och anser att de bär det yttersta ansvaret för kriget och dess följder. \n\nFör att hantera situationen, stödjer Socialdemokraterna kraftiga sanktioner mot Ryssland, samtidigt som de stödjer Ukrainas självständighet och dess befolkning. De ser det som viktigt att Sverige tillhandahåller tillfälliga boenden för de ukrainare som söker skydd i landet och föreslår en utökning av regeringens befogenheter för att snabbt kunna tillhandahålla detta.\n\nEn viktig del i Socialdemokraternas position är att Sverige ska ta en del av ansvaret för att ta emot flyktingar, inklusive de som flyr från Ukraina. De anser att Sverige bör fortsätta att hjälpa de mest utsatta, inklusive kvotflyktingar, samtidigt som de hjälper de som flyr från Ukraina. De betonar vikten av att inte ställa olika grupper av människor mot varandra, och menar att Sverige har kapacitet att hjälpa både ukrainska flyktingar och andra grupper.\n\nSammanfattningsvis, Socialdemokraterna stödjer en aktiv roll för Sverige i att hjälpa till att lindra det humanitära lidandet i Ukraina och dess grannländer, genom att ta emot flyktingar, ge tillfälligt boende och stödja sanktioner mot Ryssland.",
+            "context": [
+                "ea0c7667-bb23-ed11-9178-901b0e9b71a8",
+                "180d7667-bb23-ed11-9178-901b0e9b71a8",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a",
+                "2396d4d6-ccd6-ec11-9170-0090facf175a",
+                "2de4860e-ccd6-ec11-9170-0090facf175a",
+                "1c96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1396d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag konstaterar att jag inte fick något svar på min fråga om hur man förhindrar att ryska bolag som finns på sanktionslistan fortsätter agera genom dotterbolag eller oklara regler - man stoppar inte införsel av till exempel flygbränsle från Ryssland via svenska hamnar. Jag fick inte heller någon kommentar till detta cirkelresonemang.</p><p>Men jag har en annan fråga som jag gärna vill få svar på. I uttalandet tas flyktingsituationen upp och hur EU ska kunna bistå de länder som tar emot flyktingar. Just nu är det gränsstaterna som tar emot flest, och Moldavien har varnat för en humanitär katastrof, då landet inte har resurser för de cirka 100 000 flyktingar som inte har möjlighet eller ork att fly vidare. Moldavien har vädjat om internationell hjälp.</p><p>Min fråga är om EU kommer att bistå länder även utanför EU. Eller är det enbart EU-länder som kommer att bistås med medicinsk och ekonomisk hjälp? Det är oklart i uttalandet.</p>",
+        "talare": "Ilona Szatmari Waldau",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Anser Ilona Szatmari Waldau att EU bör bistå länder utanför EU med medicinsk och ekonomisk hjälp?",
+            "answer": "Ja, Ilona Szatmari Waldau uttrycker en oro för Moldaviens situation och undrar om EU kommer att bistå länder utanför EU, vilket indikerar att hon anser att sådant stöd är viktigt."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Basert på debattstykkene, ser det ut til at det er en diskusjon om EU bør bistå land utenfor EU med medisinsk og økonomisk hjelp. I debatten nevnes det at det er uklart om EU vil bistå land utenfor EU, eller om det bare er EU-land som vil bli bistått med medisinsk og økonomisk hjelp. Det er også en pågående diskusjon om hvordan bistand blir håndtert av forskjellige instanser, og hvordan denne hjelpen kan fordeles mer effektivt. Det er imidlertid ingen klar konklusjon i debatten om EU bør bistå land utenfor EU medisinsk og økonomisk. Dette er et komplekst spørsmål som krever ytterligere diskusjon og vurdering.",
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a",
+                "3161bc67-3143-ed11-9177-901b0eac4c70",
+                "2b61bc67-3143-ed11-9177-901b0eac4c70",
+                "2261bc67-3143-ed11-9177-901b0eac4c70",
+                "3561bc67-3143-ed11-9177-901b0eac4c70",
+                "2496d4d6-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Anser Ilona Szatmari Waldau har uttryckt oro över hur EU kommer att bistå länder som tar emot flyktingar, speciellt de länder som ligger utanför EU. Hon har särskilt nämnt situationen i Moldavien, som har varnat för en humanitär katastrof och bett om internationell hjälp på grund av det stora antalet flyktingar landet tar emot. Waldau har frågat om EU kommer att bistå länder även utanför EU eller om det endast är EU-länder som kommer att få medicinsk och ekonomisk hjälp. Hon har dock inte fått något klart svar på detta. Frågan om EU:s roll i att bistå länder utanför unionen, speciellt i en humanitär kris, är därför fortfarande oklar.",
+            "context": [
+                "1396d4d6-ccd6-ec11-9170-0090facf175a",
+                "1196d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ilona Szatmari Waldau\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3da228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag är medveten om beslutet som folketinget tog i den här frågan. Det var otroligt olyckligt. Eftersom man har påbörjat det här och läget är så akut - det pågår i detta nu - måste regeringen agera och protestera mot det som sker. När det väl har hänt ligger det på botten och förgiftar havet, och då är det för sent. Det är nu möjligheten fortfarande finns att göra något, och jag hoppas att Annika Strandhäll och regeringen kan göra det skyndsamt.</p>",
+        "talare": "Rasmus Ling",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Vad säger Rasmus Ling om regeringens ansvar i den aktuella situationen?",
+            "answer": "Rasmus Ling uttrycker att regeringen måste agera och protestera mot det som sker eftersom situationen är akut och pågår just nu. Han betonar att det är viktigt att agera innan det är för sent och hoppas att Annika Strandhäll och regeringen kan agera skyndsamt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "3ba228e8-3dc6-ec11-9170-0090facf175a",
+                "3da228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Rasmus Ling har uttryckt sin oro över hur regeringen hanterar den aktuella situationen. Han har kritiserat regeringen för att de inte tagit tillräckligt ansvar för landets ekonomi och för att de inte agerat tillräckligt snabbt mot problem som skjutningar och otrygghet. Han har även pekat på att regeringen inte har tagit ansvar för att hjälpa de familjer som upplevt oro under de senaste åtta åren.\n\nLing har också uttryckt sin oro över bränslepriserna i Sverige, och menar att de ligger långt över priserna i jämförbara länder. Han anser att detta har fått konsekvenser för företag och människors möjligheter att leva på landsbygden och att regeringen borde tänka om.\n\nSlutligen, Ling kritiserar regeringen för att de inte har tagit tillräckligt ansvar för att hjälpa och stödja människor som behöver det, och menar att om man inte lär sig att ta ansvar kommer samma problem att upprepas om och om igen. Han innefattar denna syn i hans syn på att Moderaterna tar ansvar för ekonomin och kommer att ta ansvar för alla de förslag de lägger fram.",
+            "context": [
+                "8096d4d6-ccd6-ec11-9170-0090facf175a",
+                "e20c7667-bb23-ed11-9178-901b0e9b71a8",
+                "3f0d7667-bb23-ed11-9178-901b0e9b71a8",
+                "d90c7667-bb23-ed11-9178-901b0e9b71a8",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "2fe4860e-ccd6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Rasmus Ling uttrycker en stark övertygelse om att regeringen har ett ansvar att agera i akuta situationer. Han betonar att när en situation är pågående och kritisk, är det viktigt att regeringen protesterar mot det som sker. Han uppmanar Annika Strandhäll och resten av regeringen att agera snabbt för att förhindra en potentiellt katastrofal situation (Result 1). \n\nHan poängterar också utmaningar kopplade till migrationslagar och integration. Ling uttrycker att tillfälliga uppehållstillstånd skapar osäkerhet och försämrar etablerings- och integrationsprocessen, särskilt för barn. Han betonar vikten av familjeåterförening och den humanitära skyddsgrunden, vilket han anser att regeringen bör prioritera (Result 2). \n\nLing diskuterar också vikten av att regeringen ger Migrationsverket nödvändiga resurser och förutsättningar för att kunna utföra sitt arbete på ett rättssäkert sätt, vilket han anser är en central fråga för regeringen att se över (Result 3).",
+            "context": [
+                "3da228e8-3dc6-ec11-9170-0090facf175a",
+                "130d7667-bb23-ed11-9178-901b0e9b71a8",
+                "16a228e8-3dc6-ec11-9170-0090facf175a",
+                "150d7667-bb23-ed11-9178-901b0e9b71a8",
+                "170d7667-bb23-ed11-9178-901b0e9b71a8",
+                "3ba228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Rasmus Ling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "24a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag har inte läst allt som har skrivits om mig, och det är för att jag inte ska tappa fokus på varför jag tog uppdraget, det vill säga för att motverka att det demokratiska samtalet drunknar i hat och hot, för att säkra att kulturen finns över hela landet för alla oavsett bakgrund och såklart för starka, fria, oberoende medier.</p><p>Jag tror att om jag fokuserar på det som har skrivits om mig nu tappar jag styrfarten på det som är det absolut viktiga.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad säger Jeanette Gustafsdotter om varför hon inte läser allt som skrivits om henne?",
+            "answer": "Jeanette Gustafsdotter säger att hon inte läser allt som skrivits om henne för att inte tappa fokus på sitt uppdrag, vilket är att motverka att det demokratiska samtalet drunknar i hat och hot, att säkra att kulturen finns över hela landet för alla oavsett bakgrund, och att stödja starka, fria, oberoende medier."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "n",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Jeanette Gustafsdotter har uttryckt att anledningen till att hon inte läser allt som skrivits om henne är för att hon inte vill förlora fokus på sitt uppdrag. Hon menar att om hon skulle lägga tid och energi på allt som skrivs om henne, riskerar hon att tappa styrfarten på de viktiga frågor hon har tagit sig an att hantera. Dessa frågor innefattar att motverka att det demokratiska samtalet drunknar i hat och hot, att säkerställa att kulturen finns tillgänglig över hela landet för alla oavsett bakgrund, och att stötta starka, fria, oberoende medier.",
+            "context": [
+                "24a228e8-3dc6-ec11-9170-0090facf175a",
+                "d90c7667-bb23-ed11-9178-901b0e9b71a8",
+                "50e4860e-ccd6-ec11-9170-0090facf175a",
+                "64e4860e-ccd6-ec11-9170-0090facf175a",
+                "4de4860e-ccd6-ec11-9170-0090facf175a",
+                "d00c7667-bb23-ed11-9178-901b0e9b71a8"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Jeanette Gustafsdotter har uttryckt att hon inte läser allt som har skrivits om henne för att hon inte vill tappa fokus på sitt uppdrag. Hennes avsikt är att motverka att det demokratiska samtalet drunknar i hat och hot, samt att säkerställa att kulturen finns tillgänglig över hela landet för alla oavsett bakgrund, och för att främja starka, fria och oberoende medier. Hon tror att om hon fokuserar på det som har skrivits om henne, kan det riskera att hon tappar styrfarten på det som är mest viktigt.",
+            "context": [
+                "24a228e8-3dc6-ec11-9170-0090facf175a",
+                "4be4860e-ccd6-ec11-9170-0090facf175a",
+                "53e4860e-ccd6-ec11-9170-0090facf175a",
+                "51e4860e-ccd6-ec11-9170-0090facf175a",
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "5aa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Jeanette Gustafsdotter\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Riksrevisionens rapport om Försäkringskassans arbete med att förebygga sjukskrivning",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "1aa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Vi debatterar i dag socialförsäkringsutskottets betänkande gällande Riksrevisionens rapport om Försäkringskassans arbete med att förebygga sjukskrivning och de ersättningar som tillhör detta arbete.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rap-port om Försäkrings-kassans arbete med att förebygga sjuk-skrivning</p><p>Jag yrkar bifall till utskottets förslag till beslut i punkt 1-3. I övrigt står vi bakom samtliga av våra reservationer, men jag väljer att yrka bifall endast till reservation 7 i betänkandet.</p><p>Fru talman! Svensk sjukförsäkringspolitik har varit omdebatterad och, enligt mig, instabil under de senaste mandatperioderna. Antingen har politiken slirat ned i diket där personer har fastnat i långtidssjukskrivningar utan tillräckliga insatser till vård och rehabilitering för återgång till arbete för dem där det är möjligt, eller så har politiken slirat ned i diket där höga sjukskrivningstal reglerats nedåt genom utförsäkringar av svårt sjuka personer. I stället hade man kunnat satsa på insatser som på riktigt kan hjälpa människor till bättre hälsa och återgång i arbete.</p><p>Fru talman! Det är på tiden att vi får en fungerande sjukförsäkring och även en fungerande process överlag kring de personer som på olika sätt drabbas av såväl fysisk som psykisk ohälsa. En oroande trend vi ser i dag är att den vanligaste orsaken till sjukskrivning är psykisk ohälsa. Däribland är stress och utbrändhet bland kvinnor vanligt förekommande.</p><p>Här menar jag, fru talman, att det borde kunna finnas en potential att tidigt fånga upp dessa personer och på olika sätt med förebyggande insatser kunna bidra med hjälp innan det går så långt att sjukskrivning blir nödvändig för återhämtning.</p><p>Fru talman! Sjukpenning i förebyggande syfte, kallad förebyggande sjukpenning, infördes för snart 30 år sedan i samband med den så kallade rehabiliteringsreformen 1992. Sedan dess har denna lagstiftning varit oförändrad. Syftet med både själva förmånen och med den medicinska behandling eller rehabilitering som krävs för ersättning är att hindra att en person blir sjuk och därmed får nedsatt arbetsförmåga och måste sjukskrivas. Det kan också handla om att förkorta sjukdomstiden eller att häva personens nedsatta arbetsförmåga. Det krävs däremot inte att personen redan har en nedsatt arbetsförmåga.</p><p>Riksrevisionen har i rapporten <em>Försäkringskassans arbete med att förebygga sjukskrivning </em><em>-</em><em> ett otydligt uppdrag</em> undersökt Försäkringskassans arbete med denna ersättning. Tyvärr visar rapporten att det preventiva arbetet med att förebygga sjukskrivningar inte alls har varit något som prioriterats från Försäkringskassan. Regeringen har också varit otydlig med sina skrivningar till Försäkringskassan. I regleringsbreven till Försäkringskassan under perioden 2005-2020 fanns inte några specifika mål rörande den förebyggande sjukpenningen. Det fanns inte heller några krav på att Försäkringskassan skulle återrapportera hur förmånen används för att förebygga och minska sjukfrånvaron.</p><p>I stället för att faktiskt förebygga sjukskrivning har ersättningarna dessutom främst använts till personer som redan har varit sjukskrivna sedan tidigare, och då faller ju lite grann hela syftet med det förebyggande arbetet. Enligt en rapport från Inspektionen för socialförsäkringen kring den förebyggande sjukpenningen är det endast 10 procent av dem som har fått förmånen som faktiskt har fått den i förebyggande syfte. Då menar jag att man verkligen har missat målet med ersättningen. Det har också visat sig att det finns stora regionala skillnader i hur ersättningen används och i vilken utsträckning.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rap-port om Försäkrings-kassans arbete med att förebygga sjuk-skrivning</p><p>Granskningen från Riksrevisionen visar även att regelverket i sig kring den förebyggande sjukpenningen har varit problematiskt och bidragit till det låga användandet av ersättningen.</p><p>Fru talman! Vi i Sverigedemokraterna ser allvarligt på de brister som framkommer. Det är bra att regeringen nu har tillsatt en utredning för att titta på regelverket, men vi anser samtidigt att de genomförda förändringarna på området inte är tillräckliga och att de kommer i senaste laget.</p><p>Utskottet föreslår därför att riksdagen riktar ett tillkännagivande till regeringen om att den ska förtydliga Försäkringskassans ansvar och uppdrag att förebygga sjukfrånvaro och tillstyrker därmed ett yrkande rörande detta från oss i Sverigedemokraterna, Moderaterna och Vänsterpartiet.</p><p>Fru talman! Det har även visat sig i Riksrevisionens granskning att det finns brister i Försäkringskassans uppföljande arbete och när det gäller att utvärdera de förebyggande insatserna. Men för att kunna arbeta effektivt måste ju Försäkringskassan få veta vilka förebyggande insatser som fungerar och har effekt. Utskottet föreslår därför att riksdagen ska tillkännage för regeringen att den ska säkerställa att effekterna av de förebyggande insatser som ges med dessa ersättningar från Försäkringskassan utvärderas. Därmed tillstyrks förslag om detta från Moderaterna och Kristdemokraterna i betänkandet.</p><p>Fru talman! Riksrevisionen pekar också på stora brister när det gäller aktörernas kunskap om det förebyggande arbetet och den förebyggande sjukpenningen. Men om ersättningen ska användas och i rätt syfte är det avgörande att de inblandade aktörerna faktiskt vet om att denna möjlighet finns och hur den kan användas.</p><p>Utskottet instämmer i den uppfattning som framförs i motioner från oss i Sverigedemokraterna och Vänsterpartiet om att aktörernas kunskap på området måste öka. Utskottet föreslår därför att riksdagen ska rikta ett tillkännagivande till regeringen om att den ska vidta åtgärder för att öka aktörernas kunskap om detta.</p><p>Fru talman! Att regelverket kring den förebyggande sjukpenningen ställer till svårigheter för att den ska kunna användas ser vi som ett problem som behöver åtgärdas. Samtidigt som psykisk ohälsa är den vanligaste orsaken till sjukskrivning är den förebyggande sjukpenningen i dag särskilt svår att tillämpa och använda vid psykisk ohälsa och diffusa fysiska symtom.</p><p>Detta är problematiskt, då det är just där den verkligen skulle behövas och kunna göra nytta. Det var också något som efterfrågades av intervjupersonerna i en utredning från Inspektionen för socialförsäkringen. Enligt utredningen <em>En sjukförsäkring med prevention, rehabilitering och trygghet</em> kan en av orsakerna till att ersättningen inte används så mycket vara att det finns ett krav på att man ska använda minst en fjärdedel av arbetstiden. Det kan ställa till problem om en person till exempel behöver gå på samtalsterapi i en timme. Då får man inte rätt till ersättningen.</p><p>En annan orsak kan vara att hälso- och sjukvården tror eller misstänker att Försäkringskassan inte kommer att godkänna behandlingsplanen för att den innehåller pedagogiska och sociala inslag. Man rekommenderar därför inte detta. Det har varit särskilt svårt att använda ersättningen just i förebyggande syfte, innan problem uppstår. Därmed ställer regelverket till så mycket problem att det inte ens kan användas i det syfte det är till för. Jag menar att detta är väldigt problematiskt.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rap-port om Försäkrings-kassans arbete med att förebygga sjuk-skrivning</p><p>Därför har vi ett yrkande och en reservation där vi anser att regeringen ska återkomma med förslag på att införa preventionsersättningen, som utredningen föreslår.</p><p>Jag satt själv med i referensgruppen till utredningen, och jag anser att detta förslag på en ny form av förebyggande ersättning, som kallas preventionsersättning, löser många av problemen kring regelverket. Ersättningen ska till exempel kunna ges timme för timme, och det blir inte riktigt lika smalt när det gäller vilken typ av insatser som ska kunna godkännas för ersättning.</p><p>Jag vill därmed yrka bifall till reservation 7 från oss i Sverigedemokraterna och Vänsterpartiet om att denna nya preventionsersättning behöver införas så snart som möjligt.</p><p>Jag vill be om ursäkt för att jag överskred min talartid.</p>",
+        "talare": "Julia Kronlid",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Anser Sverigedemokraterna att de genomförda förändringarna på området för förebyggande sjukpenning är tillräckliga?",
+            "answer": "Nej, Sverigedemokraterna anser att de genomförda förändringarna på området för förebyggande sjukpenning inte är tillräckliga och att de kommer i senaste laget. De ser allvarligt på de brister som framkommit och anser att ytterligare åtgärder behövs."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "1aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Sverigedemokraterna anser att de förändringar som genomförts inom förebyggande sjukpenning inte är tillräckliga. De påpekar att det förebyggande arbetet för att förhindra sjukskrivningar inte har prioriterats tillräckligt, och att ersättningar har främst använts till personer som redan varit sjukskrivna tidigare. Sverigedemokraterna ser allvarligt på dessa brister och menar att regeringens åtgärder kommer i senaste laget. De föreslår att regeringen ska förtydliga Försäkringskassans uppdrag att förebygga sjukfrånvaro och säkerställa att effekterna av de förebyggande insatserna utvärderas. Dessutom föreslår de att regeringen ska vidta åtgärder för att öka aktörernas kunskap om förebyggande sjukpenning.",
+            "context": [
+                "1aa228e8-3dc6-ec11-9170-0090facf175a",
+                "6361bc67-3143-ed11-9177-901b0eac4c70",
+                "6561bc67-3143-ed11-9177-901b0eac4c70",
+                "92a228e8-3dc6-ec11-9170-0090facf175a",
+                "2ee4860e-ccd6-ec11-9170-0090facf175a",
+                "8396d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Riksrevisionens rapport om yrkeshögskolan",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "89a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Svensk arbetsmarknad tudelas. Vi ser ett växande utanförskap i många grupper i vårt samhälle. Vi vet nu att omkring hälften av alla utrikes födda i Sverige inte kan försörja sig själva. Samtidigt skriker många branscher efter kompetens. Man har inte möjlighet att anställa.</p><p>Vi har ett utbildningsproblem på svensk arbetsmarknad. Vi har en stor grupp personer som saknar arbete och företag som skriker efter personer med rätt kompetens. Här har vi en hemläxa att göra.</p><p>Vi behöver i allt större utsträckning säkerställa att vi utbildar för svensk arbetsmarknad. Det är en grundförutsättning för Sveriges tillväxt och konkurrenskraft långsiktigt.</p><p>Här spelar yrkeshögskolan en väldigt viktig roll. Sedan Myndigheten för yrkeshögskolan startade som en myndighet 2009 har den byggts ut granska kraftigt, från omkring 23 000 platser till en bra bit över 35 000 platser.</p><p>Det är glädjande att se att vi här inne är överens om en fortsatt kraftig utbyggnad. Det finns goda skäl för det. Yrkeshögskolan visar väldigt goda resultat, bättre resultat än kanske någon annan utbildningsform. Omkring nio av tio går ut i arbete. I vissa yrkeskategorier är alla i stort sett garanterade jobb efter avslutad utbildning. Det är fantastiskt.</p><p>Men vi ser fortfarande ett skriande behov av platser inom flera områden. Jag kan ta ett konkret exempel. Jag tror att många av oss har drabbats av tågförseningar på grund av signalfel, kanske nästan dagligdags. Hur kommer det sig då att det bara utbildas 16 signaltekniker i Sverige? Det är ett konkret problem som många av oss möter i vår vardag. Här behöver vi säkerställa att det finns utbildningsplatser för att möta detta behov.</p><p>Det är därför glädjande att Riksrevisionen i sin granskning, som vi har att ta ställning till och debattera här i dag, kommer fram till att yrkeshögskolan i stort lever upp till de högt satta mål och förväntningar som vi har på denna utbildningsform. I stort är de rekommendationer som man lämnar ett arbete som nu har påbörjats. Det handlar framför allt om att utreda hur en gemensam antagning till yrkeshögskolan skulle kunna se ut. Detta är någonting som vi välkomnar.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rapport om yrkeshögskolan</p><p>Fru talman! Med det vill jag tacka för dagens debatt i ett ärende där vi kan konstatera att vi för ovanlighetens skull är förhållandevis överens. Det finns brister, och det finns utmaningar som vi behöver hugga tag i. Men i stort gläder det mig att se att vi i denna kammare är överens om yrkeshögskolans viktiga roll för svensk tillväxt och konkurrenskraft långsiktigt.</p><p>Med det vill jag yrka bifall till utskottets förslag i betänkandet.</p><p>(Applåder)</p>",
+        "talare": "Josefin Malmqvist",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad säger Josefin Malmqvist om yrkeshögskolans roll på den svenska arbetsmarknaden?",
+            "answer": "Josefin Malmqvist betonar att yrkeshögskolan spelar en väldigt viktig roll på den svenska arbetsmarknaden. Hon framhåller att yrkeshögskolan har byggts ut kraftigt sedan 2009 och att den visar mycket goda resultat, med omkring nio av tio som går ut i arbete efter avslutad utbildning. Hon anser att yrkeshögskolan är avgörande för att säkerställa att utbildningen matchar behoven på arbetsmarknaden, vilket är en grundförutsättning för Sveriges tillväxt och konkurrenskraft på lång sikt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "89a228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": ""
+        },
+        "graph_RAG": {
+            "answer": "Josefin Malmqvist menar att yrkeshögskolan spelar en väldigt viktig roll på den svenska arbetsmarknaden. Hon påpekar att svensk arbetsmarknad är tudelad och att det finns ett växande utanförskap i samhället. Samtidigt finns det många branscher som behöver kompetens och inte kan anställa. I denna situation ser hon yrkeshögskolan som en viktig lösning eftersom den utbildar för arbetsmarknaden och bidrar därmed till Sveriges tillväxt och konkurrenskraft. Sedan myndigheten för yrkeshögskolan startade 2009 har den byggts ut kraftigt, från 23 000 platser till över 35 000 platser. Malmqvist applåderar att yrkeshögskolan visar goda resultat, med omkring nio av tio studenter som går ut i arbete efter avslutad utbildning. Hon ser behovet av att fortsätta utbygga yrkeshögskolan för att möta arbetsmarknadens behov.",
+            "context": [
+                "89a228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Josefin Malmqvist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3aa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nu är det fokus på att få ut kris- och återstartsmedlen. Därefter är det fokus på att sätta ihop remissvaren så fort som möjligt. Efter det är den exakta formen inte klar ännu - där förväntar jag mig att återkomma snarast. Men jag ser fram emot en fortsatt dialog med Christer Nylander framöver.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?",
+            "answer": "Socialdemokraterna fokuserar på att få ut kris- och återstartsmedlen samt att snabbt sätta ihop remissvaren. Den exakta formen för detta arbete är ännu inte klar, men partiet förväntar sig att återkomma med mer information och ser fram emot en fortsatt dialog med Christer Nylander."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "y",
+            "context": [
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        },
+        "cosine_RAG": {
+            "answer": "Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen är inte tydligt uttalad i de rankade debattstyckena. Dock framhåller de vikten av att stödja samhället under krisen, och har gått fram med förslag om stödpaket på 20 miljarder för att hantera den akuta situationen. Vidare verkar de vara inriktade på att sätta ihop remissvaren så fort som möjligt efter att ha fått ut kris- och återstartsmedlen. Förutom detta, betonar Socialdemokraterna vikten av att stöden inte ska förvärra beroendet av icke-förnybara energikällor och att de som mest behöver stödet ska kunna få det. Notera dock att detta svar är baserat på tillgänglig information och kan inte ge en heltäckande bild av Socialdemokraternas position.",
+            "context": [
+                "8096d4d6-ccd6-ec11-9170-0090facf175a",
+                "7e96d4d6-ccd6-ec11-9170-0090facf175a",
+                "0b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "56e4860e-ccd6-ec11-9170-0090facf175a",
+                "5796d4d6-ccd6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ]
+        },
+        "graph_RAG": {
+            "answer": "Socialdemokraterna har betonat vikten av att snabbt distribuera kris- och återstartsmedel. De arbetar för att sätta ihop remissvar så fort som möjligt, men den specifika formen för detta är ännu inte klar, och de väntar med att dela mer information. De har också betonat vikten av att ha en nära dialog med branscher och dess företrädare och har därför inrättat ett nytt kris- och återstartsråd. Regeringen, som leds av Socialdemokraterna, verkar villiga att föra en dialog med riksdagspartiernas företrädare om hur de tillsammans kan utforma kulturpolitiken, vilket indikerar en öppenhet för samarbete och samråd.",
+            "context": [
+                "3aa228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "8496d4d6-ccd6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8",
+                "7d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        }
+    }
+]

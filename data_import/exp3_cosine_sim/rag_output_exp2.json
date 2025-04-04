@@ -1,0 +1,84 @@
+[
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3aa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nu är det fokus på att få ut kris- och återstartsmedlen. Därefter är det fokus på att sätta ihop remissvaren så fort som möjligt. Efter det är den exakta formen inte klar ännu - där förväntar jag mig att återkomma snarast. Men jag ser fram emot en fortsatt dialog med Christer Nylander framöver.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "answer": "Socialdemokraterna fokuserar på att få ut kris- och återstartsmedlen samt att snabbt sätta ihop remissvaren. Den exakta formen för detta arbete är ännu inte klar, men partiet förväntar sig att återkomma med mer information och ser fram emot en fortsatt dialog med Christer Nylander.",
+            "question": "Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?"
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "context": [
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "Yes"
+        },
+        "LLM_annotator": {
+            "reasonable_question": "\n\nNo"
+        },
+        "RAG_pipeline": {
+            "answer": "Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen fokuserar på att snabbt distribuera dessa medel. Efter det arbetar de med att sätta ihop remissvaren så fort som möjligt. Den exakta formen för fortsatt hantering är ännu inte klar, men de ser fram emot en fortsatt dialog om detta.\n\nDe betonar också vikten av att föra en nära dialog med branschen och dess företrädare, och har därför inrättat ett nytt kris- och återstartsråd. Parallellt med detta pågår remisstiden för återstartsutredningen \"Från kris till kraft\". Socialdemokraterna är öppna för att diskutera kulturens långsiktiga villkor och hur kulturpolitiken kan utformas tillsammans med riksdagspartiernas företrädare.",
+            "context": [
+                "3aa228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "8496d4d6-ccd6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8",
+                "7d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        },
+        "eval": {
+            "orig_answer": "",
+            "RAG_pipeline_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3aa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nu är det fokus på att få ut kris- och återstartsmedlen. Därefter är det fokus på att sätta ihop remissvaren så fort som möjligt. Efter det är den exakta formen inte klar ännu - där förväntar jag mig att återkomma snarast. Men jag ser fram emot en fortsatt dialog med Christer Nylander framöver.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "answer": "Socialdemokraterna fokuserar på att få ut kris- och återstartsmedlen samt att snabbt sätta ihop remissvaren. Den exakta formen för detta arbete är ännu inte klar, men partiet förväntar sig att återkomma med mer information och ser fram emot en fortsatt dialog med Christer Nylander.",
+            "question": "Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?"
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "context": [
+                "26a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "3aa228e8-3dc6-ec11-9170-0090facf175a"
+            ],
+            "reasonable_question": "Yes"
+        },
+        "LLM_annotator": {
+            "reasonable_question": "\n\nNo"
+        },
+        "RAG_pipeline": {
+            "answer": "Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen fokuserar på att snabbt distribuera dessa medel. Efter det arbetar de med att sätta ihop remissvaren så fort som möjligt. Den exakta formen för fortsatt hantering är ännu inte klar, men de ser fram emot en fortsatt dialog om detta.\n\nDe betonar också vikten av att föra en nära dialog med branschen och dess företrädare, och har därför inrättat ett nytt kris- och återstartsråd. Parallellt med detta pågår remisstiden för återstartsutredningen \"Från kris till kraft\". Socialdemokraterna är öppna för att diskutera kulturens långsiktiga villkor och hur kulturpolitiken kan utformas tillsammans med riksdagspartiernas företrädare.",
+            "context": [
+                "3aa228e8-3dc6-ec11-9170-0090facf175a",
+                "94a228e8-3dc6-ec11-9170-0090facf175a",
+                "38a228e8-3dc6-ec11-9170-0090facf175a",
+                "8496d4d6-ccd6-ec11-9170-0090facf175a",
+                "a60c7667-bb23-ed11-9178-901b0e9b71a8",
+                "7d96d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
+        },
+        "eval": {
+            "orig_answer": "",
+            "RAG_pipeline_answer": ""
+        }
+    }
+]
