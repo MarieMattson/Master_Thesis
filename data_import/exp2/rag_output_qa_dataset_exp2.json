@@ -483,8 +483,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Lawen Redar betonar vikten av fria och oberoende medier, särskilt i krigets Ukraina. Hon framhåller att vi får kännedom om den förödande situationen i landet tack vare journalister och utrikeskorrespondenter, som med risk för sina liv rapporterar om händelserna på plats. Hon påpekar också hur farligt det blir för dessa korrespondenter att verka i Ukraina för varje dag som går. \n\nI Ryssland, däremot, märker hon en total censur av alla nyheter och medierapporteringar om kriget i Ukraina, vilket leder till att den ryska allmänheten bara får information från statlig tv och regimvänliga källor. Trots detta gör självständiga journalister och medborgare allt de kan för att nå ut med sanningen, ofta med livet som insats. \n\nRedar kritiserar förslag om att minska anslagen till public service, särskilt i ljuset av det nya säkerhetspolitiska läget. Hon menar att oberoende och saklig information är viktigare än någonsin. Hon understryker också att public service är en \"kollektiv nyttighet som gynnar alla medborgare\", och att det har aldrig i modern tid varit viktigare med medieaktörer i allmänhetens tjänst som är partipolitiskt och kommersiellt oberoende. Slutligen ger hon ett särskilt tack till de journalister och korrespondenter som förser oss med sanningen i en tid då den medvetet utmanas.",
@@ -569,8 +569,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Socialdemokraterna ser rehabilitering som en viktig del i arbetet för att hjälpa långtidssjuka att återvända till arbetslivet och bli friska. De stödjer arbetsplatsinriktat rehabiliteringsstöd och förebyggande sjukpenning som viktiga verktyg för att hålla sjukfrånvaron på en långsiktigt låg nivå. \n\nDe har också yrkat bifall till reservation 1, vilket innebär att de står bakom sina reservationer men för närvarande endast yrkar bifall till den första. De anser att sjukförsäkringen ska ge trygghet vid sjukdom och att de som drabbas av sjukdom ska vara ekonomiskt skyddade och ha rätt till stöd och insatser för att så snabbt som möjligt återfå sin arbetsförmåga.\n\nSocialdemokraterna har tagit flera steg under mandatperioden för att förbättra sjukförsäkringen, bland annat genom att höja taket i sjukpenningen och förbättra ekonomin för sjukskrivna. De har även ändrat regelverket för prövning vid dag 180, vilket har minskat andelen utförsäkringar efter sex månaders sjukskrivning.\n\nRegeringen har också tagit emot en utredning med förslag om en ny förmån, preventionsersättning, som ska kunna beviljas för att genomgå en förebyggande medicinsk eller arbetslivsinriktad åtgärd i syfte att förkorta sjukdomstid eller förhindra nedsatt arbetsförmåga på grund av sjukdom. \n\nSammanfattningsvis är Socialdemokraternas position att sjukförsäkringssystemet behöver reformeras och förstärkas för att bättre kunna stödja och rehabilitera långtidssjuka, med en stark inriktning mot att förebygga sjukskrivning och förbättra rehabiliteringsinsatser.",
@@ -608,8 +608,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Maria Nilsson erkänner att yrkeshögskolan spelar en avgörande roll på den svenska arbetsmarknaden, speciellt när det kommer till att täcka kompetensbrist inom vissa yrken. Hon framhåller att yrkeshögskolan är ett värdefullt komplement till andra utbildningsformer och fyller en viktig lucka mellan akademisk och gymnasial utbildning. Nilsson betonar också att yrkeshögskolan har en hög genomströmning och attraktivitet, och att de som går yrkeshögskolan ofta får relevanta jobb. Hon menar dock att det behövs mer arbete för att fortsätta utveckla och förbättra yrkeshögskolan och för att säkerställa en högkvalitativ yrkeshögskola som kan möta och motverka den rådande kompetensbristen.",
@@ -919,8 +919,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Socialdemokraterna ser allvarligt på situationen i Ukraina och tar ställning för att Sverige ska spela en aktiv roll i att lindra det humanitära lidandet. De erkänner Rysslands invasion som en orsak till de massiva flyktingströmmarna och anser att de bär det yttersta ansvaret för kriget och dess följder. \n\nFör att hantera situationen, stödjer Socialdemokraterna kraftiga sanktioner mot Ryssland, samtidigt som de stödjer Ukrainas självständighet och dess befolkning. De ser det som viktigt att Sverige tillhandahåller tillfälliga boenden för de ukrainare som söker skydd i landet och föreslår en utökning av regeringens befogenheter för att snabbt kunna tillhandahålla detta.\n\nEn viktig del i Socialdemokraternas position är att Sverige ska ta en del av ansvaret för att ta emot flyktingar, inklusive de som flyr från Ukraina. De anser att Sverige bör fortsätta att hjälpa de mest utsatta, inklusive kvotflyktingar, samtidigt som de hjälper de som flyr från Ukraina. De betonar vikten av att inte ställa olika grupper av människor mot varandra, och menar att Sverige har kapacitet att hjälpa både ukrainska flyktingar och andra grupper.\n\nSammanfattningsvis, Socialdemokraterna stödjer en aktiv roll för Sverige i att hjälpa till att lindra det humanitära lidandet i Ukraina och dess grannländer, genom att ta emot flyktingar, ge tillfälligt boende och stödja sanktioner mot Ryssland.",
@@ -1091,8 +1091,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Sverigedemokraterna anser att de förändringar som genomförts inom förebyggande sjukpenning inte är tillräckliga. De påpekar att det förebyggande arbetet för att förhindra sjukskrivningar inte har prioriterats tillräckligt, och att ersättningar har främst använts till personer som redan varit sjukskrivna tidigare. Sverigedemokraterna ser allvarligt på dessa brister och menar att regeringens åtgärder kommer i senaste laget. De föreslår att regeringen ska förtydliga Försäkringskassans uppdrag att förebygga sjukfrånvaro och säkerställa att effekterna av de förebyggande insatserna utvärderas. Dessutom föreslår de att regeringen ska vidta åtgärder för att öka aktörernas kunskap om förebyggande sjukpenning.",
@@ -1130,8 +1130,8 @@
             "reasonable_question": ""
         },
         "cosine_RAG": {
-            "answer": "",
-            "context": ""
+            "answer": "Jag hittade inte svaret",
+            "context": []
         },
         "graph_RAG": {
             "answer": "Josefin Malmqvist menar att yrkeshögskolan spelar en väldigt viktig roll på den svenska arbetsmarknaden. Hon påpekar att svensk arbetsmarknad är tudelad och att det finns ett växande utanförskap i samhället. Samtidigt finns det många branscher som behöver kompetens och inte kan anställa. I denna situation ser hon yrkeshögskolan som en viktig lösning eftersom den utbildar för arbetsmarknaden och bidrar därmed till Sveriges tillväxt och konkurrenskraft. Sedan myndigheten för yrkeshögskolan startade 2009 har den byggts ut kraftigt, från 23 000 platser till över 35 000 platser. Malmqvist applåderar att yrkeshögskolan visar goda resultat, med omkring nio av tio studenter som går ut i arbete efter avslutad utbildning. Hon ser behovet av att fortsätta utbygga yrkeshögskolan för att möta arbetsmarknadens behov.",
