@@ -46,9 +46,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"C\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "Understood. Please provide the context, question, and answer for evaluation.",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -97,9 +97,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"M\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -148,9 +148,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Morgan Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-02\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":False}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -195,9 +195,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Sofia Damm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-03\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -243,9 +243,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Markus Selin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -297,9 +297,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Magdalena Andersson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevence\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -352,9 +352,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "Understood. Please provide the context, question, and answer for evaluation.",
-            "graph_RAG_response": "Understood. Please provide the context, question, and answer for evaluation.",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\": False, \"Quality\": True, \"Relevance\": True, \"Manner\": True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -404,9 +404,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Ola Möller\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-02\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -453,9 +453,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Morgan Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\": True, \"Quality\": True, \"Relevance\": True, \"Manner\": True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -505,9 +505,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Håkan Svenneling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "Understood. Please provide the context, question, and answer for evaluation.",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":True, \"Quality\":False, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -601,9 +601,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Larry Söder\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "Please provide the context, question, and answer for evaluation."
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -645,9 +645,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\": False, \"Quality\": True, \"Relevance\": True, \"Manner\": True}"
         }
     },
     {
@@ -686,9 +686,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Maria Nilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -739,9 +739,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Larry Söder\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -790,9 +790,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "Understood. Please provide the context, question, and answer for evaluation.",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -838,9 +838,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Jens Holm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "Understood. Please provide the context, question, and answer for evaluation.",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":False, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -890,9 +890,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -941,9 +941,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevence\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -987,9 +987,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Yasmine Eriksson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "Understood. Please provide the context, question, and answer for evaluation.",
-            "cosine_RAG_response": "{\"Quality\":True, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -1035,9 +1035,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "Please provide the context, question, and answer for evaluation.",
-            "graph_RAG_response": "{\"Quality\":False, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":False, \"Relevance\":False, \"Manner\":False}",
+            "cosine_RAG_response": "\n\n{\"Quantity\": False, \"Quality\": True, \"Relevance\": True, \"Manner\": True}"
         }
     },
     {
@@ -1082,9 +1082,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Ilona Szatmari Waldau\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":False, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "Understood. Please provide the context, question, and answer for evaluation."
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -1134,9 +1134,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Rasmus Ling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":False, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":True}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":False, \"Relevance\":False, \"Manner\":False}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":False, \"Relevance\":False, \"Manner\":False}"
         }
     },
     {
@@ -1183,9 +1183,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Jeanette Gustafsdotter\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "Please provide the context, question, and answer for evaluation.",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "Understood. Please provide the context, question, and answer for evaluation."
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -1227,9 +1227,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     },
     {
@@ -1266,9 +1266,9 @@
             "cypher_query": "MATCH (t:Talare {name: \"Josefin Malmqvist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":True, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevence\":True, \"Manner\":True}"
         }
     },
     {
@@ -1319,9 +1319,9 @@
             "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id"
         },
         "eval": {
-            "orig_answer": "{\"Quality\":True, \"Relevance\":True}",
-            "graph_RAG_response": "{\"Quality\":False, \"Relevance\":True}",
-            "cosine_RAG_response": "{\"Quality\":False, \"Relevance\":False}"
+            "orig_answer": "\n\n{\"Quantity\":True, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "graph_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}",
+            "cosine_RAG_response": "\n\n{\"Quantity\":False, \"Quality\":True, \"Relevance\":True, \"Manner\":True}"
         }
     }
 ]
