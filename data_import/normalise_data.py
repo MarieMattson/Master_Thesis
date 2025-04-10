@@ -16,17 +16,22 @@ class Speaker(BaseModel):
                   "Arbetsmarknadsminister", "Hälso- och sjukvårdsminister", "Bostadsminister", 
                   "Jämställdhetsminister", "Landshövding", "Europaminister", "Digitaliseringsminister",
                   "Skogsminister", "Livsmedelsminister", "Utrikesminister", "Samhällsbyggnadsminister", 
-                  "Tullminister", "Socialförsäkringsminister", "Pensionsminister", "Flyktingminister"]
+                  "Tullminister", "Socialförsäkringsminister", "Pensionsminister", "Flyktingminister",
+                  "Arbetsmarknadsministern"]
 
-        # Remove any title at the start of the name
-        pattern = r'^(?:' + '|'.join(titles) + r')\s+'
-        value = re.sub(pattern, '', value)
+        # Loop over titles and remove any occurrence of the title within 'value'
+        for title in titles:
+            if title in value:
+                value = value.replace(title, "")
 
         # Remove " replik" at the end if present
         value = re.sub(r'\s*replik$', '', value)
 
         # Remove anything inside parentheses at the end of the name
         value = re.sub(r'\s*\(.*\)$', '', value)
+
+        # Strip any leading or trailing whitespace after removal
+        value = value.strip()
 
         return value
 

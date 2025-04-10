@@ -16,3 +16,4 @@ old_filtered_riksdag.json
 filtered_riksdag.json
 temp/
 full_dataset.csv
+dataset_small.json
