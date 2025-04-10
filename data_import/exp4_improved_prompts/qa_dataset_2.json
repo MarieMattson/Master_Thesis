@@ -1,0 +1,422 @@
+[
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "43a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Frågestund</p><p>Fru talman! Väl utförda rättsintyg utgör ofta viktig bevisning i rättegångar.</p><p>Dessvärre har antalet rättsintyg som utförs av Rättsmedicinalverket minskat kraftigt det senaste decenniet. Antalet rättsintyg utfärdade av Rättsmedicinalverket som baseras på kroppsundersökningar har halverats sedan Morgan Johansson tillträdde som justitieminister, från 2 487 år 2014 till 1 243 förra året.</p><p>Det har i stället blivit vanligare att polis och åklagare enbart använder sig av patientjournaler som skadedokumentation, vilket inte minst i ärenden som handlar om sexualbrott och våld i nära relationer ofta ger ett betydligt sämre underlag i rättsprocessen.</p><p>Jag vill därför fråga justitie- och inrikesminister Morgan Johansson vilka åtgärder han avser att vidta för att polis och åklagare i framtiden ska beställa fler rättsintyg och kroppsundersökningar från Rättsmedicinalverket.</p>",
+        "talare": "Mikael Damsgaard",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad uttryckte Mikael Damsgaard för oro angående rättsintyg under februari 2022?",
+            "answer": "Mikael Damsgaard uttryckte oro över att antalet rättsintyg utfärdade av Rättsmedicinalverket har minskat kraftigt, vilket påverkar kvaliteten på bevisningen i rättegångar, särskilt i fall som rör sexualbrott och våld i nära relationer. Han ifrågasatte vilka åtgärder justitie- och inrikesminister Morgan Johansson planerar för att öka beställningarna av rättsintyg och kroppsundersökningar."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "58a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Om det är lagstiftningen för vapen och annan materiel som kan användas dubbelt som Håkan Svenneling är ute efter finns det en ansvarig myndighet, ISP, som granskar detta i enlighet med den lagstiftning Sverige har för krigsmaterielexport och andra produkter. Det råder stor politisk enighet kring denna nya lagstiftning.</p><p>Jag kan gärna titta närmare på just detta fall, men det är i slutänden myndigheten som beslutar vilken export som kan ske.</p><p>När det gäller Gambia och den pågående rättsprocessen ber jag att få hänvisa till utrikesministern. Jag har inte den detaljkunskapen och ska inte ens försöka svara på frågan. Ledamoten får återkomma i särskild ordning till utrikesministern.</p>",
+        "talare": "Morgan Johansson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på ansvaret för export av krigsmateriel och dubbelt användbar materiel?",
+            "answer": "Socialdemokraterna anser att det är den ansvariga myndigheten, ISP, som ska granska och besluta om export av krigsmateriel och annan materiel som kan användas dubbelt, i enlighet med svensk lagstiftning. Det finns en bred politisk enighet kring denna lagstiftning."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1596d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Det har nu gått tre veckor sedan Putin brutalt raserade den världsordning som vi vant oss vid. Det är tre veckor sedan de strukturer som uppstod efter andra världskriget, för att vi skulle kunna leva i fred och frihet, slogs sönder. I tre veckor har modiga ukrainare kämpat för sina liv, för sin frihet och, fru talman, för allas vår frihet.</p><p>EU måste fortsätta att visa ledarskap när det gäller ytterligare sanktioner, när det gäller mer stöttning med vapen och försvarsmateriel och när det gäller mottagandet av dem som nu flyr för sina liv. Och EU måste bryta sitt beroende av rysk gas. Vi kan exempelvis se till oss själva och ifrågasätta om det är rimligt att ett land som Sverige, med goda förutsättningar att vara självförsörjande på ren el, under perioder importerar dyr och smutsig el. I Sverige har vi förlorat delar av en planerbar elproduktion, vilket ökar behovet av att importera el från Europa, som i sin tur importerar gas från Ryssland.</p><p>Repower EU-planen, som presenteras av kommissionen i maj, kommer att vara otroligt viktig. Statsministern har sagt att Sverige har varit pådrivande i diskussionerna om hur man ska minska beroendet av rysk olja och gas. Men hur har Sverige varit pådrivande? Jag tänker exempelvis på bioenergin från skogen. I kommissionens meddelande om Repower EU nämns inte bioenergin från skogen över huvud taget. Kommer Sverige att säkerställa att skogen blir en del av lösningen när EU ställer om för att bryta sitt beroende?</p>",
+        "talare": "Sofia Damm",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Anser Kristdemokraterna att EU bör bryta sitt beroende av rysk gas och olja?",
+            "answer": "Ja, Kristdemokraterna anser att EU bör bryta sitt beroende av rysk gas och olja, och de betonar vikten av att EU visar ledarskap genom att införa ytterligare sanktioner och stödja Ukraina med vapen och försvarsmateriel."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1e96d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Som jag har svarat tidigare: För att komma framåt i frågan vad gäller beroendet av den ryska gasen är jag inte säker på att det är de länder som är minst beroende av den ryska gasen som ska driva på för ett totalstopp. Jag är rädd att detta skulle kunna få motsatt effekt, nämligen att länder slår bakut. Med detta sagt är vi från svensk sida väldigt tydliga i diskussionerna om att det är en sårbarhet att det är på det här sättet, både klimatmässigt och säkerhetspolitiskt, och att man behöver ställa om.</p><p>Jag tycker att det arbete som kommissionen gör för att hitta andra leverantörer av gas är viktigt. Då löser man inte miljöproblemen, men däremot minskar man beroendet av den ryska gasen, som hjälper till att finansiera kriget. Detta är viktigt.</p><p>Därutöver är det helt avgörande att vi i Europa bygger ut importoberoende energislag, där den havsbaserade vindkraften har en otroligt stor potential, inte minst när den kan kombineras med vätgaslagring. Här behöver vi från svensk sida fortsätta att driva på i Europa men självklart också göra vår hemläxa genom att bygga ut mer vindkraft. Där vet jag att Miljöpartiet är en viktig politisk aktör i Sverige.</p>",
+        "talare": "Magdalena Andersson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Magdalena Andersson för att minska beroendet av rysk gas och vad anser hon om alternativa energikällor?",
+            "answer": "Magdalena Andersson anser att det är viktigt att minska beroendet av rysk gas eftersom det utgör en sårbarhet både klimatmässigt och säkerhetspolitiskt. Hon betonar vikten av att hitta andra gasleverantörer för att minska detta beroende, även om det inte löser miljöproblemen. Dessutom framhåller hon betydelsen av att Europa satsar på importoberoende energikällor, särskilt havsbaserad vindkraft i kombination med vätgaslagring, och att Sverige bör fortsätta driva på denna utveckling."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "42a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Det är precis därför som en höjning av lägstanivån genom införandet av ett garantitillägg måste följas av en höjning av de allmänna pensionerna, som bygger på livsinkomsten.</p><p>En höjning av pensionsavgiften, alltså avsättningarna till det allmänna pensionssystemet, är en förutsättning för att vi ska kunna visa respekt för våra pensionärer och en förutsättning för legitimiteten för det svenska pensionssystemet.</p><p>(Applåder)</p>",
+        "talare": "Ardalan Shekarabi",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad sade Ardalan Shekarabi om pensionssystemet och pensionärernas situation i februari 2022?",
+            "answer": "Ardalan Shekarabi betonade vikten av att höja lägstanivån genom ett garantitillägg och att detta måste följas av en höjning av de allmänna pensionerna. Han menade att en höjning av pensionsavgiften är nödvändig för att visa respekt för pensionärerna och för att upprätthålla legitimiteten i det svenska pensionssystemet."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "99a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nej, Mikael Eskilandersson, jag förstår att du inte förstår problemet om du tror att informationen på en hårddisk försvinner för att du slår en yxa i den. Rättsforensisk teknik gör det i dag ganska lätt att hämta information från både det ena och det andra skadade i den digitala infrastrukturen, så det tror jag inte är något större problem.</p><p>Mikael Eskilandersson är inte medveten om hur det fungerar när man gör en husrannsakan. Det är inte så att den som är misstänkt för brott har tid att elda upp några papper i en papperskorg och stå och vissla medan polisen går igenom lägenheten, utan det är snabba ryck. Man går in och säkrar de fysiska bevis man behöver, och det är där hela poängen ligger.</p><p>Om det är i en molntjänst och man gör en husrannsakan och ska ha tag i inloggningsuppgifter eller liknande måste man först knäcka en kryptering, och om den misstänkte har en kollega eller liknande som är inblandad kan den snabbt gå in och radera uppgifter. Det är därför man häktar folk och de inte får lov att kontakta omvärlden och sådana saker. Men jag förstår att Mikael Eskilandersson inte har koll på de här sakerna.</p><p>Jag har en annan fråga, fru talman. I Sverigedemokraternas skrivning står det att informationen ska begäras ut om revisor begär det. Men i majoriteten av alla företag finns det ingen revisor eftersom revisionsplikten är slopad. Vi vill återinföra den nu. Men vilken revisor ska begära ut informationen om det inte finns någon revisor? I de flesta fall rimmar det väldigt illa.</p><p>När det gäller brott mot bokföringslagen är det dessutom så att det är en individ som blir dömd för att inte ha lämnat över bokföringen medan alla de bakom det som står i räkenskaperna - för även ett kriminellt växlingskontor har koll på sina pengar; det kan jag lova Mikael Eskilandersson - kommer undan. Man skickar fram en som tar smällen, och sedan kommer resten undan. Det är därför vi behöver säkra de fysiska räkenskaperna.</p>",
+        "talare": "Ola Möller",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Socialdemokraterna att revisionsplikten bör återinföras för att säkerställa att information kan begäras ut korrekt?",
+            "answer": "Ja, Socialdemokraterna anser att revisionsplikten bör återinföras eftersom det i många företag saknas revisorer, vilket gör det svårt att begära ut information på ett korrekt sätt."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "22a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Frågestund</p><p>Jag vill hälsa statsråden välkomna. Frågor besvaras av justitie- och inrikesminister Morgan Johansson, statsrådet Ardalan Shekarabi, klimat- och miljöminister Annika Strandhäll och kulturminister Jeanette Gustafsdotter.</p><p>En fråga ska vara av övergripande och allmänpolitiskt slag eller avse ett ämne som faller inom statsrådets ansvarsområde och rör dennes tjänsteutövning. Justitie- och inrikesminister Morgan Johansson besvarar såväl allmänpolitiska frågor som frågor inom sitt eget ansvarsområde.</p>",
+        "talare": "FÖRSTE VICE TALMANNEN",
+        "parti": "FÖRSTE VICE TALMANNEN",
+        "qa_pair": {
+            "question": "Anser FÖRSTE VICE TALMANNEN att frågorna under frågestunden endast ska handla om specifika detaljer inom statsrådens ansvarsområden?",
+            "answer": "Nej, FÖRSTE VICE TALMANNEN anser att frågorna ska vara av övergripande och allmänpolitiskt slag eller röra ämnen inom statsrådens ansvarsområden, vilket innebär att de inte är begränsade till enbart specifika detaljer."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Vissa säkerhetspolitiska frågor",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "5196d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nej, jag sprider inte något ryskt narrativ. Nej, jag tycker inte att Ukraina ska betala något slags rättmätigt pris. Detta är Putins krig. Det är hans fel att kriget har startat. Skulden ligger bara hos honom, och jag hoppas innerligt att vi en dag får döma den jäkeln i den internationella kriminaldomstolen för brott mot mänskliga rättigheter. Det hoppas jag att Joar och jag får se innan vi en dag lämnar detta jordeliv.</p><p>Med detta sagt är det viktigt att se att man måste kunna prata om vad olika typer av bedömningar får för säkerhetspolitiska konsekvenser för Sverige. Jag tyckte att det beslut som denna riksdag fattade medan jag låg på sjukhus gick för snabbt och byggde på ett för dåligt underlag när det gällde de säkerhetspolitiska aspekterna. Jag hoppas att vi inte kommer att fatta fler beslut som har stor säkerhetspolitisk betydelse för Sverige på grund av ett utskottsinitiativ från fem ledamöter i finansutskottet.</p><p>Att resonera kring vad det innebär när vi ger vapenstöd till Ukraina, som befinner sig i krig, och vilka säkerhetspolitiska risker det medför tycker jag är mitt ansvar som ledamot av Sveriges riksdag och dess utrikesutskott. Därmed inte sagt att jag tycker att det är fel eller att jag inte tycker att vi ska ge allt stöd till Ukraina. Vi ska alltid förhålla oss tydligt kritiska till brott mot mänskliga rättigheter.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Vissa säkerhets-politiska frågor</p><p>Jag menar att man absolut kan vara kritisk till brott mot mänskliga rättigheter men fortfarande anse att vi ska vara en militärt alliansfri stat. Man kan ändå kritisera alla brott mot mänskliga rättigheter, oavsett av vem de begås, var de sker och med vilka motiv. Det tänker jag göra mot president Putin varje dag som han begår sådana brott. Det är skillnad, och det är viktigt att komma ihåg.</p><p>Därför hoppas jag att vi har tydliga säkerhetspolitiska diskussioner under de säkerhetspolitiska samtal som startar i morgon och att detta leder till att tydliggöra Sveriges säkerhetspolitiska linje.</p>",
+        "talare": "Håkan Svenneling",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur ser Håkan Svenneling på Sveriges säkerhetspolitiska beslut och dess konsekvenser?",
+            "answer": "Håkan Svenneling anser att Sveriges säkerhetspolitiska beslut ibland fattas för hastigt och utan tillräckligt underlag, vilket kan få betydande konsekvenser. Han betonar vikten av att diskutera de säkerhetspolitiska riskerna med att ge vapenstöd till Ukraina och att Sverige bör förbli militärt alliansfritt. Han vill också se tydliga säkerhetspolitiska diskussioner för att klargöra Sveriges linje."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "(forts. från § 13) Stöd till personer med funktionsnedsättning (forts. SoU12)",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "9296d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag ställer mig självklart bakom alla våra reservationer i betänkandet SoU12, men för att vinna tid yrkar jag bifall endast till reservation 16. Jag vänder mig även till ledamoten Camilla Waltersson Grönvall som tog upp Miljöpartiet i sitt anförande. Hon får gärna ta replik så får vi samtala lite grann om nationella riktlinjer.</p><p>Utanför mitt fönster där jag bor har jag ett träd. Det gör att jag hela tiden kan följa årstiderna. Lövsprickningen kommer att ske när som helst, känner jag. Längtan efter att få vara ute och att kunna känna lukten av grönska och vinden i håret växer sig bara starkare och starkare.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Stöd till personer med funktionsnedsättning</p><p>Att kunna röra på sig och att få möjlighet att röra på sig är viktigt för välmående, hälsa och minskad sjuklighet. På senare tid har även kopplingen till den kognitiva förmågan lyfts fram alltmer. Den fysiska hälsan hos personer med funktionsnedsättningar är betydligt sämre än i befolkningen som helhet, såklart beroende på vilken typ av funktionsnedsättning man har.</p><p>Fru talman! Om en människa har vissa funktionsvariationer som gör det svårt att röra sig finns desto större skäl för samhället att inte bara i sin fysiska utformning utan även via olika stödsystem i så hög grad som möjligt understödja möjligheten att röra på sig.</p><p>I dag finns ett bra och viktigt stöd som innebär att en bil kan anpassas efter din funktionsförmåga, en bil som du själv kan köra. Jag anser att det nu skulle vara dags att se över hur ett system för cykelstöd skulle kunna införas som komplement till bilstöd. Det här är ett stöd som kan öppna fler dörrar till rörelsefrihet, förbättrad hälsa, välmående och kanske även cykelglädje på köpet. I dag finns det specialgjorda cyklar som personer med olika typer av funktionsvariationer kan använda sig av. Men de behöver ofta specialbeställas och är såklart dyrare. Det är i dagsläget bara barn som kan få bidrag till cykel som fritidshjälpmedel.</p><p>Både från talarstolen här i dag och från personer som vi pratar med och träffar hör vi berättelser om hur svårt det till exempel kan vara att få ett arbete om man har ett funktionshinder eller att man som förälder hela tiden behöver beskriva det som barnet <em>inte</em> kan för att kunna få ett stöd. Det blir en känsla av att man ständigt måste göra ned sitt barn. Det kan också vara svårigheter att få rätt tillgång till hjälpmedel.</p><p>Förutom det grundläggande som att få det stöd som LSS säger finns mycket kvar att göra för att förbättra livssituationen för personer med funktionsnedsättning. Ett cykelstöd är inte det största av alla stöd, men jag anser att det kan vara ett exempel.</p><p>Ett annat exempel som vi har lyft fram är att det tydligt bör framgå av regelverket att insatserna enligt LSS ska utformas så att även syskon till den stödbehövande får den avlastning och den egentid med föräldrarna som de behöver. Det här är en del i att leva upp till barnkonventionen, som nu är svensk lag, i det här fallet särskilt § 3 där det står att barnets bästa ska beaktas i alla beslut som rör barn.</p><p>Fru talman! Sverige behöver också göra upp med sin historia. Många av oss har spridd kunskap om vad personer med funktionsnedsättning drabbats av, till exempel tvångssteriliseringar. Många har fått leva sitt liv på institutioner. Vi har dock ingen sammanhängande bild av den förda politiken under stora delar av 1900-talet och hur den har drabbat människor.</p><p>Men i och med att vi saknar denna bild är det viktigt att individer och anhöriga får komma till tals, och de förtjänar en ursäkt. Och vi som samhälle behöver minnas vad det är som har skett och säkerställa att denna typ av människosyn aldrig återkommer. </p><p>Stöd till personer med funktionsnedsättning</p><p>Jag har nu förstått att det finns fler partier som vill samma sak, och jag hoppas att det verkligen blir av. </p><p>Jag vill avsluta med att nämna att jag är väldigt glad över att det finns en majoritet för att utredningen om huvudmannaskap nu får ett tilläggsdirektiv om att samtliga hjälpmoment för alla grundläggande behov ska ge rätt till assistans. Den helhetssyn som var tänkt från början kan nu framöver bli verklighet. </p><p>Överläggningen var härmed avslutad.</p><p>(Beslut skulle fattas den 17 mars.)</p><p>Fiskeripolitik</p>",
+        "talare": "Margareta Fransson",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Anser Miljöpartiet att det nuvarande stödet för personer med funktionsnedsättning är tillräckligt utan att införa ytterligare åtgärder som cykelstöd?",
+            "answer": "Nej, Miljöpartiet anser att det nuvarande stödet inte är tillräckligt och föreslår att ett system för cykelstöd bör införas som komplement till bilstöd för att förbättra rörelsefrihet och hälsa för personer med funktionsnedsättning."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "9fa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag kan än en gång säga att Ola Möller borde ta en diskussion med Näringslivets Regelnämnd. Där finns statistik som visar att kostnaden för de nya reglerna minskade under alliansregeringen. Men under er regering har den ökat med 1 miljard om året.</p><p>De kostnaderna läggs ju någonstans. Det är den sista kunden som måste betala alla kostnader för varan. I dagens läge, när e-handeln är så pass stor, betyder det att Ola Möller och jag, som kunder, kan handla från en ehandel i Tyskland i stället för i Sverige. Det betyder att vi driver svenska företag i botten och utomlands om vi inte försöker få dem konkurrenskraftiga.</p><p>Jag ska ta ett exempel som Ola Möller kan ta med sig. Kemikalieskatten som Ola Möllers parti införde gör att svenska företag som bedriver ehandel är tvungna att antingen skapa ett lager någonstans i övriga Europa eller lägga ned sin verksamhet. Över 1 000 sysselsättningstillfällen har försvunnit från Sverige på grund av kemikalieskatten, som inte har räddat miljön ett enda dyft eftersom vi faktiskt köper varorna från Tyskland, Italien eller England i dag.</p><p>Jag menar att vi måste se på helheten men också ha för ögonen att om vi sätter in en regel, som kan vara av godo, måste vi ta bort två för att minska regelbördan för svenska företag. Vi måste vara konkurrenskraftiga. Målsättningen måste vara att regelbördan och kostnaden för den ska minska för svenska företag.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Associationsrätt</p><p>Vår svenska regering, med näringsministern i spetsen, sa den 22 september precis samma sak som jag, men Ola Möller har uppenbarligen en annan uppfattning än sitt eget parti.</p>",
+        "talare": "Larry Söder",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Kristdemokraterna för att minska regelbördan för svenska företag?",
+            "answer": "Kristdemokraterna anser att för varje ny regel som införs bör två tas bort för att minska regelbördan och kostnaderna för svenska företag. De betonar vikten av att göra svenska företag mer konkurrenskraftiga och kritiserar kemikalieskatten för att ha lett till förlorade arbetstillfällen utan att förbättra miljön."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Associationsrätt",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "9da228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag skulle önska att Ola Möller tar sig en liten tur i Stockholm och tittar på näringslivets regelverk. Det kan förklara ganska tydligt för Ola Möller hur nya regler slår mot företag och slår ut företag. Det betyder också att svenska företag får mindre konkurrenskraft gentemot andra europeiska företag. De räknar med att pålagorna på svenska företag kommer att uppgå till 1 miljard om året.</p><p>När det gäller en del saker kan man fundera på om de är bra eller dåliga. Ta personalliggare, till exempel, som ökar regelbördan rätt mycket för företag. I vissa fall är det väldigt bra, inom byggbranschen, till exempel. Men man vill också gå vidare och införa detta för andra typer av verksamheter, som kanske inte har samma behov som byggbranschen.</p><p>Detta är regelverk som tynger våra företagare. Man måste vara aktsam. Vilka regler är det som faktiskt hjälper oss att ta bort de värsta utan att göra så att vi skuldbelägger eller lägger mer kostnader på dem som sköter sig? Jag menar att vi ska ha bra svenska företag. De företag som sköter sig ska också ha möjlighet att konkurrera med de andra företagen i Europa.</p><p>Jag kan inte se att det pågår någon liberaliseringsvåg, som Ola Möller säger i talarstolen, eller att det är av ondo att kanske ta bort två regler när man inför en ny, för att minska regelbördan för svenska företag.</p><p>Sedan har vi problem i en del svenska företag, och dem ska vi hjälpas åt med. Men jag tror att Ola Möller gör sig själv en otjänst om han tror att alla svenska företag är fiender, i stället för att ta tag i dem som faktiskt gör något som vi inte vill ha i Sverige.</p>",
+        "talare": "Larry Söder",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Anser Larry Söder att det är viktigt att minska regelbördan för svenska företag för att öka deras konkurrenskraft?",
+            "answer": "Ja, Larry Söder anser att det är viktigt att minska regelbördan för svenska företag för att de ska kunna konkurrera bättre med andra europeiska företag. Han betonar att regler som inte är nödvändiga bör tas bort för att inte belasta företagen i onödan."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Radio och tv i allmänhetens tjänst",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "7496d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag känner mig nödgad att gå upp här i debatten. Jag tror helt ärligt att Lawen Redar har missförstått stycket om granskningsnämnden.</p><p>Hon menar att det är vi som ska granska det som fälls. Jag kan dementera det. Det stämmer inte. Det är inte vi politiker och riksdagsledamöter som ska granska det som fälls i granskningsnämnden. Det vi vill är att tillsätta ett organ.</p><p>Det har framkommit att det råder en diskrepans mellan det som allmänheten uppfattar att granskningsnämnden granskar och vad den faktiskt granskar. Det är här vi vill rätta till felet, om jag får uttrycka mig så.</p><p>Det är ett problem att människor tror att man granskar faktafel. Om det senare framkommer att det var ett faktafel i ett program som sedan inte fälldes är det ett problem anser vi.</p><p>Det handlar återigen om misstro och tillit till public service. Granskningsnämnden menar i dag att det inte är dess uppgift att dubbelkolla och kontrollera fakta. Vi menar att det bör ingå i dess uppdrag. Det är vad vi vill lägga till i granskningsnämndens uppdrag.</p><p>Vi kan tala om tillit. Man kan vända på de siffror som Lawen Redar nämnde. Det är 23 procent som i dag inte har förtroende för public service. Det är 35 procent som anser att det inte är värt priset.</p><p>Om man inte känner tillit, varför ska vi då ha public service? Det är väl någonstans grundbulten att man ska känna tillit till det. Då måste man säkerställa att publiken känner tillit till public service.</p>",
+        "talare": "Angelika Bengtsson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Vad var Angelika Bengtssons ståndpunkt om granskningsnämndens uppdrag i mars 2022?",
+            "answer": "Angelika Bengtsson ansåg att granskningsnämndens uppdrag borde inkludera att dubbelkolla och kontrollera fakta, eftersom det finns en diskrepans mellan vad allmänheten tror att nämnden granskar och vad den faktiskt granskar. Hon menade att detta skulle öka tilliten till public service."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "2fa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Frågestund</p><p>Fru talman! Jag har en fråga till klimatminister Annika Strandhäll.</p><p>Vi behöver minska utsläppen från transportsektorn med minst 70 procent till 2030. Det är bara åtta år kvar till dess. Häromdagen kom Trafikverket med ny statistik om utsläppen från våra vägtransporter. De minskade med bara 0,3 procent i fjol. Det är alldeles för lite. Är klimat- och miljöministern nöjd med statistiken?</p><p>Man kan tänka sig statlig medfinansiering till kollektivtrafiken, ökade satsningar på elektrifiering av fordonsflottan och en vägslitageavgift på de tunga transporterna för att flytta över transporter från väg till järnväg.</p><p>Jag vill veta vad klimat- och miljöministern tänker göra för att vi snabbt ska minska utsläppen från vägtransporterna så att vi når vårt klimatmål till 2030. Det måste väl ändå vara planen?</p>",
+        "talare": "Jens Holm",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Anser Jens Holm att nuvarande minskningstakt av utsläpp från vägtransporter är tillräcklig för att nå klimatmålen till 2030?",
+            "answer": "Nej, Jens Holm anser att minskningen av utsläppen är alldeles för liten och otillräcklig för att nå de uppsatta klimatmålen till 2030."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "2396d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag tackar statsministern för det mycket tydliga svaret.</p><p>Det gläder mig att vi också tänker på efterspelet. Nu är vi mitt uppe i detta fruktansvärda, men de saker vi gör nu kommer att avgöra hur läkande, ansvarsutkrävande och återuppbyggnad kommer att ske. Det gläder mig att de planerna finns.</p><p>Jag skulle vilja passa på att fråga statsministern om hon kan utveckla något om de krigsbrott och övergrepp som nu sker, det lidande som de för med sig, de oerhörda humanitära kriser som vi ser spelas upp framför våra ögon i Ukraina och alltmer i grannländer när flyktingvågen blir allt större. Vad kan Sverige göra för att lindra det hjärtskärande lidande vi alla ser?</p>",
+        "talare": "Olle Thorell",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Olle Thorell att det är viktigt att planera för återuppbyggnad och ansvarsutkrävande efter den nuvarande krisen?",
+            "answer": "Ja, Olle Thorell anser att det är viktigt att planera för återuppbyggnad och ansvarsutkrävande efter den nuvarande krisen, eftersom de åtgärder som vidtas nu kommer att påverka hur dessa processer genomförs i framtiden."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "1396d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag konstaterar att jag inte fick något svar på min fråga om hur man förhindrar att ryska bolag som finns på sanktionslistan fortsätter agera genom dotterbolag eller oklara regler - man stoppar inte införsel av till exempel flygbränsle från Ryssland via svenska hamnar. Jag fick inte heller någon kommentar till detta cirkelresonemang.</p><p>Men jag har en annan fråga som jag gärna vill få svar på. I uttalandet tas flyktingsituationen upp och hur EU ska kunna bistå de länder som tar emot flyktingar. Just nu är det gränsstaterna som tar emot flest, och Moldavien har varnat för en humanitär katastrof, då landet inte har resurser för de cirka 100 000 flyktingar som inte har möjlighet eller ork att fly vidare. Moldavien har vädjat om internationell hjälp.</p><p>Min fråga är om EU kommer att bistå länder även utanför EU. Eller är det enbart EU-länder som kommer att bistås med medicinsk och ekonomisk hjälp? Det är oklart i uttalandet.</p>",
+        "talare": "Ilona Szatmari Waldau",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Vad uttryckte Ilona Szatmari Waldau för oro angående EU:s stöd till flyktingmottagande länder i mars 2022?",
+            "answer": "Ilona Szatmari Waldau uttryckte oro över huruvida EU kommer att bistå länder utanför EU, som Moldavien, med medicinsk och ekonomisk hjälp för att hantera flyktingkrisen."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3da228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag är medveten om beslutet som folketinget tog i den här frågan. Det var otroligt olyckligt. Eftersom man har påbörjat det här och läget är så akut - det pågår i detta nu - måste regeringen agera och protestera mot det som sker. När det väl har hänt ligger det på botten och förgiftar havet, och då är det för sent. Det är nu möjligheten fortfarande finns att göra något, och jag hoppas att Annika Strandhäll och regeringen kan göra det skyndsamt.</p>",
+        "talare": "Rasmus Ling",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Anser Rasmus Ling att regeringen bör agera snabbt i den aktuella frågan?",
+            "answer": "Ja, Rasmus Ling anser att regeringen bör agera snabbt eftersom situationen är akut och det finns fortfarande en möjlighet att göra något innan det är för sent."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "24a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag har inte läst allt som har skrivits om mig, och det är för att jag inte ska tappa fokus på varför jag tog uppdraget, det vill säga för att motverka att det demokratiska samtalet drunknar i hat och hot, för att säkra att kulturen finns över hela landet för alla oavsett bakgrund och såklart för starka, fria, oberoende medier.</p><p>Jag tror att om jag fokuserar på det som har skrivits om mig nu tappar jag styrfarten på det som är det absolut viktiga.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Socialdemokraterna för vikten av att skydda det demokratiska samtalet och kulturen i Sverige?",
+            "answer": "Socialdemokraterna betonar vikten av att motverka hat och hot i det demokratiska samtalet och att säkerställa att kulturen är tillgänglig för alla i hela landet, oavsett bakgrund. De anser också att det är avgörande att ha starka, fria och oberoende medier för att upprätthålla en fungerande demokrati."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Vissa säkerhetspolitiska frågor",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "4996d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Vissa säkerhets-politiska frågor</p><p>Fru talman! Jag vill inledningsvis yrka bifall till reservation 2. Jag vill också lyfta fram det särskilda yttrande om FN:s konvention om förbud mot kärnvapen som Kristdemokraterna har tillsammans med Moderaterna och Sverigedemokraterna.</p><p>Totalt ligger ett hundratal motionsyrkanden till grund för det betänkande som vi debatterar i dag. Aktualiteten i debatter som denna har skiftat över tid. I grunden har det alltid handlat om hur vi som nation bäst värnar trygghet och säkerhet. Om detta handlar det även i dag, och det gör det på ett sätt som få av oss trodde skulle vara fallet för bara några veckor sedan.</p><p>I blixtbelysning ser vi hur den ryska invasionen av Ukraina har förändrat förutsättningarna för säkerhetspolitiken. Förändringen är dramatisk. Skiftet är historiskt. Associationerna för oss tillbaka till de mörkaste kapitlen i Europas historia.</p><p>Fru talman! Den 30 september 1938 återvände den brittiske premiärministern Chamberlain till London efter att ha förhandlat med Adolf Hitler i München. Tillsammans med de politiska ledningarna i Frankrike och Italien hade Chamberlain gett grönt ljus för ett tyskt införlivande av de sudettyska områdena i Tjeckoslovakien.</p><p>Premiärministern hälsades som en hjälte. Med sig till väntande folkmassor hade han en icke-aggressionspakt undertecknad av honom och Hitler. Risken för ett storkrig ansågs vara avvärjd. Chamberlain talade om fred i vår tid.</p><p>Men dåvarande oppositionsledaren Winston Churchill höjde ett varningens finger. I ett tal inför det brittiska parlamentet sa han att Storbritannien och Frankrike i München haft att välja mellan krig och vanära. Han tillade: De valde vanära, de kommer att få krig. Något halvår senare gick Tyskland in i Tjeckoslovakien. I september 1939 invaderades Polen.</p><p>Fru talman! Utan att dramatisera eller överdriva står den fria världen i dag inför en situation liknande den 1939. Även om västvärlden inte har valt vanära, även om USA, EU och Nato står samlade bakom diplomatiska ansträngningar och omfattande sanktioner, har vi fått krig. Risken är att detta bara är början.</p><p>Sverige står i den här allvarliga situationen utan garantier om hjälp utifrån vid ett militärt angrepp. I det avseendet är vi i samma situation som Ukraina. Vi är det därför att Socialdemokraterna blockerar frågan om ett svenskt medlemskap i Nato. Ett resursstarkt politiskt parti, enligt självbilden evigt regeringsbärande och mästare i beslutsfattande, förmår inte att samla sig bakom det som är bäst för landet.</p><p>När det gäller frågan om svenskt medlemskap i det som i dag är EU var splittringen inom socialdemokratin uppenbar i decennier. När det gäller partiets säkerhetspolitiska positioner och Natomotstånd blottläggs ihåligheterna och bristerna i detta nu.</p><p>Det ryska angreppskriget mot Ukraina och de brutala övergreppen mot det ukrainska folket utgör allvarliga brott mot humanitär rätt och krigets lagar. Parallellt utmanas den europeiska säkerhetsordningen och grundläggande förutsättningar för vår säkerhet. Över en natt har Socialdemokraternas säkerhetspolitiska linje blivit överspelad. Alliansfriheten är obsolet, och upprustning av det militära försvaret har högsta prioritet.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Vissa säkerhets-politiska frågor</p><p>Fru talman! Kristdemokraterna har genom åren välkomnat Sveriges bilaterala försvarssamarbeten, främst med Finland, USA och Storbritannien. Samtidigt har vi framhållit att inget av dessa samarbeten besvarar den centrala frågan om vad som händer om vårt land skulle angripas militärt.</p><p>Socialdemokraternas närmast sorglösa respons på detta har varit att alliansfriheten har tjänat Sverige väl och att det medför risker att förändra den säkerhetspolitiska linjen.</p><p>Det kan tyckas förnuftigt att framhålla vikten av varsamhet och långsiktighet i säkerhetspolitiken. Samtidigt skulle inte ett svenskt Natomedlemskap innebära någon förändring av den säkerhetspolitiska linjen. Det skulle innebära ett förtydligande.</p><p>När det gäller risker krävs det i dessa dagar ingen avancerad analysförmåga för att se var det verkliga vågspelet finns. Är det något som invasionen av Ukraina lär oss är det att en enskild nation kan ha stöd från hela världen men ändå stå ensam i försvaret mot en skoningslös angripare.</p><p>Fru talman! Europa står inför en ny och illavarslande utveckling. Det illustreras bland annat av att regimföreträdare i Moskva numera öppet talar om Sverige som en del av en rysk intressesfär. I samma anda görs uttalanden om att ett svenskt eller finländskt Natomedlemskap skulle leda till politiska och militära reaktioner från den ryska statsledningen.</p><p>Budskapet är tydligt: Putin sätter stopp för ytterligare utvidgning av Nato. Nu är det inte i Moskva som Sveriges säkerhetspolitiska tillhörighet och framtid avgörs. Det är och förblir i vårt eget land. Ändå är det i den uppkomna situationen nödvändigt att inte bara se det som händer utan även agera därefter.</p><p>Den finländska socialdemokratins ansvarsfulla hållning och tydliga avsikt att hålla dörren öppen för ett Natomedlemskap borde för Socialdemokraterna i Sverige tjäna som förebild. Inför det oerhörda som nu sker krävs politisk insikt, men också förmåga att ompröva tidigare positioner och dra nödvändiga slutsatser.</p><p>Att döma av opinionsmätningar i såväl Sverige som Finland inser den stora allmänheten just detta i båda länderna. Verkligheten har hunnit i kapp Socialdemokraternas doktrinära motstånd mot ett Natomedlemskap.</p><p>Om detta enbart vore en partiintern angelägenhet skulle frågan och dess ansvarslösa hantering kunna bero. Dessvärre är dock de politiska realiteterna sådana att Socialdemokraterna aktivt hindrar ett för hela vårt land direkt avgörande ställningstagande.</p><p>Fru talman! Fortsatt osäkerhet om vad som sker vid ett eventuellt angrepp mot Sverige sänker tröskeln för en angripare och ökar risken för en militär konflikt. Mot den bakgrunden är ett förtydligande av Sveriges säkerhetspolitiska linje nödvändigt och ofrånkomligt.</p><p>I samråd med Finland behövs en politisk avsiktsförklaring med innebörden att Sverige önskar bli medlem av Nato. Det ska inte ske efter långdraget utredande och analyser av lämplig tidpunkt, och inte efter att Socialdemokraterna ytterligare förhalat frågan. En medlemskapsprocess behöver inledas nu, omedelbart.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Vissa säkerhets-politiska frågor</p><p>Detta innebär inte att Sverige bidrar till osäkerhet och destabilisering i Europa. Det innebär att klarhet skapas och att krigsförbrytarna i Kreml får det besked de inte vill ha.</p><p>Fru talman! Den politik som alldeles för långe hållit vårt land utanför de västliga demokratiernas försvarsallians bör förpassas till historien.</p>",
+        "talare": "Lars Adaktusson",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Anser Lars Adaktusson att Sveriges alliansfrihet fortfarande tjänar landet väl?",
+            "answer": "Nej, Lars Adaktusson anser att alliansfriheten är föråldrad och att Sverige bör bli medlem i Nato för att stärka sin säkerhetspolitiska position."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Riksrevisionens rapport om yrkeshögskolan",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "89a228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Svensk arbetsmarknad tudelas. Vi ser ett växande utanförskap i många grupper i vårt samhälle. Vi vet nu att omkring hälften av alla utrikes födda i Sverige inte kan försörja sig själva. Samtidigt skriker många branscher efter kompetens. Man har inte möjlighet att anställa.</p><p>Vi har ett utbildningsproblem på svensk arbetsmarknad. Vi har en stor grupp personer som saknar arbete och företag som skriker efter personer med rätt kompetens. Här har vi en hemläxa att göra.</p><p>Vi behöver i allt större utsträckning säkerställa att vi utbildar för svensk arbetsmarknad. Det är en grundförutsättning för Sveriges tillväxt och konkurrenskraft långsiktigt.</p><p>Här spelar yrkeshögskolan en väldigt viktig roll. Sedan Myndigheten för yrkeshögskolan startade som en myndighet 2009 har den byggts ut granska kraftigt, från omkring 23 000 platser till en bra bit över 35 000 platser.</p><p>Det är glädjande att se att vi här inne är överens om en fortsatt kraftig utbyggnad. Det finns goda skäl för det. Yrkeshögskolan visar väldigt goda resultat, bättre resultat än kanske någon annan utbildningsform. Omkring nio av tio går ut i arbete. I vissa yrkeskategorier är alla i stort sett garanterade jobb efter avslutad utbildning. Det är fantastiskt.</p><p>Men vi ser fortfarande ett skriande behov av platser inom flera områden. Jag kan ta ett konkret exempel. Jag tror att många av oss har drabbats av tågförseningar på grund av signalfel, kanske nästan dagligdags. Hur kommer det sig då att det bara utbildas 16 signaltekniker i Sverige? Det är ett konkret problem som många av oss möter i vår vardag. Här behöver vi säkerställa att det finns utbildningsplatser för att möta detta behov.</p><p>Det är därför glädjande att Riksrevisionen i sin granskning, som vi har att ta ställning till och debattera här i dag, kommer fram till att yrkeshögskolan i stort lever upp till de högt satta mål och förväntningar som vi har på denna utbildningsform. I stort är de rekommendationer som man lämnar ett arbete som nu har påbörjats. Det handlar framför allt om att utreda hur en gemensam antagning till yrkeshögskolan skulle kunna se ut. Detta är någonting som vi välkomnar.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Riksrevisionens rapport om yrkeshögskolan</p><p>Fru talman! Med det vill jag tacka för dagens debatt i ett ärende där vi kan konstatera att vi för ovanlighetens skull är förhållandevis överens. Det finns brister, och det finns utmaningar som vi behöver hugga tag i. Men i stort gläder det mig att se att vi i denna kammare är överens om yrkeshögskolans viktiga roll för svensk tillväxt och konkurrenskraft långsiktigt.</p><p>Med det vill jag yrka bifall till utskottets förslag i betänkandet.</p><p>(Applåder)</p>",
+        "talare": "Josefin Malmqvist",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Anser Josefin Malmqvist att yrkeshögskolan spelar en viktig roll för Sveriges tillväxt och konkurrenskraft?",
+            "answer": "Ja, Josefin Malmqvist anser att yrkeshögskolan är avgörande för Sveriges långsiktiga tillväxt och konkurrenskraft, eftersom den bidrar till att utbilda personer med rätt kompetens för den svenska arbetsmarknaden."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    },
+    {
+        "dok_id": "H90968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-02-17 00:00:00",
+        "anforande_id": "3aa228e8-3dc6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Nu är det fokus på att få ut kris- och återstartsmedlen. Därefter är det fokus på att sätta ihop remissvaren så fort som möjligt. Efter det är den exakta formen inte klar ännu - där förväntar jag mig att återkomma snarast. Men jag ser fram emot en fortsatt dialog med Christer Nylander framöver.</p>",
+        "talare": "Jeanette Gustafsdotter",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Jeanette Gustafsdotter att det är viktigt att få ut kris- och återstartsmedlen snabbt?",
+            "answer": "Ja, Jeanette Gustafsdotter betonar vikten av att fokusera på att snabbt distribuera kris- och återstartsmedlen."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": {
+            "reasonable_question": ""
+        }
+    }
+]

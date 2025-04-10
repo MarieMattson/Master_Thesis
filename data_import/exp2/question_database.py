@@ -3,7 +3,7 @@ import traceback
 from llm_retrieval.full_pipeline_class import GraphRAG
 
 graph_rag = GraphRAG()
-with open("/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/formatted_qa_dataset_2.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 
@@ -34,7 +34,7 @@ for entry in dataset:
         print(f"⚠️ Error processing entry: {question}")
         print(traceback.format_exc())
 
-with open("/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset_exp2.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/graph_output.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
-print("\nProcessing complete! Results saved to rag_output_exp2.json.")
+print("\nProcessing complete!")

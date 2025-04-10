@@ -21,11 +21,16 @@ class QueryGenerator:
     def generate_qa_inference_person(self, entry):
         qa_type = "generate_qa_inference_person"
         prompt = f"""
-                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
-
-                    Based on the following speech, asks about what the speaker ({entry['talare']}) has expressed in the speech (e.g., "Vad säger {entry['talare']} om...?" or "Hur argumenterar {entry['talare']} för...?)".  
-
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
+                  You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
+                    
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the speaker ({entry['talare']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created                    
+                    Guidelines:
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should start with something like: *"Hur argumenterar {entry['talare']} för..." or "Vad tycker {entry['talare']} om..."*
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -42,14 +47,29 @@ class QueryGenerator:
 
     def generate_qa_inference_party(self, entry):
         qa_type = "generate_qa_inference_party"
-        prompt = f"""
+        prompt = f"""                    
                     You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
+                    
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the party ({entry['parti']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created                    
+                    Guidelines:
+                    - Use the **full name of the party**, not the abbreviation (see list below).
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should start with something like: *"Hur argumenterar {entry['parti']} för..." or "Vad tycker {entry['parti']} om..."*
 
-                    Based on the following speech, create a question that asks about the party's ({entry['parti']}) position based on the speech (e.g., "Vad är {entry['parti']}:s position i...?").  
+                    **Party abbreviations and their full names:**
+                    M: Moderaterna  
+                    S: Socialdemokraterna  
+                    SD: Sverigedemokraterna  
+                    C: Centerpartiet  
+                    V: Vänsterpartiet  
+                    L: Liberalerna  
+                    KD: Kristdemokraterna  
+                    MP: Miljöpartiet
 
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
-                    In the data, the party association is written as the short form, but in your questions, the names **must be written out**.
-                    M: Moderaterna, S: Socialdemokraterna, SD: Sverigedemokraterna, C: Centerpartiet, V: Vänsterpartiet, L: Liberalerna, KD: Kristdemokraterna, MP: Miljöpartiet de Gröna
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -67,15 +87,18 @@ class QueryGenerator:
     def generate_qa_comparison_person_yes(self, entry):
         qa_type = "generate_qa_comparison_person"
         prompt = f"""
-                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
-
-                    Based on the following speech, create a question that asks about the person's ({entry['talare']}) position based on the speech.
-                    The must be possible to answer with a yes/no answer (e.g., "Anser {entry['talare']} att...?").  
-                    When writing responses to the questions, provide a yes/no answer as well as additional information.
-                    You must write a question to which the answer is **yes**.
-
+                    You are an expert in analyzing Swedish parliamentary debates and generating relevant yes/no questions and answers. 
                     
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the speaker ({entry['talare']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created
+                    Guidelines:
+                    - The answer must always be based on the speech.
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should expect a yes/no answer, and should start with something like: *"Anser {entry['talare']} att..."*
+                    - The answer must always be **"yes"**, followed by a brief **explanation or context** based on the speech.
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -93,16 +116,18 @@ class QueryGenerator:
     def generate_qa_comparison_person_no(self, entry):
         qa_type = "generate_qa_comparison_person"
         prompt = f"""
-                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
-
-                    Based on the following speech, create a question that asks about the person's ({entry['talare']}) position based on the speech.
-                    The must be possible to answer with a yes/no answer (e.g., "Anser {entry['talare']} att...?").  
-                    When writing responses to the questions, provide a yes/no answer as well as additional information.
-                    You must write a question to which the answer is **no**.
-                    Do **not** use double negations like "Anser x att y inte är z?"
-
+                    You are an expert in analyzing Swedish parliamentary debates and generating relevant yes/no questions and answers. 
                     
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the speaker ({entry['talare']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created
+                    Guidelines:
+                    - The answer must always be based on the speech.
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should expect a yes/no answer, and should start with something like: *"Anser {entry['talare']} att..."*
+                    - The answer must always be **"no"**, followed by a brief **explanation or context** based on the speech.
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -111,7 +136,7 @@ class QueryGenerator:
                     **Output format:**  
                     {{
                         "question": "<Generated question in Swedish>",
-                        "answer": "<Generated answer based on the speech in Swedish>"
+                        "answer": "<Yes-answer with brief explanation in Swedish>"
                     }}
                     """
         
@@ -122,17 +147,28 @@ class QueryGenerator:
     def generate_qa_comparison_party_yes(self, entry):
         qa_type = "generate_qa_comparison_party"
         prompt = f"""
-                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
+                    You are an expert in analyzing Swedish parliamentary debates and generating relevant yes/no questions with corresponding answers.
 
-                    Based on the following speech, create a question that asks about the person's ({entry['parti']}) position based on the speech.
-                    The must be possible to answer with a yes/no answer (e.g., "Anser {entry['parti']} att...?").  
-                    When writing responses to the questions, provide a yes/no answer as well as additional information.
-                    You must write a question to which the answer is **yes**.
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the party ({entry['parti']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created
+                    Guidelines:
+                    - Use the **full name of the party**, not the abbreviation (see list below).
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should expect a yes/no answer, and should start with something like: *"Anser {entry['parti']} att..."*
+                    - The answer must always be **"yes"**, followed by a brief **explanation or context** based on the speech.
 
-
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
-                    In the data, the party association is written as the short form, but in your questions, the names **must be written out**.
-                    M: Moderaterna, S: Socialdemokraterna, SD: Sverigedemokraterna, C: Centerpartiet, V: Vänsterpartiet, L: Liberalerna, KD: Kristdemokraterna, MP: Miljöpartiet de Gröna
+                    **Party abbreviations and their full names:**
+                    M: Moderaterna  
+                    S: Socialdemokraterna  
+                    SD: Sverigedemokraterna  
+                    C: Centerpartiet  
+                    V: Vänsterpartiet  
+                    L: Liberalerna  
+                    KD: Kristdemokraterna  
+                    MP: Miljöpartiet
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -141,27 +177,38 @@ class QueryGenerator:
                     **Output format:**  
                     {{
                         "question": "<Generated question in Swedish>",
-                        "answer": "<Generated answer based on the speech in Swedish>"
+                        "answer": "<Yes-answer with brief explanation in Swedish>"
                     }}
                     """
-        
+
         return self._query_llm(entry, prompt, qa_type)
     
 
     def generate_qa_comparison_party_no(self, entry):
         qa_type = "generate_qa_comparison_party"
         prompt = f"""
-                    You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
+                    You are an expert in analyzing Swedish parliamentary debates and generating relevant yes/no questions with corresponding answers.
 
-                    Based on the following speech, create a question that asks about the person's ({entry['parti']}) position based on the speech.
-                    The must be possible to answer with a yes/no answer (e.g., "Anser {entry['parti']} att...?").  
-                    When writing responses to the questions, provide a yes/no answer as well as additional information.
-                    You must write a question to which the answer is **no**.
-                    Do **not** use double negations like "Anser x att y inte är z?"
+                    Based on the speech below, create a **question in Swedish** that asks about the position of the party ({entry['parti']}) as expressed in the speech.
+                    Create an **answer in Swedish** based on the question you just created
+                    Guidelines:
+                    - Use the **full name of the party**, not the abbreviation (see list below).
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question should expect a yes/no answer, and should start with something like: *"Anser {entry['parti']} att..."*
+                    - The answer must always be **"no"**, followed by a brief **explanation or context** based on the speech.
 
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
-                    In the data, the party association is written as the short form, but in your questions, the names **must be written out**.
-                    M: Moderaterna, S: Socialdemokraterna, SD: Sverigedemokraterna, C: Centerpartiet, V: Vänsterpartiet, L: Liberalerna, KD: Kristdemokraterna, MP: Miljöpartiet de Gröna
+                    **Party abbreviations and their full names:**
+                    M: Moderaterna  
+                    S: Socialdemokraterna  
+                    SD: Sverigedemokraterna  
+                    C: Centerpartiet  
+                    V: Vänsterpartiet  
+                    L: Liberalerna  
+                    KD: Kristdemokraterna  
+                    MP: Miljöpartiet
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -170,10 +217,9 @@ class QueryGenerator:
                     **Output format:**  
                     {{
                         "question": "<Generated question in Swedish>",
-                        "answer": "<Generated answer based on the speech in Swedish>"
+                        "answer": "<Yes-answer with brief explanation in Swedish>"
                     }}
-                    """
-        
+                    """        
         return self._query_llm(entry, prompt, qa_type)
     
     def generate_qa_temporal(self, entry):
@@ -182,13 +228,16 @@ class QueryGenerator:
                     You are an expert in analyzing Swedish parliamentary debates and generating relevant questions and answers. 
 
                     Based on the following speech, create a question that asks about the person's ({entry['talare']}) position based on the speech during a specific time {entry["dok_datum"]}.
-                    The must be possible to answer with a yes/no answer (e.g., "Vad sade {entry['talare']} om x under {entry["dok_datum"]}?").  
-                    When writing responses to the questions, provide a yes/no answer as well as additional information.
-
-                    
-                    The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
-                    In the data, the date is written as numbers, but in your questions, it **must be written out**.
-                    For example, 2022-03-16 00:00:00 should be written as "i mars 2022"
+                    The questions must include the speaker and the a time perdiod, preferrably a month (e.g., "Vad sade {entry['talare']} om x under {entry["dok_datum"]}?").  
+                    Guidelines:
+                    - Do **not** copy the exact wording from the speech — rephrase using your own words while preserving the intended meaning.
+                    - Focus on **broader political opinions or positions**, not on minor or irrelevant details (e.g., do not ask questions like *“Why doesn’t X read the news about herself?”*).
+                    - Assume that these are **statements by politicians**, representing **opinions or positions**, not necessarily absolute facts.
+                    - Both the question and the answer must be written in **Swedish**, and must be directly relevant to the content of the speech.
+                    - The question and answer must be written in **Swedish** and should be directly relevant to the provided speech.
+                    - In  the data, the date is written as numbers, but in your questions, months **must be written out**. But years should be written with numbers.
+                    - You should **not** mention the days, only the months.
+                    - For example, 2022-03-16 00:00:00 should be written as "i mars 2022"
 
                     ### Speech ###
                     {entry['anforandetext']}
@@ -261,7 +310,7 @@ class QueryGenerator:
 
 if __name__ == "__main__":
     input_file = "/mnt/c/Users/User/thesis/data_import/exp2/random_sample.json"
-    output_file = "/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset.json"
+    output_file = "/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/qa_dataset_2.json"
     QG = QueryGenerator()
 
     with open(input_file, "r", encoding="utf-8") as file:

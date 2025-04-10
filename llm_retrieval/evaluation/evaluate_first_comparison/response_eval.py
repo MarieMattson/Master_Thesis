@@ -37,21 +37,27 @@ Do not hallucinate. My master thesis depends on it, so do a good job, please!
 
 def evaluate_rag_output_with_edenai(question, answer, context):
     prompt = f"""   
-            Evaluate the following response: {answer}.You will base your evaluation on two of Grice's maxims: quality and relevance.
-            Context: {context}
+            You will base your evaluation on two of Grice's maxims: quality and relevance.
+            You should base your evaluation on the follwoing context: 
+            {context}
+            This is the question being asked by a user:
+            {question}
+            And this is the answer you are meant to evaluate:
+            {answer}
+
             Quality  
             True if: 
-            The answer is factually accurate and is based on the following context:
-            {context}
+            The answer is factually accurate.
+            The answer is based on the provided context.
 
             False if:  
-            The answer contains fabricated, misleading, or unverifiable claims and is not based on the provided context.
+            The answer contains fabricated, misleading, or unverifiable claims.
+            The answer is not based on the provided context.
 
             Relevance  
             True if:  
-            The response provides relevant information based on the follwoing question:
-            {question}
-
+            The answer provides relevant information based on the provided question. Meaning does the provided answer actually answer the question.
+            
             False if:  
             The response includes unrelated content or goes off-topic.
   

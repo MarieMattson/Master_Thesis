@@ -1,34 +1,40 @@
 import json
-from datasets import load_dataset
 import os
-from dotenv import load_dotenv
 import requests
-
-
+from datasets import load_dataset
+from dotenv import load_dotenv
 load_dotenv()
 EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
-N_EVALUATIONS = 27
-dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/exp2/qa_dataset.json", split="train")
-url = "https://api.edenai.run/v2/text/chat"
+
+DATA_FILE_PATH = "/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/graph_output.json"
+OUTPUT_FILE_PATH = "/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/graph_output.json"
+API_URL = "https://api.edenai.run/v2/text/chat"
+
+dataset = load_dataset("json", data_files=DATA_FILE_PATH, split="train")
 
 global_message = """
+You are a useful evaluator tasked with determining whether a generated question is valid based on the following guidelines. Review the question and provide a brief explanation for your evaluation. The evaluation should be based on whether the question adheres to the specified rules and guidelines.
 
-You are a useful evaluator tasked with determining whether a QA pair is reasonable and should be approved. A question should be approved if it is well-formed, meaningful, and contributes to a relevant discussion. Use the following criteria to decide:
+Guidelines for Evaluating Validity:
 
-### Approve the question if:
-✅ It asks about a broader issue, policy, or debate.  
-✅ The answer is not self-evident or redundant based on the question itself.  
-✅ It provides meaningful political, social, or economic context.  
-✅ The question allows for an informative and substantive answer rather than a simple confirmation or repetition.  
-✅ The question is answerable from the provided context.
-✅ The question is answered based on the provided context.
+Language:
+- The question must be written in Swedish.
 
-### Disapprove the question if:
-❌ The answer is too obvious or self-explanatory from the question itself.  
-❌ It focuses only on a single statement or phrase without broader relevance.
-❌ It lacks political or contextual depth.  
-❌ It is vague, unclear, or does not allow for a substantial answer.  
-❌ It is about a statement made by the talman (Speaker of the Parliament) — such questions should always be disapproved.  
+Relevance and Focus:
+- The question must directly relate to broader political opinions or positions.
+- The question should not focus on personal anecdotes or trivial facts unrelated to political discourse.
+- The question should reflect political views or positions rather than specific facts or events.
+
+Question Structure:
+- The question must inquire about political opinions or positions either of a speaker or a political party.
+- Question can ask about the position of the individual or party on a broader political issue (e.g., “Hur argumenterar x för…”).
+- Questions can expect a yes or no answer, with a brief explanation provided in the response (e.g., “Anser x att…”).
+
+Avoid Personal or Irrelevant Details:
+- Questions should not be based on personal details, unrelated events, or anecdotes. The focus should remain on the political opinions or positions of the speaker or party.
+
+Evaluation Task:
+Given the following question, assess whether it follows the guidelines outlined above. Provide a simple "valid" or "invalid".
 
 ### Examples:
 ❌ Disapprove: "Anser Markus Selin att Sverigedemokraternas hållning till ålen är motsägelsefull?"  
@@ -37,40 +43,63 @@ You are a useful evaluator tasked with determining whether a QA pair is reasonab
 ❌ Disapprove: "Vad säger Jeanette Gustafsdotter om varför hon inte läser allt som skrivits om henne?"  
    - Focuses on a personal habit rather than a policy or debate.  
 
-❌ Disapprove: "Vad sa talmannen om oppositionens agerande i senaste debatten?"  
-   - Questions about statements from the talman should always be disapproved.  
-
 ✅ Approve: "Vad säger Josefin Malmqvist om yrkeshögskolans roll på den svenska arbetsmarknaden?"  
    - Engages with a broader labor market issue and allows for a substantive response.  
 
 ✅ Approve: "Vad är Socialdemokraternas position i frågan om höjning av pensionsavgiften?"  
    - Directly relevant to policy and political debate.  
 
-Use these criteria when evaluating each QA pair. If a question does not meet the approval standards, disapprove it.
-
+Use these criteria when evaluating each question. If a question  does not meet the approval standards, disapprove it.
 
 ### **Output Format:**  
-
 **Output:::**  
+Valid/Invalid  
+The question will be provided. If the question meets the criteria, answer "Valid." Otherwise, answer "Invalid."  
+Do **NOT** add any explanation, only yes or no.
+"""
 
-Yes/No
+global_message_temporal = """
+You are a useful evaluator tasked with determining whether a generated question is valid based on the following guidelines. Review the question and provide a brief explanation for your evaluation. The evaluation should be based on whether the question adheres to the specified rules and guidelines.
 
+Guidelines for Evaluating Validity:
+
+Language:
+- The question must be written in Swedish.
+
+Relevance and Focus:
+- The question must directly relate to broader political opinions or positions.
+- The question should reflect political views or positions rather than specific facts or events.
+
+Question Structure:
+- The question must inquire about specific statements, political opinions or positions either of a speaker or a political party.
+- Questions should inquire about the speaker’s or party’s position at different points in time, like a month and year. For example, a question can ask about a speaker's opinion about a certain topic in May 2020.
+
+Evaluation Task:
+Given the following question, assess whether it follows the guidelines outlined above. Provide a simple "valid" or "invalid".
+
+Use these criteria when evaluating each question. If a question  does not meet the approval standards, disapprove it.
+
+### **Output Format:**  
 **Output:::**  
-
-The context, question, and answer will be provided. If the question and answer both meet the criteria, answer "Yes." Otherwise, answer "No."  
+Valid/Invalid  
+The question will be provided. If the question meets the criteria, answer "Valid." Otherwise, answer "Invalid."  
 Do **NOT** add any explanation, only yes or no.
 """
 
 
+
+# Request headers for EdenAI API
 headers = {
     "Authorization": f"Bearer {EDENAI_API_KEY}",
     "accept": "application/json",
     "content-type": "application/json"
 }
 
-def evaluate_qa_with_edenai(question, answer, context):
-    payload = {
-        "providers": "meta/llama3-1-405b-instruct-v1:0", #"openai/gpt-4o",   #"deepseek/DeepSeek-V3",
+# Function to evaluate QA pair using EdenAI API
+def evaluate_qa_with_edenai(question, question_type):
+    if question_type == "generate_qa_temporal":
+        payload = {
+        "providers": "meta/llama3-1-405b-instruct-v1:0",  # Change provider as needed
         "response_as_dict": True,
         "attributes_as_list": False,
         "show_base_64": True,
@@ -79,50 +108,54 @@ def evaluate_qa_with_edenai(question, answer, context):
         "max_tokens": 4096,
         "tool_choice": "auto",
         "previous_history": [
-            {'role': 'user', 'message': f"Context:\n{context}\n\nQuestion:\n{question}\n\nAnswer:\n{answer}"}, 
-            {'role': 'user', 'message': global_message}
-            ]
-
+            {'role': 'user', 'message': f"\nQuestion:\n{question}\n"},
+            {'role': 'user', 'message': global_message_temporal}
+        ]
     }
+    else:
+        payload = {
+            "providers": "meta/llama3-1-405b-instruct-v1:0",  # Change provider as needed
+            "response_as_dict": True,
+            "attributes_as_list": False,
+            "show_base_64": True,
+            "show_original_response": False,
+            "temperature": 0,
+            "max_tokens": 4096,
+            "tool_choice": "auto",
+            "previous_history": [
+                {'role': 'user', 'message': f"\nQuestion:\n{question}\n"},
+                {'role': 'user', 'message': global_message}
+            ]
+        }
 
-    response = requests.post(url, json=payload, headers=headers)
-
+    response = requests.post(API_URL, json=payload, headers=headers)
 
     if response.status_code == 200:
-        evaluation = response.json()
-        return evaluation
+        return response.json()
     else:
-        print("Error with EdenAI API request:", response.text)
+        print(f"Error with EdenAI API request: {response.text}")
         return None
+    
+updated_data = []
 
-
-print(f"Evaluating {N_EVALUATIONS} QA pairs...")
-updated_data = list()
-
-
-
-for idx, entry in enumerate(dataset.select(range(N_EVALUATIONS))):
+for idx, entry in enumerate(dataset):
     question = entry.get("qa_pair", {}).get("question", "N/A")
-    answer = entry.get("qa_pair", {}).get("answer", "N/A")
-    context = entry.get("anforandetext", "N/A")
+    question_type = entry.get("qa_type", "N/A")
+    evaluation = evaluate_qa_with_edenai(question, question_type)
 
-    evaluation = evaluate_qa_with_edenai(question, answer, context)
-   
     if evaluation:
         if "meta/llama3-1-405b-instruct-v1:0" in evaluation and "generated_text" in evaluation["meta/llama3-1-405b-instruct-v1:0"]:
             response = evaluation["meta/llama3-1-405b-instruct-v1:0"]['generated_text']
-            entry["LLM_annotator"]["reasonable_question"] = response
-            print(entry)
+            entry["LLM_annotator"] = response
             updated_data.append(entry)
         else:
             print(f"Skipping entry {idx} due to content policy violation.")
-            entry["LLM_annotator"]["reasonable_question"] = "Content rejected due to policy violation."
+            entry["LLM_annotator"] = "Content rejected due to policy violation."
             updated_data.append(entry)
 
-        print("*" * 80)
+    print("*" * 80)
 
-
-with open("/mnt/c/Users/User/thesis/data_import/exp2/updated_dataset.json", "w", encoding="utf-8") as f:
+with open(OUTPUT_FILE_PATH, "w", encoding="utf-8") as f:
     json.dump(updated_data, f, ensure_ascii=False, indent=4)
 
 print("Dataset successfully updated and saved!")
