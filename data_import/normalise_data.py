@@ -9,12 +9,15 @@ class Speaker(BaseModel):
     @field_validator('talare')
     def clean_talare(cls, value):
         # List of titles to remove from 'talare'
-        titles = [
-            "Statsrådet", "Utbildningsminister", "Kultur- och idrottsminister",
-            "Socialminister", "Finansminister", "Justitieminister", "Försvarsminister",
-            "Minister", "Kulturministern", "Justitie- och inrikesministern", "Statsministern", 
-            "Infrastrukturministern", "Klimat- och miljöministern", "Näringsministern"]
-        
+        titles = ["Statsrådet", "Utbildningsminister", "Kultur- och idrottsminister",
+                  "Socialminister", "Finansminister", "Justitieminister", "Försvarsminister",
+                  "Minister", "Kulturministern", "Justitie- och inrikesministern", "Statsministern", 
+                  "Infrastrukturministern", "Klimat- och miljöministern", "Näringsministern",
+                  "Arbetsmarknadsminister", "Hälso- och sjukvårdsminister", "Bostadsminister", 
+                  "Jämställdhetsminister", "Landshövding", "Europaminister", "Digitaliseringsminister",
+                  "Skogsminister", "Livsmedelsminister", "Utrikesminister", "Samhällsbyggnadsminister", 
+                  "Tullminister", "Socialförsäkringsminister", "Pensionsminister", "Flyktingminister"]
+
         # Remove any title at the start of the name
         pattern = r'^(?:' + '|'.join(titles) + r')\s+'
         value = re.sub(pattern, '', value)
@@ -33,18 +36,23 @@ class Speaker(BaseModel):
         value = re.sub(r'\s*\(.*\)$', '', value)
         return value
 
-input_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
-output_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"  
+if __name__ =="__main__":
+    # Input and Output file paths
+    input_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
+    output_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
 
-with open(input_file, 'r', encoding='utf-8') as f:
-    data = json.load(f)
+    # Reading the input JSON file
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
 
-for item in data:
-    if 'talare' in item:
-        # Clean 'talare' and 'parti' fields using Speaker model
-        item['talare'] = Speaker(**item).talare
+    # Processing each item in the data
+    for item in data:
+        if 'talare' in item:
+            # Clean 'talare' and 'parti' fields using Speaker model
+            item['talare'] = Speaker(**item).talare
 
-with open(output_file, 'w', encoding='utf-8') as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
+    # Saving the cleaned data back to a file
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
 
-print(f"Cleaned data saved to: {output_file}")
+    print(f"Cleaned data saved to: {output_file}")
