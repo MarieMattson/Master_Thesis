@@ -1,4 +1,6 @@
 import os
+from xmlrpc.client import boolean
+from langchain.schema import Document
 from dotenv import load_dotenv
 from langchain_neo4j import Neo4jGraph
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
@@ -7,8 +9,12 @@ from neo4j import GraphDatabase
 import numpy as np
 import requests
 import sklearn
+from nltk.tokenize import word_tokenize
 from langchain_core.messages import HumanMessage, SystemMessage
+from sqlalchemy import Boolean
 from llm_retrieval.old.openai_parses import OpenAIResponse
+from langchain_community.retrievers import BM25Retriever
+
 load_dotenv()
 NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
@@ -117,8 +123,25 @@ class GraphRAG():
 
         return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
 
+    def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=6)->list[dict]:
+        # Convert each node to a LangChain Document
+        documents = [
+            Document(
+                page_content=node['c.text'],
+                metadata={"original_node": node}
+
+            )
+            for node in retrieved_nodes
+        ]
+
+        retriever = BM25Retriever.from_documents(documents, k=top_k,preprocess_func=word_tokenize)
+
+        results = retriever.invoke(query_text)
+        return [{"node": doc.metadata["original_node"], "score": None} for doc in results]
+
+
     @staticmethod
-    def print_ranked_nodes(ranked_nodes:list[dict]):
+    def print_ranked_nodes(ranked_nodes:list[dict], is_cosine:boolean):
         """Print ranked nodes in a readable format without embeddings."""
         for i, item in enumerate(ranked_nodes, start=1):
             node = item["node"]
@@ -128,8 +151,9 @@ class GraphRAG():
             #print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
             print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")
             print(f"📜 **Chunk Text:** {node['c.text']}...")
-            print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  
-            print("-" * 80) 
+            if is_cosine:
+                print(f"⭐ **Similarity Score:** {score[0][0]:.4f}")  
+            print("-" * 80)
 
 
     def generate_response(self, ranked_nodes:list[dict], user_query:str, top_k=3):
@@ -143,7 +167,7 @@ class GraphRAG():
             #prompt += f"📌 **Chunk ID:** {node['c.chunk_id']}\n"
             prompt += f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...\n"
             prompt += f"📜 **Chunk Text:** {node['c.text']}...\n" 
-            prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
+            #prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
         prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
         response = self.llm.invoke([HumanMessage(content=prompt)])
         
@@ -192,11 +216,21 @@ if __name__ == "__main__":
     print(f"Retrieved {len(retrieved_nodes)} nodes.")
 
     print("\nRanking nodes by similarity...")
-    ranked_nodes = graph_rag.rank_nodes_by_similarity(user_query, retrieved_nodes)
+    cosine_ranked_nodes = graph_rag.rank_nodes_by_similarity(user_query, retrieved_nodes)
     
-    print("\nPrinting ranked nodes...")
-    graph_rag.print_ranked_nodes(ranked_nodes)
+    print("\nPrinting cosine ranked nodes...")
+    graph_rag.print_ranked_nodes(cosine_ranked_nodes, is_cosine=True)
+
+    print("\nRanking nodes with BM25...")
+    bm25_ranked_nodes = graph_rag.rank_nodes_with_BM25(user_query, retrieved_nodes)
+    print("\nPrinting BM25 ranking")
+    graph_rag.print_ranked_nodes(bm25_ranked_nodes, is_cosine=False)
 
     print("\nGenerating final response...")
-    final_response = graph_rag.generate_response(ranked_nodes, user_query)
+    print("\nCosine version")
+    final_response = graph_rag.generate_response(cosine_ranked_nodes, user_query)
+    print("\nFinal Response:\n", final_response)
+    
+    print("\nBM25 version")
+    final_response = graph_rag.generate_response(bm25_ranked_nodes, user_query)
     print("\nFinal Response:\n", final_response)
