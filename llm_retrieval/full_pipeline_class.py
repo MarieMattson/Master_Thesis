@@ -102,7 +102,7 @@ class GraphRAG():
         finally:
             driver.close()
     
-    def rank_nodes_by_similarity(self, query_text: str, retrieved_nodes: list[dict], top_k=6) -> list[dict]:
+    def rank_nodes_by_similarity(self, query_text: str, retrieved_nodes: list[dict], top_k=10) -> list[dict]:
         """Rank retrieved nodes based on cosine similarity with the user query."""
         
         query_embedding = np.array(self.embedding.embed_query(query_text)).reshape(1, -1)
@@ -123,7 +123,7 @@ class GraphRAG():
 
         return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
 
-    def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=6)->list[dict]:
+    def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=10)->list[dict]:
         # Convert each node to a LangChain Document
         documents = [
             Document(

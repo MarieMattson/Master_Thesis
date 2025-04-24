@@ -20,12 +20,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -64,12 +66,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -108,12 +112,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -152,12 +158,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -196,12 +204,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -240,12 +250,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -284,12 +296,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -328,12 +342,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -372,12 +388,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -416,12 +434,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -460,12 +480,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -504,12 +526,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -548,12 +572,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -592,12 +618,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -636,12 +664,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -680,12 +710,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -724,12 +756,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -768,12 +802,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -812,12 +848,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -856,12 +894,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -900,12 +940,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -944,12 +986,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -988,12 +1032,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1032,12 +1078,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1076,12 +1124,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1120,12 +1170,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1164,12 +1216,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1208,12 +1262,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1252,12 +1308,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1296,12 +1354,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1340,12 +1400,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1384,12 +1446,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1428,12 +1492,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1472,12 +1538,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1516,12 +1584,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1560,12 +1630,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1604,12 +1676,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1648,12 +1722,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1692,12 +1768,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1736,12 +1814,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1780,12 +1860,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1824,12 +1906,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1868,12 +1952,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1912,12 +1998,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -1956,12 +2044,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2000,12 +2090,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2044,12 +2136,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2088,12 +2182,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2132,12 +2228,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2176,12 +2274,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2220,12 +2320,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2264,12 +2366,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2308,12 +2412,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2352,12 +2458,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2396,12 +2504,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2440,12 +2550,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2484,12 +2596,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2528,12 +2642,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2572,12 +2688,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2616,12 +2734,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2660,12 +2780,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2704,12 +2826,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2748,12 +2872,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2792,12 +2918,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2836,12 +2964,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2880,12 +3010,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2924,12 +3056,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -2968,12 +3102,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -3012,12 +3148,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -3056,12 +3194,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -3100,12 +3240,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -3144,12 +3286,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
@@ -3188,12 +3332,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "",
+            "nr_of_nodes": 0   
         },
         "cosine_RAG": {
             "answer": "",
