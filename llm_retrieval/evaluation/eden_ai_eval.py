@@ -1,4 +1,5 @@
 import json
+import time
 from datasets import load_dataset
 import os
 from dotenv import load_dotenv
@@ -6,37 +7,43 @@ import requests
 
 load_dotenv()
 EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
-N_EVALUATIONS = 27
-dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/rag_output_exp1.json", split="train")
+dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result_combined.json", split="train")
 url = "https://api.edenai.run/v2/text/chat"
 
 global_message = """
-You are an evaluator tasked with determining whether a question-answer pair should be approved or disapproved based on the following criteria. Your goal is to assess if the answer is relevant, informative, and based on the provided context. 
+You are an evaluator tasked with judging a question-answer pair based on two distinct criteria: **Factuality** and **Relevance**. 
+Your goal is to assess whether the *question* is grounded in the context, and whether the *answer* appropriately responds to the question.
 
-### Approve the question if:
-✅ The answer directly addresses the question asked.
-✅ The answer is rooted in the provided context and does not introduce external information that was not part of the context.
-✅ The question is clear and specific, and the answer provides a well-structured and substantive response to it.
-✅ The answer offers relevant details or explanations that contribute to a comprehensive understanding of the topic.
-✅ The answer is logically coherent with the context and enhances the discussion of the topic.
+---
 
-### Disapprove the question if:
-❌ The answer does not directly respond to the question.
-❌ The answer is too vague or lacks substance, offering no meaningful explanation or detail.
-❌ The answer contradicts the context or introduces information that is not supported by the context.
-❌ The question is too broad or ambiguous, making it impossible to provide a clear, relevant answer.
-❌ The question or answer lacks a connection to the context, rendering the answer irrelevant or incomplete.
+### 1. Factuality: Is the answer based on the context?
 
-### **Output Format:**  
+✅ Yes, if the answer is clearly grounded in information found in the context.  
+❌ No, if the answer introduces topics or facts not supported by the context, or if it is unanswerable based on the context.
 
-**Output:::**  
+---
 
-Yes/No
+### 2. Relevance: Does the answer respond to the question?
 
-**Output:::**  
+✅ Yes, if the answer directly and specifically addresses the question.  
+❌ No, if the answer ignores the question, is vague, off-topic, or introduces irrelevant or contradictory information.
 
-The context, question, and answer will be provided. If the answer directly addresses the question and is grounded in the context, answer "Yes." Otherwise, answer "No."  
-Do **NOT** add any explanation, only yes or no.
+---
+
+### If the answer states that it cannot answer the question, it should be evaluated as follows:
+- **Factuality**: ❌ No, because the question is not grounded in the context.
+- **Relevance**: ❌ No, because the answer does not respond to the question.
+
+### If unsure, lean toward "No" for either category unless all conditions for "Yes" are clearly met.
+
+---
+
+### Output Format:
+Return your final evaluation as a JSON object using **only** the following format:
+
+{ "factuality": "Yes" or "No", "relevance": "Yes" or "No" }
+
+Do not include any other text, explanation, or formatting.
 """
 
 headers = {
@@ -65,17 +72,31 @@ def evaluate_rag_output_with_edenai(question, answer, context):
 
     if response.status_code == 200:
         evaluation = response.json()
+        #print(json.dumps(evaluation, indent=2))  # <-- Add this line to print full LLM response nicely
         return evaluation
+
     else:
         print("Error with EdenAI API request:", response.text)
         return None
 
+def get_generated_text_safely(evaluation, tag=""):
+    try:
+        response = evaluation.get("meta/llama3-1-405b-instruct-v1:0", {})
+        if response.get("status") != "success":
+            print(f"[{tag}] Response status not successful:", response.get("status"))
+            print(json.dumps(response, indent=2))
+            return None
+        return response["generated_text"]
+    except Exception as e:
+        print(f"[{tag}] Error accessing 'generated_text': {e}")
+        print("Full response for debugging:")
+        print(json.dumps(evaluation, indent=2))
+        return None
 
-print(f"Evaluating {N_EVALUATIONS} QA pairs...")
+
 updated_data = list()
 
 for idx, entry in enumerate(dataset):
-    # Initialize the 'eval' key if it doesn't exist
     if 'eval' not in entry:
         entry['eval'] = {}
 
@@ -83,43 +104,57 @@ for idx, entry in enumerate(dataset):
     question = entry.get("qa_pair", {}).get("question", "N/A")
     context = entry.get("anforandetext", "N/A")
     answer = entry.get("qa_pair", {}).get("answer", "N/A")
-    print("original: ",question, "context: ", context,"answer: ", answer)
+    print("original: ",question) #, "context: ", context,"answer: ", answer)
     
     # Then, the generated RAG_stuff
-    rag_answer = entry.get("RAG_pipeline", {}).get("answer", "N/A")
-    print("ragragrag", rag_answer)
-    
+    graph_rag_cosine_answer = entry.get("graph_RAG_cosine", {}).get("answer", "N/A")
+    graph_rag_bm25_answer = entry.get("graph_RAG_bm25", {}).get("answer", "N/A")
+    cosine_rag_answer = entry.get("cosine_RAG", {}).get("answer", "N/A")
+    print("ragragrag cosine", graph_rag_cosine_answer)    
+    print("ragragrag bm25", graph_rag_bm25_answer)
+    print("cosinecosinecosine", cosine_rag_answer)
+    print("\n","="*80)
     # Evaluating original answer
-    evaluation_original = evaluate_rag_output_with_edenai(question, answer, context)
-    evaluation_rag = evaluate_rag_output_with_edenai(question, rag_answer, context)
+    evaluation_graph_rag_cosine = evaluate_rag_output_with_edenai(question, graph_rag_cosine_answer, context)
+    evaluation_graph_rag_bm25 = evaluate_rag_output_with_edenai(question, graph_rag_bm25_answer, context)
     
-    if evaluation_original:
-        if "meta/llama3-1-405b-instruct-v1:0" in evaluation_original and "generated_text" in evaluation_original["meta/llama3-1-405b-instruct-v1:0"]:
-            response = evaluation_original["meta/llama3-1-405b-instruct-v1:0"]['generated_text']
-            entry["eval"]["orig_answer"] = response
-            print("evaluation_reasonable_answer_original", response)
-            updated_data.append(entry)
+    if evaluation_graph_rag_cosine and "meta/llama3-1-405b-instruct-v1:0" in evaluation_graph_rag_cosine:
+        verdict = get_generated_text_safely(evaluation_graph_rag_cosine, tag="graph_RAG_cosine")
+        if verdict:
+            entry["eval"]["graph_RAG_cosine_response"] = verdict
+            print("evaluation_graph_rag_cosine:", verdict)
         else:
-            print(f"Skipping entry {idx} due to content policy violation.")
-            entry["eval"]["orig_answer"] = "Content rejected due to policy violation."
-            updated_data.append(entry)
+            print(f"Skipping entry {idx} due to cosine error.")
+            entry["eval"]["graph_RAG_cosine_response"] = "Error."
     
+    
+    if evaluation_graph_rag_bm25 and "meta/llama3-1-405b-instruct-v1:0" in evaluation_graph_rag_bm25:
+        verdict = get_generated_text_safely(evaluation_graph_rag_bm25, tag="graph_RAG_bm25")
+        if verdict:
+            entry["eval"]["graph_RAG_bm25_response"] = verdict
+            print("evaluation_reasonable_answer_bm25:", verdict)
+        else:
+            print(f"Skipping entry {idx} due to bm25 error.")
+            entry["eval"]["graph_RAG_bm25_response"] = "Error."
+    
+
+    evaluation_cosine_rag = evaluate_rag_output_with_edenai(question, cosine_rag_answer, context)
+    if evaluation_cosine_rag and "meta/llama3-1-405b-instruct-v1:0" in evaluation_cosine_rag:
+        verdict = get_generated_text_safely(evaluation_cosine_rag, tag="cosine_RAG")
+        if verdict:
+            entry["eval"]["cosine_RAG_response"] = verdict
+            print("evaluation cosine: ", verdict)
+        else:
+            print(f"Skipping entry {idx} due to cosine RAG error.")
+            entry["eval"]["cosine_RAG_response"] = "Error."
+    
+    updated_data.append(entry)
+    time.sleep(0.5)
     print("="*80)
-    
-    if evaluation_rag:
-        if "meta/llama3-1-405b-instruct-v1:0" in evaluation_rag and "generated_text" in evaluation_rag["meta/llama3-1-405b-instruct-v1:0"]:
-            response = evaluation_rag["meta/llama3-1-405b-instruct-v1:0"]['generated_text']
-            entry["eval"]["RAG_pipeline_answer"] = response
-            print("Evaluation_rag_answer", response)
-            updated_data.append(entry)
-        else:
-            print(f"Skipping entry {idx} due to content policy violation.")
-            entry["eval"]["RAG_pipeline_answer"] = "Content rejected due to policy violation."
-            updated_data.append(entry)
 
-    print(entry)
+#    print(entry)
 
-with open("/mnt/c/Users/User/thesis/data_import/exp2/evaluated_dataset.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json", "w", encoding="utf-8") as f:
     json.dump(updated_data, f, ensure_ascii=False, indent=4)
 
 print("Dataset successfully updated and saved!")
