@@ -102,7 +102,7 @@ class GraphRAG():
         finally:
             driver.close()
     
-    def rank_nodes_by_similarity(self, query_text: str, retrieved_nodes: list[dict], top_k=10) -> list[dict]:
+    def rank_nodes_by_similarity(self, query_text: str, retrieved_nodes: list[dict], top_k=6) -> list[dict]:
         """Rank retrieved nodes based on cosine similarity with the user query."""
         
         query_embedding = np.array(self.embedding.embed_query(query_text)).reshape(1, -1)
@@ -123,7 +123,7 @@ class GraphRAG():
 
         return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
 
-    def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=10)->list[dict]:
+    def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=6)->list[dict]:
         # Convert each node to a LangChain Document
         documents = [
             Document(
@@ -148,7 +148,6 @@ class GraphRAG():
             score = item["score"]
 
             print(f"🔹 **Result {i}**")
-            #print(f"📌 **Chunk ID:** {node['c.chunk_id']}")
             print(f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...")
             print(f"📜 **Chunk Text:** {node['c.text']}...")
             if is_cosine:
@@ -156,18 +155,13 @@ class GraphRAG():
             print("-" * 80)
 
 
-    def generate_response(self, ranked_nodes:list[dict], user_query:str, top_k=3):
-        
-        top_nodes = ranked_nodes[:top_k]
+    def generate_response(self, ranked_nodes:list[dict], user_query:str):
         
         prompt = f"User query: {user_query}\n\nBased on the ranked debate chunks, generate a relevant response to the user query using the following information You must respond in Swedish:\n\n"
-        for i, item in enumerate(top_nodes, start=1):
+        for i, item in enumerate(ranked_nodes, start=1):
             node = item["node"]
             prompt += f"\n🔹 **Result {i}:**\n"
-            #prompt += f"📌 **Chunk ID:** {node['c.chunk_id']}\n"
-            prompt += f"🗣 **Anförande Text:** {node['a.anforande_text'][:300]}...\n"
-            prompt += f"📜 **Chunk Text:** {node['c.text']}...\n" 
-            #prompt += f"⭐ **Similarity Score:** {item['score'][0][0]:.4f}\n"
+            prompt += f"🗣 **Anförande Text:** {node['a.anforande_text']}...\n"
         prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
         response = self.llm.invoke([HumanMessage(content=prompt)])
         
