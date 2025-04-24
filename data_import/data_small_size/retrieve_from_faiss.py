@@ -7,7 +7,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 
-def retrieve(query, top_k=3):
+def retrieve(query, top_k=10):
     # Generate the query embedding
     query_embedding = np.array(embedding.embed_query(query), dtype="float32").reshape(1, -1)
     
