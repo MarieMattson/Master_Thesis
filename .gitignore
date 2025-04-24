@@ -19,6 +19,6 @@ full_dataset.csv
 dataset_small.json
 data_import/data_small_size/index/
 data_import/data_small_size/data/index/faiss_index.bin
-data_import/data_small_size/data/index/anforand_ids.npy
 data_import/data_small_size/data/index/documents.npy
+data_import/data_small_size/data/index/anforande_ids.npy
 /data_import/dev_folder/exp3_cosine_sim/index

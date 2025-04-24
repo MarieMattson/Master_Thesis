@@ -52,16 +52,21 @@ with ThreadPoolExecutor(max_workers=8) as executor:
 embedding_duration = time.time() - embedding_start
 print(f"⏱️ Embedding took {embedding_duration:.2f} seconds")
 
-# Convert to NumPy and create FAISS index
+# Convert to NumPy
 embeddings_np = np.array(embeddings, dtype="float32")
-index = faiss.IndexFlatL2(embeddings_np.shape[1])
+
+# Normalize the embeddings to unit vectors (important for cosine similarity)
+faiss.normalize_L2(embeddings_np)
+
+# Create FAISS index with dot product (cosine similarity)
+index = faiss.IndexFlatIP(embeddings_np.shape[1])
 index.add(embeddings_np)
 
 # Save everything
-os.makedirs("index", exist_ok=True)
-faiss.write_index(index, "index/faiss_index.bin")
-np.save("index/anforande_ids.npy", np.array(anforande_ids))
-np.save("index/documents.npy", np.array(texts))
+os.makedirs("data/index", exist_ok=True)
+faiss.write_index(index, "data/index/faiss_index.bin")
+np.save("data/index/anforande_ids.npy", np.array(anforande_ids))
+np.save("data/index/documents.npy", np.array(texts))
 
 # Done
 full_duration = time.time() - full_start
