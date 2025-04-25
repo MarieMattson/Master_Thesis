@@ -11,7 +11,7 @@ def filter_and_save_by_year(years, input_file, output_file):
 
 if __name__ == "__main__":
     input_file = "/mnt/c/Users/User/thesis/data_import/full_dataset.csv"
-    output_file = "filtered_riksdag.json"
-    year_to_filter = ["2021/22"] 
+    output_file = "/mnt/c/Users/User/thesis/data_import/data_large_size/filtered_riksdag.json"
+    year_to_filter = ["2018/19", "2019/20", "2020/21","2021/22"] 
 
     filter_and_save_by_year(year_to_filter, input_file, output_file)

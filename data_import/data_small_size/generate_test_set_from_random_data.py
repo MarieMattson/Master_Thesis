@@ -331,7 +331,7 @@ class QueryGenerator:
         
 if __name__ == "__main__":
     input_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/dataset_random_entries.json"
-    output_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/qa_dataset_random_entries.json"
+    output_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/more_qa_dataset_random_entries.json"
     QG = QueryGenerator()
 
     with open(input_file, "r", encoding="utf-8") as file:
@@ -339,17 +339,72 @@ if __name__ == "__main__":
 
     qa_dataset = []
     
-    ratios = {
-        "generate_qa_inference_person": 0.2,
-        "generate_qa_inference_party": 0.2,
-        "generate_qa_comparison_person_yes": 0.12,
-        "generate_qa_comparison_person_no": 0.12,
-        "generate_qa_comparison_party_yes": 0.12,
-        "generate_qa_comparison_party_no": 0.12,
-        "generate_qa_temporal": 0.12
+    #ratios = {
+    #    "generate_qa_inference_person": 0.2,
+    #    "generate_qa_inference_party": 0.2,
+    #    "generate_qa_comparison_person_yes": 0.12,
+    #    "generate_qa_comparison_person_no": 0.12,
+    #    "generate_qa_comparison_party_yes": 0.12,
+    #    "generate_qa_comparison_party_no": 0.12,
+    #    "generate_qa_temporal": 0.12
+    #}
+
+    # Number of questions for each category
+    required_questions = {
+        "generate_qa_inference_person": 36,
+        "generate_qa_inference_party": 41,
+        "generate_qa_comparison_person_yes": 13, #27
+        "generate_qa_comparison_person_no": 12,
+        "generate_qa_comparison_party_yes": 16, #32
+        "generate_qa_comparison_party_no": 16,
+        "generate_qa_temporal": 41
+    }
+
+    generated_counts = {
+        "generate_qa_inference_person": 0,
+        "generate_qa_inference_party": 0,
+        "generate_qa_comparison_person_yes": 0,
+        "generate_qa_comparison_person_no": 0,
+        "generate_qa_comparison_party_yes": 0,
+        "generate_qa_comparison_party_no": 0,
+        "generate_qa_temporal": 0
     }
 
     for anforande in data:
+        for query_type, required_amount in required_questions.items():
+            # Check if we still need to generate more of this question type
+            if generated_counts[query_type] < required_amount:
+                if query_type == "generate_qa_inference_person":
+                    qa_pair = QG.generate_qa_inference_person(anforande)
+                elif query_type == "generate_qa_inference_party":
+                    qa_pair = QG.generate_qa_inference_party(anforande)
+                elif query_type == "generate_qa_comparison_person_yes":
+                    qa_pair = QG.generate_qa_comparison_person_yes(anforande)
+                elif query_type == "generate_qa_comparison_person_no":
+                    qa_pair = QG.generate_qa_comparison_person_no(anforande)
+                elif query_type == "generate_qa_comparison_party_yes":
+                    qa_pair = QG.generate_qa_comparison_party_yes(anforande)
+                elif query_type == "generate_qa_comparison_party_no":
+                    qa_pair = QG.generate_qa_comparison_party_no(anforande)
+                elif query_type == "generate_qa_temporal":
+                    qa_pair = QG.generate_qa_temporal(anforande)
+
+                if qa_pair:
+                    qa_dataset.append(qa_pair)
+                    generated_counts[query_type] += 1
+                time.sleep(1)
+
+                # Stop generating for this query type if we have enough
+                if generated_counts[query_type] >= required_amount:
+                    break
+
+
+    with open(output_file, "w", encoding="utf-8") as file:
+        json.dump(qa_dataset, file, ensure_ascii=False, indent=4)
+
+    print(f"Saved {len(qa_dataset)} Q&A pairs to {output_file}")
+
+    '''for anforande in data:
         random_value = random.random()
         
         # Randomly select the query type based on the specified ratios
@@ -376,11 +431,5 @@ if __name__ == "__main__":
 
 
         if qa_pair:
-            qa_dataset.append(qa_pair)
+            qa_dataset.append(qa_pair)'''
         
-        time.sleep(1)
-
-    with open(output_file, "w", encoding="utf-8") as file:
-        json.dump(qa_dataset, file, ensure_ascii=False, indent=4)
-
-    print(f"Saved {len(qa_dataset)} Q&A pairs to {output_file}")
