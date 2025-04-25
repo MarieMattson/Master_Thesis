@@ -330,8 +330,8 @@ class QueryGenerator:
             }
         
 if __name__ == "__main__":
-    input_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/dataset_random_entries.json"
-    output_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/more_qa_dataset_random_entries.json"
+    input_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/more_dataset_random_entries.json"
+    output_file = "/mnt/c/Users/User/thesis/data_import/data_small_size/qa_dataset_more_random_entries.json"
     QG = QueryGenerator()
 
     with open(input_file, "r", encoding="utf-8") as file:
@@ -390,6 +390,7 @@ if __name__ == "__main__":
                     qa_pair = QG.generate_qa_temporal(anforande)
 
                 if qa_pair:
+                    print(qa_pair)
                     qa_dataset.append(qa_pair)
                     generated_counts[query_type] += 1
                 time.sleep(1)
