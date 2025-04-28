@@ -1,6 +1,7 @@
 import os
 import json
 import time
+from more_itertools import chunked
 import numpy as np
 import faiss
 from langchain_openai import OpenAIEmbeddings
@@ -23,11 +24,16 @@ texts = []
 anforande_ids = []
 
 for item in data:
-    rubrik = item.get("avsnittsrubrik", "").strip()
-    talare = item.get("talare", "").strip()
-    text = item.get("anforandetext", "").strip()
-    
-    full_text = f"{rubrik}. {talare}: {text}"
+    try:
+        date = item.get("dok_datum", "").strip()
+        rubrik = item.get("avsnittsrubrik", "").strip()
+        talare = item.get("talare", "").strip()
+        text = item.get("anforandetext", "").strip()
+    except AttributeError:
+        print(f"⚠️ Missing attribute in item: {item}")
+        continue
+
+    full_text = f"{date}: {rubrik}. {talare}: {text}"
     if full_text.strip():
         texts.append(full_text)
         anforande_ids.append(item.get("anforande_id", "unknown_id"))
@@ -36,21 +42,26 @@ for item in data:
 print("🔁 Generating embeddings with concurrency...")
 embedding_start = time.time()
 
-def embed_text(text):
-    return embedding_model.embed_query(text)
+batch_size = 16
 
-embeddings = [None] * len(texts)
-with ThreadPoolExecutor(max_workers=8) as executor:
-    future_to_index = {executor.submit(embed_text, text): i for i, text in enumerate(texts)}
-    for future in tqdm(as_completed(future_to_index), total=len(future_to_index)):
-        i = future_to_index[future]
-        try:
-            embeddings[i] = future.result()
-        except Exception as e:
-            print(f"❌ Error embedding text at index {i}: {e}")
+def embed_batch(batch):
+    return embedding_model.embed_documents(batch)
+
+embeddings = []
+for batch in tqdm(chunked(texts, batch_size), total=len(texts) // batch_size + 1):
+    try:
+        result = embed_batch(batch)
+        embeddings.extend(result)
+        time.sleep(1)  # avoid rate limits
+    except Exception as e:
+        print(f"❌ Error in batch: {e}")
 
 embedding_duration = time.time() - embedding_start
 print(f"⏱️ Embedding took {embedding_duration:.2f} seconds")
+
+# Check for any issues before converting to NumPy
+if not all(isinstance(vec, list) and all(isinstance(x, float) for x in vec) for vec in embeddings):
+    raise ValueError("⚠️ Detected invalid embeddings. Some vectors are malformed or None.")
 
 # Convert to NumPy
 embeddings_np = np.array(embeddings, dtype="float32")

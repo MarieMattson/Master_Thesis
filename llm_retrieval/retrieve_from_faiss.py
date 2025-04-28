@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.schema import HumanMessage
 from dotenv import load_dotenv
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 class FaissRetriever:
@@ -15,12 +15,27 @@ class FaissRetriever:
         self.anforande_ids = np.load(anforande_ids_path, allow_pickle=True)
         self.documents = np.load(documents_path, allow_pickle=True)
         
-        self.url = "https://api.openai.com/v1/chat/completions"
-        self.headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {OPENAI_API_KEY}"
-        }
-        self.llm = ChatOpenAI(model="gpt-4")
+        self.url = "https://api.edenai.run/v2/text/chat"
+        self.headers = {"Authorization": f"Bearer {EDENAI_API_KEY}",
+                        "accept": "application/json",
+                        "content-type": "application/json"}
+        
+        self.payload = {
+                        "providers": "meta/llama3-1-405b-instruct-v1:0",  # "openai/gpt-4o",   #"deepseek/DeepSeek-V3",
+                        "response_as_dict": True,
+                        "attributes_as_list": False,
+                        "show_base_64": True,
+                        "show_original_response": False,
+                        "temperature": 0,
+                        "max_tokens": 4096,
+                        "tool_choice": "auto",
+                        "previous_history": [
+                            {'role': 'user', 'message': f"Context:\n{context}\n\nQuestion:\n{question}\n\nAnswer:\n{answer}"}, 
+                            {'role': 'user', 'message': global_message}
+                        ]
+                    }
+
+        self.llm = ChatOpenAI(model="gpt-4o")
 
     def retrieve(self, query, top_k=6):
         query_embedding = np.array(embedding.embed_query(query), dtype="float32").reshape(1, -1)

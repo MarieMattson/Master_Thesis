@@ -369,36 +369,26 @@ if __name__ == "__main__":
         "generate_qa_comparison_party_no": 0,
         "generate_qa_temporal": 0
     }
-
     for anforande in data:
-        for query_type, required_amount in required_questions.items():
-            # Check if we still need to generate more of this question type
-            if generated_counts[query_type] < required_amount:
-                if query_type == "generate_qa_inference_person":
-                    qa_pair = QG.generate_qa_inference_person(anforande)
-                elif query_type == "generate_qa_inference_party":
-                    qa_pair = QG.generate_qa_inference_party(anforande)
-                elif query_type == "generate_qa_comparison_person_yes":
-                    qa_pair = QG.generate_qa_comparison_person_yes(anforande)
-                elif query_type == "generate_qa_comparison_person_no":
-                    qa_pair = QG.generate_qa_comparison_person_no(anforande)
-                elif query_type == "generate_qa_comparison_party_yes":
-                    qa_pair = QG.generate_qa_comparison_party_yes(anforande)
-                elif query_type == "generate_qa_comparison_party_no":
-                    qa_pair = QG.generate_qa_comparison_party_no(anforande)
-                elif query_type == "generate_qa_temporal":
-                    qa_pair = QG.generate_qa_temporal(anforande)
+        # Randomize the order of question types to ensure variety
+        question_types = list(required_questions.keys())
+        random.shuffle(question_types)
+
+        for query_type in question_types:
+            if generated_counts[query_type] < required_questions[query_type]:
+                # Dynamically call the right method from QG
+                qa_pair = getattr(QG, query_type)(anforande)
 
                 if qa_pair:
                     print(qa_pair)
                     qa_dataset.append(qa_pair)
                     generated_counts[query_type] += 1
-                time.sleep(1)
+                    time.sleep(1)
+                    break  # Stop after the first successful QA for this anforande
 
-                # Stop generating for this query type if we have enough
-                if generated_counts[query_type] >= required_amount:
-                    break
-
+        # Early exit if all quotas are fulfilled
+        if all(generated_counts[q] >= required_questions[q] for q in required_questions):
+            break
 
     with open(output_file, "w", encoding="utf-8") as file:
         json.dump(qa_dataset, file, ensure_ascii=False, indent=4)

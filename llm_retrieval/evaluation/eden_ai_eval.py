@@ -54,7 +54,7 @@ headers = {
 
 def evaluate_rag_output_with_edenai(question, answer, context):
     payload = {
-        "providers": "meta/llama3-1-405b-instruct-v1:0",  # "openai/gpt-4o",   #"deepseek/DeepSeek-V3",
+        "providers": "openai/gpt-4o", #"google/gemini-1.5-pro-latest", #"meta/llama3-1-405b-instruct-v1:0",     #"deepseek/DeepSeek-V3",
         "response_as_dict": True,
         "attributes_as_list": False,
         "show_base_64": True,
@@ -81,7 +81,7 @@ def evaluate_rag_output_with_edenai(question, answer, context):
 
 def get_generated_text_safely(evaluation, tag=""):
     try:
-        response = evaluation.get("meta/llama3-1-405b-instruct-v1:0", {})
+        response = evaluation.get("openai/gpt-4o", {})
         if response.get("status") != "success":
             print(f"[{tag}] Response status not successful:", response.get("status"))
             print(json.dumps(response, indent=2))
@@ -97,8 +97,11 @@ def get_generated_text_safely(evaluation, tag=""):
 updated_data = list()
 
 for idx, entry in enumerate(dataset):
-    if 'eval' not in entry:
-        entry['eval'] = {}
+    if idx > 2:
+        break
+    # Make sure eval_openai exists
+    if "eval_openai" not in entry:
+        entry["eval_openai"] = {}
 
     # First original qa-pair
     question = entry.get("qa_pair", {}).get("question", "N/A")
@@ -114,39 +117,32 @@ for idx, entry in enumerate(dataset):
     print("ragragrag bm25", graph_rag_bm25_answer)
     print("cosinecosinecosine", cosine_rag_answer)
     print("\n","="*80)
-    # Evaluating original answer
-    evaluation_graph_rag_cosine = evaluate_rag_output_with_edenai(question, graph_rag_cosine_answer, context)
-    evaluation_graph_rag_bm25 = evaluate_rag_output_with_edenai(question, graph_rag_bm25_answer, context)
-    
-    if evaluation_graph_rag_cosine and "meta/llama3-1-405b-instruct-v1:0" in evaluation_graph_rag_cosine:
-        verdict = get_generated_text_safely(evaluation_graph_rag_cosine, tag="graph_RAG_cosine")
-        if verdict:
-            entry["eval"]["graph_RAG_cosine_response"] = verdict
-            print("evaluation_graph_rag_cosine:", verdict)
-        else:
-            print(f"Skipping entry {idx} due to cosine error.")
-            entry["eval"]["graph_RAG_cosine_response"] = "Error."
-    
-    
-    if evaluation_graph_rag_bm25 and "meta/llama3-1-405b-instruct-v1:0" in evaluation_graph_rag_bm25:
-        verdict = get_generated_text_safely(evaluation_graph_rag_bm25, tag="graph_RAG_bm25")
-        if verdict:
-            entry["eval"]["graph_RAG_bm25_response"] = verdict
-            print("evaluation_reasonable_answer_bm25:", verdict)
-        else:
-            print(f"Skipping entry {idx} due to bm25 error.")
-            entry["eval"]["graph_RAG_bm25_response"] = "Error."
-    
 
-    evaluation_cosine_rag = evaluate_rag_output_with_edenai(question, cosine_rag_answer, context)
-    if evaluation_cosine_rag and "meta/llama3-1-405b-instruct-v1:0" in evaluation_cosine_rag:
-        verdict = get_generated_text_safely(evaluation_cosine_rag, tag="cosine_RAG")
-        if verdict:
-            entry["eval"]["cosine_RAG_response"] = verdict
-            print("evaluation cosine: ", verdict)
-        else:
-            print(f"Skipping entry {idx} due to cosine RAG error.")
-            entry["eval"]["cosine_RAG_response"] = "Error."
+    # Evaluate and insert ONLY missing fields
+    if "graph_RAG_cosine_response" not in entry["eval_openai"]:
+        evaluation_graph_cosine = evaluate_rag_output_with_edenai(question, graph_rag_cosine_answer, context)
+        if evaluation_graph_cosine and "openai/gpt-4o" in evaluation_graph_cosine:
+            verdict = get_generated_text_safely(evaluation_graph_cosine, tag="graph_RAG_cosine")
+            if verdict:
+                entry["eval_openai"]["graph_RAG_cosine_response"] = verdict
+                print("evaluation graph cosine: ", verdict)
+
+    if "graph_RAG_bm25_response" not in entry["eval_openai"]:
+        evaluation_graph_bm25 = evaluate_rag_output_with_edenai(question, graph_rag_bm25_answer, context)
+        if evaluation_graph_bm25 and "openai/gpt-4o" in evaluation_graph_bm25:
+            verdict = get_generated_text_safely(evaluation_graph_bm25, tag="graph_RAG_bm25")
+            if verdict:
+                entry["eval_openai"]["graph_RAG_bm25_response"] = verdict
+                print("evaluation graph bm25: ", verdict)
+
+    if "cosine_RAG_response" not in entry["eval_openai"]:
+        evaluation_cosine_rag = evaluate_rag_output_with_edenai(question, cosine_rag_answer, context)
+        if evaluation_cosine_rag and "openai/gpt-4o" in evaluation_cosine_rag:
+            verdict = get_generated_text_safely(evaluation_cosine_rag, tag="cosine_RAG")
+            if verdict:
+                entry["eval_openai"]["cosine_RAG_response"] = verdict
+                print("evaluation cosine rag: ", verdict)
+
     
     updated_data.append(entry)
     time.sleep(0.5)

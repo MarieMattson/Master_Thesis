@@ -47,7 +47,8 @@ class GraphRAG():
         **Requirements:**
         - Only use metadata in your cypher queries, not the contents of the anforande_text
         - DO NOT ADD ANY NEW LINES OR ANY WRITING EXCEPT THE CYPHER QUERY
-        - DO NOT ADD ANYTHING TO THE NAMES, INCLUDING PARTY ASSOCIATION
+        - DO NOT ADD PARTY ASSOCIATION TO THE NAME
+        - If the question contains a politicians role, e.g. "Miljö- och klimatministern Isabella Lövin", you should use the full title in the query.
         - Only return a valid Cypher query—no explanations or summaries.
         - The query should find the speaker’s "Anförande" nodes and related "Chunk" nodes.
         - **Output ONLY the Cypher query.**
