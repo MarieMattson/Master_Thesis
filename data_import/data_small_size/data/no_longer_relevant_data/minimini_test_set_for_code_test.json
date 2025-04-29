@@ -1,0 +1,186 @@
+[
+    {
+        "dok_id": "H90971",
+        "avsnittsrubrik": "Pensioner",
+        "dok_datum": "2022-02-23 00:00:00",
+        "anforande_id": "fe550445-f0ca-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Herr talman! Det råder ingen tvekan om att Sverigedemokraterna också har drivit på för höjda pensioner. Vi har flera gånger föreslagit en stärkt garantipension, nu senast med 300 kronor utöver det som regeringen har föreslagit.</p><p>Jag skulle vilja ta tillfället i akt att korrigera en siffra jag sa i mitt tidigare anförande. Jag tror att det kan ha letat sig in något litet fel där, så jag vill se till att det blir korrekt.</p><p>Vi har också lagt fram en stor reform för att höja pensionsavsättningarna genom att växla inom arbetsgivaravgiften, den allmänna löneavgiften och insättningar till pensionsavsättningarna. Det är en satsning på hela 22 miljarder. Det råder alltså ingen tvekan om att stärkta pensioner är en väldigt viktig fråga för oss.</p><p>När det gäller förslaget som har kommit fram om garantitillägget är vi naturligtvis glada över att fler partier vill ta initiativ till att stärka pensionerna. Jag fick tidigare svar på att det ska vara samma regelverk som för garantipensionen, och om undantaget för kvalificeringsregeln tas bort ska det gälla även där.</p><p>Min följdfråga är då: När kommer det här förslaget att läggas fram? Det står i det särskilda yttrandet från Socialdemokraterna att avskaffandet av regeln om tillgodoräknande av bosättningstid bereds på Regeringskansliet. Kommer det här förslaget om att ta bort undantaget att läggas fram före den 22 augusti eller i alla fall under den här mandatperioden, eller är det bara någonting som lovas men som inte kommer att göras i praktiken? Det är en fråga som jag gärna skulle vilja ha svar på om det går att ge något besked om detta.</p>",
+        "talare": "Julia Kronlid",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Anser Sverigedemokraterna att det är viktigt att höja pensionerna och stärka garantipensionen?",
+            "answer": "Ja, Sverigedemokraterna anser att det är viktigt att höja pensionerna och har föreslagit en stärkt garantipension med 300 kronor utöver regeringens förslag. De har också lagt fram en reform för att öka pensionsavsättningarna med en satsning på 22 miljarder kronor."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0   
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909126",
+        "avsnittsrubrik": "Nordiskt samarbete inklusive Arktis",
+        "dok_datum": "2022-06-08 00:00:00",
+        "anforande_id": "db022d69-c139-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Herr talman! Vi sverigedemokrater älskar Sverige. Det är allom bekant. Vi sverigedemokrater älskar även Norden och det nordiska samarbetet. Det nordiska samarbetet är en framgångssaga, trots bakslaget under pandemin, och det bygger på frivillighet. Det bygger på frivillighet och ändå fungerar det. Eller kanske fungerar det så väl just därför? Jag tror inte att det är en slump. Vi vet att vi kan minska det när vi vill om vi vill det, och vi kan frångå det när vi vill om vi vill det. Men det vill vi verkligen inte.</p><p>Det frivilliga samarbetet formas lättare kring fördelar för de länder som ingår. Det ger den flexibilitet som ger fördelar och inte nackdelar. Det ger vilja att ställa upp lojalt med andra nordiska länder när det behövs. Det frivilliga samarbetet är <em>vårt</em> samarbete och inte någon annans.</p><p>Nordensamarbetet bör stå modell för EU-samarbetet som alltmer börjar likna en planekonomisk tvångströja. Reformeringen av EU-samarbetet måste börja senast under Sveriges ordförandeskap 2023 med det nordiska samarbetet som modell. Men eftersom vi är realister ser vi att förutsättningarna för ett nordiskt samarbete är bättre än för ett EU-samarbete. De nordiska länderna är historiskt sett homogena länder som även inbördes har stora likheter. Det är viktigt att inse det.</p><p></p><p>Det är också viktigt att bevara den homogeniteten. Det mångkulturella experiment som Sverige håller på med nu skapar olikheter, spänningar, våld och oro, och det minskar förutsättningarna för det frivilliga samarbetet inte bara i Sverige utan även i Norden. Vi sverigedemokrater älskar samarbete, men det måste vara ett samarbete som leder till goda resultat för svenskarna och det måste bygga på realistiska premisser.</p><p>Herr talman! Vi sverigedemokrater vill göra mycket för miljön. Vi tänker i generationsperspektiv. Vi vill kunna lämna över ett Norden med god miljö till våra barn. Vi ska inte förbruka miljön. Det kallas miljömässig hållbarhet. Miljömässig hållbarhet blir ofta synonymt med begreppet hållbarhet när initiativ tas av andra partier, men det är ju bara en del av hållbarheten. Det ska också ingå social hållbarhet och ekonomisk hållbarhet i hållbarhetsbegreppet.</p><p>Det handlar om att varken miljön, den sociala situationen eller ekonomin ska förbrukas. På så vis säkerställer vi att nästa generation får en god miljö, en god social situation och en god ekonomi.</p><p>Även utanför de tre gängse hållbarhetsdelarna finns viktiga värden att försvara och bevara till kommande generationer. Vi lever i vår kultur, och den ger oss sammanhang och mening. Vi ska inte förbruka vår kultur. Våra barn har rätt att leva i vår kultur med tusenårig förankring och en sammanhållning över generationer och in i framtiden. Kulturell hållbarhet är den fjärde hållbarhetsdelen. Hållbarhet handlar alltså om respekt för många värden samtidigt och om balans. Utan balansen blir ambitioner lätt både utopiska och skadliga.</p><p>Nordisk frihet, där Sverigedemokraterna ingår, har agerat flera gånger under det gångna året och fått gehör för att de sociala och ekonomiska värdena inte ska glömmas bort vid hållbarhetsansatser, till exempel inför COP 26 och Stockholm + 50. Det är perspektiv som är oerhört viktiga i annars ensidiga diskussioner.</p><p>Det är viktigt för oss människor, men också för miljön, att vi inte bara fokuserar på miljön och miljömässig hållbarhet. Det krävs nämligen att man inte föröder ekonomin om man ska ha resurser till framtida miljövänlighet, och det krävs att man inte föröder livskvalitet om man ska ha kvar ett engagemang för miljön. Dessutom kan vi fråga oss vad man har vunnit om man har räddat miljön men förlorat barnens förutsättningar att få ett gott och meningsfullt liv. </p><p>Hållbarhet handlar alltså om respekt för många värden samtidigt och om balans. Nordisk frihet, där Dansk folkeparti, Sannfinländarna och Sverigedemokraterna ingår, har hållit emot när det gäller förslag som vi bedömer skulle skada Nordens ekonomier och de nordiska folkens livskvalitet eller bara vara ogenomförbara. Till exempel har Nordisk frihet tillsammans med andra stoppat ett gemensamt nordiskt datum för fossilfrihet. </p><p>Länderna är alltför olika och har helt olika förutsättningar att uppnå fossilfrihet. Ett gemensamt datum skulle ge ett ganska litet mervärde med tanke på de åtaganden som de respektive länderna redan har gjort. Ett sådant datum skulle inte heller på ett lika träffsäkert sätt tillåta oss att beakta negativa effekter på de värden som står i konflikt med klimatambitionerna. Den nödvändiga balansen mellan värden går i ett sådant läge inte att upprätthålla. </p><p></p><p>Visst är det roligt att vara rosenkindad idealist, men vi sverigedemokrater och Nordisk frihet ser som vårt viktiga kall att vara realister för att våra barns framtid ska vara hållbar i begreppets samtliga betydelser. Realism förenar partierna i Nordisk frihet och svetsar oss samman, och realism är vad man får om man röstar på dessa partier. Andra realister är välkomna in i samarbetet. </p><p>Överläggningen var härmed avslutad. </p><p>(Beslut fattades under § 11.)</p>",
+        "talare": "Staffan Eklöf",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Anser Staffan Eklöf att EU-samarbetet bör fortsätta som det är utan förändringar?",
+            "answer": "Nej, Staffan Eklöf anser att EU-samarbetet behöver reformeras och att det nordiska samarbetet bör stå som modell för denna reformering, eftersom han ser det nuvarande EU-samarbetet som en planekonomisk tvångströja."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0   
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80963",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2021-01-13 00:00:00",
+        "anforande_id": "6232e588-b57d-eb11-914b-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Det svenska skattesystemet behöver ses över. I dag är krångliga skatteregler ett av de vanligaste problemen för företag. Det gäller inte minst momssystemet, och även kapitalbeskattningen är svåröverblickbar. </p><p>Liberalerna gick till val på en stor skattereform, och en sådan finns också med i januariavtalet - en seger för L, sas det. Men var är den? Av JÖK:ens stora skattereformsambitioner verkar det snart ha blivit bara en tummetott. Att döma av Liberalernas debattartikel i DI verkar Johan Pehrson nu dra samma slutsats; nu talar Liberalerna i stället om nästa mandatperiod. Det är lite som i sången om flickan på lasarettet. </p><p>Min fråga till Johan Pehrson är: Blir det någon skattereform, eller har Liberalerna gett sossarna regeringsmakten i utbyte mot smör där ovanför?</p>",
+        "talare": "Ebba Busch",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Ebba Busch för att det svenska skattesystemet behöver reformeras?",
+            "answer": "Ebba Busch anser att det svenska skattesystemet är för komplicerat och utgör ett stort problem för företag, särskilt när det gäller moms och kapitalbeskattning. Hon kritiserar också Liberalernas oförmåga att genomföra den utlovade skattereformen, vilket var en del av januariavtalet, och ifrågasätter om de har prioriterat regeringsmakten över reformen."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0   
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909126",
+        "avsnittsrubrik": "Nordiskt samarbete inklusive Arktis",
+        "dok_datum": "2022-06-08 00:00:00",
+        "anforande_id": "db022d69-c139-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Herr talman! Vi sverigedemokrater älskar Sverige. Det är allom bekant. Vi sverigedemokrater älskar även Norden och det nordiska samarbetet. Det nordiska samarbetet är en framgångssaga, trots bakslaget under pandemin, och det bygger på frivillighet. Det bygger på frivillighet och ändå fungerar det. Eller kanske fungerar det så väl just därför? Jag tror inte att det är en slump. Vi vet att vi kan minska det när vi vill om vi vill det, och vi kan frångå det när vi vill om vi vill det. Men det vill vi verkligen inte.</p><p>Det frivilliga samarbetet formas lättare kring fördelar för de länder som ingår. Det ger den flexibilitet som ger fördelar och inte nackdelar. Det ger vilja att ställa upp lojalt med andra nordiska länder när det behövs. Det frivilliga samarbetet är <em>vårt</em> samarbete och inte någon annans.</p><p>Nordensamarbetet bör stå modell för EU-samarbetet som alltmer börjar likna en planekonomisk tvångströja. Reformeringen av EU-samarbetet måste börja senast under Sveriges ordförandeskap 2023 med det nordiska samarbetet som modell. Men eftersom vi är realister ser vi att förutsättningarna för ett nordiskt samarbete är bättre än för ett EU-samarbete. De nordiska länderna är historiskt sett homogena länder som även inbördes har stora likheter. Det är viktigt att inse det.</p><p></p><p>Det är också viktigt att bevara den homogeniteten. Det mångkulturella experiment som Sverige håller på med nu skapar olikheter, spänningar, våld och oro, och det minskar förutsättningarna för det frivilliga samarbetet inte bara i Sverige utan även i Norden. Vi sverigedemokrater älskar samarbete, men det måste vara ett samarbete som leder till goda resultat för svenskarna och det måste bygga på realistiska premisser.</p><p>Herr talman! Vi sverigedemokrater vill göra mycket för miljön. Vi tänker i generationsperspektiv. Vi vill kunna lämna över ett Norden med god miljö till våra barn. Vi ska inte förbruka miljön. Det kallas miljömässig hållbarhet. Miljömässig hållbarhet blir ofta synonymt med begreppet hållbarhet när initiativ tas av andra partier, men det är ju bara en del av hållbarheten. Det ska också ingå social hållbarhet och ekonomisk hållbarhet i hållbarhetsbegreppet.</p><p>Det handlar om att varken miljön, den sociala situationen eller ekonomin ska förbrukas. På så vis säkerställer vi att nästa generation får en god miljö, en god social situation och en god ekonomi.</p><p>Även utanför de tre gängse hållbarhetsdelarna finns viktiga värden att försvara och bevara till kommande generationer. Vi lever i vår kultur, och den ger oss sammanhang och mening. Vi ska inte förbruka vår kultur. Våra barn har rätt att leva i vår kultur med tusenårig förankring och en sammanhållning över generationer och in i framtiden. Kulturell hållbarhet är den fjärde hållbarhetsdelen. Hållbarhet handlar alltså om respekt för många värden samtidigt och om balans. Utan balansen blir ambitioner lätt både utopiska och skadliga.</p><p>Nordisk frihet, där Sverigedemokraterna ingår, har agerat flera gånger under det gångna året och fått gehör för att de sociala och ekonomiska värdena inte ska glömmas bort vid hållbarhetsansatser, till exempel inför COP 26 och Stockholm + 50. Det är perspektiv som är oerhört viktiga i annars ensidiga diskussioner.</p><p>Det är viktigt för oss människor, men också för miljön, att vi inte bara fokuserar på miljön och miljömässig hållbarhet. Det krävs nämligen att man inte föröder ekonomin om man ska ha resurser till framtida miljövänlighet, och det krävs att man inte föröder livskvalitet om man ska ha kvar ett engagemang för miljön. Dessutom kan vi fråga oss vad man har vunnit om man har räddat miljön men förlorat barnens förutsättningar att få ett gott och meningsfullt liv. </p><p>Hållbarhet handlar alltså om respekt för många värden samtidigt och om balans. Nordisk frihet, där Dansk folkeparti, Sannfinländarna och Sverigedemokraterna ingår, har hållit emot när det gäller förslag som vi bedömer skulle skada Nordens ekonomier och de nordiska folkens livskvalitet eller bara vara ogenomförbara. Till exempel har Nordisk frihet tillsammans med andra stoppat ett gemensamt nordiskt datum för fossilfrihet. </p><p>Länderna är alltför olika och har helt olika förutsättningar att uppnå fossilfrihet. Ett gemensamt datum skulle ge ett ganska litet mervärde med tanke på de åtaganden som de respektive länderna redan har gjort. Ett sådant datum skulle inte heller på ett lika träffsäkert sätt tillåta oss att beakta negativa effekter på de värden som står i konflikt med klimatambitionerna. Den nödvändiga balansen mellan värden går i ett sådant läge inte att upprätthålla. </p><p></p><p>Visst är det roligt att vara rosenkindad idealist, men vi sverigedemokrater och Nordisk frihet ser som vårt viktiga kall att vara realister för att våra barns framtid ska vara hållbar i begreppets samtliga betydelser. Realism förenar partierna i Nordisk frihet och svetsar oss samman, och realism är vad man får om man röstar på dessa partier. Andra realister är välkomna in i samarbetet. </p><p>Överläggningen var härmed avslutad. </p><p>(Beslut fattades under § 11.)</p>",
+        "talare": "Staffan Eklöf",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Anser Karolina Swedin att USA är bra?",
+            "answer": "Nej, Staffan Eklöf anser att EU-samarbetet behöver reformeras och att det nordiska samarbetet bör stå som modell för denna reformering, eftersom han ser det nuvarande EU-samarbetet som en planekonomisk tvångströja."
+        },
+        "qa_type": "generate_qa_comparison_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "",
+            "nr_of_nodes": 0   
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    }
+]

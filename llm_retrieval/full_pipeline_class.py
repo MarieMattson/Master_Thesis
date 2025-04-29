@@ -11,7 +11,6 @@ import requests
 import sklearn
 from nltk.tokenize import word_tokenize
 from langchain_core.messages import HumanMessage, SystemMessage
-from sqlalchemy import Boolean
 from llm_retrieval.old.openai_parses import OpenAIResponse
 from langchain_community.retrievers import BM25Retriever
 
@@ -119,28 +118,35 @@ class GraphRAG():
                 logger.warning(f"Missing embedding for node: {node['c.chunk_id']}")
                 continue
 
-
         ranked_nodes = sorted(ranked_nodes, key=lambda x: x[1], reverse=True)
-
-        return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
-
+        if ranked_nodes:
+            return [{"node": item[0], "score": item[1]} for item in ranked_nodes[:top_k]]
+        else:
+            return []
+        
     def rank_nodes_with_BM25(self, query_text: str, retrieved_nodes: list[dict], top_k=6)->list[dict]:
         # Convert each node to a LangChain Document
+        if not retrieved_nodes:
+            print("No retrieved nodes available for BM25 ranking.")
+            return []
+
         documents = [
             Document(
                 page_content=node['c.text'],
                 metadata={"original_node": node}
-
             )
             for node in retrieved_nodes
+            if 'c.text' in node and node['c.text']  # Check that 'c.text' exists and is non-empty
         ]
 
-        retriever = BM25Retriever.from_documents(documents, k=top_k,preprocess_func=word_tokenize)
+        if not documents:
+            print("No valid documents available for BM25 ranking.")
+            return []
 
+        retriever = BM25Retriever.from_documents(documents, k=top_k, preprocess_func=word_tokenize)
         results = retriever.invoke(query_text)
         return [{"node": doc.metadata["original_node"], "score": None} for doc in results]
-
-
+    
     @staticmethod
     def print_ranked_nodes(ranked_nodes:list[dict], is_cosine:boolean):
         """Print ranked nodes in a readable format without embeddings."""
@@ -157,16 +163,27 @@ class GraphRAG():
 
 
     def generate_response(self, ranked_nodes:list[dict], user_query:str):
+
+        if not ranked_nodes:
+            fallback_prompt = (
+                f"If no relevant information is found, respond with a fallback message.\n"
+                f"Specify what is being asked in the questoin:\n\n"
+                f"\"{user_query}\"\n\n"
+                f"Respond: 'Jag hittar ingen information om ... i min data'."
+            )
+            response = self.llm.invoke([HumanMessage(content=fallback_prompt)])
+            return response.content
         
-        prompt = f"User query: {user_query}\n\nBased on the ranked debate chunks, generate a relevant response to the user query using the following information You must respond in Swedish:\n\n"
-        for i, item in enumerate(ranked_nodes, start=1):
-            node = item["node"]
-            prompt += f"\n🔹 **Result {i}:**\n"
-            prompt += f"🗣 **Anförande Text:** {node['a.anforande_text']}...\n"
-        prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
-        response = self.llm.invoke([HumanMessage(content=prompt)])
-        
-        return response.content
+        else:
+            prompt = f"User query: {user_query}\n\nBased on the ranked debate chunks, generate a relevant response to the user query using the following information You must respond in Swedish:\n\n"
+            for i, item in enumerate(ranked_nodes, start=1):
+                node = item["node"]
+                prompt += f"\n🔹 **Result {i}:**\n"
+                prompt += f"🗣 **Anförande Text:** {node['a.anforande_text']}...\n"
+            prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
+            response = self.llm.invoke([HumanMessage(content=prompt)])
+            
+            return response.content
 
 if __name__ == "__main__":
     graph_rag = GraphRAG()
@@ -199,7 +216,7 @@ if __name__ == "__main__":
 
     user_query = (
         """
-        Vad är Socialdemokraternas position i frågan om hanteringen av kris- och återstartsmedlen?
+        Anser Karolina Swedin att USA är bra?
         """) 
       
     print("Translating user query into Cypher query...")
