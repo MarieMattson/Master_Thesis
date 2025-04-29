@@ -42,7 +42,7 @@ for item in data:
 print("🔁 Generating embeddings with concurrency...")
 embedding_start = time.time()
 
-batch_size = 16
+batch_size = 32
 
 def embed_batch(batch):
     return embedding_model.embed_documents(batch)

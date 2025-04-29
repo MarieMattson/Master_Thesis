@@ -7,7 +7,7 @@ import requests
 
 load_dotenv()
 EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
-dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result_combined.json", split="train")
+dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json", split="train")
 url = "https://api.edenai.run/v2/text/chat"
 
 global_message = """
@@ -54,7 +54,7 @@ headers = {
 
 def evaluate_rag_output_with_edenai(question, answer, context):
     payload = {
-        "providers": "openai/gpt-4o", #"google/gemini-1.5-pro-latest", #"meta/llama3-1-405b-instruct-v1:0",     #"deepseek/DeepSeek-V3",
+        "providers": "google/gemini-1.5-pro-latest", #"openai/gpt-4o",  #"meta/llama3-1-405b-instruct-v1:0",     #"deepseek/DeepSeek-V3",
         "response_as_dict": True,
         "attributes_as_list": False,
         "show_base_64": True,
@@ -81,7 +81,7 @@ def evaluate_rag_output_with_edenai(question, answer, context):
 
 def get_generated_text_safely(evaluation, tag=""):
     try:
-        response = evaluation.get("openai/gpt-4o", {})
+        response = evaluation.get("google/gemini-1.5-pro-latest", {})
         if response.get("status") != "success":
             print(f"[{tag}] Response status not successful:", response.get("status"))
             print(json.dumps(response, indent=2))
@@ -97,11 +97,9 @@ def get_generated_text_safely(evaluation, tag=""):
 updated_data = list()
 
 for idx, entry in enumerate(dataset):
-    if idx > 2:
-        break
     # Make sure eval_openai exists
-    if "eval_openai" not in entry:
-        entry["eval_openai"] = {}
+    #if "eval_openai" not in entry:
+    #    entry["eval_openai"] = {}
 
     # First original qa-pair
     question = entry.get("qa_pair", {}).get("question", "N/A")
@@ -119,28 +117,33 @@ for idx, entry in enumerate(dataset):
     print("\n","="*80)
 
     # Evaluate and insert ONLY missing fields
-    if "graph_RAG_cosine_response" not in entry["eval_openai"]:
+    #if "graph_RAG_cosine_response" not in entry["eval_openai"]:
+    if idx >= 20:
+        updated_data.append(entry)
+        continue
+    else: 
         evaluation_graph_cosine = evaluate_rag_output_with_edenai(question, graph_rag_cosine_answer, context)
-        if evaluation_graph_cosine and "openai/gpt-4o" in evaluation_graph_cosine:
+        if evaluation_graph_cosine and "google/gemini-1.5-pro-latest" in evaluation_graph_cosine:
             verdict = get_generated_text_safely(evaluation_graph_cosine, tag="graph_RAG_cosine")
             if verdict:
-                entry["eval_openai"]["graph_RAG_cosine_response"] = verdict
+                entry["gemini_eval"]["graph_RAG_cosine_response"] = verdict
                 print("evaluation graph cosine: ", verdict)
 
-    if "graph_RAG_bm25_response" not in entry["eval_openai"]:
+    #if "graph_RAG_bm25_response" not in entry["eval_openai"]:
         evaluation_graph_bm25 = evaluate_rag_output_with_edenai(question, graph_rag_bm25_answer, context)
-        if evaluation_graph_bm25 and "openai/gpt-4o" in evaluation_graph_bm25:
+        if evaluation_graph_bm25 and "google/gemini-1.5-pro-latest" in evaluation_graph_bm25:
             verdict = get_generated_text_safely(evaluation_graph_bm25, tag="graph_RAG_bm25")
             if verdict:
-                entry["eval_openai"]["graph_RAG_bm25_response"] = verdict
+                print(entry)
+                entry["gemini_eval"]["graph_RAG_bm25_response"] = verdict
                 print("evaluation graph bm25: ", verdict)
 
-    if "cosine_RAG_response" not in entry["eval_openai"]:
+    #if "cosine_RAG_response" not in entry["eval_openai"]:
         evaluation_cosine_rag = evaluate_rag_output_with_edenai(question, cosine_rag_answer, context)
-        if evaluation_cosine_rag and "openai/gpt-4o" in evaluation_cosine_rag:
+        if evaluation_cosine_rag and "google/gemini-1.5-pro-latest" in evaluation_cosine_rag:
             verdict = get_generated_text_safely(evaluation_cosine_rag, tag="cosine_RAG")
             if verdict:
-                entry["eval_openai"]["cosine_RAG_response"] = verdict
+                entry["gemini_eval"]["cosine_RAG_response"] = verdict
                 print("evaluation cosine rag: ", verdict)
 
     

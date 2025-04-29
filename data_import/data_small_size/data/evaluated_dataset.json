@@ -80,6 +80,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -163,6 +173,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "{\"factuality\": \"no\", \"relevance\": \"no\"}\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"no\", \"relevance\": \"no\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -246,6 +266,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n"
         }
     },
     {
@@ -329,6 +359,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "{\"factuality\": \"No\", \"relevance\": \"Yes\"}\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "{\"factuality\": \"No\", \"relevance\": \"Yes\"}\n"
         }
     },
     {
@@ -412,6 +452,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n"
         }
     },
     {
@@ -495,6 +545,16 @@
             "graph_RAG_bm25_response": "Error.",
             "graph_RAG_cosine_response": "Error.",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -578,6 +638,16 @@
             "graph_RAG_bm25_response": "\n\n{\"factuality\": \"Yes\", \"relevance\": \"Yes\"}",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -639,6 +709,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{\"factuality\": \"yes\", \"relevance\": \"yes\"}\n```\n",
+            "graph_RAG_cosine_response": "```json\n{\"factuality\": \"yes\", \"relevance\": \"yes\"}\n```\n"
         }
     },
     {
@@ -722,6 +802,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "{\"factuality\": \"No\", \"relevance\": \"No\"}\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "{\"factuality\": \"No\", \"relevance\": \"Yes\"}\n"
         }
     },
     {
@@ -805,6 +895,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"No\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -888,6 +988,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -949,6 +1059,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1032,6 +1152,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1115,6 +1245,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"no\", \"relevance\": \"yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1198,6 +1338,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1281,6 +1431,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1364,6 +1524,16 @@
             "graph_RAG_bm25_response": "\n\n{\"factuality\": \"No\", \"relevance\": \"No\"}",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"No\",\n\"relevance\": \"No\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "{\"factuality\": \"No\", \"relevance\": \"Yes\"}\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1447,6 +1617,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1528,6 +1708,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\", \n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n"
         }
     },
     {
@@ -1611,6 +1801,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
+            "graph_RAG_bm25_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }",
+            "graph_RAG_cosine_response": "{ \"factuality\": \"No\", \"relevance\": \"No\" }"
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "```json\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_bm25_response": "```json\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }\n```\n",
+            "graph_RAG_cosine_response": "```json\n{ \"factuality\": \"no\", \"relevance\": \"yes\" }\n```\n"
         }
     },
     {
@@ -1694,6 +1894,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -1777,6 +1987,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -1860,6 +2080,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -1943,6 +2173,16 @@
             "graph_RAG_bm25_response": "Error.",
             "graph_RAG_cosine_response": "Error.",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2026,6 +2266,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2109,6 +2359,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2192,6 +2452,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2253,6 +2523,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2336,6 +2616,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n    \"factuality\": \"Yes\", \n    \"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2419,6 +2709,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2502,6 +2802,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2585,6 +2895,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2668,6 +2988,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2751,6 +3081,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",  \n\"relevance\": \"Yes\" \n}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2834,6 +3174,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -2917,6 +3267,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3000,6 +3360,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\", \n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3061,6 +3431,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3144,6 +3524,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3227,6 +3617,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "Error.",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3310,6 +3710,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3393,6 +3803,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3476,6 +3896,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3559,6 +3989,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{\n  \"factuality\": \"No\",\n  \"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3642,6 +4082,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3711,6 +4161,16 @@
             "graph_RAG_bm25_response": "Error.",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3794,6 +4254,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3877,6 +4347,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -3960,6 +4440,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4043,6 +4533,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4126,6 +4626,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4209,6 +4719,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4292,6 +4812,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4375,6 +4905,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4458,6 +4998,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4541,6 +5091,16 @@
             "graph_RAG_bm25_response": "Error.",
             "graph_RAG_cosine_response": "Error.",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4624,6 +5184,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4701,6 +5271,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"No\",\n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4784,6 +5364,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"No\",\n\"relevance\": \"No\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4867,6 +5457,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\"factuality\": \"No\", \"relevance\": \"No\"}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -4950,6 +5550,16 @@
             "graph_RAG_bm25_response": "\n\n{\"factuality\": \"Yes\", \"relevance\": \"Yes\"}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5033,6 +5643,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5116,6 +5736,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"Yes\", \n\"relevance\": \"Yes\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5199,6 +5829,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"Yes\",  \n\"relevance\": \"Yes\" \n}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5282,6 +5922,16 @@
             "graph_RAG_bm25_response": "\n\n{\"factuality\": \"Yes\", \"relevance\": \"Yes\"}",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5343,6 +5993,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5426,6 +6086,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5509,6 +6179,16 @@
             "graph_RAG_bm25_response": "\n\n{\n\"factuality\": \"No\", \n\"relevance\": \"No\"\n}",
             "graph_RAG_cosine_response": "\n\n{\n\"factuality\": \"No\", \n\"relevance\": \"No\"\n}",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5592,6 +6272,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5675,6 +6365,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5758,6 +6458,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"Yes\", \"relevance\": \"Yes\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5841,6 +6551,16 @@
             "graph_RAG_bm25_response": "Error.",
             "graph_RAG_cosine_response": "Error.",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     },
     {
@@ -5924,6 +6644,16 @@
             "graph_RAG_bm25_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "graph_RAG_cosine_response": "\n\n{ \"factuality\": \"No\", \"relevance\": \"No\" }",
             "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
         }
     }
 ]
