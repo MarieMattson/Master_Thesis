@@ -16,7 +16,7 @@ class CosineRAG:
         self.embedding_model = OpenAIEmbeddings(openai_api_key=self.api_key)
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        self.llm = ChatOpenAI(model="gpt-4")
+        self.llm = ChatOpenAI(model="gpt-4o")
         
         self.documents = []
         self.anforande_ids = []

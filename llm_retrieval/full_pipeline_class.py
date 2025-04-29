@@ -31,7 +31,7 @@ class GraphRAG():
             "Content-Type": "application/json",
             "Authorization": f"Bearer {OPENAI_API_KEY}"
         }
-        self.llm = ChatOpenAI(model="gpt-4")
+        self.llm = ChatOpenAI(model="gpt-4o")
         self.embedding = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
         
