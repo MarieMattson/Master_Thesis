@@ -6,35 +6,20 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.schema import HumanMessage
 from dotenv import load_dotenv
 load_dotenv()
-EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
-
+ 
 class FaissRetriever:
     def __init__(self, index_path, anforande_ids_path, documents_path):
         self.index = faiss.read_index(index_path)
         self.anforande_ids = np.load(anforande_ids_path, allow_pickle=True)
         self.documents = np.load(documents_path, allow_pickle=True)
         
-        self.url = "https://api.edenai.run/v2/text/chat"
-        self.headers = {"Authorization": f"Bearer {EDENAI_API_KEY}",
-                        "accept": "application/json",
-                        "content-type": "application/json"}
-        
-        self.payload = {
-                        "providers": "meta/llama3-1-405b-instruct-v1:0",  # "openai/gpt-4o",   #"deepseek/DeepSeek-V3",
-                        "response_as_dict": True,
-                        "attributes_as_list": False,
-                        "show_base_64": True,
-                        "show_original_response": False,
-                        "temperature": 0,
-                        "max_tokens": 4096,
-                        "tool_choice": "auto",
-                        "previous_history": [
-                            {'role': 'user', 'message': f"Context:\n{context}\n\nQuestion:\n{question}\n\nAnswer:\n{answer}"}, 
-                            {'role': 'user', 'message': global_message}
-                        ]
-                    }
-
+        self.url = "https://api.openai.com/v1/chat/completions"
+        self.headers = {
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {OPENAI_API_KEY}"
+                        }
         self.llm = ChatOpenAI(model="gpt-4o")
 
     def retrieve(self, query, top_k=6):
@@ -62,6 +47,10 @@ class FaissRetriever:
             prompt += f"\n🔹 **Result {i}:**\n"
             prompt += f"🗣 **Anförande Text:** {anforande}...\n"
         prompt += "\nNow, generate a response based on the context provided above. Make sure to answer the user query in a natural and coherent way based on the information from the debate. You must respond in Swedish"
+        prompt += f"If no relevant information is found, respond with a fallback message.\n"
+        prompt += f"Specify what is being asked in the question:\n\n"
+        prompt += f"\"{user_query}\"\n\n"
+        prompt += f"Respond: 'Jag hittar ingen information om ... i min data'."
         response = self.llm.invoke([HumanMessage(content=prompt)])
         
         return response.content

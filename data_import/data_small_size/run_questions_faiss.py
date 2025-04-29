@@ -1,14 +1,13 @@
 import json
 import traceback
 
-from networkx import number_of_nodes
 from llm_retrieval.retrieve_from_faiss import FaissRetriever
 
 faiss_rag = FaissRetriever(index_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/faiss_index.bin",
                             anforande_ids_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/anforande_ids.npy",
                             documents_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/documents.npy"
                         )
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_random_entries.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_73_random_entries.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 for entry in dataset:
@@ -30,7 +29,7 @@ for entry in dataset:
         print(f"⚠️ Error processing entry: {question}")
         print(traceback.format_exc())
 
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_faiss_result.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
 print("\nProcessing complete!")

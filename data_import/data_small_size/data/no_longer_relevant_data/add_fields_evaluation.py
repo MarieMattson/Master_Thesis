@@ -1,7 +1,7 @@
 import json
 
 # Load your dataset
-with open('/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json', 'r', encoding='utf-8') as f:
+with open('/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_combined_result.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 # Make sure data is a list of items or a dict
@@ -22,7 +22,7 @@ for item in data:
     }
 
 # Save the updated dataset
-with open('/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json', 'w', encoding='utf-8') as f:
+with open('/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_combined_result.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
 
 print("✅ Dataset updated successfully!")

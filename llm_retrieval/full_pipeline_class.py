@@ -167,7 +167,7 @@ class GraphRAG():
         if not ranked_nodes:
             fallback_prompt = (
                 f"If no relevant information is found, respond with a fallback message.\n"
-                f"Specify what is being asked in the questoin:\n\n"
+                f"Specify what is being asked in the question:\n\n"
                 f"\"{user_query}\"\n\n"
                 f"Respond: 'Jag hittar ingen information om ... i min data'."
             )

@@ -1,9 +1,9 @@
 import json
 
 # Paths to the data files
-graph_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result_graph.json"
-cosine_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result.json"
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_result_combined.json"
+graph_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_graph_result.json"
+cosine_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_faiss_result.json"
+output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_combined_result.json"
 
 # Load graph_data and cosine_data
 with open(graph_path, "r", encoding="utf-8") as f: 
