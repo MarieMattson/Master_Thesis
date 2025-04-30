@@ -7,7 +7,7 @@ I can also write code to check if the top anforande is in the same debate as the
 from collections import Counter, defaultdict
 import json
 
-path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json"
+path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
 
 with open(path, "r") as f:
     data = json.load(f)
@@ -43,13 +43,13 @@ def evaluate_relevance(data, retrieval_models):
 evaluate_relevance(data, retreival_models)
 
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset_with_relevance.json"
+#output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset_with_relevance.json"
 #with open(output_path, "w") as f:
 #    json.dump(data, f, indent=2, ensure_ascii=False)
 
 # NOW for counting the results
-with open(output_path, "r") as f:
-    data = json.load(f)
+#with open(output_path, "r") as f:
+#    data = json.load(f)
 model_counters = defaultdict(Counter)
 
 # Iterate through the dataset

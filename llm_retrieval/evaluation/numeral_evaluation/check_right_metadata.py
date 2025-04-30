@@ -9,7 +9,7 @@ question_types_person = ["generate_qa_inference_person", "generate_qa_comparison
 question_types_temporal = ["generate_qa_temporal"]
 question_types_party = ["generate_qa_inference_party", "generate_qa_comparison_party"] 
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset_with_relevance.json"
+output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
 original_data = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/dataset_small.json"
 retreival_models = ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]
 
