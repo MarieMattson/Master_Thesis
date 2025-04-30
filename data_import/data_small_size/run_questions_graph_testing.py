@@ -3,7 +3,7 @@ import traceback
 from llm_retrieval.full_pipeline_class import GraphRAG
 
 graph_rag = GraphRAG()
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_175_random_entries.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_173_graph_result.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 
