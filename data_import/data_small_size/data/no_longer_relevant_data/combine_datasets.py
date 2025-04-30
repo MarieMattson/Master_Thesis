@@ -1,9 +1,9 @@
 import json
 
 # Paths to the data files
-graph_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_graph_result.json"
-cosine_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_faiss_result.json"
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_combined_result.json"
+graph_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/result_faiss_qa_dataset_part4.json"
+cosine_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/result_qa_dataset_part4.json"
+output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_combined_result_part4.json"
 
 # Load graph_data and cosine_data
 with open(graph_path, "r", encoding="utf-8") as f: 
@@ -28,9 +28,9 @@ for entry in cosine_data:
                 entry["graph_RAG_cosine"]["context"] = graph_entry["graph_RAG_cosine"]["context"]
             if not entry["graph_RAG_cosine"]["cypher_query"]:
                 entry["graph_RAG_cosine"]["cypher_query"] = graph_entry["graph_RAG_cosine"]["cypher_query"]
-            if entry["graph_RAG_cosine"]["nr_of_nodes"] == 0:
+            if entry["graph_RAG_cosine"]["number_of_nodes"] == 0:
                 try:
-                    entry["graph_RAG_cosine"]["nr_of_nodes"] = graph_entry["graph_RAG_cosine"]["number_of_nodes"]
+                    entry["graph_RAG_cosine"]["number_of_nodes"] = graph_entry["graph_RAG_cosine"]["number_of_nodes"]
                 except KeyError:
                     pass
             if not entry["graph_RAG_bm25"]["answer"]:
@@ -39,9 +39,9 @@ for entry in cosine_data:
                 entry["graph_RAG_bm25"]["context"] = graph_entry["graph_RAG_bm25"]["context"]
             if not entry["graph_RAG_bm25"]["cypher_query"]:
                 entry["graph_RAG_bm25"]["cypher_query"] = graph_entry["graph_RAG_bm25"]["cypher_query"]
-            if entry["graph_RAG_bm25"]["nr_of_nodes"] == 0:
+            if entry["graph_RAG_bm25"]["number_of_nodes"] == 0:
                 try:
-                    entry["graph_RAG_bm25"]["nr_of_nodes"] = graph_entry["graph_RAG_bm25"]["number_of_nodes"]
+                    entry["graph_RAG_bm25"]["number_of_nodes"] = graph_entry["graph_RAG_bm25"]["number_of_nodes"]
                 except KeyError:
                     pass
             # If there are additional fields you want to update, do it similarly here

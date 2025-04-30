@@ -1,13 +1,16 @@
 import json
 import traceback
 from llm_retrieval.full_pipeline_class import GraphRAG
-
+#/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part1.json
+#/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part2.json
+#/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part3.json
+#/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part3.json
 graph_rag = GraphRAG()
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_173_graph_result.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part4.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
-
-for entry in dataset:
+# you forgot to do 50 :(
+for idx, entry in enumerate(dataset):
     try:
         question = entry["qa_pair"]["question"]
         
@@ -76,12 +79,12 @@ for entry in dataset:
             print(f"Response generation failed: {e}")
             continue
 
-
     except Exception as e:
         print(f"⚠️ Error processing entry: {question}")
         print(traceback.format_exc())
 
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_173_graph_result.json", "w", encoding="utf-8") as f:
+
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/result_qa_dataset_part4.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
 print("\nProcessing complete!")

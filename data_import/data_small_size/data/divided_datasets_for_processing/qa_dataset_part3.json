@@ -1,0 +1,1542 @@
+[
+    {
+        "dok_id": "H80972",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:297 om extratjänster",
+        "dok_datum": "2021-01-28 00:00:00",
+        "anforande_id": "d3e0c032-879c-eb11-9152-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Låt oss repetera igen. Mellan 2016 och 2019 hade vi ingen pandemi. Enligt riksdagens utredningstjänst är det alltså 6 procent som går till osubventionerad anställning efter 90 dagar. Kostnaden för att skapa dessa jobb är alltså 7 miljoner kronor per jobb. Det är inga småpengar, fru talman, utan vi pratar om 10 miljarder som regeringen tänker använda till extratjänster. Och man tillför en halv miljard till, precis som statsrådet sa.</p><p>Om man har en så misslyckad reform eller aktivitet vore det rimligt att utvärdera den. Det vore rimligt att överväga den om man inte får det resultat man vill ha - om det inte är så att syftet är att flytta kostnaderna för försörjningsstöd till staten, men då kan man fortfarande ifrågasätta om det är en lämplig åtgärd.</p><p>Det allvarligaste är inte kostnaden för skattebetalarna, utan det är att individen blir inlåst i ett system och slutar söka jobb. Jag har mött personer som har extratjänster, och jag är helt säker på de gör en värdefull insats och tycker att de gör det. Det är en väldigt sjyst ersättning att få 20 000 i månaden, men problemet, till exempel i Sandvikens fall, är att man inte har budgeterat för 450 personer till. Om det vore så att Sandvikens kommun hade behov av 450 anställda till kräver jag att Sandvikens kommun ska budgetera för det och anställa personerna på riktiga jobb, osubventionerade anställningar.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>Nästa problem i detta är att det blir en spridningseffekt. Vi ser i Malmö att man säger upp privata entreprenörer och att man tänker sätta personer som har extratjänster att utföra det jobbet i stället. Vi kan se samma sak i Ockelbo, där det hände nyligen. Man säger upp den privata entreprenören som står för markskötsel och parkskötsel i Ockelbo och tänker sannolikt ersätta det med extratjänster. Det blir direkta undanträngningseffekter av friska, välmående företag som ersätts av denna åtgärd, som tyvärr har väldigt liten effekt.</p><p>Man borde kanske tänka nytt och annorlunda. Jag vill repetera och säga att jag alltså inte är emot subventionerade anställningar. Jag tycker att det är en utmärkt åtgärd för att folk ska få visa vad de kan, men då kanske man skulle ställa om hela systemet och rikta sig till de små och medelstora företag som faktiskt kan anställa och budgetera.</p><p>Jag skulle vilja ställa en fråga till arbetsmarknadsministern. Givet att vi, precis som ministern sa, har en pandemi och riskerar massarbetslöshet är det viktigt att man om man använder 10 ½ miljard har åtgärder som verkligen ger effekt och som gör att Lars Beckman, om han har en arbetsmarknadspolitisk åtgärd, har en chans att få ett jobb på den arbetsplats där han är. Jag tror inte att vare sig jag eller statsrådet tror att Sandviken kan budgetera för att 450 personer ska få en fast anställning i Sandvikens kommun. Då har individen slösat bort tiden på en extratjänst i stället för att ha möjlighet att få ett jobb som är en osubventionerad anställning.</p><p>Min fråga kvarstår: Givet det väldigt låga utfallet av personer som går till osubventionerade anställningar, vilken samhällsekonomisk analys har ministern gjort? Eller är ministern nöjd med ett utfall på 6 procent? Det blir konsekvensen av att man inte gör något: Man är nöjd med att använda 10 miljarder för få 6 procent som går till osubventionerade anställningar och där varje osubventionerad anställning kostar 7 miljoner. Är det en rimlig användning av pengarna?</p>",
+        "talare": "Lars Beckman",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Anser Moderaterna att det är rimligt att använda 10 miljarder kronor på extratjänster när endast 6 procent går vidare till osubventionerade anställningar?",
+            "answer": "Nej, Moderaterna anser inte att det är rimligt. De ifrågasätter effektiviteten och kostnaden av extratjänsterna, särskilt när så få går vidare till osubventionerade jobb och när det finns risk för undanträngningseffekter på arbetsmarknaden."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90913",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:6 om väg 77",
+        "dok_datum": "2021-09-30 00:00:00",
+        "anforande_id": "49d6af9c-8332-ec11-9164-0090facf175a",
+        "anforandetext": "<p>Herr talman och infrastrukturminister Eneroth! Jag är fullt medveten om detta. Anledningen till att jag tar upp frågan är att jag tycker att styrningen av Trafikverket är för svag. Regleringsbreven är för tunt skrivna, och det behövs mycket tydligare styrning. Verket kör lite fritt valt arbete, är bilden vi har här i länet. </p><p>Ett problem är upphandlingarna, med långa processer och mycket krav som kan ifrågasättas. Däremot är det dåliga krav vad gäller genomförande. Sommarhalvåret borde man ju kunna köra tvåskift jämt, när det är ljust dygnet runt. Vi har många vägbyggen som står still på fredagarna - då är det inte en människa där och jobbar - och hela helgerna. Sedan kommer de på måndagsmorgonen igen och kör till torsdagskvällen. Det tycker jag faktiskt inte är okej om man ska verkställa ett projekt och få fram trafiken så att det fungerar. </p><p>Vi har en bro på Furusundsvägen, där jag bor. De har hållit på med den bron sedan den 1 maj - eller om det var den 2 maj de började - och de blev klara nu i veckan. Det är en liten bro, kanske 150 meter lång. Det är sanslöst att det ska ta sådan tid. Där var heller inte en människa och jobbade på fredagarna; då var det tydligen röd dag i Trafikverkets värld. </p><p>Det som behövs är att Trafikverket reformeras och styrs upp, med bättre regleringsbrev för att få ordning på verksamheten och stopp på miljardrullningen i fördyrade kostnader. Det är vad som sker i dag: Vartenda bygge blir fördröjt och fördyrat - överallt. Det gäller inte bara Förbifart Stockholm, utan det gäller i princip vartenda bygge. </p>",
+        "talare": "Kjell Jansson",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad var Kjell Janssons åsikt om Trafikverkets styrning och upphandlingar under september 2021?",
+            "answer": "Kjell Jansson ansåg att styrningen av Trafikverket var för svag och att regleringsbreven var för tunt skrivna, vilket ledde till ineffektivitet och fördyrade kostnader i byggprojekt. Han kritiserade också de långa upphandlingsprocesserna och bristen på krav för genomförande, samt föreslog att Trafikverket borde reformeras och styras upp bättre."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809103",
+        "avsnittsrubrik": "Redovisning av åtgärder i enlighet med målsättningarna i det nationella brottsförebyggande programmet Tillsammans mot brott",
+        "dok_datum": "2021-04-07 00:00:00",
+        "anforande_id": "2db759c6-3dd0-eb11-9153-901b0eac4c78",
+        "anforandetext": "<p>Herr talman! I dag ska vi debattera regeringens redovisning av åtgärder i enlighet med målsättningarna i det nationella brottsförebyggande programmet Tillsammans mot brott.</p><p>Jag står bakom Moderaternas alla reservationer, men jag yrkar bifall endast till reservation nummer 6.</p><p>Regeringen presenterade programmet 2017. Syftet var att skapa förutsättningar för ett strukturerat och långsiktigt brottsförebyggande arbete i hela samhället.</p><p>Regeringen har nu redogjort för vilka åtgärder som har vidtagits och beslutats. Utifrån det som Petter Löberg precis sa verkar det ha gått väldigt bra, men hur har det gått under de fyra åren efter att programmet antogs? Vad är facit? Jag säger att det är icke godkänt.</p><p>Nationella trygghetsundersökningar visar att brott mot enskilda personer har ökat sedan 2016. Det gäller till exempel misshandel, olaga hot, sexualbrott, personrån och andra brott. Över 22 procent av befolkningen blev utsatt för något av dessa brott under 2019.</p><p>År 2020 blev skjutningar ett vardagsbrott i Sverige, med en skjutning varje dag. Nästan varannan vecka sköts en människa ihjäl, och massor av människor blev skadade. Människor reagerar knappt längre när en skjutning sker utan rycker på axlarna och tänker: Jaså, en till.</p><p>30 procent av Sveriges befolkning känner sig så otrygga att de undviker att gå ut på kvällarna i sitt eget bostadsområde. De sitter alltså kvar i sin lägenhet och vågar inte gå ut - i Sverige, 30 procent!</p><p>19 procent av alla 16-19-åringar är oroliga för att bli rånade. Det är också väldigt många. 19 procent har alltså ont i magen när de går ut därför att de är rädda för att de ska bli rånade. Det kan man förstå med tanke på de ökande rånen, särskilt rån med förnedringsinslag. Det är förfärligt.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Redovisning av åtgär-der i enlighet med målsättningarna i det nationella brottsföre-byggande programmet Tillsammans mot brott</p><p>Cirka hälften av alla människor i Sverige oroar sig i stor utsträckning över brottsligheten i samhället överlag. Människor i Sverige är rädda på många sätt och vis, många i sitt eget bostadsområde. Och många är rädda för att närstående kommer att utsättas, även jag. Jag är orolig när jag vet att mina söner ska ut och festa en lördagskväll, och jag är orolig när min svärdotter ska ut med sina kompisar. När jag vet att de går ut och festar tycker jag att det är jobbigt. De bor inte ens hemma, men jag har en liten klump i magen - är det den här kvällen det ska hända något?</p><p>Polisen har en mycket viktig roll i samhällets brottsförebyggande arbete, och det finns behov av en utredning av vad som egentligen är polisens uppdrag. Den senaste utredningen gjordes för över 20 år sedan, och en ny utredning behövs för att klargöra polisens brottsförebyggande arbete och deras roll.</p><p>Herr talman! Ett nationellt kunskapscentrum bör inrättas som ska sprida kunskap om forskning och beprövande metoder för att förebygga brott. Kunskapscentret ska fokusera på brottsförebyggande och lämna stöd till kommunerna i arbetet med unga i riskzonen.</p><p>Vi har tidigare föreslagit att ett nationellt exitprogram för gängkriminella ska införas, och det är på gång i någon form. Men egentligen är det ännu viktigare att ta fram ett nationellt program för att ungdomar i riskzonen ska hindras från att bli gängkriminella, inte ett program för dem som har varit gängkriminella i flera år och ska lämna det. Det är när man ser att en ungdom är på väg in i gängkriminalitet som man ska sätta in ett program, det som vi kallar ett no entry-program. Det är mycket bättre att stoppa dem innan de har fastnat i kriminalitet. Vårt förslag är alltså att kunskapscentret ska ta fram ett nationellt no entry-program där man samlar föräldrar och andra viktiga vuxna och myndigheter som ska samarbeta för att få unga att hoppa av den kriminella banan. Syftet är att med gemensamma krafter stoppa deras kriminella bana.</p><p>Herr talman! Narkotikapolitiken måste vara restriktiv. Samhället måste tidigt reagera när unga människor börjar med narkotika - ju tidigare desto bättre. Det är viktigt att drogtesta även ungdomar under 15 år. Sociala insatsgrupper med samarbete mellan sociala myndigheter, polisen och skolan är andra viktiga åtgärder för att stoppa en kriminell livsstil.</p><p>Försäljningen av narkotika på nätet ökar. Antalet unga mellan 15 och 24 år som vårdats för psykisk störning orsakad av cannabis eller andra droger har mer än fördubblats under tio års tid. Vi moderater tycker att det är viktigt att fånga upp unga som mår dåligt och därför riskerar att hamna i utanförskap och kriminalitet. Därför är det viktigt att socialsekreterare, fältassistenter och andra kommunala tjänstemän finns ute på gator och torg även efter att kontoret har stängt.</p><p>Herr talman! Fängelserna i Sverige har fått en ny grupp av unga vuxna som innebär nya utmaningar för Kriminalvården. Det rör sig om unga män från utsatta områden, som har lågt förtroende för polisen och andra myndigheter, som har börjat med en kriminell livsstil i unga år och som också har missbruksproblem, i alla fall de flesta. Dessa personer är ofta helt ointresserade av att sluta med sin kriminalitet. Detta innebär nya krav på innehållet under fängelsetiden eller olika straff inom frivården.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Redovisning av åtgär-der i enlighet med målsättningarna i det nationella brottsföre-byggande programmet Tillsammans mot brott</p><p>Insatserna under verkställigheten måste ha huvudfokus på att de inte ska återfalla i brott. Därför vill vi tillsätta en utredare som ska ta ett samlat grepp kring denna grupp av personer och lämna förslag på lämpliga brottsförebyggande åtgärder och också se över straffens innehåll. Utredaren ska också ta in erfarenheter från andra länder för att försöka komma fram till vad som fungerar och vad som inte fungerar.</p><p>Herr talman! De vidrigaste brott jag vet är sexualbrott mot barn. Jag jobbade med det när jag var kriminalinspektör i Göteborg. Det vänder sig i magen när man vet vad vissa barn utsätts för. Jag är van vid det mesta, men det här är så otroligt obehagligt och vidrigt att man blir fysiskt illamående. Jag har sett filmer med övergrepp på barn, och en film som jag såg för tio år sedan finns fortfarande kvar på min näthinna. Jag kan fortfarande få ont i magen när jag tänker på den, så hemsk var den.</p><p>Det är därför mycket viktigt att samhället gör allt för att stoppa dessa brott. På Karolinska universitetssjukhuset finns Anova, som är ett centrum som arbetar med att förebygga sexuell och reproduktiv ohälsa och sexuellt våld. Där finns Preventell - hjälplinjen vid oönskad sexualitet. Hjälplinjen har funnits sedan 2012 och har sedan invigningen tagit emot över 2 000 samtal. Dit kan människor, till exempel pedofiler som känner att de är på väg att göra ett sexuellt övergrepp på barn och inser att det inte är normalt, ringa och få stöd.</p><p>I samband med inskrivningssamtalet får dömda brottslingar information om Preventell, och det finns också möjlighet att kontakta dem anonymt. Denna information ges dock inte när sexualbrottslingar ska lämna fängelset och övergå till frivården. Vi tycker verkligen att de borde få denna information när de kommer ut i samhället. Detta är en viktig verksamhet för att förebygga sexuella övergrepp på barn. Därför bör man se över vilka möjligheter som finns till fast finansiering, för nu får de pengar år för år, projektbaserat. Vi moderater anser i likhet med Myndigheten för vård- och omsorgsanalys att det på sikt ska övergå till ett regionalt ansvar.</p><p>Sammanfattningsvis, herr talman, har vi fem tillkännagivanden, och det känns väldigt bra.</p><p>Först bör ett särskilt lands- och glesbygdsspecifikt brottsförebyggande arbete utvecklas.</p><p>Sedan bör, som jag pratade om, ett nationellt kunskapscentrum som ska ta fram ett no entry-program inrättas. Det har vi också ett tillkännagivande om, vilket är väldigt bra.</p><p>Det bör finnas fler socialsekreterare utanför kontorstid.</p><p>En utredning bör ta reda på vilka brottsförebyggande åtgärder som är effektiva när det gäller unga män.</p><p>Till sist bör en översyn göras av finansieringen till Preventell.</p>",
+        "talare": "Ellen Juntti",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad sade Ellen Juntti om regeringens brottsförebyggande program och dess effektivitet under april 2021?",
+            "answer": "Ellen Juntti uttryckte att regeringens brottsförebyggande program, som presenterades 2017, inte har varit framgångsrikt. Hon menade att brott mot enskilda personer har ökat sedan programmet infördes och att det inte har uppnått sina mål. Hon ansåg att programmet är icke godkänt och betonade behovet av nya åtgärder och utredningar för att effektivt förebygga brott."
+        },
+        "qa_type": "generate_qa_temporal",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909110",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:465 om nya Skurubrons finansiering",
+        "dok_datum": "2022-05-10 00:00:00",
+        "anforande_id": "8af8d4b9-be2a-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Tack för det svar vi har fått av statsrådet! Jag vill haka på eftersom jag representerar Nacka och vill gärna säga några ord.</p><p>En överenskommelse mellan Nacka kommun och regeringen om avgiftsfinansiering har ju ingåtts en gång i tiden. Närmare bestämt tog kommunstyrelsen i Nacka ett sådant beslut 2009 med argumentet att därmed kunna tidigarelägga bygget. Under kommande år hände det inte så jättemycket när det gällde planeringen av att faktiskt bygga bron. I dag, tack och lov, har bygget kommit igång. Det är bra. Men det som alltjämt skaver kraftigt är de avgifter som hotar att införas samma dag som bron ska tas i anspråk.</p><p>Fru talman! För samtliga boende i hela Värmdö samt den bortre delen av Ormingelandet i Nacka är de obligatoriska avgifterna snart ett faktum. En sådan kostnadsövervältring skulle vara unik i landet.</p><p>Jag ska nu läsa innantill:</p><p>För oss handlar denna fråga inte bara om den praktiska finansieringen av en bro inom regionen. Den handlar också om viktiga principer för hur vi ska hantera infrastrukturinvesteringar i vårt land och hur kostnaderna ska fördelas mellan olika samhällsnivåer samt mellan dessa och brukare.</p><p>Vi kan inte acceptera att offentligt finansieringsansvar för helt nödvändig infrastruktur på enstaka ställen ska övervältras på närmast berörda enskilda personer och företagare. Vi anser att det är en grundläggande princip att statliga vägar ska finansieras med statliga medel. Om tiotusentals invånare på Värmdö och delar av Nacka ska tvingas betala avgift varje dag för att lämna sin kommun med den enda möjliga landförbindelsen är det inte bara något som gått snett i det enskilda fallet. Då innebär det också ett systemskifte som bäddar för helt andra principer vad gäller planering och finansiering av statlig infrastruktur. Detta motsätter vi oss bestämt.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>De som har skrivit detta är ministerns egna socialdemokratiska vänner. Undertecknare är bland annat en annan minister som heter Khashayar Farmanbar.</p>",
+        "talare": "Richard Herrey",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Vad tycker Moderaterna om att införa avgifter för statliga vägar och broar?",
+            "answer": "Moderaterna anser att det är en grundläggande princip att statliga vägar och broar ska finansieras med statliga medel och motsätter sig att kostnaderna övervältras på enskilda personer och företagare. De ser det som ett systemskifte som de inte kan acceptera."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809146",
+        "avsnittsrubrik": "Ändrade regler i utlänningslagen",
+        "dok_datum": "2021-06-22 00:00:00",
+        "anforande_id": "30ea50f7-3328-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Alla som vill kan göra sin egen bedömning genom att jämföra den proposition som nu finns med förslaget från Migrationskommittén. Då kommer man att se att huvuddragen i propositionen stämmer överens med det som vi stod bakom när vi satt i kommittén.</p><p>Den viktiga förändringen av migrationspolitiken med det här beslutet, som jag tror att Hans Eklind och andra helt missar men som är ett oerhört viktigt besked, är att vi inte går tillbaka till en utlänningslag som väsentligt skiljer sig från övriga Europa, utan vi håller fast vid den politiska omläggning som gjordes i samband med flyktingkrisen 2015. Det tror jag är det absolut viktigaste beskedet, och det visar den här lagstiftningen väldigt tydligt.</p><p>Jag har kommenterat språk- och samhällsorienteringskraven, och vi backar inte från dem. Det ska införas sådana krav, men jag har också förklarat hur det måste hänga ihop med språk- och samhällsorienteringskraven för medborgarskapet.</p><p>Hans Eklind säger att man stod bakom Migrationskommitténs betänkande, men det är ju inte så att Hans Eklinds uppgörelse med de andra partierna om de sju punkter som man lyckades förhandla fram på ett år överensstämmer med Migrationskommitténs förslag, till exempel när det gäller alternativt skyddsbehövande och rätten till familjeåterförening.</p><p>Vi hade gärna gjort ett handslag med Hans Eklind och Kristdemokraterna, men det vill de inte. Då blev situationen som den blev. Vi måste hantera migrationsfrågan trots att Kristdemokraterna inte ville detta.</p>",
+        "talare": "Rikard Larsson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Rikard Larsson för att den nuvarande propositionen om migrationspolitiken är i linje med tidigare beslut och inte avviker från europeiska normer?",
+            "answer": "Rikard Larsson menar att den nuvarande propositionen om migrationspolitiken överensstämmer med de huvuddrag som tidigare beslutats i Migrationskommittén. Han betonar att det är viktigt att Sverige inte återgår till en utlänningslag som skiljer sig väsentligt från övriga Europa, utan istället fortsätter på den politiska omläggning som gjordes under flyktingkrisen 2015. Detta ser han som ett centralt besked i den nya lagstiftningen."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909104",
+        "avsnittsrubrik": "Socialtjänstens arbete m.m.",
+        "dok_datum": "2022-04-28 00:00:00",
+        "anforande_id": "f03f78f4-bb23-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Herr talman - ursäkta, herr ålderspresident! Det är första gången för mig i talarstolen när herr ålderspresidenten leder sammanträdet.</p><p>Jag pratade om kompetensen och kvaliteten inom socialtjänsten, Acko Ankarberg Johansson, och jag sa just i mitt anförande att vi delvis förra mandatperioden och delvis denna mandatperiod har tillskjutit medel från regeringen för att förstärka kvaliteten på det sociala arbetet. Det handlar också om att kunna höja bemanningen. Vi har också ställt krav sedan 2014 att man ska vara lägst socionom. Det är en grund, tänker jag, som ändå gör att man ställer krav på kommunerna.</p><p>Sedan är det ett stort ansvar, herr ålderspresident, som det är viktigt att kommunerna tar. Jag sa i mitt anförande att vi nu har skjutit till rätt mycket medel i välfärdsmiljarder som ska gå till kommuner och regioner, och det är ju kommunerna som har kompetensen när det gäller att tillse att medlen kommer till användning på rätt sätt.</p><p>Jag har väldigt mycket kontakt med kommunerna och socialtjänsten, och jag ser att det görs satsningar. Men som Acko Ankarberg Johansson också säger har arbetsbelastningen blivit mycket större under de senaste åren. Jag menar att vi alla, både regeringen, oppositionen i riksdagen och kommunerna, har ett ansvar för att driva dessa frågor. Och kommunerna ska göra sitt arbete.</p><p>Jag tycker ändå att vi har haft diskussioner i kammaren som för frågan framåt, och det har kommit många intressanta förslag som vi jobbar med i regeringen. Inte minst har ni i oppositionen drivit på frågan bra, så jag tycker att vi gör ett bra arbete tillsammans.</p>",
+        "talare": "Mats Wiking",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Mats Wiking för vikten av att stärka socialtjänstens kvalitet och bemanning?",
+            "answer": "Mats Wiking betonar vikten av att stärka socialtjänstens kvalitet och bemanning genom att tillskjuta medel från regeringen och ställa krav på att personalen ska ha minst socionomutbildning. Han anser att kommunerna har ett stort ansvar att använda dessa resurser på rätt sätt och att det är viktigt med samarbete mellan regeringen, oppositionen och kommunerna för att hantera den ökade arbetsbelastningen inom socialtjänsten."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80957",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:157 om en undersökning bland personer som identifierar sig som muslimer",
+        "dok_datum": "2020-12-18 00:00:00",
+        "anforande_id": "434336d0-f371-eb11-914b-901b0eac4c70",
+        "anforandetext": "<p>Herr ålderspresident! Jag beklagar den konspiratoriska ton som finns, men så är livet i politiken av och till.</p><p>När det gäller dessa frågor är det oerhört viktigt att vi har kunskap om den våldsbejakande extremismen. Det är också därför vi har startat Center mot våldsbejakande extremism, både för att utveckla det förebyggande arbetet och för att ge stöd till exempelvis kommuner som har behov av stöd och vägledning. Det är också viktigt att vi hela tiden har forskning för att se hur utvecklingen ser ut.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>Jag motsätter mig inte kunskap; tvärtom bejakar jag och välkomnar den. Vi behöver mer kunskap på en rad olika områden. Bland annat pågår just nu tre forskningsstudier som handlar om hotet från salafistiska och salafist-jihadistiska miljöer i Sverige, som kan ge mer kunskap om salafistisk påverkan på samhället. Där kommer vi att kunna få mer kunskap om hur hotet ser ut. Det finns också ett hot från den radikalnationalistiska miljön, och det tas också fram en rapport om det hotet mot samhället och vår demokrati.</p><p>Jag tror att den här typen av forskningsstudier och rapporter är oerhört viktiga för att vi bättre ska kunna förebygga terrorism och det grundläggande hot mot demokratin som finns i vårt samhälle i dag. Där har Försvarshögskolan en viktig roll, som tar fram mer kunskap. Det är förstås också en fråga för Säpo att hålla reda på de hot som finns mot vår demokrati.</p><p>I denna insamling av kunskap är det förstås också väldigt viktigt att se vilka individer det finns i samhället som kan utgöra hot. Det är helt grundläggande för att vi ska kunna skydda vårt samhälle.</p><p>Det här är alltså viktigt. Jag välkomnar kunskap och forskning kring detta så att vi hela tiden bättre kan skydda vårt samhälle mot terrorhandlingar.</p>",
+        "talare": "Åsa Lindhagen",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Anser Miljöpartiet att det är viktigt att samla kunskap och bedriva forskning för att förebygga våldsbejakande extremism och skydda demokratin?",
+            "answer": "Ja, Miljöpartiet anser att det är viktigt att samla kunskap och bedriva forskning för att bättre kunna förebygga våldsbejakande extremism och skydda demokratin, vilket framgår av deras stöd för Center mot våldsbejakande extremism och pågående forskningsstudier."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90966",
+        "avsnittsrubrik": "Försvarspolitik",
+        "dok_datum": "2022-02-15 00:00:00",
+        "anforande_id": "f052ade4-36c2-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Jag delar ledamoten Pål Jonsons syn på svensk säkerhetspolitik, alltså att vi skulle behöva så stor samsyn som möjligt kring det. Jag tror att det är viktigt för ett litet land att ha en stor samsyn kring säkerhetspolitiken. Där är vi helt överens. Vi två representerar också två partier som historiskt sett har kunnat lösa de här frågorna och hitta framkomliga vägar.</p><p></p><p>Jag tror att det är en linje som vi ska fortsätta på. Det kommer framöver att vara diskussioner och samtal; jag vet att Försvarsberedningen ska träffas under morgondagen, och jag tror också att man kan fundera kring den säkerhetspolitiska agendan.</p><p>Sedan har vi såklart frågan om Nato och om Nato-option, som det sägs. Jag är inte så mycket för det där med option, men jag tycker att man ska fundera på om vi ska vara medlemmar i Nato. Vi har lite olika syn på det. Från socialdemokratiskt håll är vi ganska tydliga med, och har ingen intern debatt om det över huvud taget, att vi anser att vi inte ska vara med i Nato. Däremot vet vi vad Nato är: Nato är inte är mer än sina medlemmar, och en stor del av medlemmarna är nära bundsförvanter till oss och finns i vårt närområde. Dem tycker jag att vi ska samarbeta med.</p><p>Jag tror att våra båda partier behöver ta ett större ansvar och se hur vi kan mötas och lösa det här. Det tror jag är viktigt för ett litet land i norra Europa.</p>",
+        "talare": "Mattias Ottosson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad är Socialdemokraternas inställning till ett svenskt medlemskap i Nato enligt talet?",
+            "answer": "Socialdemokraterna är tydliga med att de inte anser att Sverige ska bli medlem i Nato. De har ingen intern debatt om detta och betonar istället vikten av att samarbeta med de Nato-medlemmar som är nära bundsförvanter och finns i Sveriges närområde."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90961",
+        "avsnittsrubrik": "Särskild debatt om hedersrelaterat våld och förtryck",
+        "dok_datum": "2022-01-28 00:00:00",
+        "anforande_id": "0dc790c4-7aba-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p> STYLEREF Kantrubrik \\* MERGEFORMAT Särskild debatt om hedersrelaterat våld och förtryck</p><p>Fru talman! Det är ren lögn att påstå att vi inte drev frågorna i opposition. Jag var ordförande i justitieutskottet 2010-2014, och vi gick till val på straffskärpningsgrunden. Och det är den straffskärpningsgrunden som vi nu har genomfört.</p><p>Jag kommer mycket väl ihåg diskussionerna som fördes då. Jag nämnde tidigare den socialdemokratiska ledamoten Nalin Pekgul. Hon drev dessa frågor hårt under många år. En annan person som drev frågor om hedersbrott och straffskärpningsgrunder är Arhe Hamednaca, som satt för Socialdemokraterna i justitieutskottet. Han hade en bakgrund i Fryshuset och hade jobbat mycket med flickor och pojkar som hade utsatts för hedersrelaterade brott.</p><p>Stå inte här, Johan Forssell, och påstå att vi socialdemokrater inte drev frågan när vi var i opposition. Problemet var att det inte hände någonting i det regeringskansli där Johan Forssell själv satt. Jag kan inte nämna en enda reform som Moderaterna lyckades driva igenom under sina alliansår.</p><p>Den andra frågan återkommer jag till i nästa replik.</p>",
+        "talare": "Morgan Johansson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur försvarar Morgan Johansson Socialdemokraternas insatser mot hedersrelaterat våld under deras tid i opposition?",
+            "answer": "Morgan Johansson hävdar att Socialdemokraterna aktivt drev frågor om hedersrelaterat våld och straffskärpningar när de var i opposition. Han nämner att de gick till val på en grund för straffskärpning som de nu har genomfört. Johansson framhåller också insatserna från socialdemokratiska ledamöter som Nalin Pekgul och Arhe Hamednaca, som arbetade hårt med dessa frågor. Han kritiserar Moderaterna för att inte ha genomfört några reformer under sina alliansår."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80935",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:66 om nedskräpning och brottslighet vid bärplockarläger",
+        "dok_datum": "2020-11-13 00:00:00",
+        "anforande_id": "7f5c2d87-3d36-eb11-914a-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Det är uppenbart att Beckman lyssnar dåligt. Vad jag har sagt är att polisen har de befogenheter de behöver för att ingripa mot pågående brottslighet. Detta är en tillämpningsfråga. Polisen får se till att använda sig av sina befogenheter.</p><p>För säkerhets skull frågade vi också Polismyndigheten om något ytterligare behöver göras och hur Polismyndigheten bedömer läget just nu. Vi fick i går information från polisregion Nord och polisregion Mitt.</p><p>I polisregion Nord säger man att man upplever färre störningar nu än tidigare år. Man tror att detta hänger samman med pandemin - att färre har kunnat åka, helt enkelt.</p><p>Polisregion Mitt säger precis samma sak: Problemen är mindre förekommande nu än tidigare år. Det hänger ihop med pandemin, men, skriver polisregion Mitt också, de nya reglerna har också haft avskräckande effekt. Det är mycket enklare nu än tidigare.</p><p>Nej, Lars Beckman ska inte alls tolka denna debatt som att regeringen inte gör någonting eller inte tänker göra någonting. Vi tänker se till att vi fortsätter använda oss av de befogenheter som finns genom att förstärka polisen, vilket vi nu gör över hela landet, och genom att högprioritera denna fråga på ett helt annat sätt än tidigare regeringar har gjort. Detta har vi redan sett resultat av under dessa fem år.</p><p>Jag kan försäkra både de boende i Gävleborg och Lars Beckman att detta är en fråga som vi naturligtvis kommer att fortsätta att arbeta mycket aktivt med.</p><p>Interpellationsdebatten var härmed avslutad. </p>",
+        "talare": "Justitie- och migrationsministern Morgan Johansson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Socialdemokraterna att polisen redan har tillräckliga befogenheter för att hantera pågående brottslighet?",
+            "answer": "Ja, Socialdemokraterna anser att polisen har de befogenheter de behöver för att ingripa mot pågående brottslighet och att det handlar om att tillämpa dessa befogenheter effektivt."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80954",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 december ",
+        "dok_datum": "2020-12-15 00:00:00",
+        "anforande_id": "34bb83e4-3971-eb11-914e-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! I Europeiska rådet krävs det enhällighet, så om bara ett enda land säger ifrån blir det inget. Det som länderna i Europeiska rådet är överens om är minst 55 procent. Vi har hela tiden drivit på för att få det högre än så, men vi kommer inte dit. Då får man välja: endera står man kvar på 40 procent och nöjer sig med det för att man inte fick exakt som man ville eller så tar man ett steg och höjer ambitionen till 55 procents minskning. Det hade vi stöd i riksdagen för att göra, och därför är det detta vi nu har kommit fram till.</p><p>Det står dock <em>minst</em> 55 procent; det innebär inte att det måste vara exakt 55 procent. Vi ska hela tiden driva på för att successivt höja målet. Jag tror att vi har ett momentum i många länder och att man ser att det här inte längre enbart upplevs som ett hot eller som något som ska ta ekonomin bakåt. Jag tror att man, precis tvärtom, ser det som vi gör: Detta är en möjlighet.</p><p>Nu har vi minst 55 procent, men låt oss trycka på. Vi vill gärna se detta öka, och då får vi möjlighet att jobba för ett höjt mål och en förbättrad ambition. Det är vad Sverige vill. Nu har vi dock tagit oss hit, och det är ett framsteg i sig.</p><p></p><p>Vad gäller diskussionen om villkorlighetsförordningen vet jag inte vad Ilona Szatmari Waldau menar med förhalning, så jag har svårt att förhålla mig till det. Men förordningen gäller. Det är den som ska implementeras, och det är viktigt att se det så.</p><p>Turkiet har vi pratat om ett antal gånger förut. Utbetalningarna till Turkiet har minskat betydligt. Jag tycker dock att vi ska ha kvar kontakten med inte minst civilsamhället och oppositionen i Turkiet; jag tycker att detta är viktigt.</p>",
+        "talare": "Stefan Löfven",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Socialdemokraterna för att höja klimatmålen inom Europeiska rådet?",
+            "answer": "Socialdemokraterna argumenterar för att höja klimatmålen inom Europeiska rådet genom att driva på för en minskning på minst 55 procent, trots att de ursprungligen ville ha ett högre mål. De ser detta som en möjlighet snarare än ett hot och vill fortsätta arbeta för att successivt höja ambitionerna ytterligare."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809142",
+        "avsnittsrubrik": "Riktlinjer för den ekonomiska politiken och Vårändringsbudget för 2021 samt extra ändringsbudget - förstärkt nedsättning av arbetsgivaravgifterna för 19-23-åringar under juni-augusti 2021",
+        "dok_datum": "2021-06-16 00:00:00",
+        "anforande_id": "cdf9f9f3-b922-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! För mig är det uppenbart att vi behöver använda långt fler verktyg än de som Karolina Skog presenterar här i replikskiftet om vi ska komma till rätta med den höga arbetslösheten.</p><p>Alliansregeringen tror jag gjorde flera misstag under sin period, men det blev också så att OECD utvärderade alliansregeringen, och företrädare för OECD sa efter finanskrisen att det är svårt att se att man hade kunnat agera bättre än vad alliansregeringen gjorde.</p><p>Jag ger gärna beröm för en del av den krispolitik som den här regeringen har stått för. Vi hade inte ett permitteringssystem på plats under förra finanskrisen. Alliansregeringen tog initiativ till att vi tog fram ett sådant, och regeringen har infört detta. Det har varit oerhört betydelsefullt. Samtidigt har jag pekat många gånger på att det inte har gett samma skydd för dem som har svagast förankring på arbetsmarknaden, de tillfälligt anställda. Det är till följd av en regel som Karolina Skog tillförde till det här systemet, som inte fanns ursprungligen och som jag menar har varit mycket skadlig och också har gjort det svårare och vägen tillbaka längre för en del på svensk arbetsmarknad.</p><p>Satsningarna som Karolina Skog pekar på - var finns evidensen för att de ger effekt? Vi vet att om vi fördubblar subventionerna till nystartsjobb kommer fler att få de jobben, och de jobben kommer att leda till fler riktiga anställningar så småningom. Det är prövat sedan tidigare, och vi vet att det funkar. Varför väljer då regeringen att inte använda sig av den typen av verktyg utan i stället satsa mer på extratjänster som inte ger de effekterna?</p><p>Jag tycker att Karolina Skog ofta signalerar pragmatism, och det tycker jag är väldigt bra. Men pragmatism handlar också om att ompröva, pröva nytt och lägga det som inte har fungerat åt sidan när det gäller arbetslöshet, brottslighet eller vad det nu kan vara. Det handlar om att pröva nya saker och framför allt om de stora, riktiga reformer som nu krävs.</p><p>Jag frågade om arbetslöshetssidan, och nu frågar jag i stället om trygghetssidan. Vilka är era stora reformer för att komma till rätta med den svenska organiserade brottsligheten?</p>",
+        "talare": "Jakob Forssmed",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Jakob Forssmed för att regeringen bör använda fler verktyg för att hantera arbetslösheten?",
+            "answer": "Jakob Forssmed anser att regeringen bör använda fler och mer beprövade verktyg för att hantera arbetslösheten, såsom att öka subventionerna till nystartsjobb, vilket han menar har visat sig effektivt tidigare. Han kritiserar regeringens fokus på extratjänster som han anser inte ger samma positiva effekter. Forssmed betonar vikten av pragmatism och att ompröva strategier som inte fungerar, samt att genomföra stora reformer för att lösa problemen."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90996",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:420 om cementkrisen",
+        "dok_datum": "2022-04-08 00:00:00",
+        "anforande_id": "9daa4ec5-82f8-ec11-9174-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! Jag tackar Magnus Ek för ytterligare frågor.</p><p>Den bedömning som Regeringskansliet gör är att det här är en oerhört komplex materia. Den är svår att hantera. Det är bara att konstatera att utan det goda samarbetet mellan regeringskansli och riksdag under förra året hade inte den tillfälliga lösningen kommit på plats. Jag får uttrycka min tacksamhet för både regeringens och riksdagens arbete förra hösten för att detta kunde lösas. En enhällig riksdag har också satt fingret på att det här måste få en långsiktig lösning. Det var en viktig signal till industrin i sig och till det specifika fallet. Det måste bli en varaktig lösning för cementproduktion vid anläggningen för Cementa i Slite. 70 procent av svensk betong kommer därifrån.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>Däremot kan regeringen inte gå in och bestämma hur en domstol ska pröva ett ärende, utan domstolarna ska följa den lag som Sveriges riksdag har antagit. Vår bedömning är att domstolen med det underlag som fanns fattade det beslut den kunde förra sommaren, och Cementa har nu startat ett intensivt arbete för att hitta en väg framåt.</p><p>Jag tror att jag har deltagit i ett tiotal möten om Cementas framtid under de månader jag har varit näringsminister, och det märks att alla förstår allvaret i situationen. Cementa har redovisat en strategi att dela upp sitt tillstånd till två tillfällen. Ett är mer kortvarigt på fyra år för att vara säker på att man klarar det långa tillståndet. Det hör ihop med det Magnus Ek tog upp i sitt inlägg, nämligen att börja skilja ut koldioxid vid cementproduktion och vara en av de första anläggningarna i världen som kan producera cement fossilfritt, vilket vore fantastiskt och en vägvisare för resten av världen.</p><p>När man har lyckats få igenom sitt kortare tillstånd på fyra år ska man undersöka möjligheterna för långa tillstånd, som en förutsättning för den mångmiljardinvestering Heidelberggruppen måste göra för att kunna avskilja koldioxid vid anläggningen i Slite. Regeringen har dessutom haft överläggningar med Norge om att i större utsträckning bygga infrastruktur tillsammans med Norge för att kunna trycka ned i tidigare naturgaskällor. </p><p>Det pågår ett intensivt arbete för hela systemet. Förra veckan fick Sverige två stöd från EU för att kunna gå vidare. En av dem handlar om koldioxidlagring vid vårt fjärrvärmeverk i Stockholm. Det ingår också i systemet med Cementa och situationen i Slite.</p><p>I dag löser man situationen dels genom att ha tagit upp tillräckligt med sten för att klara en period, dels genom Nordkalks fyndighet på Gotland och dels lite import från Estland. 5-15 procent av den betong som tillverkas i dag kommer från andra källor än den svåra i Slite. Där handlar det om grundvattnet på Gotland.</p><p>Efter inkörningsproblem - det var svårt att ta in annan kalk i anläggningen - går processen enligt bolaget allt bättre, och man kan trygga tillverkningen så länge man har tillstånd att fortsätta vid Nordkalk och närimporten.</p><p>Det svar jag kan ge i dag är följande: Nej, frågan är ännu inte löst, men jag tror att Cementa har tagit ett stort steg framåt i fråga om tillståndet under det år som har gått. Nu i dagarna förbereds det sista för att skicka in ansökan om det fyraåriga tillståndet, som skulle trygga cementtillverkningen och betongtillverkningen de kommande åren.</p>",
+        "talare": "Karl-Petter Thorwaldsson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på behovet av en långsiktig lösning för cementproduktionen vid Cementa i Slite?",
+            "answer": "Socialdemokraterna anser att det är avgörande att hitta en varaktig lösning för cementproduktionen vid Cementa i Slite, eftersom 70 procent av svensk betong kommer därifrån. De betonar vikten av det goda samarbetet mellan regeringskansli och riksdag för att nå en tillfällig lösning och ser det som en viktig signal till industrin att en långsiktig lösning är nödvändig."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80918",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2020-10-01 00:00:00",
+        "anforande_id": "7b059682-7d14-eb11-9143-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Det är sant att det är en historisk budget. I ett läge där vi har en pandemi som pågår har det varit viktigt att kunna göra stora investeringar för att skjuta till resurser till sjukvården, till äldreomsorgen och inte minst till alla de företag som drabbas av pandemin genom olika stödinsatser men också att göra det nogsamt på ett sätt som inte urholkar statsfinanserna - något parti ville lägga 100 miljarder i månaden - utan är ansvarsfullt.</p><p>Åklagarmyndigheten har de senaste åren fått reala tillskott som innebär att man i någon mening fått mer resurser än man begärt. Nu har vi ett effektivt rättsväsen och en polis som har mer resurser än någonsin. Det leder till fler fällande domar.</p><p>Självklart kommer vi att följa utvecklingen när det gäller resurserna för åklagarväsendet.</p>",
+        "talare": "Tomas Eneroth",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Anser Socialdemokraterna att det är viktigt att göra stora investeringar i sjukvården och äldreomsorgen under pandemin?",
+            "answer": "Ja, Socialdemokraterna anser att det är viktigt att göra stora investeringar i sjukvården och äldreomsorgen under pandemin för att hantera de utmaningar som uppstått och samtidigt vara ansvarsfulla med statsfinanserna."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909126",
+        "avsnittsrubrik": "Flexibilitet, omställningsförmåga och trygghet på arbetsmarknaden",
+        "dok_datum": "2022-06-08 00:00:00",
+        "anforande_id": "b7022d69-c139-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Här går man in i värsta kärleksvurmandet mellan Socialdemokraterna och Centerpartiet. Det är väldigt rörande! Och det är också bra att alla väljare får se detta nu så att de kan fundera över hur de ska lägga sina röster till hösten.</p><p>Vad kommer det att innebära om man lägger sin röst på Socialdemokraterna? Vilka mer av Centerns olika arbetsmarknadsfientliga förslag tänker man anpassa sig till? Vi har lärt oss att Socialdemokraterna kan säga en sak i valrörelsen, men om deras regeringsunderlag utgörs av Centern kan det bli precis vilka förslag som helst som hamnar på riksdagens bord. Det är ändå värt att notera.</p><p>Eva Nordmark sa tidigare att vi måste anpassa oss efter en arbetsmarknad som har förändrats, och det är alldeles korrekt. För inte så många år sedan hade Eva Nordmark absolut hållit med mig om jag hade sagt att otryggheten på den svenska arbetsmarknaden har ökat kraftigt de senaste decennierna. Det är något som vi måste ta tag i.</p><p>Den reform som nu ska genomföras förbättrar faktiskt inte tryggheten för de tillfälligt anställda. Det värsta är att den inte kommer att förbättra tryggheten, snarare försämra, även för dem som har fasta anställningar. Som det ser ut nu ökar otryggheten för precis alla på arbetsmarknaden. </p><p>Det är för mig obegripligt hur en socialdemokrat kan stå upp och vara stolt över detta och tycka att det är historiskt.</p>",
+        "talare": "Ciczie Weidby",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur ser Vänsterpartiet på samarbetet mellan Socialdemokraterna och Centerpartiet när det gäller arbetsmarknadsfrågor?",
+            "answer": "Vänsterpartiet är kritiska till samarbetet mellan Socialdemokraterna och Centerpartiet, särskilt när det gäller arbetsmarknadsfrågor. De anser att Socialdemokraterna riskerar att anpassa sig till Centerns arbetsmarknadsfientliga förslag, vilket kan leda till ökad otrygghet för både tillfälligt och fast anställda. Vänsterpartiet ifrågasätter hur Socialdemokraterna kan vara stolta över en reform som de menar försämrar tryggheten på arbetsmarknaden."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909111",
+        "avsnittsrubrik": "Riksdagens arbetsformer",
+        "dok_datum": "2022-05-11 00:00:00",
+        "anforande_id": "32a8311f-c02a-ed11-9178-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Jag börjar med att för Sverigedemokraternas räkning yrka bifall till reservation 6 i konstitutionsutskottets betänkande KU35 <em>Riksdagens arbetsformer</em>.</p><p>Denna mandatperiod har vi nått milstolpen att demokratin firar 100 år. Demokrati är något som utvecklas gradvis. Vi har exempelvis inte längre en tvåkammarriksdag, och vi har även antagit en ny grundlag.</p><p>Ett principiellt tillvägagångssätt torde vara att låta demokratin utvecklas med små och mycket väl övervägda steg framåt. Vi har till exempel en lång tradition av så kallad konstitutionell praxis, det vill säga ett oskrivet regelverk som både tillämpas och respekteras av våra riksdagspartier. Och så länge så är fallet, att partierna tillämpar, respekterar och försvarar denna praxis, kan nog en del frågor med fördel förbli oreglerade. När avsteg görs från väl etablerad praxis kan man dock ifrågasätta om regelverket bör stramas upp och uttryckligen regleras.</p><p>Riksdagens arbetsformer</p><p>En sådan praxis frångicks i början av denna mandatperiod då talmän skulle väljas. Traditionellt har talmän valts utifrån hur många mandat partierna fått i valet, alltså i storleksordning. Eftersom denna konstitutionella praxis historiskt fungerat mycket väl fram till 2018 års val är tiden nu mogen att i lag fästa val av vice talmän och således återgå till den väl etablerade och väl fungerande praxis som rått att talmän utses utifrån partiernas storlek. Mot bakgrund av det här bör regeringen tillsätta en utredning i syfte att ändra regelverket i denna riktning.</p><p>Fru talman! Detsamma kan med fog sägas gälla frågan om val av presidieposter i riksdagens utskott. Nu gällande ordning är att ett organ vars ledamöter helt eller delvis väljs av riksdagen inom sig ska välja en ordförande och en eller flera vice ordförande om inte annat är föreskrivet.</p><p>Rättsläget ger alltså uttryck för att varje utskott självt väljer sin ordförande och sina vice ordförande. I praktiken måste detta dock anses vara en sanning med modifikation. Det har utvecklats en praxis där de politiska partier som invalts i Sveriges riksdag fördelar presidieposterna sinsemellan. När valet av ordförande i ett visst utskott ska ske är det alltså redan bestämt vilken partitillhörighet han eller hon har.</p><p>Det finns i sig inget att invända mot denna praxis så länge som väljarnas preferenser respekteras, det vill säga att tilldelningen av presidieposter sker genom en strikt proportionell fördelning mellan de i riksdagen invalda partierna. Med anledning av detta finns det behov av att, precis som med val av talmän, utifrån ett lagstadgat proportionalitetskriterium reglera från vilket parti presidieposterna i riksdagens utskott ska väljas.</p><p>Fru talman! Här i plenisalen hänger både en svensk flagga och en EU-flagga. Vi sverigedemokrater ser inget större behov av en EU-flagga eftersom riksdagen är till för det svenska folkets valda ombud och inte några andra. Men då det av hävd - eller praxis, skulle man kunna säga - ankommer på talmannen att avgöra vilka flaggor som ska hänga här kommer jag inte att avge vare sig reservation eller yrkande om att ta bort den. Men om fru talmannen i samråd med sina kollegor skulle få för sig att hänga upp två svenska flaggor i stället vore vi sverigedemokrater självklart mycket tacksamma.</p>",
+        "talare": "Lars Andersson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Hur argumenterar Sverigedemokraterna för att val av talmän och presidieposter i riksdagens utskott bör regleras utifrån partiernas storlek?",
+            "answer": "Sverigedemokraterna anser att val av talmän och presidieposter i riksdagens utskott bör baseras på partiernas storlek för att respektera väljarnas preferenser och upprätthålla en väl fungerande konstitutionell praxis. De menar att den traditionella ordningen, där talmän valts utifrån partiernas mandat i storleksordning, har fungerat väl och bör återinföras genom lagstiftning. På samma sätt bör presidieposterna fördelas proportionellt mellan partierna i riksdagen för att säkerställa en rättvis representation."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90919",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2021-10-21 00:00:00",
+        "anforande_id": "95e1d432-de4d-ec11-915f-901b0eac4c70",
+        "anforandetext": "<p></p><p>Fru talman! Det låter glädjande. Inte heller jag tycker att det ska vara politiska beslut. Däremot är det kanske bra att fundera på frågan. Det är väldigt många som undrar.</p><p>En annan fråga där staten kanske skulle behöva gå in och vara lite tydligare är den ojämlika vaccineringen i regionerna. Det kan vi se bland annat här i Stockholmsregionen när vi jämför hur det ser ut på Järvafältet, i Södertälje och i exempelvis innerstaden. Jag vet att regeringen har gjort ett antal satsningar. Men hur kan vi, ursäkta uttrycket, piska på regionerna lite mer?</p>",
+        "talare": "Karin Rågsjö",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Anser Vänsterpartiet att staten bör vara mer aktiv i att hantera ojämlik vaccinering i regionerna?",
+            "answer": "Ja, Vänsterpartiet anser att staten bör vara mer aktiv och tydlig i att hantera den ojämlika vaccineringen i regionerna, särskilt med tanke på skillnaderna som finns inom Stockholmsregionen."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90960",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-01-27 00:00:00",
+        "anforande_id": "9066605b-7aba-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Jag tackar Elsemarie Bjellqvist för frågan.</p><p>Den tidigare reformen var ett steg på vägen men gav alldeles för liten effekt. Alltför många valde att ändå bosätta sig i socialt utsatta områden. Det tyder på att incitamenten var för svaga, och därför vill vi pröva andra incitament, åtgärder och regler för att slutgiltigt avsluta EBO.</p><p>Vår tanke är att vi ska ha en kontrollerad asylmottagning där man kommer till ett mottagningscenter och inom rimlig tid får veta om man får stanna eller inte. Om man inte har rätt till asyl ska man återvända. Men om man har rätt till asyl ska man placeras i en kommun och få tillgång till språkutbildning, arbete och bostad för att komma in i det svenska samhället och vara med och bidra till det svenska folkhushållet.</p>",
+        "talare": "Anders Ygeman",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Anders Ygeman för att förändra asylmottagningen i Sverige?",
+            "answer": "Anders Ygeman argumenterar för att den tidigare reformen inte var tillräckligt effektiv eftersom många fortfarande bosatte sig i socialt utsatta områden. Han föreslår att man ska införa starkare incitament och regler för att avsluta EBO. Ygeman vill ha en kontrollerad asylmottagning där asylsökande snabbt får besked om de får stanna. De som har rätt till asyl ska placeras i en kommun och få tillgång till språkutbildning, arbete och bostad för att integreras i det svenska samhället."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80951",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2020-12-10 00:00:00",
+        "anforande_id": "2baf6c2c-c567-eb11-914e-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! Tack för frågan! Sverige kanske är en av orsakerna till att den här nyheten kom fram i Financial Times förra veckan, tror jag att det var.</p><p>Uppgiften om eventuell korruption i ett av UNDP:s projekt i Ryssland var en nyhet redan för något år sedan. Då ställde vi väldigt tuffa krav från Sveriges och min sida på UNDP att utreda detta och att låta en aktör vid sidan av, som inte hade bindningar till organisationen, göra detta.</p><p>Rapporten har nu kommit. Jag tycker att det är bra att den har kommit fram. Den visar att det har funnits brister i UNDP:s agerande. Men det har egentligen ingenting med miljöfonden GEF att göra.</p>",
+        "talare": "Peter Eriksson",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Hur ser Miljöpartiet på hanteringen av korruptionsanklagelser inom UNDP:s projekt i Ryssland?",
+            "answer": "Miljöpartiet anser att det var viktigt att ställa hårda krav på UNDP att utreda korruptionsanklagelserna och att en oberoende aktör skulle genomföra utredningen. De ser det som positivt att rapporten nu har offentliggjorts och att den belyser brister i UNDP:s agerande, även om det inte är kopplat till miljöfonden GEF."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809102",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:577 om färdtjänst och funktionsrätt",
+        "dok_datum": "2021-04-06 00:00:00",
+        "anforande_id": "6dfde4a9-3cd0-eb11-9153-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Tack, ministern, för vad jag tycker är ett bra svar!</p><p>Jag håller med om mycket av det som ministern säger men vill poängtera att jag inte talar om kvaliteten på färdtjänsten i sig, hur duktiga chaufförerna är och så vidare, utan jag talar om tillståndsgivningen. De som är nöjda med färdtjänsten är ju de som har fått färdtjänsttillstånd. Sedan finns det brister i kvaliteten i vissa delar av landet. Det stora problemet är att det skiljer sig väldigt mycket mellan olika kommuner och regioner. Regelverket är inte detsamma oberoende av var man bor.</p><p></p><p>Det är ett problem att de som faktiskt får färdtjänsttillstånd ändå inte alltid har de rättigheter som det borde innebära. Det beror som sagt väldigt mycket på vilken kommun och region man bor i, och det kan gälla både restriktioner kring resandet och priser. På vissa ställen är det väldigt dyrt att åka. Många av dem som reser har till exempel sjukersättning eller låga pensioner, och vi vet alla att det inte är speciellt fett.</p><p>Det finns lokala restriktioner som innebär att man får resa enbart under vissa tider, krav på förbokning, begränsade möjligheter att ta med sig ledsagare, förbud mot att göra stopp på vägen, begränsningar i antalet arbetsresor man får göra och så vidare. Det skiljer sig alltså åt över landet.</p><p>Detta kan avgöras utan att man ens behöver göra en analys av om det är förenligt med regeringens funktionsrättspolitiska mål och trots att det innebär omfattande risk för att syftet med färdtjänsten förfelas. Dessutom sätter varje kommun sina egna avgifter och begränsningar, och avgifterna höjs som sagt. Det är inte självklart att ha råd med färdtjänst.</p><p>Synskadades Riksförbund rapporterar också om att bedömningen i många fall inte längre görs utifrån individens förutsättningar, så som det ska göras, vilket ytterligare försämrar situationen. Tillståndsgivare och förvaltningsrätten motiverar allt oftare sina beslut med att färdtjänst inte är en form av bistånd utan ska ses som en trafikform och tolkar \"väsentliga svårigheter\" utifrån det. Detta gör man utifrån en rad i förarbetena, med andra ord i propositionen. Det verkar alltså som om man kan välja ut vilka rader i propositionen man vill använda.</p><p>Man kan inte tro att resor med färdtjänst går att ersätta med resor med den allmänna kollektivtrafiken hur som helst. Kollektivtrafiken kan användas i vissa fall men behöver kompletteras med ett färdtjänsttillstånd. Den allmänna kollektivtrafiken kommer aldrig att fullt ut kunna tillgodose resebehovet för personer med till exempel synnedsättning.</p><p>Anser ministern att det är rimligt att se färdtjänsten som en trafikform snarare än en rättighet för dem som behöver den? Tycker ministern att det synsättet främjar de funktionsrättspolitiska målen?</p><p>Hur ser ministern på de lokala restriktioner som finns på vissa ställen och som kraftigt begränsar rätten till färdtjänst även för dem som trots allt fått ett tillstånd? Är detta något som regeringen planerar att se över i lagstiftningen?</p><p>Hur tänker ministern se till att bedömningen av vem som ska ha rätt till tillstånd utgår från rättighetsperspektivet och de funktionsrättspolitiska målen och inte trafikpolitiska mål?</p>",
+        "talare": "Jessica Thunander",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur argumenterar Vänsterpartiet för att färdtjänst bör betraktas som en rättighet snarare än en trafikform?",
+            "answer": "Vänsterpartiet anser att färdtjänst bör ses som en rättighet för dem som behöver den, snarare än enbart en trafikform. De menar att det nuvarande systemet, där tillgången till färdtjänst varierar kraftigt beroende på kommun och region, inte är förenligt med de funktionsrättspolitiska målen. Partiet kritiserar att bedömningar ofta görs utifrån trafikpolitiska mål istället för individens behov, vilket leder till orättvisa och begränsningar för dem som är beroende av färdtjänst. Vänsterpartiet vill se en förändring där rättighetsperspektivet prioriteras i tillståndsgivningen."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809145",
+        "avsnittsrubrik": "Framtidens infrastruktur",
+        "dok_datum": "2021-06-21 00:00:00",
+        "anforande_id": "d313cf75-3328-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Herr talman! Teres Lindberg och jag måste ha lärt oss matematik på väldigt olika sätt. Vi moderater har gjort en omfördelning med 33 miljarder kronor. Teres Lindbergs parti vill lyfta in hela höghastighetsbanan med 400 miljarder kronor. Jag tror att det är Teres Lindberg som är svenska folket svaret skyldig när det gäller vad som ska prioriteras bort. </p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Framtidens infrastruktur</p><p>Vi vill bygga nya sträckningar - de som ligger i befintlig plan. Men vi vill inte ha höghastighetsstandard på dem. Det är en viss skillnad kostnadsmässigt på att bygga för höghastighetståg och att bygga för vanlig järnvägstrafik. Det är en stor del. Därför kan vi ha råd med nya isbrytare och med laddinfrastrukturen. Jag tror till och med att vi har råd med nya infrastrukturpolitiska projekt, till exempel Oslo-Stockholm. Det kommer inte Socialdemokraterna och denna regering, om de sitter kvar, att ha råd med i och med att 400 miljarder kronor för höghastighetsbanor enligt både infrastrukturministern och miljö- och klimatministern ska in i denna plan. Det är hälften av pengarna i planen. Det innebär att det inte finns pengar till de projekt som redan ligger där. </p><p>Det är Teres Lindberg som är svaret skyldig. Det är 400 miljarder kronor som ni måste plocka bort. Det innebär att de som vill ha Norrbotniabanan byggd kan titta i stjärnorna efter att det kommer någon ny räls på plats där. Ska höghastighetsbanorna ha företräde kommer norra Sverige inte att få någon ny järnväg. </p>",
+        "talare": "Maria Stockhaus",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Anser Moderaterna att det är bättre att satsa på traditionell järnvägstrafik istället för höghastighetsbanor för att kunna finansiera fler infrastrukturprojekt?",
+            "answer": "Ja, Moderaterna anser att det är mer kostnadseffektivt att bygga för vanlig järnvägstrafik istället för höghastighetsbanor, vilket skulle möjliggöra finansiering av fler projekt som nya isbrytare och laddinfrastruktur."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80994",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:529 om myndigheterna och cykelkompetensen",
+        "dok_datum": "2021-03-16 00:00:00",
+        "anforande_id": "c767a6d6-95bf-eb11-9156-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Tack, Jakob Forssmed! Jag är beredd att lyssna på alla bra förslag, för så pragmatisk är jag. Det tycker jag att både jag och regeringen har visat då vi har gjort stora insatser för att främja cyklingen, inte minst stora nationella insatser. Man ska ändå komma ihåg att huvuddelen av ansvaret ligger på kommuner och regioner. Där finns det verkligen kommuner och regioner som har, milt sagt, stor förbättringspotential. Jag uppskattar verkligen när cykelstäder och entusiaster visar att detta är möjligt, vare sig vi pratar om Örebro, Uppsala, Lund, Växjö eller andra ställen.</p><p>Jag blir bekymrad när man till exempel här i Stockholm implementerar elsparkcyklar på ett sätt som skapar fruktansvärd oreda i trafiken. Jag tror att det är angeläget att alla kommuner på bästa sätt skapar förutsättningar för säker cykling.</p><p>När det gäller 1,5-metersregeln tror jag att det är viktigt att alla som följer den här debatten har klart för sig att majoriteten av cykelolyckorna är singelolyckor.</p><p>Vi ska säkerställa en bra kvalitet på våra cykelvägar och cykelinfrastrukturen och att det finns goda förutsättningar för säker cykling. Vi ska öka kunskapen kring detta. Därav den systematiska satsningen på Cykelcentrum och forskning, på att bygga upp kompetensen, sprida erfarenheterna, stärka civilsamhällets möjligheter att agera och se till att barns och ungdomars cykling kan öka liksom andra grupper som i dag inte har fått känna på den fördel som cyklingen innebär - en känsla som Jakob Forssmed och jag delar.</p><p>Vi lägger ansenliga ekonomiska resurser för att stärka svensk cykling. Det gjorde som sagt inte alliansregeringen, för annat var viktigare. Om det nu sker en tillnyktring tycker jag att det är positivt.</p><p>Låt oss hoppas att vi fortsätter att stärka cyklingen i Sverige. Det behövs inte bara för folkhälsan utan också för trafiksäkerheten, framkomligheten och framför allt klimatet.</p><p>Interpellationsdebatten var härmed avslutad.</p>",
+        "talare": "Tomas Eneroth",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på vikten av att främja cykling i Sverige och vilka åtgärder har de vidtagit för att stödja detta?",
+            "answer": "Socialdemokraterna anser att det är viktigt att främja cykling i Sverige för att förbättra folkhälsan, trafiksäkerheten, framkomligheten och klimatet. De har gjort stora nationella insatser och satsat betydande ekonomiska resurser för att stärka cyklingen. Partiet betonar också vikten av att kommuner och regioner tar ansvar för att skapa säkra förutsättningar för cykling och har investerat i forskning och kompetensutveckling genom Cykelcentrum för att öka kunskapen och förbättra cykelinfrastrukturen."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809137",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2021-06-09 00:00:00",
+        "anforande_id": "6c184259-3c1d-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Jag vill börja med att understryka att de som har släppt in Sverigedemokraterna i värmen är väljarna. Det är väljarna som röstar; det är väljarna som avgör hur proportionerna ser ut här i kammaren. Sedan kan man vara olika skicklig på att förhandla, vilket båda våra partier har visat i flera olika sakfrågor. Och nej, Sverigedemokraterna kommer inte att få igenom alla sina konkreta förslag. Men vi förenas i ambitionen att vi ska få en kraftigt minskad migration till Sverige.</p><p>Vi kommer inte att lämna värnandet av att man ska kunna söka asyl på ett rättssäkert sätt. Vi kommer inte att lämna principen om att små barn ska kunna återförenas med sina föräldrar. Vi kommer inte att lämna principen att den människa som är i nöd och söker skydd också ska ges möjlighet att få det. Men vi kommer inte att försvara det här systemet, som många gånger utvisar människor som har försökt göra rätt för sig och låter människor som inte har rätt att vara i landet vara här och bete sig illa. Det blir det ändring på.</p>",
+        "talare": "Ebba Busch",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Ebba Busch för en förändring av migrationspolitiken i Sverige?",
+            "answer": "Ebba Busch argumenterar för en kraftigt minskad migration till Sverige. Hon betonar att det är viktigt att upprätthålla rättssäkra asylprocesser och att små barn ska kunna återförenas med sina föräldrar. Samtidigt vill hon förändra det nuvarande systemet som ibland utvisar människor som försöker göra rätt för sig, medan de som inte har rätt att stanna i landet får stanna och bete sig illa."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80911",
+        "avsnittsrubrik": "Debatt med anledning av budgetpropositionens avlämnande",
+        "dok_datum": "2020-09-21 00:00:00",
+        "anforande_id": "81c2708f-630d-eb11-9146-901b0e9b71a8",
+        "anforandetext": "<p></p><p>Fru talman! Det är jättebra att det har varit så tydligt att skattesänkningar inte har varit Miljöpartiets prioritering i den här budgeten. Vi står dock bakom den utformning som vi gemensamt landade i.</p><p>Vad gäller effektiv klimatpolitik finns det två saker som trumfar allt annat. Den första är att ta bort fossila subventioner, det vill säga sluta ge pengar till dem som släpper ut. Därför har vi i Miljöpartiet prioriterat att i varje budget se till att ta bort ett par sådana. Det gör vi även i denna budget. Den andra saken är koldioxidskatt. Det är exemplariskt och jätteeffektivt. Jag skulle gärna använt detta verktyg betydligt mycket mer om riksdagen var med på det.</p><p>Den rapport som Jakob Forssmed refererar till går ut på att man i stället för att ha ett brett klimatarbete med olika slags verktyg ska ta bort dem och ersätta dem med en otroligt stor höjning av koldioxidskatten. Den är så stor att till och med jag börjar tveka om det vore lämpligt att gå fram med den så hårt. </p><p>Jag vill ställa en fråga tillbaka. Ska jag tolka detta som att Jakob Forssmed tycker att vi ska lägga ned investeringsstöden och på det sättet göra som väldigt många ekonomer förespråkar, nämligen ersätta dem med en kraftfull höjning av koldioxidskatten? I så fall kanske vi skulle sätta oss ned och prata om det.</p>",
+        "talare": "Karolina Skog",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Hur ser Karolina Skog på användningen av koldioxidskatt i klimatpolitiken?",
+            "answer": "Karolina Skog anser att koldioxidskatt är ett mycket effektivt verktyg i klimatpolitiken och skulle gärna se att det användes mer, förutsatt att riksdagen stödjer det. Hon betonar också vikten av att ta bort fossila subventioner som en prioritet för Miljöpartiet. Samtidigt uttrycker hon tveksamhet inför en alltför stor höjning av koldioxidskatten, som föreslås i en rapport, och ifrågasätter om det vore lämpligt att genomföra en sådan drastisk förändring."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90991",
+        "avsnittsrubrik": "(forts. från § 8) Klimatpolitik (forts. MJU20)",
+        "dok_datum": "2022-03-31 00:00:00",
+        "anforande_id": "62137898-37ee-ec11-916f-901b0eac4c70",
+        "anforandetext": "<p>Herr talman! Om vi börjar med det sista: Ja, den som har koll på hur det funkar vet att det av varje träd vi plockar ut är en del som blir virke, en del som blir massa som kan användas till kläder eller papper och en del som blir restströmmar - som <em>absolut</em> ska användas till att göra hållbara kemikalier och drivmedel. Det ställer jag absolut upp på, Jens Holm, varje dag i veckan! Jag tycker dessutom att staten borde vara med och gynna det på alla sätt vi kan. </p><p>Det täcker inte alla drivmedelsbehov, och det innebär inte - vilket ibland hävdas i den här salen - att man gör drivmedel av prima virke. Det är nämligen ingen som skulle ge sig på den ekonomiska dumheten. Det här är ganska lätt för varje person som någon gång har besökt ett sågverk eller ett massabruk att förstå; det första man inser är att man har olika strömmar från den resursen.</p><p></p><p>Herr talman! Jag tror verkligen att jag är snubblande nära att feltolka eller fultolka Jens Holm, och jag vill försöka undvika det. Men jag tror att det i botten här finns någonting som är väldigt talande för Vänsterpartiets politik, nämligen tendensen att vilja begränsa den ekonomiska verksamheten i samhället snarare än att försöka sträva efter att den ska vara hållbar. Det gäller även det man säger om att lagstifta om en absolut koldioxidbudget. Det blir väldigt lätt att det halkar in på det. </p><p>Det här handlar också om att plocka hem ekonomisk verksamhet till Sverige därför att vi gör den mer hållbar här än någon annanstans. Det är också det Miljömålsberedningen har tittat på under det senaste året. Det jag vill att vi gör är att fundera på inte hur vi begränsar den ekonomiska verksamheten utan hur vi minskar utsläppen från den. Varje gång vi begränsar detta och säger att vi inte ska göra saker stannar vi nämligen av, och då riskerar vi att hämma tillväxten. Här ligger skillnaden mellan Jens Holms synsätt och mitt sätt att se på klimatomställningen - som kanske är nyliberalt, kanske klassiskt liberalt eller kanske bondförnuftigt. Man kan kalla det vad man vill. </p><p>Detta säger också något intressant om hur Jens Holm vill mobilisera medel, för jag inser att vi kommer att behöva låna upp även statliga medel exempelvis till järnvägar. Men det är inte att mobilisera medel, utan det är att låna upp medel. Det är två helt olika saker. </p>",
+        "talare": "Magnus Ek",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Hur ser Centerpartiet på ekonomisk verksamhet i relation till hållbarhet och klimatomställning?",
+            "answer": "Centerpartiet anser att det är viktigt att inte begränsa den ekonomiska verksamheten utan istället fokusera på att minska utsläppen från den. De betonar vikten av att göra ekonomisk verksamhet mer hållbar i Sverige och ser det som en möjlighet att främja tillväxt. Centerpartiet är också för att staten ska stödja användningen av restströmmar från skogsbruket för att producera hållbara kemikalier och drivmedel."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80946",
+        "avsnittsrubrik": "(forts. från § 5) Kultur, medier, trossamfund och fritid (forts. KrU1)",
+        "dok_datum": "2020-12-03 00:00:00",
+        "anforande_id": "0bc05bc4-4157-eb11-9147-901b0eac4c70",
+        "anforandetext": "<p>Herr talman! Vi kan börja med de tre punkter som ministern anförde.</p><p>Jag besökte själv Riksarkivet för inte så länge sedan. Enligt Arkivutredningen behöver Riksarkivet mer medel än de som regeringen tillfört myndigheten. I vår budget tillför vi ju större medel till Riksarkivet för att man ska kunna klara sitt uppdrag på ett bra sätt. Arkivtraditionen är grundläggande för svensk förvaltningskultur men också i den nya tidens utmaningar för informationssäkerheten, till exempel.</p><p>Jag kan notera att regeringen och januaripartierna återigen avstyrker vår statliga fond till öppna museer över hela landet, oavsett huvudman. Man är återigen insnöad och fokuserad på de få museer som finns i Stockholm, som vi också tillför medel till. Och man stöttar inte filmen genom att återigen säga nej till det produktionsincitament på 300 miljoner som Sverigedemokraterna budgeterar för.</p><p>Man lovar runt men håller tunt.</p>",
+        "talare": "Aron Emilsson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Hur argumenterar Sverigedemokraterna för behovet av ökade medel till Riksarkivet och stöd till museer och filmproduktion?",
+            "answer": "Sverigedemokraterna anser att Riksarkivet behöver mer resurser än vad regeringen har tilldelat för att kunna utföra sitt uppdrag effektivt, särskilt med tanke på informationssäkerhetens utmaningar. Partiet föreslår också en statlig fond för att stödja öppna museer över hela landet, inte bara de i Stockholm, samt ett produktionsincitament på 300 miljoner kronor för att främja filmindustrin."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80946",
+        "avsnittsrubrik": "Kommissionens arbetsprogram 2021",
+        "dok_datum": "2020-12-03 00:00:00",
+        "anforande_id": "94bf5bc4-4157-eb11-9147-901b0eac4c70",
+        "anforandetext": "<p>Jag vill påpeka att ledamoten drog över sin talartid med mer än 75 procent.</p>",
+        "talare": "ANDRE VICE TALMANNEN",
+        "parti": "ANDRE VICE TALMANNEN",
+        "qa_pair": {
+            "question": "Hur ser ANDRE VICE TALMANNEN på vikten av att hålla sig inom den tilldelade talartiden i debatter?",
+            "answer": "ANDRE VICE TALMANNEN betonar vikten av att respektera den tilldelade talartiden i debatter, vilket antyds av påpekandet att en ledamot överskred sin tid med mer än 75 procent. Detta kan ses som en uppmaning till att följa reglerna för att säkerställa en rättvis och effektiv debatt."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80964",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:209 om elnätsavgiftens storlek",
+        "dok_datum": "2021-01-14 00:00:00",
+        "anforande_id": "a85d331e-8186-eb11-914b-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Jag lyssnar givetvis både på vad folk säger och uppfattar, Jan Ericson. Men det gör inte att jag inte ser det faktum att vi har ett trendbrott. Nils Holgersson-undersökningen har i 10-15 år studerat elnätsprisutvecklingen i Sverige, och den konstaterar att vi förra året hade ett trendbrott. Elnätspriserna sjönk för första gången på 26 år. Jan Ericson borde glädjas åt det.</p><p>Låt oss arbeta tillsammans för att detta inte ska vara en engångsföreteelse utan att vi även framöver ska kunna ha konkurrenskraftiga elnätspriser och ökade investeringar i elnätet. Det tror jag är det bästa för Sverige.</p><p></p><p>Jag välkomnar om Jan Ericson i framtiden inte bara lyssnar på grannar och vänner, vilket är nog så viktigt, utan även på den moderata partiledningen.</p><p>Interpellationsdebatten var härmed avslutad.  </p>",
+        "talare": "Anders Ygeman",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på utvecklingen av elnätspriserna i Sverige och vad anser de bör göras framöver?",
+            "answer": "Socialdemokraterna ser positivt på det trendbrott som skett med sjunkande elnätspriser för första gången på 26 år. De anser att det är viktigt att arbeta för att detta inte bara blir en engångsföreteelse, utan att Sverige även i framtiden ska ha konkurrenskraftiga elnätspriser och ökade investeringar i elnätet."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809112",
+        "avsnittsrubrik": "Författningsfrågor",
+        "dok_datum": "2021-04-22 00:00:00",
+        "anforande_id": "9148d815-7706-ec11-9160-901b0e9b71a0",
+        "anforandetext": "<p>Herr talman! Hans Ekström var skicklig på så sätt att han lät en liten dumhet slinka ut precis i slutet av sitt anförande, så att jag inte hann trycka på knappen för replik.</p><p>Att vilja stärka domstolars och domares oberoende är allt annat än revolutionärt. Om något är det att förebygga att revolution inträffar fort.</p><p>20 av 28 länder i EU har en central administration av domstolarna vilken sköts av ett fristående råd som inte ligger under regering och parlament. Det har vi inte i Sverige. Detta sköts av Domstolsverket, som lyder direkt under regeringen. Tillsynen av domstolar sköts av JO och JK, som ligger under riksdag och regering. Avskedandet av domare sker i dag under Statens ansvarsnämnd, som ligger under regeringen.</p><p>Att utreda att skapa avstånd på de här tre punkterna mellan å ena sidan regering och riksdag och å andra sidan den dömande makten i form av domare och domstolar är allt annat än revolutionärt. Det var bara det jag ville avsluta med att säga.</p><p>Överläggningen var härmed avslutad.</p><p>(Beslut skulle fattas den 28 april.)</p>",
+        "talare": "Ida Drougge",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Hur argumenterar Moderaterna för att stärka domstolars och domares oberoende i Sverige?",
+            "answer": "Moderaterna anser att det är viktigt att stärka domstolars och domares oberoende för att förhindra snabba revolutionära förändringar. De påpekar att i 20 av 28 EU-länder sköts domstolarnas administration av ett fristående råd, vilket inte är fallet i Sverige där Domstolsverket lyder under regeringen. Moderaterna föreslår att utreda möjligheten att skapa större avstånd mellan regeringen och den dömande makten för att öka oberoendet."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H9093",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2021-09-15 00:00:00",
+        "anforande_id": "56b9bf8e-782b-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Herr talman! Eftersom vi denna dag av artighet inte ifrågasätter varandras bevekelsegrunder utan bara våra metoder vill jag säga att jag tror att ni ibland missar de risker som finns när man inte följer upp sina egna reformer.</p><p></p><p>Förtidspensionssystemet är ju fantastiskt; det måste vi ha. En halv miljon förtidspensionärer kunde vi inte ha. Vi hade världens mest sjukskrivna folk. Vi tvingades att reformera ett system som ni lät löpa amok.</p><p>Att ha offentliga välfärdssystem är jättebra. Att ha offentliga monopol som ifrågasätter om privata entreprenörer kan göra nytta i välfärden är inte bra. Vi reformerade det som ni inte orkade.</p><p>Det här är inte ett friskrivande från skyldigheten att alltid följa varje reform. Det finns inte en enda reform som kan genomföras felfritt. Det finns alltid risker med varje förändring.</p><p>Därför ska man alltid noggrant se till att alla skolor, såväl privata som offentliga, levererar den kunskap som eleverna har rätt till och att varje äldreboende, privat eller offentligt, levererar den trygghet och den omsorg som den äldre behöver. Är svaret nej på frågan om detta sker ska man ändra på saker.</p><p>(Applåder)</p>",
+        "talare": "Ulf Kristersson",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Anser Moderaterna att offentliga monopol i välfärden bör ifrågasättas och att privata entreprenörer kan bidra positivt?",
+            "answer": "Ja, Moderaterna anser att offentliga monopol i välfärden inte är bra och att privata entreprenörer kan göra nytta, vilket framgår av deras reformarbete för att förbättra välfärdssystemen."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90941",
+        "avsnittsrubrik": "Internationellt bistånd",
+        "dok_datum": "2021-12-08 00:00:00",
+        "anforande_id": "c78cff13-4375-ec11-9168-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Jag kan börja med att hänvisa just till vår kommittémotion i biståndsfrågor från tidigare i år. Där finns ganska detaljerade fingervisningar om hur vi skulle vilja att biståndsprioriteringarna ska se ut vid sidan av och som komplement till själva utgiftsområdesdebatten.</p><p>På en punkt vill jag instämma med Janine Alm Ericson. Vi tror också att det behövs resurser till exempelvis forskning och utveckling. Det gäller inte minst teknikbistånd. I många utvecklingsländer behövs stöd till ökad energiutvinning, där det finns stor potential för det. Sverige kan alltså bidra med kompetens på områden där vi är särskilt kompetenta. Det gäller inte minst just miljöforskning, energiforskning och energiutvinning. Det gäller även projekt som har gjorts historiskt, till exempel i fråga om att motverka avskogning eller att ta vara på råvaror och naturkrafter. Vi kan, om vi vill, göra rätt insatser på rätt plats.</p>",
+        "talare": "Aron Emilsson",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Hur ser Sverigedemokraterna på prioriteringar inom bistånd, särskilt när det gäller teknikbistånd och energiforskning?",
+            "answer": "Sverigedemokraterna anser att biståndsprioriteringar bör inkludera resurser för forskning och utveckling, särskilt inom teknikbistånd. De betonar vikten av att stödja ökad energiutvinning i utvecklingsländer och att Sverige kan bidra med sin kompetens inom miljö- och energiforskning. Partiet ser också värdet i historiska projekt som motverkar avskogning och utnyttjar naturresurser effektivt."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90982",
+        "avsnittsrubrik": "Återrapportering från Europeiska rådets möte den 10-11 mars",
+        "dok_datum": "2022-03-16 00:00:00",
+        "anforande_id": "2096d4d6-ccd6-ec11-9170-0090facf175a",
+        "anforandetext": "<p>Fru talman! Sverige har kommit långt i omställningen, men också i Sverige är vi fortsatt beroende av fossila bränslen. Många människor är beroende av bilen för att exempelvis kunna ta sig till och från arbetet och handla mat. Det är mot denna bakgrund som regeringen har kommit med stödpaket. Med detta sagt visar det här hur viktigt det är att vi fortsätter att ställa om så att vi inte är importberoende av energislag på det sätt som vi är i dag.</p><p>Sverige ligger långt framme, men vi måste fortsätta att arbeta stenhårt i denna riktning. Där vet jag att Miljöpartiet är ett av de partier som har drivit på och kommer att fortsätta att göra det. Att vi är så pass oberoende som vi ändå är i dag är inte minst tack vare att Miljöpartiet konsekvent har drivit denna linje och också fått gehör för den.</p>",
+        "talare": "Magdalena Andersson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Magdalena Andersson på Sveriges beroende av fossila bränslen och vad anser hon om omställningen till förnybar energi?",
+            "answer": "Magdalena Andersson anser att Sverige har gjort framsteg i omställningen till förnybar energi, men att landet fortfarande är beroende av fossila bränslen. Hon betonar vikten av att fortsätta arbetet för att minska importberoendet av energi och lyfter fram Miljöpartiets roll i att driva denna omställning framåt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90993",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:350 om extratjänster",
+        "dok_datum": "2022-04-05 00:00:00",
+        "anforande_id": "c975054e-2af6-ec11-916f-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Jag vill börja där ledamoten började, i 2014. Det är väldigt viktigt att komma ihåg att arbetsmarknaden och världen har förändrats väldigt kraftfullt sedan 2014.</p><p>Det vi nu ser efter att vi har varit inne i en väldigt allvarlig och djup kris på svensk arbetsmarknad till följd av pandemin är att svensk arbetsmarknad har återhämtat sig väldigt starkt. Fler människor kan nu ställa väckarklockan på morgonen, gå till sitt arbete och försörja sig själva.</p><p></p><p>Vi har i dag över 201 000 lediga jobb på Arbetsförmedlingens platsbank. Vi har på många sätt en väldigt stark arbetsmarknad. Det ser ljust ut för många som i dag står utanför arbetsmarknaden.</p><p>Här är politikens uppgift att se till att människor snabbare kommer i arbete, bland annat genom de matchningstjänster som ledamoten nämner. Regeringen ser nu via Arbetsförmedlingen till att fler människor får tillgång till dem.</p><p>Jag vill också beklaga att Lars Beckman och hans parti här i kammaren drog undan möjligheterna för oss att kunna fortsätta att använda extratjänsterna. Varför? Jo, därför att extratjänsterna är en viktig arbetsmarknadspolitisk åtgärd.</p><p>Inte minst många utrikes födda kvinnor har via en extratjänst fått möjlighet att komma i arbete och egen försörjning. Av dem som hade extratjänster under förra året var 49 procent utrikesfödda kvinnor.</p><p>Fru talman! Sedan är det sant som ledamoten säger. En extratjänst går inte alltid vidare till en reguljär anställning. Det vi ska komma ihåg är att trots att extratjänsterna är dyrare än en del andra arbetsmarknadspolitiska åtgärder riktar de sig till dem som står allra längst från arbetsmarknaden.</p><p>För oss socialdemokrater är det självklart att om du har stora behov ska du också få ett starkare stöd. Om du på egen hand snabbt kan ta dig in i ett arbete, och många behöver inte ens hjälp till det, kan det vara en enklare form av en snabb matchningstjänst in i arbete som gäller.</p><p>Det handlar om att ge stöd utifrån de behov som människor har. Vi vet att det för många människor inte räcker att ha en subventionerad anställning. Det kan vara så att extratjänsten är vägen in att få erfarenhet från arbetslivet för att sedan kliva in i en utbildning eller kanske i en ytterligare subventionerad anställning för att sedan kunna ta sig till ett arbete där man kan försörja sig själv.</p><p>Fru talman! Jag vill verkligen beklaga att Lars Beckman och hans parti drog undan möjligheterna för oss att kunna fortsätta att anvisa till extratjänster. De är viktiga inte minst för utrikesfödda kvinnor. Det är viktigt att vi gör allt som står i vår makt för att se till att människor får rätt stöd.</p><p>Moderaternas politik är en dålig politik. När vi nu tittar på den interpellation som ställs ser vi att arbetsmarknadsutbildningarna lyfts fram. Det är ett mycket viktigt verktyg. Det är då väldigt märkligt hur Moderaterna valde att dra ned också på volymen i arbetsmarknadsutbildningarna, om man nu tycker att de är så bra. Det är en politik som inte hänger ihop.</p><p>Fru talman! Det vi i stället behöver nu är ett starkare mandat för Socialdemokraterna så att vi kan fortsätta att stärka den svenska arbetsmarknaden, stärka de svenska löntagarna och se till att ytterligare jobb kan skapas i hela landet.</p><p> Det kan ske tack vare den stora nyindustrialisering som vi ser pågår här och nu men också genom att sätta in fler och bättre åtgärder så att de som står utanför arbetsmarknaden ska få möjlighet till ett eget arbete och en egen försörjning.</p>",
+        "talare": "Arbetsmarknads- och jämställdhetsministern Eva Nordmark",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Arbetsmarknads- och jämställdhetsministern Eva Nordmark för vikten av extratjänster på arbetsmarknaden?",
+            "answer": "Arbetsmarknads- och jämställdhetsministern Eva Nordmark betonar att extratjänster är en viktig arbetsmarknadspolitisk åtgärd, särskilt för dem som står längst från arbetsmarknaden, såsom utrikes födda kvinnor. Hon anser att extratjänster ger dessa individer möjlighet att få arbetslivserfarenhet och en väg in till egen försörjning. Nordmark kritiserar också Moderaternas politik för att ha dragit undan möjligheterna att använda extratjänster och menar att det är viktigt att ge stöd baserat på individens behov för att fler ska kunna komma i arbete."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80998",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:548 om formuleringar om det säkerhetspolitiska läget",
+        "dok_datum": "2021-03-23 00:00:00",
+        "anforande_id": "e8dd072e-6ec8-eb11-9156-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Låt mig inskärpa vad Hans Wallmark sa. Detta handlar inte om att tala ned något beslut. Vi har varit med om att ta ett totalförsvarsbeslut tillsammans, och där är också Moderaterna villiga att ställa sig bakom både inriktningen på krigsorganisationen och grundorganisationen och ekonomin fram till 2025. Sedan har vi större ekonomiska ramar, så vi har verkligen varit med och tagit ansvar, anser jag, kopplat till detta.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>Jag tror att försvarsministern får förvänta sig att han ska kunna svara på frågor i denna kammare om centrala dokument som rör Sveriges säkerhetspolitiska linje, om det spretar mellan vad som står i utrikesdeklarationen om risken för ett väpnat angrepp och vad som står i totalförsvarspropositionen.</p><p>Jag upplever, fru talman, att denna debatt, men till en del också den föregående, pekar på att det är en hel del saker i regeringens säkerhetspolitiska linje som helt enkelt inte hänger ihop. Det kanske inte är så konstigt. Jag tycker inte att det som regeringen gör alltid är analogt med vad man säger. Till exempel säger man att den militära alliansfriheten tjänar oss väl och bidrar till stabilitet och säkerhet i närområdet samtidigt som man gör precis allt man kan för att fördjupa samarbetet med viktiga Natoländer som USA, Storbritannien, Norge med flera.</p><p>Numera förlägger vi till och med regementena så att vi snabbt ska kunna få hjälp av USA, som är ett centralt Natoland, i händelse av ett väpnat angrepp. Därför tror jag att det är många som upplever det motsägelsefullt att man skruvar tillbaka klockan och pratar om att den militära alliansfriheten tjänar oss väl när man samtidigt fördjupar det internationella försvarssamarbetet med ett antal Natoländer.</p><p>Låt mig också säga att under regeringen Reinfeldt hade man en gemensam, framförhandlad säkerhetspolitisk linje som var förankrad i Försvarsberedningen till punkt och pricka. Regeringen har valt att inte köra den vägen, utan i stället väljer man en egen hemvävd modell.</p>",
+        "talare": "Pål Jonson",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Anser Moderaterna att det finns inkonsekvenser i regeringens säkerhetspolitiska linje?",
+            "answer": "Ja, Moderaterna anser att det finns inkonsekvenser i regeringens säkerhetspolitiska linje, särskilt när det gäller att kombinera militär alliansfrihet med fördjupat samarbete med Natoländer."
+        },
+        "qa_type": "generate_qa_comparison_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80946",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2020-12-03 00:00:00",
+        "anforande_id": "c5bf5bc4-4157-eb11-9147-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Tack, ministern, för svaret!</p><p>Jag skulle gärna vilja höra från finansministern hur den här synen på att krisen riskerar att leda till ökad ojämlikhet ser ut inom ramen för EU-samarbetet. Finns det en insikt också bland andra europeiska ledare om att vi behöver motverka den här tendensen?</p>",
+        "talare": "Åsa Westlund",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på risken för ökad ojämlikhet i samband med krisen inom EU-samarbetet?",
+            "answer": "Socialdemokraterna uttrycker oro för att krisen kan leda till ökad ojämlikhet och betonar vikten av att EU-länderna gemensamt arbetar för att motverka denna utveckling."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": ""
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    }
+]

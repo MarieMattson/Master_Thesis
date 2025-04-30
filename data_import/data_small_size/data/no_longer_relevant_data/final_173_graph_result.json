@@ -18,14 +18,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Miljöpartiet har en tydlig ståndpunkt när det gäller miljöfarlig verksamhet och tillståndsprövning. Enligt debatternas innehåll verkar Miljöpartiet inte stödja att regeringen helt frånsäger sig rätten att pröva tillåtligheten av miljöfarlig verksamhet. Partiet betonar vikten av en stark miljölagstiftning och att alla verksamheter som kan ha miljöpåverkan, inklusive stora jordbruk, bör granskas och ges miljötillstånd. Miljöpartiet anser att miljökraven är nödvändiga för att säkerställa både miljöskydd och jordbrukets överlevnad. Det verkar alltså som att Miljöpartiet förespråkar noggranna och effektiva prövningar snarare än att avveckla eller försvaga nuvarande miljökrav.",
+            "context": [
+                "64851f8f-a231-ec11-915b-901b0eac4c78",
+                "1b87e8a5-56eb-ec11-916f-901b0eac4c70",
+                "5c937693-7606-ec11-9160-901b0e9b71a0",
+                "60851f8f-a231-ec11-915b-901b0eac4c78",
+                "e466f22b-ac04-eb11-9146-901b0e9b71a8",
+                "78c2708f-630d-eb11-9146-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"MP\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2541
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Miljöpartiet anser att regeringen bör ha rätt att pröva tillåtligheten av miljöfarlig verksamhet. Enligt det första resultatet från debatten, är det avgörande för regeringen att förbehålla sig prövningen av verksamheter som kan antas ha en betydande miljöpåverkan. Detta är en del av miljöbalkens prövningssystem och innebär att regeringen har de bästa förutsättningarna att göra de nödvändiga bedömningarna och avvägningarna ur ett nationellt perspektiv. Miljöpartiet betonar vikten av att regeringen tar ansvar för sådana miljöfrågor och att detta inte utmanar domstolarnas oberoende utan är en del av det lagstadgade systemet.",
+            "context": [
+                "7e8a5440-630d-eb11-9146-901b0e9b71a8",
+                "7c8a5440-630d-eb11-9146-901b0e9b71a8",
+                "1b87e8a5-56eb-ec11-916f-901b0eac4c70",
+                "19789fa3-af30-eb11-914a-901b0e9b71a8",
+                "389c9728-c58c-eb11-9152-901b0e9b71a8",
+                "879c6f40-b3c3-eb11-9156-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"MP\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2541
         },
         "cosine_RAG": {
             "answer": "",
@@ -62,14 +78,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Sverigedemokraterna har uttryckt kritik mot regeringens hantering av islamistiska influenser i Sverige. De anser att regeringen har varit långsam och ineffektiv när det gäller att agera mot islamistiska grupper, särskilt i fråga om att stoppa offentliga bidrag till organisationer med kopplingar till islamism, som Ibn Rushd. Sverigedemokraterna efterfrågar skarpare åtgärder och menar att dessa organisationer bidrar till radikalisering och utgör ett hot mot samhället.\n\nDe har också kritiserat regeringens ovilja att införa lagstiftning som skulle möjliggöra fråntagande av medborgarskap för personer som har varit inblandade i terrorverksamhet utomlands. Generellt sett verkar Sverigedemokraterna inte anse att regeringens politik effektivt motverkar islamistiska influenser, och de har föreslagit mer drastiska åtgärder för att hantera problemet.",
+            "context": [
+                "eb03a3af-9fad-eb11-914f-901b0eac4c78",
+                "8f8a5440-630d-eb11-9146-901b0e9b71a8",
+                "abd12d3e-b517-ec11-9160-901b0e9b71a0",
+                "918a5440-630d-eb11-9146-901b0e9b71a8",
+                "26c02348-bc23-ed11-9178-901b0e9b71a8",
+                "ef03a3af-9fad-eb11-914f-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Sverigedemokraterna har uttryckt oro över regeringens politik och dess förmåga att effektivt motverka islamistiska influenser i Sverige. I den första debattdelen lyfter de fram att islamism är ett återkommande tema i regeringens politik. De nämner specifikt statsbidrag till islamistiska organisationer som Ibn Rushd, och ifrågasätter regeringens arbete med att utveckla skarpare demokrativillkor för statsbidrag. Sverigedemokraterna verkar alltså skeptiska till att regeringens politik effektivt hanterar detta problem, och de betonar behovet av tydligare och mer effektiva åtgärder för att motverka islamistiska krafter i Sverige.",
+            "context": [
+                "abd12d3e-b517-ec11-9160-901b0e9b71a0",
+                "5a50430d-276d-eb11-914e-901b0e9b71a0",
+                "95a80267-f6bf-ec11-9167-901b0eac4c78",
+                "2b789fa3-af30-eb11-914a-901b0e9b71a8",
+                "154d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "bb8cff13-4375-ec11-9168-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "cosine_RAG": {
             "answer": "",
@@ -106,14 +138,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att Tomas Eneroth kritiserar Moderaternas förslag att minska resurserna för trafiksäkerhetsinsatser med över 30 miljarder kronor. Eneroth påpekar att när Moderaterna var i regeringsposition prioriterades inte tillräckliga investeringar i infrastruktur, vilket ledde till underinvesteringar som nu måste hanteras. Han framhåller att regeringen har lagt mer resurser på trafiksäkerhet och vägunderhåll för att förbättra säkerheten på vägarna, såsom hastighetsövervakning och krav på vinterdäck. Dessutom nämner han att det är viktigt att fortsätta rusta upp vägarna och att ha en bredare uppslutning för att säkerställa att både svenska och utländska aktörer bidrar till vägunderhåll genom exempelvis vägslitageavgifter.",
+            "context": [
+                "7ad6af9c-8332-ec11-9164-0090facf175a",
+                "1c8eccab-a0ad-eb11-914f-901b0eac4c78",
+                "10659db0-63bd-eb11-9156-901b0e9b71a8",
+                "9651d933-3416-ec11-9160-901b0e9b71a0",
+                "216efcf1-df3e-eb11-914a-901b0e9b71a8",
+                "787fbaf8-372c-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Tomas Eneroth\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 609
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Tomas Eneroth har uttryckt kritik mot Moderaternas förslag att minska resurserna för infrastruktursatsningar med över 30 miljarder kronor. Han har påpekat att dessa nedskärningar skulle påverka viktiga områden som trafiksäkerhet och utvecklingen av det svenska transportsystemet. Eneroth har understrukit att nuvarande regering satsar mer än någonsin på infrastruktur, med en nationell plan på närmare 900 miljarder kronor, jämfört med den tidigare moderatledda regeringens 522 miljarder. Han har också framhållit att det är viktigt att fortsätta med investeringar för att förbättra trafiksäkerheten, exempelvis genom viltstängsel och andra åtgärder som kan minska olyckor på vägarna. Eneroth verkar således inte anse att det är bra att Moderaterna vill minska dessa resurser, utan menar att det är viktigt att fortsätta satsa på infrastruktur för att stödja både regional och nationell utveckling.",
+            "context": [
+                "3d58042c-bdb5-ec11-9167-901b0eac4c78",
+                "d24374b1-ba22-ec11-915b-901b0eac4c78",
+                "d89ffcda-b417-ec11-9160-901b0e9b71a0",
+                "d49ffcda-b417-ec11-9160-901b0e9b71a0",
+                "767fbaf8-372c-ec11-915b-901b0eac4c78",
+                "be67a6d6-95bf-eb11-9156-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Tomas Eneroth\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 609
         },
         "cosine_RAG": {
             "answer": "",
@@ -150,14 +198,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I januari 2022 uttryckte Johan Danielsson oro över att investeringsstödet för hyresbostäder och studentbostäder hade avskaffats på initiativ av Moderaterna, Kristdemokraterna och Sverigedemokraterna. Han menade att det stora intresset för investeringsstödet visade på ett fortsatt behov av hyresbostäder med lägre hyra, och avskaffandet av stödet skulle leda till färre nya hyresbostäder och studentbostäder i landet. Danielsson betonade också vikten av att upprätthålla en hög byggtakt och att regeringen aktivt arbetade för att skapa bättre förutsättningar för bostadsbyggande, bland annat genom förslag som skulle underlätta för förstagångsköpare och främja hållbart byggande.",
+            "context": [
+                "84a57cff-adb9-ec11-9167-901b0eac4c78",
+                "86a57cff-adb9-ec11-9167-901b0eac4c78",
+                "fbd31b83-38ee-ec11-916f-901b0eac4c70",
+                "f7d31b83-38ee-ec11-916f-901b0eac4c70",
+                "c0af8fe8-d9fe-ec11-9174-901b0e9b71a0",
+                "e9bf82c6-d9fe-ec11-9174-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Johan Danielsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-01\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 78
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I januari 2022 uttryckte Johan Danielsson att investeringsstödet var en viktig faktor för att öka byggtakten och främja byggandet av hyresrätter, speciellt sådana som vanligt folk har råd med. Han betonade att investeringsstödet hade bidragit till att öka byggtakten i Sverige och att det avskaffandet av stödet av Moderaterna och Sverigedemokraterna skulle få negativa konsekvenser, bland annat färre hyresbostäder. Danielsson menade att stödet var avgörande för att starta och omvandla områden, som exempelvis Drottninghög i Helsingborg, där det bidragit till en positiv utveckling och tryggare boendemiljöer. Han betonade också att en stabil byggtakt var viktig för att motverka ineffektivitet och konkurrensproblem på byggmaterialmarknaden.",
+            "context": [
+                "a6fdf811-bc44-ed11-9177-901b0eac4c70",
+                "88a57cff-adb9-ec11-9167-901b0eac4c78",
+                "16446196-c02a-ed11-9178-901b0e9b71a8",
+                "a8fdf811-bc44-ed11-9177-901b0eac4c70",
+                "f9d31b83-38ee-ec11-916f-901b0eac4c70",
+                "e9bf82c6-d9fe-ec11-9174-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Johan Danielsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-01\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 78
         },
         "cosine_RAG": {
             "answer": "",
@@ -194,14 +258,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna ser det som Socialstyrelsens ansvar att utfärda och uppdatera föreskrifter för ambulanssjukvården. Dessa föreskrifter ska säkerställa att ambulanser är utrustade med den nödvändiga utrustningen för prehospital akutsjukvård, både inom och utanför ambulansen. Socialdemokraterna betonar att föreskrifterna måste hålla sig på en generell nivå för att inte bli inaktuella snabbt, med tanke på den snabba medicintekniska utvecklingen. De anser att det är viktigt att föreskrifterna är flexibla nog för att anpassas till ny teknik utan att behöva ständiga omarbetningar. Myndigheterna ansvarar för innehållet i sina föreskrifter och uppdaterar dem vid behov, men det finns för närvarande ingen avsikt från Socialdemokraterna att initiera en översyn av dessa regler.",
+            "context": [
+                "8a75c7f0-3216-ec11-9160-901b0e9b71a0",
+                "8875c7f0-3216-ec11-9160-901b0e9b71a0",
+                "3ad6af9c-8332-ec11-9164-0090facf175a",
+                "8475c7f0-3216-ec11-9160-901b0e9b71a0",
+                "6bf9f512-28dc-ec11-916f-901b0eac4c70",
+                "2ac661ee-2d03-eb11-9146-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna erkänner den snabba medicintekniska utvecklingen och förstår vikten av att utrustningen i ambulanser uppdateras i takt med denna utveckling. Det är dock en balansgång att specificera för mycket i föreskrifterna, då detta skulle kräva ständiga uppdateringar och förändringar. Därför väljer man att hålla riktlinjerna på en nivå som tillåter flexibilitet och aktualitet utan att bli inaktuella för snabbt. Det är även viktigt att notera att olika typer av ambulanser, såsom iva-ambulanser, kan ha olika utrustningsbehov beroende på deras specifika syften. I dagsläget finns det inga planer på att initiera en översyn av reglerna för ambulansutrustning, men frågan om nödvändigheten av specifika utrustningar kan komma att ses över vid behov.",
+            "context": [
+                "8875c7f0-3216-ec11-9160-901b0e9b71a0",
+                "13eba563-8f77-eb11-914b-901b0eac4c70",
+                "4ea859bc-3cbb-ec11-9167-901b0eac4c78",
+                "4a89e34d-cd59-ec11-915f-901b0eac4c70",
+                "2a35ab05-ffb7-eb11-914f-901b0eac4c78",
+                "565df076-f693-ec11-916c-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "cosine_RAG": {
             "answer": "",
@@ -238,14 +318,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Sverigedemokraterna anser att det är viktigt att införa förarbevis för snabbgående båtar. De har uttryckt att sjösäkerheten är mycket viktig och att det finns faror i vattnet som man måste vara medveten om för att undvika olyckor. Enligt Sverigedemokraterna bör ett teknikneutralt obligatoriskt förarbevis kopplas till hastighet och gälla alla farkoster som når upp till en viss hastighet, till exempel 35 knop, vilket motsvarar ungefär 65 kilometer i timmen. Detta skulle gälla både för snabbgående båtar och vattenskotrar (Resultat 3).",
+            "context": [
+                "a4c55ba1-b922-ec11-915b-901b0eac4c78",
+                "a6c55ba1-b922-ec11-915b-901b0eac4c78",
+                "a1c55ba1-b922-ec11-915b-901b0eac4c78",
+                "596e4c8d-d9fe-ec11-9174-901b0e9b71a0",
+                "516e4c8d-d9fe-ec11-9174-901b0e9b71a0",
+                "bd67a6d6-95bf-eb11-9156-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Sverigedemokraterna anser att det är viktigt att införa förarbevis för snabbgående båtar. De har uttryckt att säkerhet på sjön är av stor betydelse och att förarbevis bör kopplas till hastighet, till exempel för båtar som går i 35 knop eller snabbare. Partiet menar att det finns många faror i vattnet och att det krävs kunskap och omdöme för att framföra snabbgående båtar och vattenskotrar säkert. Därför förespråkar de ett obligatoriskt förarbevis som inkluderar dessa typer av farkoster, inte bara vattenskotrar.",
+            "context": [
+                "a4c55ba1-b922-ec11-915b-901b0eac4c78",
+                "a6c55ba1-b922-ec11-915b-901b0eac4c78",
+                "a1c55ba1-b922-ec11-915b-901b0eac4c78",
+                "f10cb900-f151-ec11-915f-901b0eac4c70",
+                "a85e5e8d-3243-ed11-9177-901b0eac4c70",
+                "0516cb82-f493-ec11-916c-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "cosine_RAG": {
             "answer": "",
@@ -282,14 +378,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Yasmine Bladelius att Linda Lindbergs förslag försämrar situationen för barn i Sverige?\n\nJa, Yasmine Bladelius verkar anse att Linda Lindbergs förslag försämrar situationen för barn i Sverige. Hon kritiserar Lindberg för att prata varmt om barns rättigheter i talarstolen, samtidigt som hennes parti lägger fram förslag som skulle försämra för barn som lever och växer upp i Sverige. Bladelius pekar särskilt på att Sverigedemokraterna, som Lindberg representerar, har lagt fram förslag som skulle begränsa ekonomiska stöd som barnbidrag och andra förmåner till endast svenska medborgare, vilket Bladelius menar drabbar många barn negativt. Hon uttrycker även förvåning över att Lindberg och hennes parti pratar om barns rättigheter men samtidigt motsätter sig att barnkonventionen ska bli svensk lag.",
+            "context": [
+                "3e2d7b52-b922-ec11-915b-901b0eac4c78",
+                "3c2d7b52-b922-ec11-915b-901b0eac4c78",
+                "f17c4b01-3463-ec11-915f-901b0eac4c70",
+                "e37c4b01-3463-ec11-915f-901b0eac4c70",
+                "f37c4b01-3463-ec11-915f-901b0eac4c70",
+                "a05e5e8d-3243-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Yasmine Bladelius\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 39
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Yasmine Bladelius att Linda Lindbergs förslag försämrar situationen för barn i Sverige? \n\nJa, Yasmine Bladelius verkar anse att Linda Lindbergs förslag försämrar situationen för barn i Sverige. I hennes anförande uttrycker hon kritik mot att Lindberg talar sig varm för barns rättigheter medan hennes parti, Sverigedemokraterna, lägger fram förslag som enligt Bladelius kraftigt försämrar för barn som lever och växer upp i Sverige. Hon påpekar att Lindberg är emot att barn som inte är svenska medborgare ska få del av de resurser som samhället avsätter för barn, vilket indirekt påverkar situationen för dessa barn negativt.",
+            "context": [
+                "3e2d7b52-b922-ec11-915b-901b0eac4c78",
+                "3c2d7b52-b922-ec11-915b-901b0eac4c78",
+                "db86e8a5-56eb-ec11-916f-901b0eac4c70",
+                "d986e8a5-56eb-ec11-916f-901b0eac4c70",
+                "c3c66990-b822-ec11-915b-901b0eac4c78",
+                "1bdecf4e-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Yasmine Bladelius\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 39
         },
         "cosine_RAG": {
             "answer": "",
@@ -326,14 +438,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Liberalerna anser att Sverige bör fokusera på att uppnå konkreta och betydande framsteg inom internationella frågor snarare än att bara sikta på små framsteg. I ett av anförandena (Resultat 3) från debatten, understryker Liberalerna vikten av att använda det svenska ordförandeskapet för att ta initiativ till betydande åtgärder, såsom ett särskilt EU-toppmöte om rättigheter och rättsstatlighet, samt kraftsamla för klimatet och utveckla frihandel. De betonar att problemen är stora och att lösningen ligger i ett fördjupat EU-samarbete snarare än mindre, gradvisa förändringar.",
+            "context": [
+                "fd15cb82-f493-ec11-916c-901b0e9b71a0",
+                "9cddcf4e-3dc6-ec11-9170-0090facf175a",
+                "b4d350ca-aeb9-ec11-9167-901b0eac4c78",
+                "d0184259-3c1d-ec11-915b-901b0eac4c78",
+                "b565139e-2ab4-ec11-9167-901b0eac4c78",
+                "0787e8a5-56eb-ec11-916f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"L\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1415
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Liberalerna verkar stödja tanken att det svenska ordförandeskapet ska fokusera på att identifiera och uppnå små framsteg i internationella frågor. Enligt det som diskuteras i debatterna, ser man dessa små steg som en naturlig och nödvändig väg att gå för att komma närmare lösningar i större konflikter. Det framgår att Liberalerna inte har invändningar mot att ordförandeskapet agerar på detta sätt, utan snarare verkar se det som en strategi som kan leda till att man kommer närmare roten till problemen.",
+            "context": [
+                "d0184259-3c1d-ec11-915b-901b0eac4c78",
+                "d2184259-3c1d-ec11-915b-901b0eac4c78",
+                "b4d350ca-aeb9-ec11-9167-901b0eac4c78",
+                "97df1831-4024-eb11-9143-901b0eac4c70",
+                "465e4e26-4157-eb11-9147-901b0eac4c70",
+                "b2851f8f-a231-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"L\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1415
         },
         "cosine_RAG": {
             "answer": "",
@@ -370,14 +498,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna förespråkar flera åtgärder för att förbättra kvinnors möjligheter att komma i arbete och för att stärka barns språkutveckling. För kvinnornas arbetsmöjligheter betonar de vikten av att ställa krav på deltagande i utbildningar och språkundervisning, särskilt för nyanlända kvinnor, för att underlätta deras inträde på arbetsmarknaden. De har också föreslagit språkplikt kopplat till försörjningsstöd, vilket skulle innebära att nyanlända aktivt deltar i svenska för invandrare (sfi) för att förbättra sina språkkunskaper och därmed sina chanser att få arbete.\n\nNär det gäller barns språkutveckling, anser Kristdemokraterna att behärskande av det svenska språket är avgörande för framgång i samhället. De förespråkar därför åtgärder som att öka den fria läsningen under skoltid och samverka mer mellan folkbibliotek, barnhälsovård och förskola för att stimulera barns språkutveckling. Dessutom framhäver de vikten av läsning i hemmet och uppmuntrar familjer att engagera sig mer i högläsning. För att ytterligare stödja språkutvecklingen vill Kristdemokraterna också införa en klassikerlista med litterära verk som alla elever bör läsa under skolgången. De betonar också betydelsen av skolbibliotek för att stödja elevers läsintresse och läsförståelse.",
+            "context": [
+                "3421258c-cd3f-eb11-914a-901b0e9b71a8",
+                "e0676d73-ba22-ec11-915b-901b0eac4c78",
+                "476f8c75-feb7-eb11-914f-901b0eac4c78",
+                "4650430d-276d-eb11-914e-901b0e9b71a0",
+                "a5f9f512-28dc-ec11-916f-901b0eac4c70",
+                "f5ae6c2c-c567-eb11-914e-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna argumenterar för att förbättra kvinnors möjligheter att komma i arbete och barns språkutveckling genom flera strategier. För att främja barns språkutveckling och läsning betonar de vikten av att skolan stimulerar och uppmuntrar läsning, särskilt för barn som inte har svenska som modersmål. De föreslår att utöka den fria läsningen under skoltid och stärker samverkan mellan folkbibliotek, barnhälsovård och förskola. Dessutom föreslår de en klassikerlista för att säkerställa att elever möter viktiga litterära verk under sin skolgång, vilket kan förbättra både språkliga och kulturella färdigheter.\n\nNär det gäller att förbättra kvinnors möjligheter att komma i arbete, tar Kristdemokraterna upp vikten av att skapa bättre förutsättningar för föräldrar att delta i arbetslivet. De ser till exempel vikten av att stödja föräldrar i deras roll, vilket kan ge fler kvinnor möjlighet att balansera familjeliv och arbetsliv. Deras socialpolitik syftar också till att stödja enskilda människor till egen försörjning och aktivt deltagande i samhället, vilket kan innebära att fler kvinnor får möjlighet att komma i arbete.",
+            "context": [
+                "e0676d73-ba22-ec11-915b-901b0eac4c78",
+                "9d9c9294-3e5f-ec11-915f-901b0eac4c70",
+                "8caf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "973ef66e-b2c3-eb11-9156-901b0e9b71a8",
+                "f5ae6c2c-c567-eb11-914e-901b0e9b71a0",
+                "a6c66990-b822-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "cosine_RAG": {
             "answer": "",
@@ -414,14 +558,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att det råder en viss osäkerhet kring regeringens ställningstagande mot användningen av tvångsåtgärder. Från det som framgår i debatten, har det uttryckts besvikelse över att regeringen inte tydligt har tagit ställning till att målet bör vara att tvångsåtgärder ska upphöra. Regeringen har berättat om olika åtgärder de vidtar, men har inte direkt svarat på frågan om de delar utskottets mål att eliminera användningen av tvångsåtgärder. Det verkar finnas en önskan från vissa ledamöter att regeringen ska vara tydligare och mer engagerad i att avskaffa tvångsåtgärder och istället hitta alternativa sätt att hantera situationer med unga som mår dåligt. Diskussionerna handlar bland annat om vikten av att ha en plan och genomföra åtgärder som leder till att avskiljningar och tvångsåtgärder försvinner helt.",
+            "context": [
+                "e47c4b01-3463-ec11-915f-901b0eac4c70",
+                "aa2304e0-3b1d-ec11-915b-901b0eac4c78",
+                "bdbf5bc4-4157-eb11-9147-901b0eac4c70",
+                "b42304e0-3b1d-ec11-915b-901b0eac4c78",
+                "352d7b52-b922-ec11-915b-901b0eac4c78",
+                "143e0d1b-3143-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Acko Ankarberg Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 148
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att det finns en diskussion kring regeringens ställningstagande om användningen av tvångsåtgärder, särskilt i kontexten av vård av unga på särskilda ungdomshem. Enligt de debattstycken som jag har tillgång till, har det uttryckts en oro över att regeringen inte tydligt har tagit ställning till att målet bör vara att tvångsåtgärder ska upphöra. Flera ledamöter har påpekat att det är viktigt att regeringen gör mer och att det finns en uttalad målsättning att tvångsåtgärder ska upphöra. Det verkar som att det finns en konsensus inom vissa delar av riksdagen om att dessa åtgärder är problematiska och att det krävs mer insatser för att hantera detta, men att det fortfarande saknas ett tydligt ställningstagande från regeringens sida.",
+            "context": [
+                "e47c4b01-3463-ec11-915f-901b0eac4c70",
+                "dc87f68a-bb39-ed11-9178-901b0e9b71a8",
+                "e27c4b01-3463-ec11-915f-901b0eac4c70",
+                "f04283c2-6fc8-eb11-9156-901b0e9b71a8",
+                "b59e5c80-3987-eb11-914b-901b0eac4c70",
+                "123e0d1b-3143-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Acko Ankarberg Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 148
         },
         "cosine_RAG": {
             "answer": "",
@@ -458,14 +618,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Centerpartiet och Miljöpartiet har haft olika åsikter i flera miljörelaterade frågor, vilket speglas i deras förhållningssätt till budget och andra propositioner. Centerpartiet har uttryckt att de ibland prioriterar annorlunda jämfört med Miljöpartiet, till exempel genom att de väljer att lägga mindre medel på skydd av skog och istället prioritera andra områden (Result 5). Det finns också indikationer på att Centerpartiet ibland föredrar att rösta på sina egna förslag och kan avstå från att stödja andra partiers förslag om de inte har varit med i förhandlingsprocessen (Result 2).\n\nNär det gäller specifika förslag från Miljöpartiet, såsom anslagsökningar innan en skogsproposition har fastställts, verkar det som att Centerpartiet kan vara tveksamt till att stödja sådana initiativ om de inte upplever att förslagen är väl förberedda eller om de inte har varit en del av diskussionen. Centerpartiet har också betonat vikten av att frivillighet och markägarperspektiv ska vara centrala i skogspolitiken och att de är försiktiga med att stödja tvångsåtgärder från myndigheterna (Result 4).\n\nSammanfattningsvis verkar det som att Centerpartiet kan ha reservationer mot Miljöpartiets förslag om anslagsökningar innan alla detaljer i en skogsproposition har fastställts, särskilt om de inte har varit involverade i utformningen av förslagen eller om de prioriterar annorlunda i budgeten.",
+            "context": [
+                "4427f1f6-d085-ec11-9163-901b0eac4c70",
+                "8227f1f6-d085-ec11-9163-901b0eac4c70",
+                "4261bc67-3143-ed11-9177-901b0eac4c70",
+                "9c521f3c-2fe0-ec11-916f-901b0eac4c70",
+                "4627f1f6-d085-ec11-9163-901b0eac4c70",
+                "7cfad202-ccc0-ec11-9167-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"C\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1951
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Centerpartiet har tydligt markerat att de säger nej till de anslagsökningar som Miljöpartiet föreslog innan en skogsproposition hade fastställts. De anser att det är viktigt att ha en balans och att kommunicera på ett sätt som håller sig nära sanningen. Centerpartiet har budgeterat betydande belopp för dessa ändamål, men de har avvisat Miljöpartiets tidigare presenterade förslag om ökade anslag utan en överenskommen skogsproposition.",
+            "context": [
+                "1a84c086-cf85-ec11-9163-901b0eac4c70",
+                "3cfad202-ccc0-ec11-9167-901b0eac4c78",
+                "4427f1f6-d085-ec11-9163-901b0eac4c70",
+                "ece852a9-3416-ec11-9160-901b0e9b71a0",
+                "668dff13-4375-ec11-9168-901b0e9b71a8",
+                "5d851f8f-a231-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"C\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1951
         },
         "cosine_RAG": {
             "answer": "",
@@ -502,14 +678,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna anser att regeringens förslag om vistelseförbud inte är tillräckligt för att effektivt bekämpa kriminalitet. De menar att förslaget, som innebär att vistelseförbud endast ska gälla för den som har skyddstillsyn eller är villkorligt frigiven, inte kommer att ha den önskade effekten på kriminella nätverk. Kristdemokraterna förespråkar en modell där vistelseförbudets längd bestäms vid straffmätningen och kan gälla under längre tid än strafftiden för att effektivt motverka gängkriminalitet. De anser att regeringens nuvarande förslag är ett exempel på bristande handlingskraft inom kriminalpolitiken och vill se ett mer omfattande och verksamt vistelseförbud.",
+            "context": [
+                "d74283c2-6fc8-eb11-9156-901b0e9b71a8",
+                "db4283c2-6fc8-eb11-9156-901b0e9b71a8",
+                "6f701ac5-f533-eb11-914a-901b0e9b71a8",
+                "483efaec-3143-ed11-9177-901b0eac4c70",
+                "42c082c6-d9fe-ec11-9174-901b0e9b71a0",
+                "d70c7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna anser att regeringens förslag om vistelseförbud inte är tillräckligt för att effektivt bekämpa kriminalitet. Enligt informationen i debatten anser Kristdemokraterna att förslaget, som endast gäller för personer under skyddstillsyn eller villkorlig frigivning, är otillräckligt. De menar att vistelseförbudet bör vara längre och kunna gälla fler personer, särskilt för att motverka lokalt knutna kriminella gäng i storstädernas förortsområden. Kristdemokraterna förespråkar en modell där vistelseförbudets längd bestäms vid straffmätningen och kan gälla längre än själva strafftiden, liknande det danska systemet.",
+            "context": [
+                "d74283c2-6fc8-eb11-9156-901b0e9b71a8",
+                "483efaec-3143-ed11-9177-901b0eac4c70",
+                "d70c7667-bb23-ed11-9178-901b0e9b71a8",
+                "73d9e90c-428e-eb11-9152-901b0e9b71a8",
+                "dc87f68a-bb39-ed11-9178-901b0e9b71a8",
+                "db550445-f0ca-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "cosine_RAG": {
             "answer": "",
@@ -546,14 +738,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Anders Åkesson att det kommunikativa ansvaret enbart ligger på Trafikverket vid stora nybyggnadsprojekt? \n\nNej, Anders Åkesson anser inte att det kommunikativa ansvaret enbart ligger på Trafikverket vid stora nybyggnadsprojekt. Han påpekar att det kommunikativa ansvaret är ett gemensamt ansvar mellan berörda myndigheter och förtroendevalda. Han nämner exempel som Västlänken, där de politiska beslutsfattarna drog sig tillbaka och lät Trafikverket hantera den offentliga diskussionen. Åkesson betonar vikten av att ha en större förförståelse och beredskap bland civilsamhället och berörda parter för att förbättra effekten av de resurser som avsätts för projekt.",
+            "context": [
+                "287e3f62-aeb9-ec11-9167-901b0eac4c78",
+                "257e3f62-aeb9-ec11-9167-901b0eac4c78",
+                "b70c5c85-3a0b-ec11-9160-901b0e9b71a0",
+                "b40c5c85-3a0b-ec11-9160-901b0e9b71a0",
+                "cbe9425e-bb44-ed11-9177-901b0eac4c70",
+                "4ff9ccd5-380b-ec11-9160-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Åkesson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 51
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Nej, Anders Åkesson anser inte att det kommunikativa ansvaret enbart ligger på Trafikverket vid stora nybyggnadsprojekt. Han betonar i stället att det kommunikativa ansvaret är ett gemensamt ansvar mellan berörda myndigheter och förtroendevalda. Han nämner specifikt att effekten av de resurser som ställs till förfogande blir bättre om det finns en större förförståelse och beredskap i civilsamhället och bland de som berörs av projekten. Det kommunikativa ansvaret delas alltså och är inte enbart Trafikverkets ansvar.",
+            "context": [
+                "287e3f62-aeb9-ec11-9167-901b0eac4c78",
+                "b44e8aa5-390b-ec11-9160-901b0e9b71a0",
+                "fb022d69-c139-ed11-9178-901b0e9b71a8",
+                "b3a0aae2-9c25-eb11-9143-901b0eac4c70",
+                "d513cf75-3328-ec11-915b-901b0eac4c78",
+                "4ff9ccd5-380b-ec11-9160-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Åkesson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 51
         },
         "cosine_RAG": {
             "answer": "",
@@ -590,14 +798,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I maj 2021 uttryckte Kristina Axén Olin, moderat riksdagsledamot, kritik mot regeringens hantering av skolinformation och de förseningar som uppstod när det gällde att tillhandahålla viktig skoldata. Hon var orolig över de konsekvenser som pandemin hade på elevernas kunskapsinhämtning och ansåg att regeringen visade senfärdighet i att hantera problemen som uppstod när SCB slutade tillhandahålla viss information till Skolverket. Kristina Axén Olin menade att den här fördröjningen hade förödande konsekvenser för möjligheten att betala ut statsbidrag och för Skolinspektionen att utföra sitt arbete. Hon kritiserade regeringen för att vara mer fokuserad på att dölja information än att ta fram nödvändiga beslut för att förbättra situationen i skolan.",
+            "context": [
+                "e35693c4-64bd-eb11-9156-901b0e9b71a8",
+                "c0b759c6-3dd0-eb11-9153-901b0eac4c78",
+                "1335414d-3316-ec11-9160-901b0e9b71a0",
+                "1735414d-3316-ec11-9160-901b0e9b71a0",
+                "beb759c6-3dd0-eb11-9153-901b0eac4c78",
+                "abb12f91-e2d8-eb11-9153-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kristina Axén Olin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-05\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 76
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristina Axén Olin uttryckte kritik mot regeringens hantering av skolinformation och beslut under den aktuella perioden. Hon pekade på en bristande verkställighet av riksdagsbeslut och riktade kritik mot att regeringen inte har gjort tillräckligt för att åtgärda skolans problem, såsom betygsinflation och skolsegregation. Hon betonade vikten av att skapa ett verkligt fritt skolval där alla får information för att göra välgrundade val, snarare än att bara välja den närmaste skolan. Dessutom uttryckte hon frustration över att de förslag som Moderaterna lagt fram, som syftar till att stärka tryggheten och hanteringen av hot och våld i skolan, inte har tagits tillvara av regeringen.",
+            "context": [
+                "86227c2c-fd0e-eb11-9146-901b0e9b71a8",
+                "ed7d3f62-aeb9-ec11-9167-901b0eac4c78",
+                "da7d3f62-aeb9-ec11-9167-901b0eac4c78",
+                "f3ba83e4-3971-eb11-914e-901b0e9b71a0",
+                "46c1f047-4549-ec11-915f-901b0eac4c70",
+                "cfb759c6-3dd0-eb11-9153-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kristina Axén Olin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-05\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 76
         },
         "cosine_RAG": {
             "answer": "",
@@ -634,14 +858,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Linda Westerlund Snecker har uttryckt kritik mot polisledningen för att fokusera på att skriva önskelistor istället för att leverera konkreta resultat, särskilt med tanke på de stora resurser som Polismyndigheten har fått till sitt förfogande under åren. Hon menar att det är dags att polisen verkligen börjar leverera resultat med de resurser de har fått och slutar fokusera på att ständigt begära mer verktyg och lagändringar utan att visa på hur dessa skulle leda till bättre resultat i kampen mot gängbrottslighet och andra utmaningar. Westerlund Snecker anser att fokus borde ligga mer på att förbättra polisutbildningen och arbetsmetoderna, samt att säkerställa att polisen har rätt förutsättningar för att kunna utföra sitt uppdrag effektivt.",
+            "context": [
+                "49a228e8-3dc6-ec11-9170-0090facf175a",
+                "4462acbf-4025-ed11-9178-901b0e9b71a8",
+                "6d8cff13-4375-ec11-9168-901b0e9b71a8",
+                "d00c7667-bb23-ed11-9178-901b0e9b71a8",
+                "fef9f9f3-b922-ec11-915b-901b0eac4c78",
+                "de0c7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Linda Westerlund Snecker\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 84
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Linda Westerlund Snecker uttrycker i sitt anförande kritik mot polisledningens sätt att hantera resurser och efterfrågar resultat snarare än fler önskelistor. Hon menar att polisen redan har fått stora ekonomiska resurser och ändrad lagstiftning men att konkreta resultat saknas. Hon anser att det är dags för polisledningen att sluta fokusera på att skriva önskelistor och istället leverera konkreta resultat, med tanke på de omfattande resurser som redan lagts på Polismyndigheten. Snecker påpekar också att det finns många förslag och önskemål från polisens sida, men att det saknas tydliga svar på hur dessa skulle hjälpa situationen.",
+            "context": [
+                "49a228e8-3dc6-ec11-9170-0090facf175a",
+                "3bd9e90c-428e-eb11-9152-901b0e9b71a8",
+                "746f07f4-3a1d-ec11-915b-901b0eac4c78",
+                "fef9f9f3-b922-ec11-915b-901b0eac4c78",
+                "d40c7667-bb23-ed11-9178-901b0e9b71a8",
+                "33f3a875-3d5f-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Linda Westerlund Snecker\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 84
         },
         "cosine_RAG": {
             "answer": "",
@@ -678,14 +918,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Vänsterpartiet argumenterar för att prioritera vägunderhåll framför nya motorvägsprojekt av flera skäl. De anser att stora motorvägsprojekt slukar betydande ekonomiska resurser som istället skulle kunna användas för att förbättra befintlig infrastruktur. Till exempel anslår Vänsterpartiet 9 miljarder kronor mer än regeringen för att upprusta vägnätet, speciellt i glesbygdsområden, vilket totalt uppgår till 207 miljarder kronor för underhåll. \n\nDe motsätter sig nya motorvägar som Tvärförbindelse Södertörn och Förbifart Stockholm eftersom dessa projekt leder till ökade utsläpp och trafik, särskilt i storstadsområden, och inte nödvändigtvis gynnar hela landet. Vänsterpartiet förespråkar istället investeringar i hållbara transportslag, såsom järnvägar, och vill bygga ett transporteffektivt samhälle genom att satsa mer på gång- och cykelbanor och minska bilismen. De ser detta som ett sätt att både främja miljön och ge bättre framkomlighet i hela Sverige.",
+            "context": [
+                "db13cf75-3328-ec11-915b-901b0eac4c78",
+                "dd13cf75-3328-ec11-915b-901b0eac4c78",
+                "d8558677-4057-eb11-9147-901b0eac4c70",
+                "45decf4e-3dc6-ec11-9170-0090facf175a",
+                "fc83c086-cf85-ec11-9163-901b0eac4c70",
+                "fe83c086-cf85-ec11-9163-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2322
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Vänsterpartiet argumenterar för att prioritera vägunderhåll framför nya motorvägsprojekt av flera anledningar. De anser att stora motorvägsprojekt, som exempelvis Tvärförbindelse Södertörn och Förbifart Stockholm, slukar enorma ekonomiska resurser som istället skulle kunna användas för att förbättra vägunderhållet i hela Sverige. Dessa projekt tenderar att kosta mycket pengar och bidrar till ökade trafikvolymer i storstadsregionerna, vilket inte gynnar glesbygden. Dessutom leder de till stora utsläpp, vilket strider mot målet att ha ett mer hållbart transportsystem.\n\nVänsterpartiet har betonat att de satsar betydligt mer än regeringen på att rusta upp vägnätet och järnvägarna, vilket visar deras engagemang för förbättrad framkomlighet och hållbarhet i hela landet. De avvisar storskaliga motorvägsprojekt just för att dessa tar resurser från andra nödvändiga investeringar och bidrar till ökade utsläpp. Istället förespråkar de att bygga mer hållbara och transporteffektiva samhällen, där mer pengar satsas på gång- och cykelbanor samt andra smartare transportslag.",
+            "context": [
+                "45decf4e-3dc6-ec11-9170-0090facf175a",
+                "db13cf75-3328-ec11-915b-901b0eac4c78",
+                "14102300-3941-eb11-9147-901b0eac4c70",
+                "e115cb82-f493-ec11-916c-901b0e9b71a0",
+                "d8558677-4057-eb11-9147-901b0eac4c70",
+                "ca13cf75-3328-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2322
         },
         "cosine_RAG": {
             "answer": "",
@@ -722,14 +978,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2020 uttryckte Elisabeth Björnsdotter Rahm oro över brister i rehabiliteringskedjan och myndigheternas ansvar. Hon påpekade att Riksrevisionens granskning visade att ingen av de största statliga myndigheterna levde upp till lagkraven. Rehabiliteringskedjan ansågs viktig för både sjukskrivna och andra inblandade parter, men om någon del i kedjan inte fungerade bröt hela processen samman. Hon betonade vikten av att arbetsgivare har en tydlig plan för återgång i arbete och att kommunikationen mellan myndigheter och de sjukskrivna förbättras. Björnsdotter Rahm yrkade på att myndigheterna måste ta sitt ansvar och åtgärda de identifierade bristerna för att förbättra situationen för sjukskrivna.",
+            "context": [
+                "45c05bc4-4157-eb11-9147-901b0eac4c70",
+                "86b12f91-e2d8-eb11-9153-901b0eac4c78",
+                "f0bf5bc4-4157-eb11-9147-901b0eac4c70",
+                "7175c7f0-3216-ec11-9160-901b0e9b71a0",
+                "39d6af9c-8332-ec11-9164-0090facf175a",
+                "34c05bc4-4157-eb11-9147-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Elisabeth Björnsdotter Rahm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 48
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2020 uttryckte Elisabeth Björnsdotter Rahm oro över hur rehabiliteringskedjan fungerade och betonade vikten av att alla inblandade parter tar sitt ansvar för att processen ska bli så bra som möjligt för den enskilde. Hon hänvisade till Riksrevisionens granskning som visade att ingen av de stora statliga myndigheterna levde upp till de lagkrav som finns. Detta innebar att rehabiliteringskedjan, trots att den är en väl fungerande kedja när den följs korrekt, brast eftersom vissa aktörer inte levde upp till sina åtaganden. Björnsdotter Rahm lyfte fram behovet av tydligare kommunikation och bättre samordning mellan myndigheter för att säkerställa att personer som nekas sjukpenning får rätt stöd och att arbetsgivare tar ett större ansvar i att upprätta planer för återgång i arbete. Hon kritiserade också myndigheterna för bristande information och framhöll att många personer med psykiatriska diagnoser inte fick rätt bedömning på grund av brister i Försäkringskassans medicinska beslutsstöd.",
+            "context": [
+                "34c05bc4-4157-eb11-9147-901b0eac4c70",
+                "45c05bc4-4157-eb11-9147-901b0eac4c70",
+                "8f550445-f0ca-ec11-9170-0090facf175a",
+                "7475c7f0-3216-ec11-9160-901b0e9b71a0",
+                "39d6af9c-8332-ec11-9164-0090facf175a",
+                "af3f78f4-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Elisabeth Björnsdotter Rahm\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 48
         },
         "cosine_RAG": {
             "answer": "",
@@ -766,14 +1038,16 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
+            "answer": "Frågan handlar om vad Lena Hallengrens ståndpunkt var angående hedersrelaterat våld och förtryck i april 2022. \n\nJag hittar ingen information om Lena Hallengrens ståndpunkt om hedersrelaterat våld och förtryck i april 2022 i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Lena Hallengren\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-04\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "graph_RAG_bm25": {
-            "answer": "",
+            "answer": "Frågan handlar om Lena Hallengrens ståndpunkt om hedersrelaterat våld och förtryck i april 2022. Jag hittar ingen information om Lena Hallengrens ståndpunkt om hedersrelaterat våld och förtryck i april 2022 i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Lena Hallengren\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2022-04\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "cosine_RAG": {
             "answer": "",
@@ -810,14 +1084,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2020 uttryckte Hans Rothenberg från Moderaterna sina åsikter om EU:s konkurrenskraft och socialpolitik i samband med diskussionen om EU-kommissionens arbetsprogram. Han betonade vikten av att stärka EU:s konkurrenskraft, särskilt i ljuset av den hårda konkurrensen från USA och Asien. För att uppnå detta ansåg han att EU borde fokusera på att främja frihandel, satsa på utbildning och forskning, samt leda utvecklingen inom artificiell intelligens.\n\nRothenberg var kritisk till genomförandet av den sociala pelaren inom EU, och menade att kommissionen istället borde fokusera på ekonomisk återhämtning efter coronakrisen. Han uttryckte oro för att den sociala pelaren skulle leda till mer överstatlighet inom socialpolitiken, och underströk vikten av att värna nationell beslutskompetens i sysselsättningsfrågor och socialpolitik. Han betonade att Europas konkurrenskraft är avgörande för att uppnå andra mål i kommissionens arbetsprogram.",
+            "context": [
+                "1af89a3e-3043-ed11-9177-901b0eac4c70",
+                "97184259-3c1d-ec11-915b-901b0eac4c78",
+                "178dff13-4375-ec11-9168-901b0e9b71a8",
+                "9bbf5bc4-4157-eb11-9147-901b0eac4c70",
+                "0ef89a3e-3043-ed11-9177-901b0eac4c70",
+                "b0a9e37b-c567-eb11-914e-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Hans Rothenberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 75
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2020 uttryckte Hans Rothenberg sina åsikter om EU:s konkurrenskraft och socialpolitik i samband med diskussioner om EU-kommissionens arbetsprogram. Rothenberg betonade vikten av att stärka EU:s konkurrenskraft för att möta utmaningar från USA och Asien. Han förespråkade en ökad satsning på frihandel, utbildning och forskning samt utnyttjande av artificiell intelligens som viktiga verktyg för att förbättra EU:s position globalt. När det gäller socialpolitiken uttryckte han skepsis mot genomförandet av den sociala pelaren inom EU, då han ansåg att detta kunde leda till ökad överstatlighet och inkräkta på nationell beslutskompetens. Han föreslog istället att fokus borde ligga på ekonomisk återhämtning efter coronakrisen.",
+            "context": [
+                "1af89a3e-3043-ed11-9177-901b0eac4c70",
+                "85bb7b56-4125-ed11-9178-901b0e9b71a8",
+                "aa184259-3c1d-ec11-915b-901b0eac4c78",
+                "178dff13-4375-ec11-9168-901b0e9b71a8",
+                "9bbf5bc4-4157-eb11-9147-901b0eac4c70",
+                "97184259-3c1d-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Hans Rothenberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 75
         },
         "cosine_RAG": {
             "answer": "",
@@ -854,14 +1144,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Markus Selin, som representerar Socialdemokraterna, har uttryckt kritik mot Centerpartiets utskottsinitiativ om vatten och menar att det undergräver förtroendet för riksdagens arbete. Han argumenterar att utskottsinitiativet inte uppfyller syftet med sådana initiativ, vilket är att rätta till mindre saker i regeringens arbete eller att genomföra något med bred majoritet när det finns tidsnöd. Selin påpekar att detta initiativ, tillsammans med många andra, bidrar till en ökning av utskottsinitiativ som kan leda till en summarisk och bristfällig lagstiftningsprocess. Han betonar vikten av en genomarbetad och avvägd lagstiftningsprocess som respekterar demokratin och delaktigheten, och han anser att Centerpartiets initiativ är forcerat och undermåligt, vilket skadar allmänhetens förtroende för riksdagen och lagstiftningen.",
+            "context": [
+                "f4527919-c02d-ec11-915b-901b0eac4c78",
+                "e9527919-c02d-ec11-915b-901b0eac4c78",
+                "e5527919-c02d-ec11-915b-901b0eac4c78",
+                "ee527919-c02d-ec11-915b-901b0eac4c78",
+                "f0527919-c02d-ec11-915b-901b0eac4c78",
+                "eb527919-c02d-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Markus Selin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 57
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Markus Selin från Socialdemokraterna har uttryckt kritik mot Centerpartiets utskottsinitiativ om vatten, och han menar att det undergräver tilltron till riksdagens arbete. Han påpekar att syftet med utskottsinitiativ i riksdagen är att rätta till mindre saker i regeringens arbete eller att ha en mycket bred majoritet för något som är tidskritiskt. Enligt Selin ryms inget av detta i Centerpartiets förslag, och han anser att det bidrar till en ökning av antalet utskottsinitiativ i riksdagen, vilket kan leda till sämre lagstiftningsprocesser och urholka allmänhetens förtroende för riksdagens arbete. Selin betonar vikten av att hålla sig till praxis och arbetsordningar i riksdagen, och han efterlyser mer genomarbetade och avvägda förslag för hållbar vattenförvaltning.",
+            "context": [
+                "ee527919-c02d-ec11-915b-901b0eac4c78",
+                "f4527919-c02d-ec11-915b-901b0eac4c78",
+                "e9527919-c02d-ec11-915b-901b0eac4c78",
+                "e5527919-c02d-ec11-915b-901b0eac4c78",
+                "eb527919-c02d-ec11-915b-901b0eac4c78",
+                "d27c4b01-3463-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Markus Selin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 57
         },
         "cosine_RAG": {
             "answer": "",
@@ -898,14 +1204,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anders Ygeman tycks inte stödja att sänka kostnaderna för fossila drivmedel på kort sikt. Istället betonar han vikten av en övergång till förnybara energikällor och behovet av att minska beroendet av fossila bränslen såsom diesel och bensin. Ygeman argumenterar för att framtiden ligger i att använda inhemska och hållbara alternativ för att säkerställa en trygg och säker drivmedelsförsörjning, och han anser att minskade kostnader för fossila drivmedel inte är rätt väg att gå.",
+            "context": [
+                "6f89e34d-cd59-ec11-915f-901b0eac4c70",
+                "3fece91b-6bb2-eb11-914f-901b0eac4c78",
+                "7589e34d-cd59-ec11-915f-901b0eac4c70",
+                "9cb12f91-e2d8-eb11-9153-901b0eac4c78",
+                "90eaa894-f151-ec11-915f-901b0eac4c70",
+                "5a57b200-7241-ec11-9164-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 395
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anders Ygeman anser inte att det är rätt att på kort sikt sänka kostnaderna för fossila drivmedel. Istället betonar han vikten av att ställa om till hållbara och förnybara drivmedel för att minska beroendet av fossila bränslen. Han ser omställningen som nödvändig för att minska klimatpåverkan och uppnå Sveriges klimatmål. Regeringen arbetar för att minska växthusgasutsläppen från transportsektorn och främja elektrifiering och hållbara bränslen. Därför menar Ygeman att att sänka kostnaderna för fossila drivmedel inte är rätt väg att gå.",
+            "context": [
+                "90eaa894-f151-ec11-915f-901b0eac4c70",
+                "056ef16d-620d-eb11-9146-901b0e9b71a8",
+                "6f89e34d-cd59-ec11-915f-901b0eac4c70",
+                "6d89e34d-cd59-ec11-915f-901b0eac4c70",
+                "ff03a3af-9fad-eb11-914f-901b0eac4c78",
+                "7589e34d-cd59-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 395
         },
         "cosine_RAG": {
             "answer": "",
@@ -942,14 +1264,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Stefan Löfven har inte uttryckt att Sverige bör avsluta sitt samarbete med Kina. I ett av hans anföranden framhåller han vikten av att ha ett samarbete med Kina, särskilt på klimatområdet, där Kina anses vara en viktig aktör. Löfven betonar att Kina har stor kunskap inom många områden och att Sverige därför vill fortsätta samarbeta med dem.",
+            "context": [
+                "cc990b52-8f35-eb11-914a-901b0e9b71a8",
+                "ddc561ee-2d03-eb11-9146-901b0e9b71a8",
+                "c4002102-7ea7-eb11-914f-901b0eac4c78",
+                "f731e588-b57d-eb11-914b-901b0eac4c70",
+                "9a676d73-ba22-ec11-915b-901b0eac4c78",
+                "27184259-3c1d-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Stefan Löfven\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 338
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Nej, det verkar inte som Stefan Löfven har sagt att Sverige bör avsluta sitt samarbete med Kina. I en av anförandena betonar han vikten av samarbete med Kina, särskilt inom klimatområdet, eftersom Kina är en betydande aktör med stor kunskap. Han nämner också att Sverige och EU har en aktiv politik i relation till Kina baserat på våra värderingar och intressen. Det finns alltså en önskan att fortsätta samarbeta, samtidigt som man upprätthåller en tydlig hållning i frågor som mänskliga rättigheter.",
+            "context": [
+                "cc990b52-8f35-eb11-914a-901b0e9b71a8",
+                "d56dfcf1-df3e-eb11-914a-901b0e9b71a8",
+                "b8676d73-ba22-ec11-915b-901b0eac4c78",
+                "0b32e588-b57d-eb11-914b-901b0eac4c70",
+                "ac6f8c75-feb7-eb11-914f-901b0eac4c78",
+                "d6639ba2-1a03-eb11-9146-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Stefan Löfven\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 338
         },
         "cosine_RAG": {
             "answer": "",
@@ -986,14 +1324,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I januari 2021 uttryckte Kerstin Lundgren en stark ståndpunkt för yttrandefrihet som en grundläggande del av ett demokratiskt samhälle. Hon betonade vikten av att medborgare ska kunna yttra sig utan rädsla för att bli gripna och att det är avgörande att inskränkningar i yttrandefriheten är tydliga och rättvisa. Hon noterade också den globala tillbakagången för demokrati och lyfte fram situationen i flera länder där yttrandefriheten är hotad, såsom Ryssland, Kina, Turkiet, Ungern och Polen. Lundgren kritiserade särskilt politiska rättegångar, som de mot Navalnyj i Ryssland och Gui Minhai i Kina, och klargjorde att Sverige inte accepterar sådana processer eftersom de inte överensstämmer med internationella regler och därmed inte kan betraktas som fria och rättvisa. Hon betonade vikten av att Sverige står upp för yttrandefrihet i alla dessa fall.",
+            "context": [
+                "b07b5d27-3987-eb11-914b-901b0eac4c70",
+                "8148d815-7706-ec11-9160-901b0e9b71a0",
+                "53ddcf4e-3dc6-ec11-9170-0090facf175a",
+                "0094bf96-a1ad-eb11-914f-901b0eac4c78",
+                "02a28ea4-3516-ec11-9160-901b0e9b71a0",
+                "2fddcf4e-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kerstin Lundgren\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-01\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 197
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kerstin Lundgren uttryckte i januari 2021 en stark ståndpunkt till försvar för yttrandefrihet som en grundlagskyddad rättighet och en förutsättning för ett demokratiskt samhälle. Hon betonade vikten av att medborgare ska kunna yttra sig utan rädsla för att bli gripna och kritiserade hur yttrandefriheten inskränks globalt, med särskild uppmärksamhet på länder som Ryssland och Kina. Lundgren nämnde specifikt de politiska rättegångarna mot personer som Aleksej Navalnyj i Ryssland och Gui Minhai i Kina och fördömde dessa som oacceptabla och politiskt motiverade. Hon betonade att Sverige inte accepterar sådana politiska rättegångar och att de inte överensstämmer med internationella regelverk. Dessutom lyfte hon fram att journalistyrket blivit ett av de farligaste yrkena på grund av dessa inskränkningar, och underströk vikten av att Sverige står upp för yttrandefrihet internationellt.",
+            "context": [
+                "b07b5d27-3987-eb11-914b-901b0eac4c70",
+                "07e25ffa-bc39-ed11-9178-901b0e9b71a8",
+                "53ddcf4e-3dc6-ec11-9170-0090facf175a",
+                "0efb26a5-23cd-eb11-9156-901b0e9b71a8",
+                "5ffde4a9-3cd0-eb11-9153-901b0eac4c78",
+                "3a9653a2-d085-ec11-9163-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kerstin Lundgren\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-01\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 197
         },
         "cosine_RAG": {
             "answer": "",
@@ -1030,14 +1384,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Under december 2020 betonade Janine Alm Ericson vikten av svenskt bistånd i en tid av flera globala kriser, inklusive pandemin och klimatförändringar. Hon argumenterade för att svenskt bistånd är av världsklass och spelar en avgörande roll i att stärka länder och individer, samt bygga motståndskraftiga, demokratiska och jämställda samhällen. Alm Ericson framhöll att biståndet inte bara handlar om akut humanitärt stöd utan också om långsiktigt utvecklingssamarbete som hjälper samhällen att stå på egna ben.\n\nHon påpekade också att nedskärningar i biståndet skulle försvaga Sveriges röst i världen när det gäller jämställdhet, demokrati och mänskliga rättigheter. Alm Ericson uppmanade regeringen att inte dra ner på biståndsresurser för att lösa inrikespolitiska problem och betonade att biståndet fungerar som en investering i en bättre värld. Hon kritiserade partier som såg biståndet som en budgetpost att skära i och betonade att varje neddragning skulle påverka insatser för en bättre värld negativt.",
+            "context": [
+                "c48cff13-4375-ec11-9168-901b0e9b71a8",
+                "e93f78f4-bb23-ed11-9178-901b0e9b71a8",
+                "261935ea-c02a-ed11-9178-901b0e9b71a8",
+                "fcdb90ca-3062-eb11-914e-901b0e9b71a0",
+                "eb3f78f4-bb23-ed11-9178-901b0e9b71a8",
+                "f48cff13-4375-ec11-9168-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Janine Alm Ericson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 81
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Under december 2020 talade Janine Alm Ericson om vikten av svenskt bistånd och dess betydelse i en tid av globala kriser. Hon betonade att pandemin hade förvärrat många av världens befintliga problem, såsom fattigdom och hunger, och att svenskt bistånd var viktigare än någonsin för att motverka dessa utmaningar. Alm Ericson argumenterade för att biståndet inte bara är en fråga om välgörenhet, utan en investering i en bättre värld. Hon framhöll att svenskt bistånd är träffsäkert och når världens mest utsatta människor, särskilt genom stöd för demokrati och civilsamhälle i länder där dessa värden hotas. Alm Ericson uttryckte oro över att nedskärningar av biståndet skulle ha negativa konsekvenser och betonade vikten av att stå fast vid enprocentsmålet för biståndet, trots politiska påtryckningar från vissa partier som ville minska detta.",
+            "context": [
+                "72db90ca-3062-eb11-914e-901b0e9b71a0",
+                "fcdb90ca-3062-eb11-914e-901b0e9b71a0",
+                "e93f78f4-bb23-ed11-9178-901b0e9b71a8",
+                "b78cff13-4375-ec11-9168-901b0e9b71a8",
+                "c44f430d-276d-eb11-914e-901b0e9b71a0",
+                "b98cff13-4375-ec11-9168-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Janine Alm Ericson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 81
         },
         "cosine_RAG": {
             "answer": "",
@@ -1074,14 +1444,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Ulla Andersson att införandet av marknadshyror är en bra lösning för att förbättra den ekonomiska situationen för vanliga människor? Nej, Ulla Andersson anser inte att marknadshyror är en bra lösning för vanliga människor. Hon argumenterar mot marknadshyror eftersom det skulle leda till betydande hyreshöjningar för många, vilket skulle urgröpa folks plånböcker och förvärra den ekonomiska situationen för dem som redan har det svårt. Hon menar att marknadshyror gynnar fastighetsägare och leder till ökade bostadsbidrag som kostar staten stort, istället för att dessa pengar skulle kunna satsas på välfärden. Införandet av marknadshyror ses som en politik som går emot Socialdemokraternas löften och skulle skapa större ekonomisk otrygghet för hyresgäster.",
+            "context": [
+                "dcf9f9f3-b922-ec11-915b-901b0eac4c78",
+                "bff9f9f3-b922-ec11-915b-901b0eac4c78",
+                "b1f9f9f3-b922-ec11-915b-901b0eac4c78",
+                "363ef66e-b2c3-eb11-9156-901b0e9b71a8",
+                "c9f9f9f3-b922-ec11-915b-901b0eac4c78",
+                "2f21258c-cd3f-eb11-914a-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ulla Andersson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 105
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att Anser Ulla Andersson inte anser att införandet av marknadshyror är en bra lösning för att förbättra den ekonomiska situationen för vanliga människor. I debatten framgår det att hon är kritisk till förslaget om marknadshyror och menar att det skulle leda till chockhöjningar av hyror, ökad trångboddhet och segregation. Hon argumenterar för att marknadshyror gynnar fastighetsägarna och inte leder till byggande av fler hyreslägenheter som folk har råd med. Andersson förespråkar istället att man bör fokusera på att bygga hyresrätter som är ekonomiskt överkomliga för allmänheten.",
+            "context": [
+                "def9f9f3-b922-ec11-915b-901b0eac4c78",
+                "dcf9f9f3-b922-ec11-915b-901b0eac4c78",
+                "bff9f9f3-b922-ec11-915b-901b0eac4c78",
+                "bdf9f9f3-b922-ec11-915b-901b0eac4c78",
+                "eb10d8e4-cca2-eb11-9152-901b0e9b71a8",
+                "b1f9f9f3-b922-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ulla Andersson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 105
         },
         "cosine_RAG": {
             "answer": "",
@@ -1118,14 +1504,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Christina Höj Larsen uttrycker sin osäkerhet kring tolkningen av den nya humanitära skyddsgrunden genom att påpeka svårigheten att förstå vilken tolkning som gäller, särskilt efter att ha lyssnat på Morgan Johanssons framträdande i programmet *Agenda*. Hon betonar att det är svårt att utläsa om tolkningen stämmer överens med Centerpartiets, Miljöpartiets eller någon annans syn. Hon ställer även direkta frågor för att få klarhet i om vissa grupper, såsom de med tillstånd enligt den nya gymnasielagen, kommer att omfattas av den nya humanitära skyddsgrunden. Det framgår att det finns en osäkerhet och ett behov av tydligare svar om vilka som egentligen kommer att omfattas av de nya reglerna.",
+            "context": [
+                "3b4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "1c4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "3d4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "4fea50f7-3328-ec11-915b-901b0eac4c78",
+                "1e4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "ff1d9bed-ace0-eb11-9153-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Christina Höj Larsen\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 51
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Christina Höj Larsen uttrycker sin osäkerhet kring tolkningen av den nya humanitära skyddsgrunden genom att beskriva hur svårt det är att utläsa vilken tolkning som gäller. Hon nämner att hon lyssnat noga på Morgan Johanssons framträdande men fortfarande har svårt att förstå om det är Centerpartiets, Miljöpartiets eller någon annan tolkning som är den rätta. Hon ställer också direkta frågor om hur den nya humanitära skyddsgrunden kommer att påverka de som har tillstånd enligt den nya gymnasielagen, särskilt de vars tillstånd har upphört, och hur pandemin har påverkat deras möjligheter att hitta arbete. Hon verkar söka klarhet i hur dessa individer kommer att omfattas av den nya lagstiftningen (Resultat 1 och 2).",
+            "context": [
+                "3b4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "1c4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "eb1d9bed-ace0-eb11-9153-901b0eac4c78",
+                "2346481c-24cd-eb11-9156-901b0e9b71a8",
+                "0f4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "4fea50f7-3328-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Christina Höj Larsen\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 51
         },
         "cosine_RAG": {
             "answer": "",
@@ -1162,14 +1564,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Vänsterpartiet anser att hanteringen av bristen på konstgödsel inom EU bör integreras i en bredare strategi för miljö- och klimatomställning. De betonar vikten av att skydda vår miljö och att jordbruket, även om det är samhällsnyttigt, medför stor miljöpåverkan, vilket motiverar att det omfattas av miljöbalkens krav (Resultat 1). De förespråkar också konkreta åtgärder för att minska utsläppen och främja hållbara jordbruksmetoder, vilket kan inkludera stöd för utveckling och användning av förnybara drivmedel och tekniker som minskar beroendet av konstgödsel (Resultat 4). Vänsterpartiets politik fokuserar på klimatomställningen som en central del av den ekonomiska politiken och de föreslår investeringar för att underlätta denna övergång (Resultat 3). Vidare betonar de behovet av statliga insatser för att stödja innovation och omställning inom jordbrukssektorn, vilket kan bidra till att hantera bristen på konstgödsel på ett hållbart sätt (Resultat 4).",
+            "context": [
+                "2087e8a5-56eb-ec11-916f-901b0eac4c70",
+                "ad9ffcda-b417-ec11-9160-901b0e9b71a0",
+                "b40c7667-bb23-ed11-9178-901b0e9b71a8",
+                "61bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "97f9f512-28dc-ec11-916f-901b0eac4c70",
+                "d683c086-cf85-ec11-9163-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2322
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Vänsterpartiet argumenterar för att EU bör hantera bristen på konstgödsel genom att fokusera på att ställa om till mer miljö- och klimatvänliga alternativ. De lyfter fram att konstgödsel i dagens form är skadlig för miljön på flera sätt: det bidrar till övergödning av vattendrag och är en klimatbov vid tillverkningen genom utsläpp av lustgas, en kraftfull växthusgas. Dessutom tros det påverka den biologiska mångfalden negativt, bland annat genom massdöd av insekter. Vänsterpartiet ser bristen som en möjlighet att uppmuntra effektivare användning av gödselmedel och att söka alternativ som kan minska utsläppen av lustgas, vilket också skulle underlätta för EU att nå sina klimatmål inom Fit for 55-initiativet.",
+            "context": [
+                "038fdfdc-bf39-ed11-9178-901b0e9b71a8",
+                "943ef66e-b2c3-eb11-9156-901b0e9b71a8",
+                "1e87ccf7-3728-ec11-915b-901b0eac4c78",
+                "352b8c89-7706-ec11-9160-901b0e9b71a0",
+                "963ef66e-b2c3-eb11-9156-901b0e9b71a8",
+                "fb4e8aa5-390b-ec11-9160-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"V\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 2322
         },
         "cosine_RAG": {
             "answer": "",
@@ -1206,14 +1624,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att Anser Ida Gabrielsson, representant för Vänsterpartiet, inte tycker att det är rättvist att personer med sjukpenning betalar mer skatt än de som arbetar. I debatten uttrycker Vänsterpartiet tydligt att de är emot den så kallade \"straffskatten\" för sjukpensionärer och personer med sjukpenning. Vänsterpartiet har föreslagit att ta bort denna högre skatt för de sjuka och hävdar att det är orättvist att dessa individer ska betala en större andel av sin inkomst i skatt jämfört med arbetande personer. Gabrielsson kritiserar andra partier, som Sverigedemokraterna, för att inte ta bort denna skattebörda i sina budgetförslag.",
+            "context": [
+                "e315cb82-f493-ec11-916c-901b0e9b71a0",
+                "be4c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "c04c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "41c05bc4-4157-eb11-9147-901b0eac4c70",
+                "7c35414d-3316-ec11-9160-901b0e9b71a0",
+                "12f9f512-28dc-ec11-916f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ida Gabrielsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 81
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Nej, Anser Ida Gabrielsson att det inte är rättvist att personer med sjukpenning betalar mer skatt än de som arbetar. Vänsterpartiet, där Gabrielsson är verksam, har länge argumenterat för att ta bort den extra skatt som personer med sjukpenning betalar. De anser att det är fel att de som har sjukpenning eller sjukersättning ska betala en större andel av sin inkomst i skatt än de som arbetar. Vänsterpartiet har konsekvent drivit förslag för att rätta till denna orättvisa och har kritiserat andra partier för att inte göra detsamma.",
+            "context": [
+                "e315cb82-f493-ec11-916c-901b0e9b71a0",
+                "e115cb82-f493-ec11-916c-901b0e9b71a0",
+                "7950430d-276d-eb11-914e-901b0e9b71a0",
+                "0148d815-7706-ec11-9160-901b0e9b71a0",
+                "e6436196-c02a-ed11-9178-901b0e9b71a8",
+                "7c35414d-3316-ec11-9160-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ida Gabrielsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 81
         },
         "cosine_RAG": {
             "answer": "",
@@ -1250,14 +1684,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kjell-Arne Ottosson har uttryckt kritik mot regeringens hantering av ripjakten, särskilt i början av processen. Enligt honom saknades konkreta svar initialt på vad som låg bakom beslutet att förändra ripjakten, och han menar att biologiska skäl inte motiverade beslutet. Han påpekar att forskningen visar att jakten inte påverkar ripornas population, vilket tyder på att andra organisationer och intressen kan ha påverkat regeringens beslut. Trots den initiala kritiken uttryckte Ottosson glädje över att regeringen senare valde att ändra sitt beslut efter att ha tagit till sig av kritiken och insåg den kulturella betydelsen av frågan. Så även om han var kritisk till den ursprungliga hanteringen, uppskattade han att regeringen var villig att ändra sig och göra rätt i slutändan.",
+            "context": [
+                "0114cf75-3328-ec11-915b-901b0eac4c78",
+                "f64374b1-ba22-ec11-915b-901b0eac4c78",
+                "6e2b8c89-7706-ec11-9160-901b0e9b71a0",
+                "fc4374b1-ba22-ec11-915b-901b0eac4c78",
+                "c0835025-b1c7-ec11-9170-0090facf175a",
+                "0814cf75-3328-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kjell-Arne Ottosson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 124
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Utifrån den information som framkommit i debatten kan man dra slutsatsen att regeringen inte hanterade frågan om ripjakten korrekt från början. Det framgår att det fanns kritik mot hur processen hanterades och att besluten inte alltid stämde överens med forskningen om ripjaktens påverkan. Det framgår också att regeringen, efter att ha fått kritik både internt och externt, valde att ändra sitt beslut angående ripjakten, vilket tyder på att det initiala beslutet inte var välgrundat. Kritiken handlade bland annat om bristande kommunikation med berörda parter, som Svenska Jägareförbundet, och att biologiska skäl inte beaktades på rätt sätt. Det är tydligt att det har funnits ett missnöje med hur beslutet fattades och motiverades, vilket i slutändan ledde till en revidering av beslutet.",
+            "context": [
+                "6e2b8c89-7706-ec11-9160-901b0e9b71a0",
+                "66137898-37ee-ec11-916f-901b0eac4c70",
+                "f64374b1-ba22-ec11-915b-901b0eac4c78",
+                "9a2c89b4-2bb4-ec11-9167-901b0eac4c78",
+                "87d6af9c-8332-ec11-9164-0090facf175a",
+                "fc4374b1-ba22-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Kjell-Arne Ottosson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 124
         },
         "cosine_RAG": {
             "answer": "",
@@ -1294,14 +1744,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna har erkänt att det funnits brister i strategin för att skydda äldre på äldreboenden under pandemin. Det har lyfts fram att det funnits problem med tillgången till skyddsutrustning och att personalen upplevde stress och press på grund av bristande rutiner och resursbrist. Regeringen har tagit emot Coronakommissionens delredovisning om vården och omsorgen av äldre och arbetar framåt för att åtgärda dessa brister. Det har även betonats att stora satsningar görs på äldreomsorgen för att förbättra situationen, bland annat genom budgetposter som syftar till att stärka och utveckla äldreomsorgen.",
+            "context": [
+                "570aa906-f371-eb11-914b-901b0eac4c70",
+                "be6f8c75-feb7-eb11-914f-901b0eac4c78",
+                "b4bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "8f6f8c75-feb7-eb11-914f-901b0eac4c78",
+                "1faf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "c06f8c75-feb7-eb11-914f-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Socialdemokraterna har erkänt att det fanns brister i strategin för att skydda äldre på äldreboenden under pandemin. Regeringen tog emot Coronakommissionens första delredovisning som pekade på att svensk äldreomsorg var oförberedd och att de åtgärder som sattes in var sena och i vissa delar otillräckliga. Det har också framkommit att det finns uppenbara problem i hur äldreomsorgen var förberedd och organiserad, särskilt i relation till regionernas sjukvårdssystem. Regeringen har vidtagit åtgärder för att hantera dessa brister och fortsätter att arbeta med att förbättra situationen, inklusive att tillsätta en utredning om en äldreomsorgslag för att säkerställa tillgången till hälso- och sjukvårdsinsatser inom äldreomsorgen.",
+            "context": [
+                "570aa906-f371-eb11-914b-901b0eac4c70",
+                "b8990b52-8f35-eb11-914a-901b0e9b71a8",
+                "bda9e37b-c567-eb11-914e-901b0e9b71a0",
+                "da8dccab-a0ad-eb11-914f-901b0eac4c78",
+                "bba9e37b-c567-eb11-914e-901b0e9b71a0",
+                "053eda10-791f-eb11-9143-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "cosine_RAG": {
             "answer": "",
@@ -1340,12 +1806,14 @@
         "graph_RAG_cosine": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "```\nMATCH (t:Talare {name: \"Peter Hultqvist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-03\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id\n```",
+            "number_of_nodes": "Node retrieval failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '``` MATCH (t:Talare {name: \"Peter Hultqvist\"})  MATCH (t)-[:HALLER]->(a:Anforande)  MATCH (a)-[:HAS_CHUNK]->(c:Chunk)  MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll)  WHERE p.dok_datum CONTAINS \"2021-03\"  RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id ```': expected 'FOREACH', 'ALTER', 'ORDER BY', 'CALL', 'USING PERIODIC COMMIT', 'CREATE', 'LOAD CSV', 'START DATABASE', 'STOP DATABASE', 'DEALLOCATE', 'DELETE', 'DENY', 'DETACH', 'DROP', 'DRYRUN', 'FINISH', 'GRANT', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REALLOCATE', 'REMOVE', 'RENAME', 'RETURN', 'REVOKE', 'ENABLE SERVER', 'SET', 'SHOW', 'SKIP', 'TERMINATE', 'UNWIND', 'USE' or 'WITH' (line 1, column 1 (offset: 0))\n\"``` MATCH (t:Talare {name: \"Peter Hultqvist\"})  MATCH (t)-[:HALLER]->(a:Anforande)  MATCH (a)-[:HAS_CHUNK]->(c:Chunk)  MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll)  WHERE p.dok_datum CONTAINS \"2021-03\"  RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id ```\"\n ^}"
         },
         "graph_RAG_bm25": {
             "answer": "",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "```\nMATCH (t:Talare {name: \"Peter Hultqvist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-03\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id\n```",
+            "number_of_nodes": "Node retrieval failed: {code: Neo.ClientError.Statement.SyntaxError} {message: Invalid input '``` MATCH (t:Talare {name: \"Peter Hultqvist\"})  MATCH (t)-[:HALLER]->(a:Anforande)  MATCH (a)-[:HAS_CHUNK]->(c:Chunk)  MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll)  WHERE p.dok_datum CONTAINS \"2021-03\"  RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id ```': expected 'FOREACH', 'ALTER', 'ORDER BY', 'CALL', 'USING PERIODIC COMMIT', 'CREATE', 'LOAD CSV', 'START DATABASE', 'STOP DATABASE', 'DEALLOCATE', 'DELETE', 'DENY', 'DETACH', 'DROP', 'DRYRUN', 'FINISH', 'GRANT', 'INSERT', 'LIMIT', 'MATCH', 'MERGE', 'NODETACH', 'OFFSET', 'OPTIONAL', 'REALLOCATE', 'REMOVE', 'RENAME', 'RETURN', 'REVOKE', 'ENABLE SERVER', 'SET', 'SHOW', 'SKIP', 'TERMINATE', 'UNWIND', 'USE' or 'WITH' (line 1, column 1 (offset: 0))\n\"``` MATCH (t:Talare {name: \"Peter Hultqvist\"})  MATCH (t)-[:HALLER]->(a:Anforande)  MATCH (a)-[:HAS_CHUNK]->(c:Chunk)  MATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll)  WHERE p.dok_datum CONTAINS \"2021-03\"  RETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id ```\"\n ^}"
         },
         "cosine_RAG": {
             "answer": "",
@@ -1382,14 +1850,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Roger Haddad anser inte att de nuvarande förslagen för att hantera mobbning i skolan är tillräckliga. Han uttrycker besvikelse över att, trots politiska utfästelser, är det ofta den mobbade eleven som tvingas byta skola medan förövaren inte möter samma konsekvenser. Haddad efterlyser mer effektiva åtgärder och verktyg för rektorer och lärare att hantera mobbningssituationer och ser det som ett misslyckande inom svensk skolpolitik att de som blir utsatta är de som får flytta. Han har föreslagit olika åtgärder, inklusive tillträdesregler och likabehandlingsplaner, men menar att dessa förslag inte fått tillräckligt stöd (Resultat 1 och 2).",
+            "context": [
+                "551e9bed-ace0-eb11-9153-901b0eac4c78",
+                "571e9bed-ace0-eb11-9153-901b0eac4c78",
+                "e97d3f62-aeb9-ec11-9167-901b0eac4c78",
+                "0c012102-7ea7-eb11-914f-901b0eac4c78",
+                "7ba9e37b-c567-eb11-914e-901b0e9b71a0",
+                "9de1d432-de4d-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Roger Haddad\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 123
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Roger Haddad har uttryckt att de nuvarande förslagen för att hantera mobbning i skolan inte är tillräckliga. Han har kritiserat att den elev som blir mobbad ofta tvingas byta skola eller till och med kommun, vilket han anser är oacceptabelt. Trots politiska utfästelser har detta problem inte angripits på ett effektivt sätt. Haddad menar att de aviserade förslagen inte räcker och har framfört förslag kring tillträdesregler, omplacering och avstängning, samt likabehandlingsplaner, men dessa har inte fått stöd från Socialdemokraterna. Detta tyder på att han anser att mer måste göras för att effektivt hantera mobbning i skolorna.",
+            "context": [
+                "551e9bed-ace0-eb11-9153-901b0eac4c78",
+                "99c790c4-7aba-ec11-9167-901b0eac4c78",
+                "ec5693c4-64bd-eb11-9156-901b0e9b71a8",
+                "eb7d3f62-aeb9-ec11-9167-901b0eac4c78",
+                "ea3dfaec-3143-ed11-9177-901b0eac4c70",
+                "616f8c75-feb7-eb11-914f-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Roger Haddad\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 123
         },
         "cosine_RAG": {
             "answer": "",
@@ -1426,14 +1910,16 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
+            "answer": "Det som efterfrågas i frågan är en beskrivning av hur Ann Linde argumenterar för civilsamhällets betydelse och deltagande i internationella konferenser.\n\nJag hittar ingen information om hur Ann Linde argumenterar för vikten av civilsamhällets deltagande i internationella konferenser i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Ann Linde\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "graph_RAG_bm25": {
-            "answer": "",
+            "answer": "Du frågar om hur Ann Linde argumenterar för vikten av civilsamhällets deltagande i internationella konferenser. Jag hittar ingen information om detta i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Ann Linde\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "cosine_RAG": {
             "answer": "",
@@ -1470,14 +1956,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2021 uttryckte Linda Lindberg, representant för Sverigedemokraterna, kritik mot regeringens hantering av pandemin och dess senfärdighet, särskilt i det tidiga skedet av pandemin. Hon påpekade att Sveriges hantering präglats av bristande beredskap och otillräckliga inledande skyddsåtgärder. När det gäller vaccinationsbevis framhöll Lindberg att hennes parti inte motsatte sig bevisen i sig, men de ifrågasatte att en övergångsregering skulle fatta beslut om införandet utan att detta först hade debatterats och beslutats i riksdagen. Sverigedemokraterna ansåg att detta borde ha väntat tills en ny regering var på plats som kunde hållas ansvarig. De föreslog också att tillfrisknandebevis och negativa testresultat skulle vara giltiga alternativ till vaccinationsbevis för att göra systemet mer inkluderande.",
+            "context": [
+                "528cff13-4375-ec11-9168-901b0e9b71a8",
+                "4a8cff13-4375-ec11-9168-901b0e9b71a8",
+                "508cff13-4375-ec11-9168-901b0e9b71a8",
+                "1c712b27-beb5-ec11-9167-901b0eac4c78",
+                "de0f2300-3941-eb11-9147-901b0eac4c70",
+                "548cff13-4375-ec11-9168-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Linda Lindberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 68
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I december 2021 uttryckte Linda Lindberg från Sverigedemokraterna kritik gentemot regeringens hantering av pandemin, särskilt dess senfärdighet i pandemins tidiga skede, något som även Coronakommissionen pekade ut. När det gäller vaccinationsbevis ansåg Lindberg och Sverigedemokraterna att det inte låg inom en övergångsregerings befogenheter att fatta beslut om sådana förordningar utan en ordentlig debatt i riksdagen. De menade att införandet av vaccinationsbevis skulle kunna vänta tills en ny regering var på plats.\n\nLindberg påpekade också att Sverigedemokraterna stöttade existensen av pandemilagen, men de hade invändningar mot den långtgående delegation av makt som regeringen fått och önskade att fler beslut skulle underställas riksdagens prövning. Partiet ansåg att riksdagen borde ha haft möjlighet att debattera och fatta beslut om frågor som vaccinationsbevis, för att säkerställa en transparent och öppen debatt inför svenska folket. \n\nSverigedemokraterna förespråkade också att vaccinationsbeviset borde inkludera tillfrisknandebevis och negativa testresultat för att vara mer inkluderande. Trots vissa frågetecken såg de fördelar med vaccinationsbeviset eftersom det möjliggjorde att arrangörer kunde maximera sina event och undvika andra restriktioner. De betonade också vikten av att öka vaccinationstäckningen för att undvika framtida restriktioner.",
+            "context": [
+                "4a8cff13-4375-ec11-9168-901b0e9b71a8",
+                "1c712b27-beb5-ec11-9167-901b0eac4c78",
+                "de0f2300-3941-eb11-9147-901b0eac4c70",
+                "795693c4-64bd-eb11-9156-901b0e9b71a8",
+                "8650430d-276d-eb11-914e-901b0e9b71a0",
+                "508cff13-4375-ec11-9168-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Linda Lindberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 68
         },
         "cosine_RAG": {
             "answer": "",
@@ -1514,14 +2016,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Nej, Miljö- och klimatminister Per Bolund har inte sagt att biobränslen är den enda lösningen för att nå klimatmålen. Han har varit tydlig med att biobränslen är ett viktigt redskap men långt ifrån det enda. I debatten lyfter han fram flera andra åtgärder som regeringen arbetar med, såsom elektrifiering och minskad transportefterfrågan. Han understryker vikten av att ha flera olika insatser för att nå klimat- och miljömålen, och poängterar att Sverige arbetar med en kombination av åtgärder för att uppnå dessa mål.",
+            "context": [
+                "ae9ffcda-b417-ec11-9160-901b0e9b71a0",
+                "a89ffcda-b417-ec11-9160-901b0e9b71a0",
+                "aa9ffcda-b417-ec11-9160-901b0e9b71a0",
+                "48184259-3c1d-ec11-915b-901b0eac4c78",
+                "7ea850f7-7b40-ec11-9164-0090facf175a",
+                "45c1f047-4549-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Miljö- och klimatministern Per Bolund\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 228
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Nej, Miljö- och klimatministern Per Bolund har inte sagt att biobränslen är den enda lösningen för att nå klimatmålen. I sitt anförande har han tydligt klargjort att biobränslen är ett av flera verktyg, men långt ifrån det enda. Han betonade också vikten av elektrifiering och andra åtgärder för att minska transportefterfrågan och skapa ett transporteffektivt samhälle. Bolund underströk att det är kombinationen av olika insatser som gör att Sverige kan nå sina klimat- och miljömål.",
+            "context": [
+                "ae9ffcda-b417-ec11-9160-901b0e9b71a0",
+                "a89ffcda-b417-ec11-9160-901b0e9b71a0",
+                "4ca77c8f-3728-ec11-915b-901b0eac4c78",
+                "93a77c8f-3728-ec11-915b-901b0eac4c78",
+                "ea45481c-24cd-eb11-9156-901b0e9b71a8",
+                "36a77c8f-3728-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Miljö- och klimatministern Per Bolund\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 228
         },
         "cosine_RAG": {
             "answer": "",
@@ -1558,14 +2076,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Håkan Svenneling att regeringen har agerat tillräckligt för att skydda demokratin i Hongkong?\n\nNej, Håkan Svenneling anser inte att regeringen har agerat tillräckligt för att skydda demokratin i Hongkong. Han har uttryckt kritik mot att regeringen inte har vidtagit konkreta åtgärder trots EU:s beslut att medlemsstaterna ska agera. Svenneling har påpekat att regeringen inte har följt upp med några konkreta handlingar, och han har varit delaktig i att driva igenom ett tillkännagivande från riksdagen om att Sverige bör säga upp avtalet om rättshjälp med Hongkong. Detta avtal riskerar annars att användas av regimen i Hongkong för att förfölja demokratiaktivister. Svenneling menar att Sverige måste vara en tydlig röst för demokrati och att regeringen inte har levt upp till detta när det gäller situationen i Hongkong.",
+            "context": [
+                "1ce0f607-3b0b-ec11-9160-901b0e9b71a0",
+                "1ae0f607-3b0b-ec11-9160-901b0e9b71a0",
+                "e048e5fe-ab04-eb11-9146-901b0e9b71a8",
+                "dc48e5fe-ab04-eb11-9146-901b0e9b71a8",
+                "c993bf96-a1ad-eb11-914f-901b0eac4c78",
+                "26f89a3e-3043-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Håkan Svenneling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 263
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Håkan Svenneling att regeringen har agerat tillräckligt för att skydda demokratin i Hongkong? Utifrån det som framgår i debattinläggen verkar Håkan Svenneling, som representerar Vänsterpartiet, kritisk till regeringens agerande i frågan om Hongkong. Han uttrycker besvikelse över att regeringen inte har vidtagit konkreta åtgärder trots EU:s uppmaningar och menar att det är orimligt att poliser ska behöva avgöra om en person är en politisk fånge eller kriminell. Svenneling vill att Sverige säger upp rättshjälpsavtalet med Hongkong, eftersom det kan användas för att förfölja demokratiaktivister. Han framhåller också att Hongkong inte längre är en demokrati och att Sverige bör agera därefter. Så, enligt honom har regeringen inte agerat tillräckligt för att skydda demokratin i Hongkong.",
+            "context": [
+                "1ce0f607-3b0b-ec11-9160-901b0e9b71a0",
+                "e048e5fe-ab04-eb11-9146-901b0e9b71a8",
+                "196ef16d-620d-eb11-9146-901b0e9b71a8",
+                "584e2edb-4075-ec11-9168-901b0e9b71a8",
+                "1ae0f607-3b0b-ec11-9160-901b0e9b71a0",
+                "dc48e5fe-ab04-eb11-9146-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Håkan Svenneling\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 263
         },
         "cosine_RAG": {
             "answer": "",
@@ -1602,14 +2136,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Socialdemokraterna anser att pandemin har bidragit till en ökad efterfrågan på svenska kvalitetsprodukter. Under pandemin har efterfrågan på lokalproducerade och högkvalitativa svenska produkter ökat kraftigt, vilket ses som en positiv utveckling för lönsamheten och satsningen på de gröna näringarna. Denna trend är något som man långsiktigt vill dra nytta av, och det har sin grund i den svenska livsmedelsstrategin, där man strävar efter att öka efterfrågan både nationellt och internationellt (Resultat 1).",
+            "context": [
+                "ccaf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "333eda10-791f-eb11-9143-901b0eac4c70",
+                "ac990b52-8f35-eb11-914a-901b0e9b71a8",
+                "490a3633-6cb2-eb11-914f-901b0eac4c78",
+                "52bebadd-a8cf-ec11-9170-0090facf175a",
+                "58bebadd-a8cf-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, pandemin har bidragit till en ökad efterfrågan på svenska kvalitetsprodukter. Enligt debatten har efterfrågan på lokalproducerade produkter ökat kraftigt under pandemin, vilket är något som både nuvarande och tidigare regeringar inte lyckats med i samma utsträckning. Detta ses som en positiv utveckling som kan bidra till lönsamhet och tilltro till de gröna näringarna, och det är något som Sverige hoppas kunna dra nytta av långsiktigt.",
+            "context": [
+                "ccaf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "49137898-37ee-ec11-916f-901b0eac4c70",
+                "141e9bed-ace0-eb11-9153-901b0eac4c78",
+                "2882ee21-f2b4-ec11-9167-901b0eac4c78",
+                "7f4c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "b0e7e85c-399d-eb11-9152-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "cosine_RAG": {
             "answer": "",
@@ -1646,14 +2196,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Ann-Christine från Utterstedt att kvotering är en effektiv metod för att uppnå jämställdhet mellan könen? Nej, hon är tydligt emot kvotering. Enligt henne missar kvotering målet med ett jämställt samhälle eftersom det fokuserar på könsfördelning snarare än individens kompetens och lämplighet. Hon anser att kvotering innebär positiv särbehandling av en grupp och negativ särbehandling av en annan, vilket inte är rättvist. Dessutom menar hon att kvotering kan leda till att individer ifrågasätter om de blivit tillsatta på grund av sin kompetens eller sitt kön. Istället betonar hon vikten av att varje individ ska ses som unik och att jämställdhet uppnås genom lika möjligheter, oavsett kön.",
+            "context": [
+                "c60c2916-aee0-eb11-9153-901b0eac4c78",
+                "339cbcff-68e2-ec11-916f-901b0eac4c70",
+                "eebf2348-bc23-ed11-9178-901b0e9b71a8",
+                "5b94bf96-a1ad-eb11-914f-901b0eac4c78",
+                "361e9bed-ace0-eb11-9153-901b0eac4c78",
+                "c80c2916-aee0-eb11-9153-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ann-Christine From Utterstedt\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 53
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Anser Ann-Christine Från Utterstedt att kvotering är en effektiv metod för att uppnå jämställdhet mellan könen? Baserat på den information som finns i debatten, verkar Ann-Christine Från Utterstedt, som representerar Sverigedemokraterna, inte anse att kvotering är en effektiv metod för att uppnå jämställdhet. Hon uttrycker en oro över att kvotering kan leda till att individer tillsätts på positioner baserat på kön snarare än kompetens och personliga egenskaper. Enligt hennes resonemang kan detta skapa osäkerhet hos individer om deras egna kvalifikationer och kompetens. Istället betonar hon vikten av att individer ses som unika och bedöms utifrån sina egna meriter och lämpligheter, snarare än att tillhöra en viss grupp.",
+            "context": [
+                "c60c2916-aee0-eb11-9153-901b0eac4c78",
+                "5b94bf96-a1ad-eb11-914f-901b0eac4c78",
+                "ec3dfaec-3143-ed11-9177-901b0eac4c70",
+                "361e9bed-ace0-eb11-9153-901b0eac4c78",
+                "c30c2916-aee0-eb11-9153-901b0eac4c78",
+                "339cbcff-68e2-ec11-916f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Ann-Christine From Utterstedt\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 53
         },
         "cosine_RAG": {
             "answer": "",
@@ -1690,14 +2256,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Fredrik Christensson från Centerpartiet har uttryckt en del oro kring Sverigedemokraternas förslag om budgetnedskärningar och sammanslagningar av lärosäten. Han har påpekat att sådana förändringar är svåra att genomföra på kort tid och har ifrågasatt hur sådana besparingar skulle påverka verksamheterna vid de berörda universiteten och högskolorna. Christensson verkar också betona vikten av den fria och nyfikenhetsdrivna forskningen, och hur minskade anslag, som de föreslagna nedskärningarna till Vetenskapsrådet, kan påverka forskningskvaliteten i Sverige negativt. Han menar att det är viktigt att satsa på både den fria forskningen och ökade basanslag för att stärka forskningssystemet i stort.",
+            "context": [
+                "11bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "13bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "0427f1f6-d085-ec11-9163-901b0eac4c70",
+                "a73d0d1b-3143-ed11-9177-901b0eac4c70",
+                "49521f3c-2fe0-ec11-916f-901b0eac4c70",
+                "2d6f0aa7-3043-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Fredrik Christensson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 44
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Fredrik Christensson har uttryckt kritik mot Sverigedemokraternas förslag om budgetnedskärningar och sammanslagningar av lärosäten. Han anser att det finns en oenighet i sakfrågan och betonar vikten av fri forskning och forskningsintensitet för att stärka forskningskvaliteten i Sverige. Christensson är skeptisk till att sådana omfattande förändringar som Sverigedemokraterna föreslår, med betydande besparingar och sammanslagningar av universitet, skulle kunna genomföras under det föreslagna budgetåret. Han framhåller också vikten av ökade basanslag till lärosäten som en viktig del av forskningssystemet.",
+            "context": [
+                "13bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "11bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "23f3a875-3d5f-ec11-915f-901b0eac4c70",
+                "d8507559-bd39-ed11-9178-901b0e9b71a8",
+                "49521f3c-2fe0-ec11-916f-901b0eac4c70",
+                "a73d0d1b-3143-ed11-9177-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Fredrik Christensson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 44
         },
         "cosine_RAG": {
             "answer": "",
@@ -1734,14 +2316,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Angelika Bengtsson har betonat vikten av transparens för att minska misstroendet mot public service. Hon anser att det nuvarande systemet kan öka misstroendet när sakfel i programinnehåll inte granskas på ett tillfredsställande sätt. Bengtsson förespråkar att ett vetenskapsråd skulle kunna belysa faktiska fel i programmen i efterhand för att öka transparensen och därmed förtroendet för public service. Enligt henne handlar det enbart om transparens och inte om att påverka innehållet på något annat sätt. Hon har också lyft fram att det finns en stor misstro mot public service bland Sverigedemokraternas väljare och att det är viktigt att adressera detta förtroendeproblem för att säkerställa att public service kan behålla sin relevans och funktion i samhället.",
+            "context": [
+                "6d96d4d6-ccd6-ec11-9170-0090facf175a",
+                "0b93c21d-a4ad-eb11-914f-901b0eac4c78",
+                "6b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6796d4d6-ccd6-ec11-9170-0090facf175a",
+                "7696d4d6-ccd6-ec11-9170-0090facf175a",
+                "0493c21d-a4ad-eb11-914f-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Angelika Bengtsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 50
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Det verkar som att Angelika Bengtsson argumenterar för att ökad transparens är viktig för att minska misstroendet mot public service. Hon betonar att det är avgörande att granska sakfel i programinnehåll, vilket inte alltid görs idag. Genom att införa ett vetenskapsråd skulle man kunna belysa faktiska fel i efterhand, vilket skulle bidra till ökad transparens och därmed minska misstroendet mot public service. Bengtsson menar att detta inte är kontroversiellt utan handlar enbart om att öka tydligheten och tilliten till public service. Hon ser transparens som ett medel för att säkerställa att public service kan upprätthålla sitt uppdrag om opartiskhet och saklighet.",
+            "context": [
+                "0b93c21d-a4ad-eb11-914f-901b0eac4c78",
+                "8a184259-3c1d-ec11-915b-901b0eac4c78",
+                "7696d4d6-ccd6-ec11-9170-0090facf175a",
+                "0493c21d-a4ad-eb11-914f-901b0eac4c78",
+                "6b96d4d6-ccd6-ec11-9170-0090facf175a",
+                "6796d4d6-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Angelika Bengtsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 50
         },
         "cosine_RAG": {
             "answer": "",
@@ -1778,14 +2376,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Sverigedemokraterna anser inte att den nuvarande energipolitiken är hållbar och effektiv. De kritiserar den förda politiken, särskilt Socialdemokraternas beroende av Miljöpartiet, som har lett till nedläggningen av kärnkraftsreaktorer och andra åtgärder som de menar har försämrat Sveriges energisituation. Sverigedemokraterna betonar vikten av en energipolitik där kärnkraft och vattenkraft utgör en bas som kan kompletteras med viss väderberoende kraftproduktion. De menar att det nuvarande systemet har lett till höga elpriser och en brist på tillförlitlig elproduktion, vilket påverkar både industrin och hushållen negativt. Partiet förespråkar en mer balanserad energipolitik där kostnader beaktas ur ett systemperspektiv och där kärnkraftens roll stärks för att säkerställa en stabil och kostnadseffektiv elförsörjning.",
+            "context": [
+                "23fad202-ccc0-ec11-9167-901b0eac4c78",
+                "7d8dff13-4375-ec11-9168-901b0e9b71a8",
+                "18fad202-ccc0-ec11-9167-901b0eac4c78",
+                "fbe9425e-bb44-ed11-9177-901b0eac4c70",
+                "04da7b48-d9fe-ec11-9174-901b0e9b71a0",
+                "0fdc90ca-3062-eb11-914e-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Sverigedemokraterna anser inte att den nuvarande energipolitiken är hållbar och effektiv. De betonar vikten av att energisystemet ska stödja den samhällsutveckling vi eftersträvar och inte belastas av hushåll och industri för att fungera. Partiet ser behov av åtgärder och föreslår att Sverige ersätter målet om 100 procent förnybar energi med ett mål om helt fossilfri elproduktion, vilket inkluderar kärnkraft. De argumenterar för att kärnkraften ska fortsätta spela en central roll i det svenska kraftsystemet och att snabbare utbyggnad av elnäten är nödvändig. Sverigedemokraterna efterfrågar också en bred överenskommelse om energipolitiken som fokuserar på systemperspektiv och kostnadseffektivitet, istället för att fastna i ideologiska återvändsgränder.",
+            "context": [
+                "5d449a9d-ad34-eb11-914a-901b0e9b71a8",
+                "a85e5e8d-3243-ed11-9177-901b0eac4c70",
+                "225d331e-8186-eb11-914b-901b0eac4c70",
+                "3289247b-ffb7-eb11-914f-901b0eac4c78",
+                "fbe9425e-bb44-ed11-9177-901b0eac4c70",
+                "464336d0-f371-eb11-914b-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 3332
         },
         "cosine_RAG": {
             "answer": "",
@@ -1822,14 +2436,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna argumenterar för behovet av en ny regering i relation till narkotikapolitiken genom att kritisera den nuvarande regeringens hantering av ANDTS-strategin (Alkohol, Narkotika, Dopning, Tobak och Spel). De anser att det nuvarande politiska ledarskapet har misslyckats med att prioritera och hantera dessa frågor effektivt. Kristdemokraterna framhäver att det finns en stark koppling mellan narkotikahandel och organiserad brottslighet, inklusive de skjutningar som sker i samhället. Därför ser de ett behov av en borgerlig regering som kan sätta fokus på och prioritera dessa frågor för att minska narkotikarelaterade problem och brottslighet.\n\nDe betonar vikten av ett starkare preventivt arbete och menar att det krävs konkreta och evidensbaserade insatser för att minska narkotikadödligheten och den organiserade brottsligheten. Kristdemokraterna kritiserar också den nuvarande regeringens förslag till ANDTS-strategi som otydlig och saknar konkreta åtgärder, vilket har lett till att de förespråkar en ny strategi som är bättre förankrad i riksdagen och som har ett partiöverskridande stöd. De lyfter fram behovet av ett nationellt kompetenscentrum för ANDTS-prevention och menar att den nuvarande regeringens tveksamhet och hantering av dessa frågor visar på ett behov av nytt ledarskap.",
+            "context": [
+                "4f61bc67-3143-ed11-9177-901b0eac4c70",
+                "63b759c6-3dd0-eb11-9153-901b0eac4c78",
+                "42c082c6-d9fe-ec11-9174-901b0e9b71a0",
+                "4b61bc67-3143-ed11-9177-901b0eac4c70",
+                "152d7b52-b922-ec11-915b-901b0eac4c78",
+                "ec9937a3-620d-eb11-9146-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna argumenterar för behovet av en ny regering i relation till narkotikapolitiken genom att kritisera den nuvarande regeringens hantering av narkotikadödligheten och narkotikapolitiken. De betonar vikten av en nollvision för narkotikarelaterade dödsfall och att narkotikapolitiken bör utvärderas för att säkerställa att den är evidensbaserad och fokuserar på skademinimering. De påpekar att regeringen inte har agerat tillräckligt snabbt på dessa frågor, trots att situationen är akut och handlar om att rädda liv.\n\nKristdemokraterna förespråkar en fortsatt restriktiv narkotikapolitik och är emot avkriminalisering, men de anser att detta inte får hindra en övergripande utvärdering av politiken för att minska dödligheten. De ser behovet av att lära av andra länder som kombinerar restriktiv politik med faktorer som lättillgänglig vård och starkt evidensbaserat preventivt arbete.\n\nDe uttrycker också besvikelse över regeringens hantering av ANDTS-strategin och framhäver behovet av en förbättrad strategi och ett nationellt kompetenscenter för prevention. Kristdemokraterna ser detta som en fråga där en ny regering skulle kunna göra betydande framsteg genom att åtgärda dessa brister och förbättra narkotikapolitiken i Sverige.",
+            "context": [
+                "24decf4e-3dc6-ec11-9170-0090facf175a",
+                "d05d4e26-4157-eb11-9147-901b0eac4c70",
+                "8caf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "b65d4e26-4157-eb11-9147-901b0eac4c70",
+                "8b0f1cdc-9045-ed11-9177-901b0eac4c70",
+                "26102300-3941-eb11-9147-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "cosine_RAG": {
             "answer": "",
@@ -1866,14 +2496,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna anser att de har vidtagit kraftfulla åtgärder för att hantera arbetslösheten under pandemin. Enligt debattinläggen har regeringen infört flera stödåtgärder, såsom korttidsarbete, vilket har omfattat 600 000 personer och räddat tiotusentals jobb. Dessutom har de höjt a-kassan tillfälligt för att ge trygghet till de som blivit arbetslösa. Trots att pandemin har varit en stor utmaning för arbetsmarknaden, menar Socialdemokraterna att deras politik har varit effektiv och att de arbetar för att pressa tillbaka arbetslösheten. De betonar vikten av att fortsätta med stöd och insatser för att säkerställa att människor kan gå från arbetslöshet till jobb och utbildning.",
+            "context": [
+                "68e1d432-de4d-ec11-915f-901b0eac4c70",
+                "90d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "80d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "0b21258c-cd3f-eb11-914a-901b0e9b71a8",
+                "4cc66990-b822-ec11-915b-901b0eac4c78",
+                "7d0c2916-aee0-eb11-9153-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna anser att de har vidtagit betydande åtgärder för att hantera arbetslösheten under pandemin, även om de inte påstår att allt har gått perfekt eller att de har gjort tillräckligt på alla områden. Regeringen har implementerat ett historiskt kraftfullt återstartspaket för ekonomin, värt över 100 miljarder kronor, och satsat över 9 miljarder kronor specifikt på arbetsmarknadspolitiken för att minska pandemins konsekvenser. Arbetsförmedlingen har förstärkts för att hantera den ökande arbetslösheten och säkerställa service över hela landet. Socialdemokraterna betonar även att Sverige fortfarande har högst arbetskraftsdeltagande i EU, vilket kan påverka jämförelser av arbetslöshet mellan olika länder. Regeringen är beredd att vidta ytterligare åtgärder vid behov för att hantera arbetslösheten.",
+            "context": [
+                "4c659db0-63bd-eb11-9156-901b0e9b71a8",
+                "49137898-37ee-ec11-916f-901b0eac4c70",
+                "dbe0c032-879c-eb11-9152-901b0e9b71a8",
+                "a65cf076-f693-ec11-916c-901b0e9b71a0",
+                "f181ee21-f2b4-ec11-9167-901b0eac4c78",
+                "484336d0-f371-eb11-914b-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "cosine_RAG": {
             "answer": "",
@@ -1910,14 +2556,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Aron Emilsson uttryckte under debatten i december 2021 att han stödde idén att öronmärka en del av biståndet för återuppbyggnad av kris- och krigsområden. Han ansåg att det var viktigt att biståndet bidrar till att vända utvecklingen i områden som tidigare drabbats av krig, konflikter och kriser, och att det finns ett egenvärde i att hjälpa människor att återuppbygga sina länder och hem med hjälp av både egna ansträngningar och internationellt stöd. Emilsson menade att det var en tydlig politisk överenskommelse, även om detaljerna om hur det skulle administreras inte fastställdes i utskottet. Han betonade också behovet av reformer för att förbättra biståndets effektivitet och minska problem som korruption och ineffektivitet.",
+            "context": [
+                "c98cff13-4375-ec11-9168-901b0e9b71a8",
+                "c58cff13-4375-ec11-9168-901b0e9b71a8",
+                "c18cff13-4375-ec11-9168-901b0e9b71a8",
+                "bb8cff13-4375-ec11-9168-901b0e9b71a8",
+                "bf8cff13-4375-ec11-9168-901b0e9b71a8",
+                "a5bf5bc4-4157-eb11-9147-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Aron Emilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 91
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Aron Emilsson, som representerar Sverigedemokraterna, uttryckte under debatten i december 2021 att han stödjer idén om att öronmärka en del av biståndet för återuppbyggnad av tidigare kris- och krigsområden. Han ansåg att detta inte borde ses som negativt och betonade vikten av att bistå människor i att återuppbygga sina länder och regioner efter krig och konflikter. Emilsson såg detta som en del av en tydlig politisk överenskommelse och menade att det finns ett egenvärde i att vända utvecklingen i områden som drabbats av kris och krig. Han pekade också på behovet av reformer för att minska kontraproduktivitet, korruption och ineffektivitet inom biståndet.",
+            "context": [
+                "c98cff13-4375-ec11-9168-901b0e9b71a8",
+                "c18cff13-4375-ec11-9168-901b0e9b71a8",
+                "068dff13-4375-ec11-9168-901b0e9b71a8",
+                "4addcf4e-3dc6-ec11-9170-0090facf175a",
+                "bb8cff13-4375-ec11-9168-901b0e9b71a8",
+                "3c6efcf1-df3e-eb11-914a-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Aron Emilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-12\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 91
         },
         "cosine_RAG": {
             "answer": "",
@@ -1954,14 +2616,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Mattias Bäckström Johansson, som representerar Sverigedemokraterna, argumenterar för att kärnkraft bör ingå i Sveriges framtida energimix. Han menar att ett energisystem som inkluderar kärnkraft är mer kostnadseffektivt jämfört med ett system som bygger enbart på förnybar energi. Enligt undersökningar, som till exempel Svenskt Näringslivs projekt \"Kraftsamling Elförsörjning\", kan ett system med kärnkraft vara upp till 40 procent billigare än ett helt förnybart system. Bäckström Johansson betonar behovet av en mix mellan planerbar kraft, som kärnkraft och vattenkraft, och väderberoende kraft för att uppnå kostnadseffektivitet och leveranssäkerhet. Han kritiserar även de regulatoriska hinder som försvårar ny kärnkraftsutveckling i Sverige och anser att dessa bör tas bort för att kunna säkra en stabil och ekonomiskt hållbar energiförsörjning.",
+            "context": [
+                "4c8dff13-4375-ec11-9168-901b0e9b71a8",
+                "07dc90ca-3062-eb11-914e-901b0e9b71a0",
+                "0fdc90ca-3062-eb11-914e-901b0e9b71a0",
+                "7d8dff13-4375-ec11-9168-901b0e9b71a8",
+                "79e0f607-3b0b-ec11-9160-901b0e9b71a0",
+                "772045de-bb39-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Mattias Bäckström Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 103
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Mattias Bäckström Johansson anser att kärnkraften bör ingå i Sveriges framtida energimix för att hålla kostnaderna nere. Han argumenterar för att en energimix som inkluderar kärnkraft är rimlig ur ett systemperspektiv, eftersom den kan bidra till lägre kostnader för både elproduktion och utbyggnad av elnätet. Enligt honom är kärnkraften en av få fossilfria kraftkällor som har tjänat Sverige väl under flera decennier och kommer fortsätta att vara viktig för att hålla låga växthusgasutsläpp (Resultat 1).\n\nDessutom pekar han på att Svenskt Näringsliv har visat att ett kraftsystem som inkluderar kärnkraft är 40 procent billigare än ett helt förnybart system, vilket ytterligare understryker hans ståndpunkt om att kärnkraften är kostnadseffektiv (Resultat 2). Han menar att det är viktigt att ha en insikt om att vi måste kunna få el under årets alla timmar till rimliga priser, och där spelar kärnkraften en viktig roll (Resultat 4).",
+            "context": [
+                "3489247b-ffb7-eb11-914f-901b0eac4c78",
+                "4c8dff13-4375-ec11-9168-901b0e9b71a8",
+                "4e8dff13-4375-ec11-9168-901b0e9b71a8",
+                "7d8dff13-4375-ec11-9168-901b0e9b71a8",
+                "5d449a9d-ad34-eb11-914a-901b0e9b71a8",
+                "82d9e90c-428e-eb11-9152-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Mattias Bäckström Johansson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 103
         },
         "cosine_RAG": {
             "answer": "",
@@ -1998,14 +2676,16 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
+            "answer": "Frågan handlar om vad Ann Linde uttryckte angående konflikten i Nagorno-Karabach under oktober 2020.\n\nJag hittar ingen information om vad Ann Linde uttryckte om konflikten i Nagorno-Karabach under oktober 2020 i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Ann Linde\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-10\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "graph_RAG_bm25": {
-            "answer": "",
+            "answer": "Det som efterfrågas i frågan är vad Ann Linde uttryckte om konflikten i Nagorno-Karabach under oktober 2020.\n\nJag hittar ingen information om vad Ann Linde uttryckte om konflikten i Nagorno-Karabach under oktober 2020 i min data.",
             "context": [],
-            "cypher_query": ""
+            "cypher_query": "MATCH (t:Talare {name: \"Ann Linde\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-10\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 0
         },
         "cosine_RAG": {
             "answer": "",
@@ -2042,14 +2722,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Markus Wiechel betonar vikten av att ha tydliga synpunkter på Borrells resa till Moskva, eftersom resan inte ansågs särskilt lyckad. Borrell, som EU:s höge representant för utrikesfrågor, förväntas agera med precision och styrka, särskilt i möten med auktoritära regimer som Ryssland, som utgör ett direkt säkerhetshot mot Sverige och EU. Under Borrells besök såg man hur han misslyckades med att markera mot brott mot mänskliga rättigheter och politiska övergrepp, vilket ledde till kritik och ifrågasättande av hans roll. Wiechel anser att det är viktigt att Borrell agerar korrekt och hanterar situationer på ett sätt som skyddar EU:s intressen.",
+            "context": [
+                "148eccab-a0ad-eb11-914f-901b0eac4c78",
+                "0a8eccab-a0ad-eb11-914f-901b0eac4c78",
+                "0f8eccab-a0ad-eb11-914f-901b0eac4c78",
+                "66340042-3516-ec11-9160-901b0e9b71a0",
+                "4d137898-37ee-ec11-916f-901b0eac4c70",
+                "c8ddcf4e-3dc6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Markus Wiechel\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 140
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Markus Wiechel har uttryckt att det är viktigt att ha tydliga synpunkter på Josep Borrells resa till Moskva, eftersom Ryssland utgör ett säkerhetshot mot både Sverige och hela EU. Resan betraktades som ett misslyckande av många, och Wiechel påpekar att Borrells agerande under resan inte var tillfredsställande. Han framhåller vikten av att EU:s representanter agerar korrekt, särskilt när det handlar om besök i auktoritära länder som Ryssland, som bedriver krig i Europa och försöker destabilisera EU. Det är därför av yttersta vikt att ha tydliga och kritiska synpunkter på sådana diplomatiska besök.",
+            "context": [
+                "148eccab-a0ad-eb11-914f-901b0eac4c78",
+                "0a8eccab-a0ad-eb11-914f-901b0eac4c78",
+                "ceddcf4e-3dc6-ec11-9170-0090facf175a",
+                "e6d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "dfd97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "d5a18ea4-3516-ec11-9160-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Markus Wiechel\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 140
         },
         "cosine_RAG": {
             "answer": "",
@@ -2086,14 +2782,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Lars Hjälmered uttryckte kritik mot näringsministerns insatser för företagsklimatet i juni 2021. Han menade att regeringen, tillsammans med stödpartierna Centerpartiet och Liberalerna, hade hanterat företagsstöden under coronakrisen oskickligt. Hjälmered påpekade att det tog åtta månader för regeringen att presentera ett förslag som skulle hjälpa enskilda firmor, vilket han ansåg var en orimligt lång väntetid för företag som hårt drabbats av pandemin, som frisörer och hantverkare. Han kritiserade också de långa handläggningstiderna och osäkerheten kring stöden, vilket riskerade att leda till att många företag gick under i onödan. Hjälmered betonade behovet av förbättringar och ett snabbare agerande för att stödja svenska företagare effektivt.",
+            "context": [
+                "71af6c2c-c567-eb11-914e-901b0e9b71a0",
+                "8fbb83e4-3971-eb11-914e-901b0e9b71a0",
+                "63e0c032-879c-eb11-9152-901b0e9b71a8",
+                "e5c55ba1-b922-ec11-915b-901b0eac4c78",
+                "61e0c032-879c-eb11-9152-901b0e9b71a8",
+                "5b00fe8b-3b1d-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Lars Hjälmered\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-06\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 130
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "I juni 2021 var Lars Hjälmered kritisk mot näringsministerns insatser för företagsklimatet. Han betonade de långa handläggningstiderna och sena politiska besked som skapade osäkerhet för företagare, till exempel gällande förlängningen av korttidspermitteringsstödet. Hjälmered uttryckte oro över att viktiga beslut dröjde och påpekade hur detta påverkade bland annat handlare som försökte planera sin verksamhet under pandemin. Han efterlyste tydligare och snabbare agerande från regeringen för att stödja företagen i den svåra situationen.",
+            "context": [
+                "f0e852a9-3416-ec11-9160-901b0e9b71a0",
+                "184336d0-f371-eb11-914b-901b0eac4c70",
+                "5eaf6c2c-c567-eb11-914e-901b0e9b71a0",
+                "b6bb83e4-3971-eb11-914e-901b0e9b71a0",
+                "3b311abc-c58c-eb11-9152-901b0e9b71a8",
+                "71af6c2c-c567-eb11-914e-901b0e9b71a0"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Lars Hjälmered\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2021-06\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 130
         },
         "cosine_RAG": {
             "answer": "",
@@ -2130,14 +2842,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Kristdemokraterna har varit tydliga med att de anser att staten bör ta ett större ansvar när kommuner och regioner inte kan uppfylla sina skyldigheter, särskilt inom hälso- och sjukvården. De har föreslagit att ansvaret för sjukvården, som idag ligger hos regionerna, bör överföras till staten för att säkerställa en bättre beredskap och tillgänglighet i hela landet. Detta indikerar att Kristdemokraterna anser att regeringen bör agera och ta ansvar när kommuner och regioner brister i sina skyldigheter.",
+            "context": [
+                "4bf9f512-28dc-ec11-916f-901b0eac4c70",
+                "bdbf5bc4-4157-eb11-9147-901b0eac4c70",
+                "67af6c2c-c567-eb11-914e-901b0e9b71a0",
+                "ed829754-be2a-ed11-9178-901b0e9b71a8",
+                "49f9f512-28dc-ec11-916f-901b0eac4c70",
+                "659c9294-3e5f-ec11-915f-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Kristdemokraterna anser att regeringen bör ta ansvar och agera när kommuner och regioner inte kan uppfylla sina skyldigheter. Det framgår av debatten att Kristdemokraterna inte tycker att regeringen kan stå handfallen när det saknas resurser eller utrustning, som det var fallet under pandemin när skyddsutrustning saknades. De menar att regeringen i sådana situationer måste kliva fram och göra vad den kan för att hantera bristerna och inte bara luta sig tillbaka på ansvarsprincipen.",
+            "context": [
+                "4bf9f512-28dc-ec11-916f-901b0eac4c70",
+                "e0e852a9-3416-ec11-9160-901b0e9b71a0",
+                "49f9f512-28dc-ec11-916f-901b0eac4c70",
+                "1314cf75-3328-ec11-915b-901b0eac4c78",
+                "64c2708f-630d-eb11-9146-901b0e9b71a8",
+                "4c0d7667-bb23-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"KD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 1929
         },
         "cosine_RAG": {
             "answer": "",
@@ -2174,14 +2902,30 @@
         },
         "LLM_annotator": "",
         "graph_RAG_cosine": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Ja, Socialdemokraterna anser att det är bättre att behålla det nuvarande samarbetet mellan de nordiska länderna istället för att skapa en ny formell struktur för transportinfrastrukturpolitiken. Det nuvarande samarbetet bedöms fungera väl med de ansvariga nordiska ministrarna och befintliga samarbetsorgan. Man ser inte behovet av att inrätta ett särskilt nordiskt transportministerråd, eftersom det skulle kunna leda till mer administration utan att nödvändigtvis effektivisera samarbetet. Socialdemokraterna förespråkar istället att fortsätta med det informella samarbetet och snabba beslutsprocesser för att möta transportbehoven i Norden och uppfylla klimatkraven.",
+            "context": [
+                "f9fe7b0c-dafe-ec11-9174-901b0e9b71a0",
+                "d1022d69-c139-ed11-9178-901b0e9b71a8",
+                "04e4860e-ccd6-ec11-9170-0090facf175a",
+                "3ea7e467-82f8-ec11-9174-901b0e9b71a0",
+                "42decf4e-3dc6-ec11-9170-0090facf175a",
+                "19e4860e-ccd6-ec11-9170-0090facf175a"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "graph_RAG_bm25": {
-            "answer": "",
-            "context": [],
-            "cypher_query": ""
+            "answer": "Socialdemokraterna verkar förespråka att behålla det nuvarande samarbetet mellan de nordiska länderna snarare än att upprätta en ny formell struktur för transportinfrastrukturpolitiken. Enligt informationen i debattinläggen finns det redan fungerande samarbeten inom transportfrågor, och det anses viktigare att fokusera på pågående projekt och identifiera nya samarbetsmöjligheter för att nå gemensamma mål, som klimatsmart mobilitet. Därmed ser man inte behovet av att inrätta ett särskilt nordiskt ministerråd för transportfrågor, utan föredrar att fortsätta med det informella men effektiva samarbetet som redan existerar.",
+            "context": [
+                "dee9425e-bb44-ed11-9177-901b0eac4c70",
+                "f5fe7b0c-dafe-ec11-9174-901b0e9b71a0",
+                "535d331e-8186-eb11-914b-901b0eac4c70",
+                "6a838e95-3a1d-ec11-915b-901b0eac4c78",
+                "b883c086-cf85-ec11-9163-901b0eac4c70",
+                "c5022d69-c139-ed11-9178-901b0e9b71a8"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": 9046
         },
         "cosine_RAG": {
             "answer": "",
