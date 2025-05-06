@@ -10,41 +10,29 @@ EDENAI_API_KEY = os.getenv("EDENAI_API_KEY")
 dataset = load_dataset("json", data_files="/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json", split="train")
 url = "https://api.edenai.run/v2/text/chat"
 
+
 global_message = """
-You are an evaluator tasked with judging a question-answer pair based on two distinct criteria: **Factuality** and **Relevance**. 
-Your goal is to assess whether the *question* is grounded in the context, and whether the *answer* appropriately responds to the question.
-
+You are an evaluator tasked with judging a question-answer pair based on **Rel. 
+Your job is to evaluate if the **anwer** provided answer the **question**.
 ---
 
-### 1. Factuality: Is the answer based on the context?
+### Pass the answer if:
 
-✅ Yes, if the answer is clearly grounded in information found in the context.  
-❌ No, if the answer introduces topics or facts not supported by the context, or if it is unanswerable based on the context.
-
----
-
-### 2. Relevance: Does the answer respond to the question?
-
-✅ Yes, if the answer directly and specifically addresses the question.  
-❌ No, if the answer ignores the question, is vague, off-topic, or introduces irrelevant or contradictory information.
+✅ Yes, if the answer directly and specifically addresses the question.
 
 ---
-
-### If the answer states that it cannot answer the question, it should be evaluated as follows:
-- **Factuality**: ❌ No, because the question is not grounded in the context.
-- **Relevance**: ❌ No, because the answer does not respond to the question.
-
-### If unsure, lean toward "No" for either category unless all conditions for "Yes" are clearly met.
-
+### Fail the answer if: 
+❌ The answer says it cannot answer the question.
+❌ Irrelevant information: The answer strays from the question or includes unrelated details.
+❌ Off-topic: The answer discusses subjects that are not relevant to the core question.
 ---
 
-### Output Format:
-Return your final evaluation as a JSON object using **only** the following format:
-
-{ "factuality": "Yes" or "No", "relevance": "Yes" or "No" }
+Return your final evaluation using **only** the following format:
+Yes/No
 
 Do not include any other text, explanation, or formatting.
 """
+
 
 headers = {
     "Authorization": f"Bearer {EDENAI_API_KEY}",
@@ -157,3 +145,43 @@ with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_d
     json.dump(updated_data, f, ensure_ascii=False, indent=4)
 
 print("Dataset successfully updated and saved!")
+
+
+
+
+
+old_global_message = """
+You are an evaluator tasked with judging a question-answer pair based on two distinct criteria: **Factuality** and **Relevance**. 
+Your goal is to assess whether the *question* is grounded in the context, and whether the *answer* appropriately responds to the question.
+
+---
+
+### 1. Factuality: Is the answer based on the context?
+
+✅ Yes, if the answer is clearly grounded in information found in the context.  
+❌ No, if the answer introduces topics or facts not supported by the context, or if it is unanswerable based on the context.
+
+---
+
+### 2. Relevance: Does the answer respond to the question?
+
+✅ Yes, if the answer directly and specifically addresses the question.  
+❌ No, if the answer ignores the question, is vague, off-topic, or introduces irrelevant or contradictory information.
+
+---
+
+### If the answer states that it cannot answer the question, it should be evaluated as follows:
+- **Factuality**: ❌ No, because the question is not grounded in the context.
+- **Relevance**: ❌ No, because the answer does not respond to the question.
+
+### If unsure, lean toward "No" for either category unless all conditions for "Yes" are clearly met.
+
+---
+
+### Output Format:
+Return your final evaluation as a JSON object using **only** the following format:
+
+{ "factuality": "Yes" or "No", "relevance": "Yes" or "No" }
+
+Do not include any other text, explanation, or formatting.
+"""
