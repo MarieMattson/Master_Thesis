@@ -2,18 +2,19 @@
 What metadata is relevevant will be based on the question type."""
 
 import json
-
+from numpy import mean
 from sklearn.metrics import average_precision_score
+from sympy import true
 
 question_types_person = ["generate_qa_inference_person", "generate_qa_comparison_person"]
 question_types_temporal = ["generate_qa_temporal"]
 question_types_party = ["generate_qa_inference_party", "generate_qa_comparison_party"] 
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
+experiment_result = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
 original_data = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/dataset_small.json"
 retreival_models = ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]
 
-with open(output_path, "r") as f:
+with open(experiment_result, "r") as f:
     output_data = json.load(f)
 with open(original_data, "r") as f:
     original_data = json.load(f)
@@ -23,11 +24,15 @@ original_lookup = {d["anforande_id"]: d for d in original_data}
 for i, d in enumerate(output_data):
     if d["qa_type"] in question_types_person:
         relevant_metadata = "talare"
+        goal_metadata = d[relevant_metadata]
     elif d["qa_type"] in question_types_temporal:
         relevant_metadata = "dok_datum"
+        goal_metadata = d[relevant_metadata][0:7]
+        print(f"goal_metadata: {goal_metadata}")
     elif d["qa_type"] in question_types_party:
         relevant_metadata = "parti"
-    goal_metadata = d[relevant_metadata]
+        goal_metadata = d[relevant_metadata]
+
     
     for model in retreival_models:
         model_relevance = []
@@ -41,8 +46,11 @@ for i, d in enumerate(output_data):
                 original_retrieved_metadata = original.get(relevant_metadata, None)
                 
                 if original_retrieved_metadata:
-                    #print(f"Original {relevant_metadata} for retrieved speech {retrieved_speech}: {original_retrieved_metadata}")
-                    
+
+                    if relevant_metadata == "dok_datum":
+                        original_retrieved_metadata = original_retrieved_metadata[0:7]
+                        print(f"original_retrieved_metadata: {original_retrieved_metadata}")
+
                     # Check if the goal metadata matches the original metadata
                     if goal_metadata == original_retrieved_metadata:
                         relevance = True
@@ -54,12 +62,12 @@ for i, d in enumerate(output_data):
 
 
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset_with_relevance.json"
+output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result_with_relevence.json"
 
-#with open(output_path, "w", encoding="utf-8") as f:
-#    json.dump(output_data, f, indent=2, ensure_ascii=False)
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-#print(f"Relevance information added and saved to {output_path}")
+print(f"Relevance information added and saved to {output_path}")
 
 
 
@@ -72,23 +80,36 @@ relevance_counts = {
     "cosine_RAG": {True: 0, False: 0}
 }
 
-for d in output_data:
-    relevance = d.get("metadata_relevance", {})  # Get the relevance data for the current document
-    for model in relevance:
-        # Count True and False values for each model
-        true_count = relevance[model].count(True)
-        false_count = relevance[model].count(False)
+mean_relevance_counts = {
+    "graph_RAG_cosine": 0,
+    "graph_RAG_bm25": 0,
+    "cosine_RAG": 0
+}
 
-        # Update the count in the dictionary
+total_combined_relevant = 0
+total_combined_documents = 0
+
+for d in output_data:
+    relevance = d.get("metadata_relevance", {})
+    for model in relevance:
+        model_relevance_list = relevance[model]
+        true_count = model_relevance_list.count(True)
+        false_count = model_relevance_list.count(False)
+        total = true_count + false_count
+
         relevance_counts[model][True] += true_count
         relevance_counts[model][False] += false_count
+        mean_relevance_counts[model] += true_count/(true_count + false_count) if (true_count + false_count) > 0 else 0
+        
 
-# Print out the counts for each model
-print("Relevance Counts:")
-for model in relevance_counts:
-    print(f"{model}: True: {relevance_counts[model][True]}, False: {relevance_counts[model][False]}")
+        if total > 0:
+            mean_rel = true_count / total
 
-print()
+            total_combined_relevant += true_count
+            total_combined_documents += total
+
+
+
 # Initialize variables to store total relevant and retrieved documents for each model
 precision_results = {}
 recall_results = {}
@@ -155,10 +176,17 @@ for model in ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]:
     map_results[model] = sum(ap_scores) / len(ap_scores) if ap_scores else 0.0
     bare_minimum_results[model] = bare_minimum_relevant
     gets_a_pass_results[model] = gets_a_pass
+    mean_relevance_counts[model] = mean_relevance_counts[model] / len(output_data) if len(output_data) > 0 else 0
 
+print()
+
+# Print out the counts for each model
+print("Relevance Counts:")
+for model in relevance_counts:
+    print(f"{model}: True: {relevance_counts[model][True]}, False: {relevance_counts[model][False]}")
 
 # Output the results
-print("Precision Results:")
+print("\nPrecision Results:")
 for model, precision in precision_results.items():
     print(f"{model}: Precision = {precision:.4f}")
 
@@ -177,3 +205,7 @@ for model, mb_score in bare_minimum_results.items():
 print("\nGets a pass Results:")
 for model, pass_score in gets_a_pass_results.items():
     print(f"{model}: Gets a pass score = {pass_score}")
+
+print("\nMean Relevance per Model:")
+for model, mean_rel in mean_relevance_counts.items():
+    print(f"{model}: Mean Relevance = {mean_rel:.4f}")

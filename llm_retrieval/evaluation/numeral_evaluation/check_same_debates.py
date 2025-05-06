@@ -1,10 +1,10 @@
 import json
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset.json"
+experiment_result = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
 original_data = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/dataset_small.json"
 retreival_models = ["graph_RAG_cosine","graph_RAG_bm25", "cosine_RAG"]
 
-with open(output_path, "r") as f:
+with open(experiment_result, "r") as f:
     output_data = json.load(f)
 with open(original_data, "r") as f:
     original_data = json.load(f) 
@@ -43,12 +43,12 @@ for i, d in enumerate(output_data):
                 d["relevance"] = {}
             d["relevance"][model] = model_relevance
 
-output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/evaluated_dataset_with_relevance.json"
+output_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result_with_debate_relevence.json"
 
-#with open(output_path, "w", encoding="utf-8") as f:
-#    json.dump(output_data, f, indent=2, ensure_ascii=False)
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-#print(f"Relevance information added and saved to {output_path}")
+print(f"Relevance information added and saved to {output_path}")
 
 
 with open(output_path, "r") as f:

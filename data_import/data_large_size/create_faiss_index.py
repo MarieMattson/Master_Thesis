@@ -74,10 +74,10 @@ index = faiss.IndexFlatIP(embeddings_np.shape[1])
 index.add(embeddings_np)
 
 # Save everything
-os.makedirs("data/index", exist_ok=True)
-faiss.write_index(index, "data/index/faiss_index.bin")
-np.save("data/index/anforande_ids.npy", np.array(anforande_ids))
-np.save("data/index/documents.npy", np.array(texts))
+os.makedirs("/mnt/c/Users/User/thesis/data_import/data_large_size/index", exist_ok=True)
+faiss.write_index(index, "/mnt/c/Users/User/thesis/data_import/data_large_size/index/faiss_index.bin")
+np.save("/mnt/c/Users/User/thesis/data_import/data_large_size/index/anforande_ids.npy", np.array(anforande_ids))
+np.save("/mnt/c/Users/User/thesis/data_import/data_large_size/index/documents.npy", np.array(texts))
 
 # Done
 full_duration = time.time() - full_start
