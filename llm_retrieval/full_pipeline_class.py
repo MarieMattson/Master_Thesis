@@ -214,11 +214,8 @@ if __name__ == "__main__":
                         """
     print(system_prompt)
 
-    user_query = (
-        """
-        Anser Karolina Swedin att USA är bra?
-        """) 
-      
+    user_query = "Vad var Linda Lindbergs åsikt om vaccinationsbevis och regeringens hantering av pandemin i december 2021?"
+
     print("Translating user query into Cypher query...")
     cypher_query = graph_rag.translate_to_cypher(user_query)
     print("Generated Cypher Query:", cypher_query)

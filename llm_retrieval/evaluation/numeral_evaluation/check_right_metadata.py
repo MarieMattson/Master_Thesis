@@ -209,3 +209,94 @@ for model, pass_score in gets_a_pass_results.items():
 print("\nMean Relevance per Model:")
 for model, mean_rel in mean_relevance_counts.items():
     print(f"{model}: Mean Relevance = {mean_rel:.4f}")
+ 
+
+# ---- GROUPING BY METADATA TYPE ----
+grouped_by_metadata_type = {
+    "person": [],
+    "party": [],
+    "temporal": []
+}
+
+for d in output_data:
+    qa_type = d.get("qa_type")
+    if qa_type in question_types_person:
+        grouped_by_metadata_type["person"].append(d)
+    elif qa_type in question_types_party:
+        grouped_by_metadata_type["party"].append(d)
+    elif qa_type in question_types_temporal:
+        grouped_by_metadata_type["temporal"].append(d)
+
+
+# ---- GROUPING BY QUESTION NATURE ----
+grouped_by_question_nature = {
+    "inference": [],
+    "comparison": [],
+    "temporal": []
+}
+
+for d in output_data:
+    qa_type = d.get("qa_type")
+    if "inference" in qa_type:
+        grouped_by_question_nature["inference"].append(d)
+    elif "comparison" in qa_type:
+        grouped_by_question_nature["comparison"].append(d)
+    elif "temporal" in qa_type:
+        grouped_by_question_nature["temporal"].append(d)
+
+
+# ---- Evaluation Function ----
+def evaluate_group(group_data, model_name):
+    total_relevant = 0
+    total_retrieved = 0
+    total_relevant_retrieved = 0
+    ap_scores = []
+    gets_a_pass = 0
+    bare_minimum_relevant = 0
+
+    for d in group_data:
+        relevance = d.get("metadata_relevance", {}).get(model_name, [])
+        retrieved_count = len(relevance)
+        relevant_count = sum(relevance)
+
+        if relevant_count >= 3:
+            gets_a_pass += 1
+        if relevant_count == 0:
+            bare_minimum_relevant += 1
+
+        if retrieved_count > 0:
+            total_retrieved += retrieved_count
+            total_relevant_retrieved += relevant_count
+        total_relevant += relevant_count
+
+        if relevant_count > 0:
+            ap = 0
+            relevant_retrieved = 0
+            for idx, rel in enumerate(relevance):
+                if rel:
+                    relevant_retrieved += 1
+                    ap += relevant_retrieved / (idx + 1)
+            ap /= relevant_count
+            ap_scores.append(ap)
+
+    precision = total_relevant_retrieved / total_retrieved if total_retrieved else 0
+    mean_ap = sum(ap_scores) / len(ap_scores) if ap_scores else 0
+
+    return precision, mean_ap, bare_minimum_relevant, gets_a_pass
+
+
+# ---- Evaluate and Print by METADATA TYPE ----
+print("\n\n===== Results by Metadata Type =====")
+for group_label, entries in grouped_by_metadata_type.items():
+    print(f"\nCategory: {group_label}")
+    for model in retreival_models:
+        p, ap, bm, gp = evaluate_group(entries, model)
+        print(f"  {model}: Precision={p:.4f}, MAP={ap:.4f}, BareMin={bm}, GetsPass={gp}")
+
+# ---- Evaluate and Print by QUESTION NATURE ----
+print("\n\n===== Results by Question Nature =====")
+for group_label, entries in grouped_by_question_nature.items():
+    print(f"\nCategory: {group_label}")
+    for model in retreival_models:
+        p, ap, bm, gp = evaluate_group(entries, model)
+        print(f"  {model}: Precision={p:.4f}, MAP={ap:.4f}, BareMin={bm}, GetsPass={gp}")
