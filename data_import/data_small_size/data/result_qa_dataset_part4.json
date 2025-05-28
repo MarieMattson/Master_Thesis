@@ -1,0 +1,320 @@
+[
+    {
+        "dok_id": "",
+        "avsnittsrubrik": "",
+        "dok_datum": "",
+        "anforande_id": "",
+        "anforandetext": "",
+        "talare": "Mikaela Erlandsson",
+        "parti": "",
+        "qa_pair": {
+            "question": "Vad var Mikaela Erlandssons ståndpunkt om regeringens ansvar för miljöfarlig verksamhet och klimatmål under september 2020?"
+        },
+        "qa_type": "null",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "Frågan handlar om Mikaela Erlandssons åsikter gällande regeringens ansvar för miljöfarlig verksamhet och klimatmål under september 2020. Jag hittar ingen information om Mikaela Erlandssons ståndpunkt i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikaela Erlandsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-09\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "Frågan handlar om Mikaela Erlandssons ståndpunkt angående regeringens ansvar för miljöfarlig verksamhet och klimatmål under september 2020.\n\nJag hittar ingen information om Mikaela Erlandssons ståndpunkt om regeringens ansvar för miljöfarlig verksamhet och klimatmål under september 2020 i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikaela Erlandsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2020-09\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": [],
+            "scores": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        }
+    },
+    {
+        "dok_id": "",
+        "avsnittsrubrik": "",
+        "dok_datum": "",
+        "anforande_id": "",
+        "anforandetext": "",
+        "talare": "Christina Höj Larsen",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur uttrycker Christina Höj Larsen sin osäkerhet kring tolkningen av den nya kvantmekaniska rättsgrunden?"
+        },
+        "qa_type": "null",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "Christina Höj Larsen uttrycker sin osäkerhet om tolkningen av den nya humanitära skyddsgrunden genom att nämna att hon hade svårt att förstå vilken tolkning som gällde när hon lyssnade på Morgan Johanssons framträdande i \"Agenda\". Hon ställde konkreta frågor för att försöka klargöra om personer med tillstånd enligt den nya gymnasielagen skulle omfattas av den nya humanitära skyddsgrunden, vilket visar på hennes osäkerhet och behov av tydliga svar kring hur lagstiftningen ska tolkas och tillämpas.",
+            "context": [
+                "3b4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "f31d9bed-ace0-eb11-9153-901b0eac4c78",
+                "fb1d9bed-ace0-eb11-9153-901b0eac4c78",
+                "4fea50f7-3328-ec11-915b-901b0eac4c78",
+                "7035414d-3316-ec11-9160-901b0e9b71a0",
+                "23c05bc4-4157-eb11-9147-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Christina Höj Larsen\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 51
+        },
+        "graph_RAG_bm25": {
+            "answer": "Christina Höj Larsen uttrycker sin osäkerhet och kritik kring den nya kvantmekaniska rättsgrunden genom att framhäva de problem som uppstått med maktobalansen på arbetsmarknaden. Hon pekar på hur nuvarande regelverk gör att arbetstagare blir beroende av arbetsgivare under osäkra villkor, vilket liknar problemen med arbetskraftsinvandringen. Detta skapar en situation där löntagare inte vågar säga ifrån vid missförhållanden av rädsla för att förlora sitt tillstånd att stanna i Sverige eller möjligheten att återse sina barn. Höj Larsen kritiserar Socialdemokraternas politik som enligt henne förstärker dessa maktobalanser, och hon ifrågasätter hur man kan förvänta sig att arbetstagare ska kunna stå upp för sina rättigheter under sådana förhållanden.",
+            "context": [
+                "eb1d9bed-ace0-eb11-9153-901b0eac4c78",
+                "2346481c-24cd-eb11-9156-901b0e9b71a8",
+                "0f4d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "65947aea-2f62-eb11-914e-901b0e9b71a0",
+                "fb1d9bed-ace0-eb11-9153-901b0eac4c78",
+                "74ea50f7-3328-ec11-915b-901b0eac4c78"
+            ],
+            "cypher_query": "MATCH (t:Talare {name: \"Christina Höj Larsen\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 51
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": [],
+            "scores": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        }
+    },
+    {
+        "dok_id": "",
+        "avsnittsrubrik": "",
+        "dok_datum": "",
+        "anforande_id": "",
+        "anforandetext": "",
+        "talare": "",
+        "parti": "SD",
+        "qa_pair": {
+            "question": "Anser Sverigedemokraterna att rymddokumentationsplikten borde ha införts omedelbart utan att invänta en ny regering?"
+        },
+        "qa_type": "null",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "Det finns inget direkt svar i de tillgängliga debattsegmenten som specifikt behandlar Sverigedemokraternas ståndpunkt om huruvida rymddokumentationsplikten borde ha införts omedelbart utan att invänta en ny regering. De segment som finns handlar mer om Sverigedemokraternas syn på migrationspolitik och olika lagförslag relaterade till detta. För att få ett specifikt svar på din fråga skulle det vara bäst att konsultera direkt uttalanden från partiet eller deras representanter i relevanta diskussioner om rymddokumentationsplikten. Om du har ytterligare frågor kring deras politik eller vill ha mer detaljerad information, rekommenderar jag att kolla partiets officiella uttalanden eller pressmeddelanden.",
+            "context": [
+                "599c9728-c58c-eb11-9152-901b0e9b71a8",
+                "1fc05bc4-4157-eb11-9147-901b0eac4c70",
+                "943f78f4-bb23-ed11-9178-901b0e9b71a8",
+                "d11b3827-3b1d-ec11-915b-901b0eac4c78",
+                "134d4bca-3a71-eb11-914e-901b0e9b71a0",
+                "c00f2300-3941-eb11-9147-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 3332
+        },
+        "graph_RAG_bm25": {
+            "answer": "Utifrån den information som finns tillgänglig i de tillhandahållna debattstyckena, finns det inget direkt svar på frågan om Sverigedemokraterna anser att rymddokumentationsplikten borde ha införts omedelbart utan att invänta en ny regering. Debattstyckena handlar om andra ämnen som plastpåseskatten, kärnkraftsutveckling och migrationsrelaterade frågor. För att få ett exakt svar på din fråga, skulle mer specifik information om Sverigedemokraternas ståndpunkt i just denna fråga behövas. Det kan vara bra att konsultera direkta uttalanden från partiet eller deras företrädare för att få klarhet i deras position.",
+            "context": [
+                "e8d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "73f8d4b9-be2a-ed11-9178-901b0e9b71a8",
+                "02da7b48-d9fe-ec11-9174-901b0e9b71a0",
+                "cf340042-3516-ec11-9160-901b0e9b71a0",
+                "9bbb7b56-4125-ed11-9178-901b0e9b71a8",
+                "225d331e-8186-eb11-914b-901b0eac4c70"
+            ],
+            "cypher_query": "MATCH (t:Talare {party: \"SD\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 3332
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": [],
+            "scores": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        }
+    },
+    {
+        "dok_id": "",
+        "avsnittsrubrik": "",
+        "dok_datum": "",
+        "anforande_id": "",
+        "anforandetext": "",
+        "talare": "Arne Hegerfors",
+        "parti": "",
+        "qa_pair": {
+            "question": "Hur argumenterar Arne Hegerfors för att det nordiska projektet inte utgör ett säkerhetshot?"
+        },
+        "qa_type": "null",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "The question is asking about the arguments presented by Arne Hegerfors regarding why the Nordic project does not constitute a security threat.\n\nJag hittar ingen information om Arne Hegerfors och hans argument angående det nordiska projektet i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Arne Hegerfors\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "The question is asking for the arguments that Arne Hegerfors presents to claim that the Nordic project does not constitute a security threat. \n\nJag hittar ingen information om Arne Hegerfors och hans argumentation angående det nordiska projektet i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Arne Hegerfors\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": [],
+            "scores": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        }
+    },
+    {
+        "dok_id": "",
+        "avsnittsrubrik": "",
+        "dok_datum": "",
+        "anforande_id": "",
+        "anforandetext": "",
+        "talare": "Sofia Nilsson",
+        "parti": "",
+        "qa_pair": {
+            "question": "Vad var Sofia Nilssons ståndpunkt om digitalisering av vården i oktober 2009?"
+        },
+        "qa_type": "null",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "Frågan handlar om Sofia Nilssons ståndpunkt om digitalisering av vården i oktober 2009. Jag hittar ingen information om detta i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Sofia Nilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2009-10\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "graph_RAG_bm25": {
+            "answer": "Frågan handlar om Sofia Nilssons åsikter eller ståndpunkt om digitalisering av vården i oktober 2009. \n\nJag hittar ingen information om Sofia Nilssons ståndpunkt om digitalisering av vården i oktober 2009 i min data.",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Sofia Nilsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nWHERE p.dok_datum CONTAINS \"2009-10\" \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "nr_of_nodes": 0,
+            "number_of_nodes": 0
+        },
+        "cosine_RAG": {
+            "answer": "",
+            "context": [],
+            "scores": []
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        },
+        "openai_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        },
+        "gemini_eval": {
+            "cosine_RAG_response": "",
+            "graph_RAG_bm25_response": "",
+            "graph_RAG_cosine_response": ""
+        }
+    }
+]

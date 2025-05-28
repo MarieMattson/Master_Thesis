@@ -1,0 +1,98 @@
+QA Type: generate_qa_comparison_party
+Model: cosine_RAG_response
+Response  Count
+     Yes     31
+      No     19
+
+Model: graph_RAG_bm25_response
+Response  Count
+     Yes     46
+      No      3
+              1
+
+Model: graph_RAG_cosine_response
+Response  Count
+     Yes     45
+      No      3
+              1
+
+QA Type: generate_qa_comparison_person
+Model: cosine_RAG_response
+Response  Count
+     Yes     34
+      No     14
+
+Model: graph_RAG_bm25_response
+Response  Count
+     Yes     39
+      No      9
+
+Model: graph_RAG_cosine_response
+Response  Count
+     Yes     42
+      No      6
+
+Comparison      Yes     No   Error
+Graph + Cosine  45+42   6+3    1
+Graph + BM25    46+39   9+3    1
+Cosine          34+31   14+19
+
+Inference
+Graph + Cosine  48+48  3      1
+Graph + BM25    39+45  11+5
+Cosine          47+35  3+15
+
+Temporal
+Graph + Cosine   42     8
+Graph + BM25     37     13
+Cosine           41     9
+
+QA Type: generate_qa_inference_person
+Model: cosine_RAG_response
+Response  Count
+     Yes     47
+      No      3
+
+Model: graph_RAG_bm25_response
+Response  Count
+     Yes     39
+      No     11
+
+Model: graph_RAG_cosine_response
+Response  Count
+     Yes     48
+              1
+      No      1
+
+QA Type: generate_qa_inference_party
+Model: cosine_RAG_response
+Response  Count
+     Yes     35
+      No     15
+
+Model: graph_RAG_bm25_response
+Response  Count
+     Yes     45
+      No      5
+
+Model: graph_RAG_cosine_response
+Response  Count
+     Yes     48
+      No      2
+
+QA Type: generate_qa_temporal
+Model: cosine_RAG_response
+Response  Count
+     Yes     41
+      No      9
+
+Model: graph_RAG_bm25_response
+Response  Count
+     Yes     37
+      No     13
+
+Model: graph_RAG_cosine_response
+Response  Count
+     Yes     42
+      No      8
+

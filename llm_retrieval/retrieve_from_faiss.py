@@ -8,13 +8,16 @@ from dotenv import load_dotenv
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 embedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
- 
+
 class FaissRetriever:
-    def __init__(self, index_path, anforande_ids_path, documents_path):
+    def __init__(self, index_path, anforande_ids_path, documents_chunks):
         self.index = faiss.read_index(index_path)
         self.anforande_ids = np.load(anforande_ids_path, allow_pickle=True)
-        self.documents = np.load(documents_path, allow_pickle=True)
-        
+        #self.documents = documents
+        self.documents_chunks = documents_chunks 
+        self.chunk_sizes = [len(chunk) for chunk in documents_chunks]
+        self.chunk_offsets = np.cumsum([0] + self.chunk_sizes)
+
         self.url = "https://api.openai.com/v1/chat/completions"
         self.headers = {
                         "Content-Type": "application/json",
@@ -22,10 +25,15 @@ class FaissRetriever:
                         }
         self.llm = ChatOpenAI(model="gpt-4o")
 
+
+    def _get_doc_by_global_idx(self, global_idx):
+        # Find which chunk the index belongs to
+        chunk_id = np.searchsorted(self.chunk_offsets, global_idx, side='right') - 1
+        local_idx = global_idx - self.chunk_offsets[chunk_id]
+        return self.documents_chunks[chunk_id][local_idx]
+
     def retrieve(self, query, top_k=6):
         query_embedding = np.array(embedding.embed_query(query), dtype="float32").reshape(1, -1)
-        
-        # Normalize the query for cosine similarity (since index vectors are normalized too)
         faiss.normalize_L2(query_embedding)
 
         distances, indices = self.index.search(query_embedding, top_k)
@@ -35,10 +43,11 @@ class FaissRetriever:
             idx = indices[0][i]
             similarity = distances[0][i]
             anforande_id = self.anforande_ids[idx]
-            doc = self.documents[idx]
+            doc = self._get_doc_by_global_idx(idx)
             results.append((anforande_id, doc, similarity))
         return results
-    
+
+
     def generate_response(self, ranked_speeches:list, user_query:str):
         print(ranked_speeches)
         

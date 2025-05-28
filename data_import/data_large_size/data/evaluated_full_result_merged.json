@@ -73,10 +73,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -153,10 +153,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -233,10 +233,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -313,10 +313,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -393,10 +393,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -473,10 +473,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -553,10 +553,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -633,10 +633,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -713,10 +713,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -793,10 +793,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -873,10 +873,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -953,10 +953,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1033,10 +1033,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1113,10 +1113,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1193,10 +1193,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1273,10 +1273,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1353,10 +1353,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1419,10 +1419,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1499,10 +1499,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -1579,10 +1579,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -1659,10 +1659,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -1739,10 +1739,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -1819,10 +1819,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -1899,10 +1899,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -1979,10 +1979,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2059,10 +2059,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2139,10 +2139,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -2219,10 +2219,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2299,10 +2299,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2379,10 +2379,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2445,10 +2445,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2525,10 +2525,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2605,10 +2605,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2685,10 +2685,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2765,10 +2765,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2845,10 +2845,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -2925,10 +2925,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3005,10 +3005,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3085,10 +3085,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3165,10 +3165,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3245,10 +3245,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -3325,10 +3325,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -3405,10 +3405,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3485,10 +3485,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3565,10 +3565,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3645,10 +3645,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3725,10 +3725,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -3805,10 +3805,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -3885,10 +3885,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -3965,10 +3965,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4031,10 +4031,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -4073,7 +4073,7 @@
       "context": [
         "548e8bf6-bd3b-eb11-914a-901b0e9b71a8",
         "e9d31b83-38ee-ec11-916f-901b0eac4c70",
-        "2094bf96-a1ad-eb11-914f-901b0eac4c78",
+        "2094bf96-a1ad-eb11-914f-901b0eac4c78", 
         "568e8bf6-bd3b-eb11-914a-901b0e9b71a8",
         "34761e44-3148-ea11-9130-901b0e9b71a0",
         "e7d31b83-38ee-ec11-916f-901b0eac4c70"
@@ -4111,10 +4111,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -4191,10 +4191,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -4271,10 +4271,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4351,10 +4351,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4431,10 +4431,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4511,10 +4511,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4591,10 +4591,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -4671,10 +4671,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4751,10 +4751,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4831,10 +4831,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -4911,10 +4911,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -4991,10 +4991,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5071,10 +5071,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5151,10 +5151,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5231,10 +5231,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5311,10 +5311,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5391,10 +5391,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5471,10 +5471,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5551,10 +5551,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -5631,10 +5631,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5711,10 +5711,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -5791,10 +5791,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5871,10 +5871,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -5951,10 +5951,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6017,10 +6017,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6097,10 +6097,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6177,10 +6177,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -6257,10 +6257,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -6337,10 +6337,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6417,10 +6417,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -6497,10 +6497,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6577,10 +6577,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -6657,10 +6657,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6737,10 +6737,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6817,10 +6817,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6897,10 +6897,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -6977,10 +6977,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7057,10 +7057,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -7137,10 +7137,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7217,10 +7217,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7297,10 +7297,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7377,10 +7377,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -7457,10 +7457,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7537,10 +7537,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7617,10 +7617,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7697,10 +7697,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7777,10 +7777,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7857,10 +7857,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -7937,10 +7937,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -8017,10 +8017,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8097,10 +8097,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8177,10 +8177,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8257,10 +8257,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8337,10 +8337,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8417,10 +8417,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8497,10 +8497,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8577,10 +8577,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8657,10 +8657,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8737,10 +8737,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8817,10 +8817,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8897,10 +8897,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -8977,10 +8977,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9057,10 +9057,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9137,10 +9137,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9217,10 +9217,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9297,10 +9297,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9377,10 +9377,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9457,10 +9457,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9537,10 +9537,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -9617,10 +9617,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9697,10 +9697,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9777,10 +9777,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -9857,10 +9857,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -9937,10 +9937,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10017,10 +10017,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -10097,10 +10097,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -10177,10 +10177,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10257,10 +10257,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10337,10 +10337,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10417,10 +10417,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -10497,10 +10497,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10577,10 +10577,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10657,10 +10657,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10737,10 +10737,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10817,10 +10817,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -10897,10 +10897,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -10977,10 +10977,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11057,10 +11057,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11137,10 +11137,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11217,10 +11217,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11297,10 +11297,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11363,10 +11363,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11443,10 +11443,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -11523,10 +11523,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11603,10 +11603,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11683,10 +11683,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11763,10 +11763,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11843,10 +11843,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -11923,10 +11923,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12003,10 +12003,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -12083,10 +12083,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12163,10 +12163,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12243,10 +12243,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12323,10 +12323,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12403,10 +12403,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12483,10 +12483,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12563,10 +12563,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12643,10 +12643,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -12723,10 +12723,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12803,10 +12803,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12883,10 +12883,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -12963,10 +12963,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13043,10 +13043,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13123,10 +13123,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13203,10 +13203,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13283,10 +13283,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13363,10 +13363,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13443,10 +13443,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13523,10 +13523,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13603,10 +13603,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13683,10 +13683,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13763,10 +13763,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13843,10 +13843,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -13923,10 +13923,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -14005,10 +14005,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14087,10 +14087,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14169,10 +14169,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14251,10 +14251,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14333,10 +14333,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14401,10 +14401,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -14483,10 +14483,9 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14565,10 +14564,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14633,10 +14632,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -14715,10 +14714,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -14797,10 +14796,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -14865,10 +14864,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -14947,10 +14946,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15029,10 +15028,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15111,10 +15110,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -15193,10 +15192,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -15275,10 +15274,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15357,10 +15356,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15439,10 +15438,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15521,10 +15520,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15603,10 +15602,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -15685,10 +15684,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -15767,10 +15766,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15849,10 +15848,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -15931,10 +15930,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16013,10 +16012,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16095,10 +16094,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16163,10 +16162,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16245,10 +16244,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16327,10 +16326,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16409,10 +16408,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -16491,10 +16490,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -16573,10 +16572,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16655,10 +16654,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16737,10 +16736,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16819,10 +16818,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16901,10 +16900,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -16983,10 +16982,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17065,10 +17064,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17147,10 +17146,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17229,10 +17228,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17311,10 +17310,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17393,10 +17392,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17475,10 +17474,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17557,10 +17556,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -17639,10 +17638,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17721,10 +17720,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17803,10 +17802,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17885,10 +17884,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -17967,10 +17966,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18049,10 +18048,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18131,10 +18130,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18213,10 +18212,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -18295,10 +18294,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18377,10 +18376,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18459,10 +18458,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -18541,10 +18540,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_6"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18623,10 +18622,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "No\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -18705,10 +18704,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18787,10 +18786,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_6",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -18869,10 +18868,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -18951,10 +18950,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19033,10 +19032,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_3",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19115,10 +19114,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top_6",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19197,10 +19196,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19265,10 +19264,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "error",
-      "graph_RAG_bm25": "error",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19347,10 +19346,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "top_3"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19429,10 +19428,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top_3",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19511,10 +19510,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19593,10 +19592,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "not_top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19675,10 +19674,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "Yes\n"
     }
   },
   {
@@ -19757,10 +19756,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "not_top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "not_top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "Yes\n",
+      "cosine_RAG_response": "No\n"
     }
   },
   {
@@ -19839,10 +19838,10 @@
       "bm25_RAG_response": "",
       "orig_answer": ""
     },
-    "top_anforande_evaluation": {
-      "graph_RAG_cosine": "top",
-      "graph_RAG_bm25": "top",
-      "cosine_RAG": "top"
+    "gemini_eval": {
+      "graph_RAG_cosine_response": "Yes\n",
+      "graph_RAG_bm25_response": "No\n",
+      "cosine_RAG_response": "No\n"
     }
   }
 ]

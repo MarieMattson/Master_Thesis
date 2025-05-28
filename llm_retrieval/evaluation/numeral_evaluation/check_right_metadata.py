@@ -2,16 +2,20 @@
 What metadata is relevevant will be based on the question type."""
 
 import json
-from numpy import mean
 from sklearn.metrics import average_precision_score
-from sympy import true
 
 question_types_person = ["generate_qa_inference_person", "generate_qa_comparison_person"]
 question_types_temporal = ["generate_qa_temporal"]
 question_types_party = ["generate_qa_inference_party", "generate_qa_comparison_party"] 
 
-experiment_result = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
-original_data = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/dataset_small.json"
+# small dataset
+#experiment_result = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
+#original_data = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/dataset_small.json"
+
+#large dataset
+experiment_result = "/mnt/c/Users/User/thesis/data_import/data_large_size/data/full_result_merged.json"
+original_data = "/mnt/c/Users/User/thesis/data_import/data_large_size/filtered_riksdag.json"
+
 retreival_models = ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]
 
 with open(experiment_result, "r") as f:
@@ -117,6 +121,14 @@ map_results = {}
 bare_minimum_results = {}
 gets_a_pass_results = {}
 map_results = {}
+zero_count_results = {}
+one_count_results = {}
+two_count_results = {}
+three_count_results = {}
+four_count_results = {}
+five_count_results = {}
+six_count_results = {}
+
 # Iterate through the data to calculate Precision, Recall, and MAP for each model
 for model in ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]:
     total_relevant = 0
@@ -127,6 +139,13 @@ for model in ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]:
     bare_minimum_relevant = 0
     gets_a_pass = 0 # meaning has 3 or more relevant documents
     ap_scores = []
+    one_count = 0
+    zero_count = 0
+    two_count = 0
+    three_count = 0
+    four_count = 0
+    five_count = 0
+    six_count = 0
 
     # Loop over each query (document) in the dataset
     for d in output_data:
@@ -134,6 +153,21 @@ for model in ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]:
         retrieved_count = len(relevance)
         relevant_count = sum(relevance)  # Count of True values (relevant documents)
         
+        if relevant_count == 0:
+            zero_count += 1
+        elif relevant_count == 1:
+            one_count += 1
+        elif relevant_count == 2:
+            two_count += 1
+        elif relevant_count == 3:
+            three_count += 1
+        elif relevant_count == 4:
+            four_count += 1
+        elif relevant_count == 5:
+            five_count += 1
+        elif relevant_count == 6:
+            six_count += 1
+
         if relevant_count >= 3:
             gets_a_pass += 1
 
@@ -177,7 +211,13 @@ for model in ["graph_RAG_cosine", "graph_RAG_bm25", "cosine_RAG"]:
     bare_minimum_results[model] = bare_minimum_relevant
     gets_a_pass_results[model] = gets_a_pass
     mean_relevance_counts[model] = mean_relevance_counts[model] / len(output_data) if len(output_data) > 0 else 0
-
+    one_count_results[model] = one_count
+    zero_count_results[model] = zero_count
+    two_count_results[model] = two_count
+    three_count_results[model] = three_count
+    four_count_results[model] = four_count
+    five_count_results[model] = five_count
+    six_count_results[model] = six_count
 print()
 
 # Print out the counts for each model
@@ -210,6 +250,15 @@ print("\nMean Relevance per Model:")
 for model, mean_rel in mean_relevance_counts.items():
     print(f"{model}: Mean Relevance = {mean_rel:.4f}")
  
+print("\nCounts of Relevant Documents:")
+print(f"Zero Count: {zero_count_results}")
+print(f"One Count: {one_count_results}")
+print(f"Two Count: {two_count_results}")
+print(f"Three Count: {three_count_results}") 
+print(f"Four Count: {four_count_results}")
+print(f"Five Count: {five_count_results}")
+print(f"Six Count: {six_count_results}")
+
 
 # ---- GROUPING BY METADATA TYPE ----
 grouped_by_metadata_type = {

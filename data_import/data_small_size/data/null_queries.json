@@ -1,0 +1,285 @@
+[
+    {
+    "dok_id": "",
+    "avsnittsrubrik": "",
+    "dok_datum": "",
+    "anforande_id": "",
+    "anforandetext": "",
+    "talare": "Mikaela Erlandsson",
+    "parti": "",
+    "qa_pair": {
+      "question": "Vad var Mikaela Erlandssons ståndpunkt om regeringens ansvar för miljöfarlig verksamhet och klimatmål under september 2020?"
+    },
+    "qa_type": "null",
+    "human_annotator": {
+      "reasonable_question": "",
+      "context": []
+    },
+    "LLM_annotator": "",
+    "graph_RAG_cosine": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "graph_RAG_bm25": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "cosine_RAG": {
+      "answer": "",
+      "context": [],
+      "scores": []
+    },
+    "bm25_RAG": {
+      "answer": "",
+      "context": []
+    },
+    "eval": {
+      "graph_RAG_cosine_response": "",
+      "graph_RAG_bm25_response": "",
+      "cosine_RAG_response": "",
+      "bm25_RAG_response": "",
+      "orig_answer": ""
+    },
+    "openai_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    },
+    "gemini_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    }
+  },
+  {
+    "dok_id": "",
+    "avsnittsrubrik": "",
+    "dok_datum": "",
+    "anforande_id": "",
+    "anforandetext": "",
+    "talare": "Christina Höj Larsen",
+    "parti": "V",
+    "qa_pair": {
+      "question": "Hur uttrycker Christina Höj Larsen sin osäkerhet kring tolkningen av den nya kvantmekaniska rättsgrunden?"
+    },
+    "qa_type": "null",
+    "human_annotator": {
+      "reasonable_question": "",
+      "context": []
+    },
+    "LLM_annotator": "",
+    "graph_RAG_cosine": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "graph_RAG_bm25": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "cosine_RAG": {
+      "answer": "",
+      "context": [],
+      "scores": []
+    },
+    "bm25_RAG": {
+      "answer": "",
+      "context": []
+    },
+    "eval": {
+      "graph_RAG_cosine_response": "",
+      "graph_RAG_bm25_response": "",
+      "cosine_RAG_response": "",
+      "bm25_RAG_response": "",
+      "orig_answer": ""
+    },
+    "openai_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    },
+    "gemini_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    }
+  },
+  {
+    "dok_id": "",
+    "avsnittsrubrik": "",
+    "dok_datum": "",
+    "anforande_id": "",
+    "anforandetext": "",
+    "talare": "",
+    "parti": "SD",
+    "qa_pair": {
+      "question": "Anser Sverigedemokraterna att rymddokumentationsplikten borde ha införts omedelbart utan att invänta en ny regering?"
+
+    },
+    "qa_type": "null",
+    "human_annotator": {
+      "reasonable_question": "",
+      "context": []
+    },
+    "LLM_annotator": "",
+    "graph_RAG_cosine": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "graph_RAG_bm25": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "cosine_RAG": {
+      "answer": "",
+      "context": [],
+      "scores": []
+    },
+    "bm25_RAG": {
+      "answer": "",
+      "context": []
+    },
+    "eval": {
+      "graph_RAG_cosine_response": "",
+      "graph_RAG_bm25_response": "",
+      "cosine_RAG_response": "",
+      "bm25_RAG_response": "",
+      "orig_answer": ""
+    },
+    "openai_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    },
+    "gemini_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    }
+  },
+  {
+    "dok_id": "",
+    "avsnittsrubrik": "",
+    "dok_datum": "",
+    "anforande_id": "",
+    "anforandetext": "",
+    "talare": "Arne Hegerfors",
+    "parti": "",
+    "qa_pair": {
+      "question": "Hur argumenterar Arne Hegerfors för att det nordiska projektet inte utgör ett säkerhetshot?"
+
+    },
+    "qa_type": "null",
+    "human_annotator": {
+      "reasonable_question": "",
+      "context": []
+    },
+    "LLM_annotator": "",
+    "graph_RAG_cosine": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "graph_RAG_bm25": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "cosine_RAG": {
+      "answer": "",
+      "context": [],
+      "scores": []
+    },
+    "bm25_RAG": {
+      "answer": "",
+      "context": []
+    },
+    "eval": {
+      "graph_RAG_cosine_response": "",
+      "graph_RAG_bm25_response": "",
+      "cosine_RAG_response": "",
+      "bm25_RAG_response": "",
+      "orig_answer": ""
+    },
+    "openai_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    },
+    "gemini_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    }
+  },
+  {
+    "dok_id": "",
+    "avsnittsrubrik": "",
+    "dok_datum": "",
+    "anforande_id": "",
+    "anforandetext": "",
+    "talare": "Sofia Nilsson",
+    "parti": "",
+    "qa_pair": {
+      "question": "Vad var Sofia Nilssons ståndpunkt om digitalisering av vården i oktober 2009?"
+
+    },
+    "qa_type": "null",
+    "human_annotator": {
+      "reasonable_question": "",
+      "context": []
+    },
+    "LLM_annotator": "",
+    "graph_RAG_cosine": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "graph_RAG_bm25": {
+      "answer": "",
+      "context": [],
+      "cypher_query": "",
+      "nr_of_nodes": 0
+    },
+    "cosine_RAG": {
+      "answer": "",
+      "context": [],
+      "scores": []
+    },
+    "bm25_RAG": {
+      "answer": "",
+      "context": []
+    },
+    "eval": {
+      "graph_RAG_cosine_response": "",
+      "graph_RAG_bm25_response": "",
+      "cosine_RAG_response": "",
+      "bm25_RAG_response": "",
+      "orig_answer": ""
+    },
+    "openai_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    },
+    "gemini_eval": {
+      "cosine_RAG_response": "",
+      "graph_RAG_bm25_response": "",
+      "graph_RAG_cosine_response": ""
+    }
+  }
+]

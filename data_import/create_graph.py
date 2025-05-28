@@ -71,9 +71,9 @@ class GraphCreator:
             driver.close()
 
 if __name__ == "__main__":
-    GC = GraphCreator
+    GC = GraphCreator()
     GC.test_connection()  # Should print: Hello, Neo4j!
-    file_path = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag_exp1.json"
+    file_path = "/mnt/c/Users/User/thesis/data_import/data_large_size/filtered_riksdag.json"#"/mnt/c/Users/User/thesis/data_import/filtered_riksdag_exp1.json"
     data = GC.load_json(file_path)
     GC.insert_data_into_neo4j(data)
     print("Data successfully imported into Neo4j!")

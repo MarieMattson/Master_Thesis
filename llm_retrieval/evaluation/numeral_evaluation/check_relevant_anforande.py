@@ -7,8 +7,8 @@ I can also write code to check if the top anforande is in the same debate as the
 from collections import Counter, defaultdict
 import json
 
-path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
-
+#path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/final_248_combined_result.json"
+path = "/mnt/c/Users/User/thesis/data_import/data_large_size/data/full_result_merged.json"
 with open(path, "r") as f:
     data = json.load(f)
 

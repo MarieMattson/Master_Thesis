@@ -1,0 +1,1466 @@
+[
+    {
+        "dok_id": "H90938",
+        "avsnittsrubrik": "Det nationella basutbudet av flygplatser",
+        "dok_datum": "2021-12-01 00:00:00",
+        "anforande_id": "c24e2edb-4075-ec11-9168-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Det är väldigt intressant det som sägs om att säkra kapaciteten på Arlanda. Det är snart tre år sedan som Arlandarådet var färdigt med sin rapport. Den dåvarande infrastrukturministern i den regeringen, som är den nuvarande infrastrukturministern i den här regeringen, har inte gjort någonting över huvud taget.</p><p>Jag var med på ett seminarium så sent som i går där Swedavias vd efterlyste politiska beslut för Arlandas utveckling. Han var oerhört frustrerad över att Arlandarådets rapport inte över huvud taget har fått några effekter på politiken på riksnivå.</p><p>Det finns inga beslut fattade. Det finns ingenting som pekar på att den tidigare regeringen, med samma infrastrukturminister som den här regeringen, hade något intresse alls av att utveckla Arlanda.</p><p>Det är ord som är svåra att ta på allvar. Regeringen ska nu sitta i nio månader. Den har väldigt svagt stöd här i riksdagen. Den behöver troligtvis efter nästa val regera med andra partier igen.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Det nationella bas-utbudet av flygplatser</p><p>Det känns inte som att Socialdemokraterna är någon garant för någon vettig flygkapacitet på tillräcklig nivå till och från Stockholm. Det är snarare tvärtom. Med en socialdemokratisk regering finns det all anledning att fortsätta att oroa sig.</p><p>Det finns kanske anledning för oss att komma tillbaka med ytterligare tillkännagivanden om inte regeringen släpper frågan om en förtida nedstängning av Bromma.</p><p>(forts. § 19)</p>",
+        "talare": "Maria Stockhaus",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Hur ser Moderaterna på Socialdemokraternas hantering av Arlandas utveckling och flygkapaciteten i Stockholm?",
+            "answer": "Moderaterna anser att Socialdemokraterna inte har visat något intresse för att utveckla Arlanda och säkra tillräcklig flygkapacitet i Stockholm. De uttrycker oro över att den socialdemokratiska regeringen inte är en pålitlig garant för en vettig flygkapacitet och kritiserar bristen på politiska beslut trots Arlandarådets rapport."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {party: \"M\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {party: \"M\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Moderaterna har uttryckt oro och kritik mot Socialdemokraternas hantering av Arlandas utveckling och flygkapaciteten i Stockholm. De anser att det saknas konkreta planer och tydliga svar från Socialdemokraterna om hur Arlanda ska utvecklas. Moderaterna är särskilt bekymrade över de ekonomiska och infrastrukturmässiga aspekterna kring nedläggningen av Bromma flygplats och hur detta kan påverka konkurrensen och kostnaderna för inrikesflyg. De har också lyft fram vikten av att säkerställa att Arlanda kan hantera den framtida flygkapaciteten för att stödja både Stockholmsregionen och Sveriges exportberoende ekonomi. Dessutom har Moderaterna kritiserat att Socialdemokraterna eventuellt samarbetar med partier som blockerar utbyggnaden av Arlanda och andra viktiga infrastrukturprojekt, vilket de anser försvårar Stockholmsregionens utveckling.",
+            "context": [
+                "03137898-37ee-ec11-916f-901b0eac4c70",
+                "e1558677-4057-eb11-9147-901b0eac4c70",
+                "01137898-37ee-ec11-916f-901b0eac4c70",
+                "e2558677-4057-eb11-9147-901b0eac4c70",
+                "bf4e2edb-4075-ec11-9168-901b0e9b71a8",
+                "b20c5c85-3a0b-ec11-9160-901b0e9b71a0"
+            ],
+            "scores": [
+                0.9097527265548706,
+                0.905961811542511,
+                0.9018048048019409,
+                0.8990682363510132,
+                0.8971084356307983,
+                0.8958487510681152
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H9093",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2021-09-15 00:00:00",
+        "anforande_id": "55b9bf8e-782b-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Herr talman! Att arbete är en förutsättning för välfärd finns det ingen tvekan om. Det är en socialdemokratisk mycket tydlig ståndpunkt. Men här är det en annan ideologisk fråga som är viktig, och det är just att alla individers möjlighet kräver ett starkt samhälle.</p><p>Jag har på senare tid ändå tyckt mig höra att det inom borgerligheten höjs röster för att till exempel marknadsexperimentet har gått för långt. Det kanske fanns goda avsikter, att det skulle förbättra välfärden. Men vi har sett att det inte riktigt har blivit så, utan det är snarare tvärtom i många fall, just för att medborgare inte längre ses som medborgare utan kunder och att vinstintresset får gå före samhällsintresset. Det är det som jag är ute efter.</p><p>Vi måste kunna dela synen att det här måste vi göra något åt, annars blir välfärden inte till för alla.</p>",
+        "talare": "Stefan Löfven",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Socialdemokraterna på marknadsexperiment inom välfärden och dess påverkan på samhällsintresset?",
+            "answer": "Socialdemokraterna anser att marknadsexperiment inom välfärden har gått för långt och att det har lett till att medborgare behandlas mer som kunder än som medborgare. De menar att vinstintresset ofta prioriteras framför samhällsintresset, vilket hotar att göra välfärden otillgänglig för alla. Därför anser de att det är nödvändigt att vidta åtgärder för att säkerställa att välfärden verkligen tjänar hela samhället."
+        },
+        "qa_type": "generate_qa_inference_party",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {party: \"S\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Socialdemokraterna har uttryckt en kritisk syn på marknadsexperiment inom välfärden. Statsminister Stefan Löfven har i debatter lyft fram att marknadsexperimentet, som kanske hade goda avsikter att förbättra välfärden, i många fall har lett till att medborgare ses som kunder och att vinstintresset går före samhällsintresset. Socialdemokraterna anser att detta kan hota jämlikheten och att det är viktigt att åtgärda dessa problem för att säkerställa att välfärden är till för alla. Partiet betonar vikten av ett starkt samhälle där medborgarnas frihet och rättigheter upprätthålls genom demokratiska och jämlika värden snarare än marknadsstyrning.",
+            "context": [
+                "55b9bf8e-782b-ec11-915b-901b0eac4c78",
+                "53b9bf8e-782b-ec11-915b-901b0eac4c78",
+                "4a1e7b2d-1786-ea11-9132-901b0eac4c78",
+                "f60f4c0f-24e7-ec11-916f-901b0eac4c70",
+                "904c6077-006d-e911-911b-901b0eac4c78",
+                "e8f7457f-0723-e911-9118-901b0e9b71a0"
+            ],
+            "scores": [
+                0.8954113721847534,
+                0.8814120888710022,
+                0.8795449137687683,
+                0.8789819478988647,
+                0.8782945871353149,
+                0.8780520558357239
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80956",
+        "avsnittsrubrik": "Hälsovård, sjukvård och social omsorg",
+        "dok_datum": "2020-12-17 00:00:00",
+        "anforande_id": "290aa906-f371-eb11-914b-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Jag är jätteglad för det positiva beskedet.</p><p>Ni kristdemokrater har i ert budgetförslag ett förslag om vårdförmedling. Då är min fråga till Kristdemokraterna, fru talman, hur den här vårdförmedlingen ska kunna se till att det anställs fler inom hälso- och sjukvården. Vi har exempelvis extremt få vårdplatser, och det handlar om att vi har för få anställda, specifikt sjuksköterskor. Hur har ni tänkt att den här vårdförmedlingen ska kunna stärka bemanningen? Det är ju det som är nyckeln.</p>",
+        "talare": "Karin Rågsjö",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur uttrycker Karin Rågsjö sin oro över bemanningssituationen inom hälso- och sjukvården?",
+            "answer": "Karin Rågsjö uttrycker oro över den nuvarande bemanningssituationen inom hälso- och sjukvården, särskilt bristen på sjuksköterskor och vårdplatser. Hon ifrågasätter hur Kristdemokraternas förslag om vårdförmedling ska kunna bidra till att anställa fler inom sektorn, vilket hon anser är avgörande för att förbättra situationen."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Karin Rågsjö\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Karin Rågsjö\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Karin Rågsjö uttrycker sin oro över bemanningssituationen inom hälso- och sjukvården genom att belysa den alarmerande personalkrisen och de negativa konsekvenserna av dålig arbetsmiljö och låga löner för vårdpersonalen. Hon ifrågasätter satsningar som kömiljarden och föreslår istället förkortade arbetstider, förbättrad arbetsmiljö och höjda löner genom ökade statsbidrag till regionerna som potentiella lösningar. Rågsjö pekar även på de stora nedskärningarna på personal vid akutsjukhusen i regioner som Stockholm, Västra Götaland och Skåne, trots att dessa regioner har stora ekonomiska överskott. Hon anser att det behövs ett system där det inte är möjligt att både skära ned på personal och samtidigt ta emot nya statliga pengar för att anställa fler. Rågsjö betonar vikten av att anställa fler för att uppnå en anständig vård och kritiserar den rådande personalpolitiken i Stockholmsregionen.",
+            "context": [
+                "af7ae5cf-9a80-e911-9121-901b0e9b71a0",
+                "d65cf076-f693-ec11-916c-901b0e9b71a0",
+                "93248147-10bd-ea11-9135-901b0eac4c70",
+                "969e3e97-3248-ea11-9130-901b0e9b71a0",
+                "390aa906-f371-eb11-914b-901b0eac4c70",
+                "bf9e3e97-3248-ea11-9130-901b0e9b71a0"
+            ],
+            "scores": [
+                0.9229322075843811,
+                0.9117962121963501,
+                0.9085800051689148,
+                0.9085618853569031,
+                0.9077115654945374,
+                0.907025933265686
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809145",
+        "avsnittsrubrik": "Utfodring av vilt",
+        "dok_datum": "2021-06-21 00:00:00",
+        "anforande_id": "0314cf75-3328-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Tack, Isak From, för frågan! Jo, det är sannerligen jaktlagens syften och intentioner som ska ligga bakom. Det är därför som vi för flera år sedan skrev ett förslag i vår övergripande jakt- och viltvårdsmotion om att bidrag inte ska gå till organisationer som bedriver verksamhet som är rent jaktfientlig. Så har det nämligen varit fram till att ändringen skedde i våras.</p><p>Men vi vet inte hur det blir. Organisationerna söker för kommande år. Kommer man att vara lika tydlig eller vad kommer att hända? För att verkligen vara tydlig: Organisationer som inte bedriver jakt- och viltvårdsfrämjande aktivitet ska inte ha pengar. Det ska vara jättetydligt. Jag förstår att väldigt många blev bekymrade när de såg listan över alla de ansökningar som kom in. Det fanns till och med organisationer som är direkt jaktfientliga.</p><p>Motionen skrev som sagt för flera år sedan. Vi har jobbat för att få en majoritet, och nu har vi fått det. Det är väldigt bra att tydligt kunna peka på att Sveriges riksdag har fattat ett beslut om att Viltvårdsfondens pengar - de pengar som jägarna har betalat in för att de över huvud taget ska få jaga - ska gå tillbaka till jägarna och inte till någon annan.</p>",
+        "talare": "Kjell-Arne Ottosson",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Kjell-Arne Ottosson för att Viltvårdsfondens pengar ska gå till jägarna och inte till jaktfientliga organisationer?",
+            "answer": "Kjell-Arne Ottosson argumenterar för att Viltvårdsfondens pengar, som jägarna betalar in, ska återgå till jägarna och inte till organisationer som är jaktfientliga. Han betonar att bidrag endast ska ges till organisationer som främjar jakt och viltvård, och att det är viktigt att detta är tydligt för att undvika att pengar går till verksamheter som motarbetar jaktens syften."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Kjell-Arne Ottosson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Kjell-Arne Ottosson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Kjell-Arne Ottosson argumenterar för att Viltvårdsfondens pengar ska gå till jägarna och inte till jaktfientliga organisationer genom att betona att medlen från fonden, som jägarna själva har bidragit till, bör användas för att stödja aktiviteter som främjar jakt och viltvård. Han kritiserar det faktum att pengar tidigare har gått till organisationer som inte bedriver jakt- och viltvårdsfrämjande aktiviteter eller till och med är direkt jaktfientliga. Ottosson framhåller att det är viktigt att tydligt visa att Sveriges riksdag har beslutat att dessa medel ska gå tillbaka till jägarna, vilket skulle säkerställa att pengarna används i enlighet med jaktlagens syften och intentioner.",
+            "context": [
+                "0314cf75-3328-ec11-915b-901b0eac4c78",
+                "b2415f8a-e14f-e911-911c-0090facf175a",
+                "db7ceb25-2e74-ea11-9134-0090facf175a",
+                "0214cf75-3328-ec11-915b-901b0eac4c78",
+                "86de50bf-f1ca-ec11-9170-0090facf175a",
+                "b3415f8a-e14f-e911-911c-0090facf175a"
+            ],
+            "scores": [
+                0.9148253202438354,
+                0.8975450992584229,
+                0.8970522880554199,
+                0.8969568610191345,
+                0.8952903151512146,
+                0.8934995532035828
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90923",
+        "avsnittsrubrik": "Statsministerns frågestund",
+        "dok_datum": "2021-10-28 00:00:00",
+        "anforande_id": "a9936550-f151-ec11-915f-901b0eac4c70",
+        "anforandetext": "<p>Herr talman! Ja, precis, jag har ingen annan uppfattning - språket är centralt, och det är därför vi eventuellt skjuter till resurser för att ge fler möjligheter att utveckla språket.</p><p>Det här tycker jag i och för sig hör till själva integrationsarbetet också. Mycket tidigare språkinsatser införs nu så att de som kommer till Sverige får utbildning i svenska språket tidigare. Det är helt avgörande.</p><p>Men det är också så att skolorna måste få mer jämlika förutsättningar. Vi har för stora skillnader mellan skolor. Skolan i allmänhet är fortfarande bra, men vi har skolor som har rejäla problem. Det är därför vi skjuter till mer resurser till de skolor som behöver mer resurser. Det är också därför vi i framtiden kommer att behöva komma bort från att skolpeng betalas ut lika när vi vet att kommunala skolor de facto har ett tyngre uppdrag än friskolor har. Då måste kommunala skolor faktiskt också få mer anslag än friskolorna.</p>",
+        "talare": "Stefan Löfven",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Stefan Löfven för vikten av språkutbildning och resurstilldelning i skolor?",
+            "answer": "Stefan Löfven betonar att språket är centralt för integration och att tidiga språkinsatser är avgörande för nyanlända i Sverige. Han anser att skolor behöver mer jämlika förutsättningar och att resurser bör riktas till skolor med större behov. Löfven menar också att kommunala skolor, som har ett tyngre uppdrag än friskolor, bör få mer anslag för att hantera dessa utmaningar."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Stefan Löfven\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Stefan Löfven\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Stefan Löfven argumenterar för vikten av språkutbildning och resurstilldelning i skolor genom att betona att språket är centralt för integration och utbildning. Han menar att tidiga språkinsatser är avgörande för att de som kommer till Sverige ska kunna lära sig svenska språket och integreras bättre i samhället. Löfven understryker också betydelsen av att skolor får mer jämlika förutsättningar, eftersom det finns stora skillnader mellan olika skolor. Därför skjuter regeringen till mer resurser till de skolor som har störst behov. Han påpekar även att kommunala skolor ofta har ett tyngre uppdrag än friskolor och därför bör få mer anslag. Sammanfattningsvis ser han språkutbildning och rättvis resurstilldelning som centrala delar för att förbättra skolsystemet och integrationen i Sverige.",
+            "context": [
+                "a9936550-f151-ec11-915f-901b0eac4c70",
+                "cc002102-7ea7-eb11-914f-901b0eac4c78",
+                "60a7e467-82f8-ec11-9174-901b0e9b71a0",
+                "a5bb7eea-620d-eb11-9146-901b0e9b71a8",
+                "eeba83e4-3971-eb11-914e-901b0e9b71a0",
+                "99bb7eea-620d-eb11-9146-901b0e9b71a8"
+            ],
+            "scores": [
+                0.914126455783844,
+                0.892940878868103,
+                0.8912940621376038,
+                0.8909706473350525,
+                0.8902599811553955,
+                0.8890515565872192
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80968",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2021-01-21 00:00:00",
+        "anforande_id": "fe9e5c80-3987-eb11-914b-901b0eac4c70",
+        "anforandetext": "<p>Herr talman! Pandemin har slagit hårt mot hela vårt samhälle, och alla vill vara med och bidra och göra det bästa av en extrem situation. Det vill även Sveriges företagare.</p><p>Problemen som vi kristdemokrater ser är att de stöd som beslutats om och som behövs för att företag ska ha en chans att överleva inte alltid når ända fram. Väntan och ovissheten är för vissa orimligt lång.</p><p>Att via morgonnyheterna samma dag få ta del av information om restriktioner som införs och förlängs för den bransch som man bedriver sin verksamhet inom blir väldigt förvirrande, och det sätter företagare i en situation där de kommer att bryta mot arbetsrättsliga lagar.</p><p>Min fråga till finansminister Magdalena Andersson är varför regeringen upprepade gånger inte har kommunicerat vare sig restriktioner i tid eller vilka ekonomiska kompensationer som kommer dessa företag till del.</p>",
+        "talare": "Camilla Brodin",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur ser Camilla Brodin på regeringens hantering av stöd och kommunikation till företag under pandemin?",
+            "answer": "Camilla Brodin anser att regeringens hantering av stöd och kommunikation till företag under pandemin är bristfällig. Hon menar att stöden inte alltid når fram i tid och att ovissheten är för lång för företagen. Dessutom kritiserar hon att information om restriktioner och ekonomiska kompensationer inte kommuniceras i tid, vilket skapar förvirring och riskerar att företag bryter mot arbetsrättsliga lagar."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Camilla Brodin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Camilla Brodin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Camilla Brodin (KD) har uttryckt oro och kritik mot regeringens hantering av stöd och kommunikation till företag under pandemin. Hon har vid flera tillfällen påpekat att de stöd som beslutats inte alltid når fram till företagen i tid, vilket skapar en orimligt lång väntan och ovisshet. Brodin har också kritiserat bristen på tydlig och snabb kommunikation om restriktioner och ekonomiska kompensationer, vilket har satt företagare i svåra situationer. Hon har betonat att handläggningstiderna är för långa och att det administrativa krånglet för företagen är stort, något som har rapporterats skapa frustration bland företagare som riskerar konkurs. Hon har även föreslagit direktstöd för att bättre stödja företag som drabbats hårt av pandemin, liknande de åtgärder som införts i andra länder.",
+            "context": [
+                "fe9e5c80-3987-eb11-914b-901b0eac4c70",
+                "bc4e8aa5-390b-ec11-9160-901b0e9b71a0",
+                "a45a4a46-569f-ea11-9138-901b0e9b71a0",
+                "37af6c2c-c567-eb11-914e-901b0e9b71a0",
+                "36af6c2c-c567-eb11-914e-901b0e9b71a0",
+                "9492c21d-a4ad-eb11-914f-901b0eac4c78"
+            ],
+            "scores": [
+                0.9182338714599609,
+                0.9076333045959473,
+                0.9062516689300537,
+                0.905998706817627,
+                0.9052587747573853,
+                0.9045090079307556
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80955",
+        "avsnittsrubrik": "Arbetsmarknad och arbetsliv och Arbetsmarknadspolitik och arbetslöshetsförsäkringen",
+        "dok_datum": "2020-12-16 00:00:00",
+        "anforande_id": "614c4bca-3a71-eb11-914e-901b0e9b71a0",
+        "anforandetext": "<p>Herr ålderspresident! Vi har den kanske enligt Ali Esbati gammaldags åsikten att fattigdom bekämpas bäst genom att fler har ett arbete att gå till. Det är därför vi lägger den absolut största delen av våra budgetsatsningar på att fler människor ska kunna få ett arbete med en lön man kan leva på och på skattesänkningar som ger låg- och medelinkomsttagare mer i plånboken.</p><p>Givetvis ska ersättningen från arbetslöshetsförsäkringen vara skälig och trygg. Men alla förändringar i a-kassan som gör det mer förmånligt att inte arbeta minskar alltid sysselsättningen. Jag vågar påstå att det finns entydig forskning på det. När regeringen höjde ersättningen i a-kassan 2016 såg man direkt negativa effekter på sysselsättningen. Fler människor i jobb bekämpar alltså fattigdom, inte a-kassan.</p><p>Efter att ha läst Vänsterns budgetförslag kan jag konstatera att det inte finns en enda åtgärd för att få fler människor i arbete utöver förslaget om höjda statsbidrag till kommuner och regioner - och med vilka partier här har Vänsterpartiet drivit igenom dessa höjda statsbidrag? Jo, med Moderaterna, Kristdemokraterna och Sverigedemokraterna.</p><p>Återigen, fattigdom bekämpas bäst med att fler människor har ett arbete att gå till.</p>",
+        "talare": "Mats Green",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Hur argumenterar Mats Green för att bekämpa fattigdom och vad är hans syn på arbetslöshetsförsäkringen?",
+            "answer": "Mats Green argumenterar för att fattigdom bäst bekämpas genom att fler människor får arbete, vilket han menar är effektivare än att förlita sig på arbetslöshetsförsäkringen. Han anser att skattesänkningar för låg- och medelinkomsttagare samt satsningar på att skapa fler jobb är viktiga åtgärder. Green är kritisk till förändringar i a-kassan som gör det mer förmånligt att inte arbeta, eftersom han menar att det minskar sysselsättningen."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mats Green\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mats Green\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Mats Green argumenterar för att bekämpa fattigdom genom att se till att fler människor har ett arbete att gå till. Han menar att fattigdom bäst bekämpas genom att fler har ett arbete med en lön man kan leva på och genom skattesänkningar som ger låg- och medelinkomsttagare mer i plånboken. När det gäller arbetslöshetsförsäkringen anser Mats Green att ersättningen ska vara skälig och trygg, men han varnar för att alla förändringar i a-kassan som gör det mer förmånligt att inte arbeta minskar sysselsättningen. Han hänvisar till forskning som han påstår visar att höjningar i a-kassan, som den regeringen genomförde 2016, hade negativa effekter på sysselsättningen. Green betonar att fler jobb är lösningen för att bekämpa fattigdom, snarare än att förlita sig på a-kassan.",
+            "context": [
+                "614c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "9915cb82-f493-ec11-916c-901b0e9b71a0",
+                "604c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "634c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "7f4c4bca-3a71-eb11-914e-901b0e9b71a0",
+                "9515cb82-f493-ec11-916c-901b0e9b71a0"
+            ],
+            "scores": [
+                0.901458740234375,
+                0.8952791094779968,
+                0.894385814666748,
+                0.8935033679008484,
+                0.8905447721481323,
+                0.8892861604690552
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90955",
+        "avsnittsrubrik": "Fortsatt beredskap genom förlängd giltighet av covid-19-lagen och lagen om tillfälliga smittskyddsåtgärder på serveringsställen",
+        "dok_datum": "2022-01-19 00:00:00",
+        "anforande_id": "27712b27-beb5-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! En så snabb hantering är inte den vanliga vägen. Det är absolut inte den enkla vägen, men vi bedömde att vi inte kunde fortsätta som vi hade gjort hittills. Vi har aldrig föreslagit att avskaffa expertmyndigheternas råd och rekommendationer. Det vi har sagt är att det nu är dags att ta tillbaka den delegation av makt som riksdagen har gett regeringen och se till att en framtida pandemilag utgår från riksdagens tydligt uttalade direktiv. Vi anser att regeringen har missbrukat den lag som har funnits. </p>",
+        "talare": "Lina Nordquist",
+        "parti": "L",
+        "qa_pair": {
+            "question": "Hur argumenterar Lina Nordquist för att riksdagen bör återta makten från regeringen i hanteringen av pandemilagar?",
+            "answer": "Lina Nordquist argumenterar för att riksdagen bör återta makten från regeringen eftersom hon anser att regeringen har missbrukat den befintliga lagen. Hon betonar vikten av att en framtida pandemilag ska baseras på riksdagens tydliga direktiv och inte enbart på regeringens beslut."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Lina Nordquist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Lina Nordquist\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Jag hittar ingen information om hur Lina Nordquist argumenterar för att riksdagen bör återta makten från regeringen i hanteringen av pandemilagar i min data.",
+            "context": [
+                "98508955-c775-eb11-914b-901b0eac4c70",
+                "a3b44f31-ade0-eb11-9153-901b0eac4c78",
+                "e5e852a9-3416-ec11-9160-901b0e9b71a0",
+                "e0527919-c02d-ec11-915b-901b0eac4c78",
+                "dc65139e-2ab4-ec11-9167-901b0eac4c78",
+                "6d5d331e-8186-eb11-914b-901b0eac4c70"
+            ],
+            "scores": [
+                0.8975401520729065,
+                0.8974633812904358,
+                0.8958173990249634,
+                0.8954089283943176,
+                0.8949791789054871,
+                0.8946977257728577
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90966",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:301 om uteblivna utvisningar",
+        "dok_datum": "2022-02-15 00:00:00",
+        "anforande_id": "3653ade4-36c2-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman!  har frågat mig vilka åtgärder jag och regeringen avser att vidta för att säkerställa att utvisningsbeslut genomförs. Tobias Andersson har också frågat mig vilka åtgärder inom mitt ansvarsområde jag avser att vidta för att i övrigt motverka skuggsamhället i Sverige.</p><p>En grundläggande förutsättning för en långsiktigt hållbar migrationspolitik som motverkar framväxten av ett skuggsamhälle är att den som har fått avslag på sin asylansökan eller av andra skäl inte får stanna i Sverige återvänder till sitt hemland.</p><p></p><p>Inledningsvis vill jag understryka att antalet asylsökande är det lägsta på över 20 år och att antalet avvikna och efterlysta stadigt har minskat sedan 2015. Dessutom har mer än 94 000 före detta asylsökande lämnat Sverige de senaste åren, och Sveriges andel återvändande ligger över genomsnittet i EU.</p><p>En rad åtgärder har vidtagits för att öka återvändandet och motverka framväxten av ett skuggsamhälle. Förvarskapaciteten har fördubblats. Polismyndigheten har fått utökade möjligheter att utföra arbetsplatskontroller och fler verktyg att använda vid inre utlänningskontroll.</p><p>Regeringen intensifierar nu arbetet ytterligare, bland annat genom åtgärder som syftar till att åstadkomma en bättre kontroll av arbetsmarknaden och ett effektivare återvändande.</p>",
+        "talare": "Anders Ygeman",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur argumenterar Anders Ygeman för vikten av att personer som fått avslag på sin asylansökan återvänder till sina hemländer?",
+            "answer": "Anders Ygeman betonar att en hållbar migrationspolitik kräver att de som inte får stanna i Sverige återvänder till sina hemländer. Han framhåller att detta är avgörande för att motverka framväxten av ett skuggsamhälle. Ygeman påpekar också att antalet asylsökande är det lägsta på över 20 år och att Sverige har en hög andel återvändande jämfört med EU-genomsnittet, vilket visar på framsteg i arbetet med att hantera migrationen effektivt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Anders Ygeman argumenterar för vikten av att personer som fått avslag på sin asylansökan återvänder till sina hemländer genom att betona att de som får avslag ska återvända, medan de som får bifall ska integreras i det svenska samhället. Han lyfter fram att sedan Socialdemokraterna bildade regering 2014 har över 90 000 personer återvänt, vilket är ett större antal än i flera andra länder. Ygeman understryker att politiken är tydlig: om man har asyl- och skyddsskäl ska man integreras i Sverige, men om man får avslag ska man återvända. Detta för att säkerställa en rättvis och effektiv hantering av asylprocessen, där resurser kan fokuseras på dem som verkligen behöver skydd.",
+            "context": [
+                "6abb7b56-4125-ed11-9178-901b0e9b71a8",
+                "85449a9d-ad34-eb11-914a-901b0e9b71a8",
+                "7bb12f91-e2d8-eb11-9153-901b0eac4c78",
+                "462045de-bb39-ed11-9178-901b0e9b71a8",
+                "ed0b01d3-10c2-eb11-9156-901b0e9b71a8",
+                "e2b910dc-e66d-ea11-9134-0090facf175a"
+            ],
+            "scores": [
+                0.9006235599517822,
+                0.8993996977806091,
+                0.8911247253417969,
+                0.8893132209777832,
+                0.8884940147399902,
+                0.88812255859375
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90947",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:121 om hastighetssänkningars inverkan på utvecklingen norr om Dalälven",
+        "dok_datum": "2021-12-16 00:00:00",
+        "anforande_id": "475df076-f693-ec11-916c-901b0e9b71a0",
+        "anforandetext": "<p>Herr talman! Jag konstaterar att nya stambanor ramas in med ungefär 107 miljarder. Det handlar om Göteborg-Borås, Ostlänken och Lund-Hässleholm. Om Sverigedemokraterna nu vill ta dessa pengar - det är så jag har tolkat det - innebär det att vi stoppar det som för Sverige, för svenskt järnvägssystem och för tre riktigt stora arbetsmarknadsregioner är de viktigaste prioriteringarna som de har arbetat med väldigt länge. Det är ett anmärkningsvärt besked från Sverigedemokraterna. </p><p>Utöver det finns det på utvecklingsanslaget ytterligare 330 miljarder kronor för bland annat satsningar på järnväg. Inte minst har vi pekat ut norra Sverige. Jag tror att alla har hört mitt engagemang för Norrbotniabanan och för Sydostlänken. Men det kan också finnas väldigt många andra önskemål. Men det handlar också om satsningar på väg. Senast har E4:an vid Skellefteå diskuterats. Jag tror att det kan vara viktigt att titta på insatser med anledning av de stora industrietableringarna där. </p><p>Det är så vi nu arbetar med Trafikverkets förslag och med remissynpunkter. Då vill Sverigedemokraterna dra i handbromsen, och de säger att det ska bli mindre satsningar på ny infrastruktur i ett läge då Sverige har 10 miljoner invånare, stora industrietableringar och stora behov av mer kapacitet i det svenska transportsystemet. Det är för mig mycket gåtfullt hur Sverigedemokraterna resonerar. Det går inte att drömma sig tillbaka i tiden och tro att alla transporter går på landsväg. Vi i Sverige måste överföra en allt större andel av transporterna på kapacitetsstark järnväg, på sjöfart och på elektrifierade vägar. </p><p>Sedan ska vi med BK4 säkerställa bra infrastruktur för vägar på landsbygd och se till att vi har klimatsmarta lastbilar så att vi har ett väl fungerande transportsystem i hela Sverige. Men vi måste arbeta med att skapa ett hållbart transportsystem. Det är utgångspunkten för regeringens politik, och vi är på god väg. </p><p>Interpellationsdebatten var härmed avslutad. </p>",
+        "talare": "Tomas Eneroth",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Tomas Eneroth på Sverigedemokraternas förslag att minska investeringarna i ny infrastruktur?",
+            "answer": "Tomas Eneroth är kritisk till Sverigedemokraternas förslag att minska investeringarna i ny infrastruktur. Han anser att det är viktigt att fortsätta satsa på järnväg och vägprojekt för att möta behoven i ett växande Sverige med stora industrietableringar. Eneroth betonar vikten av att överföra transporter till järnväg och elektrifierade vägar för att skapa ett hållbart transportsystem, vilket han menar är en central del av regeringens politik."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Tomas Eneroth\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Tomas Eneroth\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Tomas Eneroth har uttryckt kritik mot förslag att minska investeringar i infrastruktur. Han anser att det är viktigt att fortsätta satsa på infrastruktur för att stödja den gröna industriella revolutionen och säkerställa konkurrenskraft och hållbarhet. Eneroth har påpekat att Sverigedemokraterna, tillsammans med Moderaterna och Kristdemokraterna, inte har redovisat hur mycket de vill skära ned på satsningarna men att sådana besparingar skulle innebära minskade resurser till ny järnväg och vägar. Han betonar vikten av att ha resurser för att möta industrins behov och utveckla infrastrukturen i hela landet.",
+            "context": [
+                "7ad6af9c-8332-ec11-9164-0090facf175a",
+                "70d6af9c-8332-ec11-9164-0090facf175a",
+                "3feba563-8f77-eb11-914b-901b0eac4c70",
+                "bee9425e-bb44-ed11-9177-901b0eac4c70",
+                "9651d933-3416-ec11-9160-901b0e9b71a0",
+                "02e4860e-ccd6-ec11-9170-0090facf175a"
+            ],
+            "scores": [
+                0.9137296676635742,
+                0.9065126180648804,
+                0.906415581703186,
+                0.9045064449310303,
+                0.90412437915802,
+                0.9040551781654358
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H909127",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-06-09 00:00:00",
+        "anforande_id": "d782ac7c-2e43-ed11-9177-901b0eac4c70",
+        "anforandetext": "<p>Fru talman! Jag tackar Maria Stockhaus för en väldigt väsentlig fråga. Det är klart att det inte är tillfredsställande med rapporterna om köer på Arlanda. Det verkar som om hela Europas flygindustri var helt oförberedd på att människor vill flyga igen efter pandemin. Vi fick skräckrapporter under hela helgen om flygplatser i Europa som stängde trots att man visste att flygresenärerna har kommit tillbaka och vill flyga ut i världen för att se sig omkring och uppleva nya saker. Det måste människor naturligtvis ha möjlighet att göra. </p><p>Vi följer frågan noga från departementet. Vi är flera som har kommunicerat i frågan tidigare. Näringsdepartementet har i morgon kallat upp Swedavia för att få en genomgång av om det finns någonting som vi kan bidra med för att hjälpa till i denna situation. Jag tror att många svenskar gärna vill att vi hjälper till så att vi löser denna situation så snabbt det bara går. </p>",
+        "talare": "Karl-Petter Thorwaldsson",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Karl-Petter Thorwaldsson på flygindustrins beredskap efter pandemin och vad anser han bör göras för att hantera situationen med köer på Arlanda?",
+            "answer": "Karl-Petter Thorwaldsson anser att flygindustrin i Europa var oförberedd på den ökade efterfrågan på flygresor efter pandemin, vilket har lett till problem som köer på Arlanda. Han betonar vikten av att människor ska kunna resa och uppleva världen. För att hantera situationen har Näringsdepartementet kallat Swedavia för att undersöka hur de kan bidra till att lösa problemen snabbt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Karl-Petter Thorwaldsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Karl-Petter Thorwaldsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Karl-Petter Thorwaldsson har uttryckt att det är otillfredsställande med köerna på Arlanda och att det verkar som om hela Europas flygindustri var oförberedd på att människor skulle vilja flyga igen efter pandemin. Han nämnde att Näringsdepartementet följer frågan noga och har kallat upp Swedavia för att få en genomgång av vad som kan göras för att förbättra situationen och lösa problemet med köerna så snabbt som möjligt. Det tyder på att Thorwaldsson anser att det är viktigt med en snabb och effektiv lösning för att hantera de nuvarande utmaningarna på Arlanda.",
+            "context": [
+                "d782ac7c-2e43-ed11-9177-901b0eac4c70",
+                "e91debb1-c12a-ed11-9178-901b0e9b71a8",
+                "ac6a3d5e-083b-eb11-914a-901b0e9b71a8",
+                "39f00849-1986-ea11-9132-901b0eac4c78",
+                "de558677-4057-eb11-9147-901b0eac4c70",
+                "00137898-37ee-ec11-916f-901b0eac4c70"
+            ],
+            "scores": [
+                0.9055047631263733,
+                0.9054139852523804,
+                0.9012144207954407,
+                0.9005071520805359,
+                0.8976236581802368,
+                0.8970268964767456
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90953",
+        "avsnittsrubrik": "Svar på interpellationerna 2021/22:208 och 219 om olympiska spelen i Beijing",
+        "dok_datum": "2022-01-14 00:00:00",
+        "anforande_id": "0982ee21-f2b4-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! David Josefsson har frågat utrikesministern om ministern och regeringen är beredda att likt andra länder agera och sätta OS i Kina i diplomatisk bojkott. Hampus Hagman har frågat utrikesministern om Sverige likt flera andra demokratiska länder kommer att genomföra en diplomatisk bojkott av kommande vinter-OS i Peking. Arbetet inom regeringen är så fördelat att det är jag som ska svara på interpellationerna.</p><p>Jag vill först peka på att utrikesministern har framhållit att regeringen ser allvarligt på situationen för mänskliga rättigheter i Kina, inklusive situationen i Xinjiang och Hongkong. Vi tar återkommande upp mänskliga rättigheter i våra kontakter med kinesiska myndighetsföreträdare liksom i internationella sammanhang, såsom i FN:s råd för mänskliga rättigheter.</p><p>De olympiska spelen är en hyllning till idrotten. Jag är därför glad att svenska idrottare deltar i vinter-OS i Peking. Jag önskar dem all framgång i tävlingarna.</p><p>Pandemin pågår fortfarande och påverkar oss alla. Den svenska regeringen avser på grund av pandemin att inte närvara vid vinter-OS i Peking, precis på samma sätt som vid sommar-OS i Tokyo.</p>",
+        "talare": "Anders Ygeman",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser Anders Ygeman på Sveriges deltagande i vinter-OS i Peking och regeringens närvaro där?",
+            "answer": "Anders Ygeman uttrycker glädje över att svenska idrottare deltar i vinter-OS i Peking och önskar dem framgång. Han förklarar att den svenska regeringen inte kommer att närvara vid spelen på grund av pandemin, vilket är samma beslut som fattades för sommar-OS i Tokyo."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Anders Ygeman\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Anders Ygeman, som var idrottsminister vid tidpunkten för vinter-OS i Peking, uttryckte att han är glad över att svenska idrottare deltar i spelen och önskar dem framgång. Han nämnde också att den svenska regeringen, på grund av den pågående pandemin, inte avser att närvara vid vinter-OS i Peking, precis som vid sommar-OS i Tokyo. Detta beslut är inte en diplomatisk bojkott, utan en konsekvens av pandemiläget. Regeringen ser allvarligt på situationen för mänskliga rättigheter i Kina och tar regelbundet upp dessa frågor i internationella sammanhang.",
+            "context": [
+                "0982ee21-f2b4-ec11-9167-901b0eac4c78",
+                "0f82ee21-f2b4-ec11-9167-901b0eac4c78",
+                "0d82ee21-f2b4-ec11-9167-901b0eac4c78",
+                "0c82ee21-f2b4-ec11-9167-901b0eac4c78",
+                "0b82ee21-f2b4-ec11-9167-901b0eac4c78",
+                "1282ee21-f2b4-ec11-9167-901b0eac4c78"
+            ],
+            "scores": [
+                0.9155718088150024,
+                0.903916597366333,
+                0.9019683599472046,
+                0.8995299935340881,
+                0.8935014009475708,
+                0.8911794424057007
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90998",
+        "avsnittsrubrik": "Debatt med anledning av vårpropositionens avlämnande",
+        "dok_datum": "2022-04-19 00:00:00",
+        "anforande_id": "b1d97b48-d9fe-ec11-9174-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! Nu blev det ännu mer frågor här. Det handlar bland annat om varför biodrivmedel ska betraktas som sörja och varför det är något dåligt för miljön eller för någonting över huvud taget att man använder avfall för att göra fungerande biodrivmedel för bilar.</p><p>Det uppstår också frågor om hur man ska kunna få ned priset på drivmedel genom att bara exkludera biodrivmedel när de i dag i Sverige kostar mindre att producera än vad dieseln gör.</p><p>SD påstår att man vill värna det svenska oberoendet, självförsörjningen och självständigheten. Men hur kan det gynnas av att man tar bort det svenska biodrivmedlet och möjligheten att blanda in det och generellt kallar det för sörja i en debatt i Sveriges riksdag?</p>",
+        "talare": "Martin Ådahl",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Hur argumenterar Martin Ådahl för användningen av biodrivmedel i Sverige?",
+            "answer": "Martin Ådahl argumenterar för att biodrivmedel inte bör betraktas som något negativt eller som 'sörja', eftersom de är ett effektivt sätt att använda avfall för att producera bränsle. Han ifrågasätter varför man skulle vilja exkludera biodrivmedel när de är billigare att producera än diesel och kan bidra till Sveriges oberoende och självförsörjning."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Martin Ådahl\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Martin Ådahl\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Martin Ådahl argumenterar för användningen av biodrivmedel i Sverige genom att betona att biodrivmedel inte bör betraktas som något dåligt för miljön, särskilt när de tillverkas av avfall. Han ifrågasätter varför biodrivmedel kallas \"sörja\" och poängterar att de i dag kostar mindre att producera i Sverige än diesel. Ådahl kritiserar retoriken som underminerar investeringar i svenska biodrivmedel, vilket han menar kan gynna miljön och minska Sveriges beroende av fossila bränslen från länder som Ryssland. Han ställer också frågor om vilka konkreta förslag andra partier har för att stödja produktionen av svenska biodrivmedel, och uttrycker att den nuvarande retoriken fryser investeringar i detta område.",
+            "context": [
+                "b1d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "b9d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "9f521f3c-2fe0-ec11-916f-901b0eac4c70",
+                "bd37759c-e536-ea11-912a-901b0eac4c78",
+                "fc1afbfa-0d86-e911-9121-901b0e9b71a0",
+                "39a77c8f-3728-ec11-915b-901b0eac4c78"
+            ],
+            "scores": [
+                0.9128132462501526,
+                0.9118265509605408,
+                0.8966693878173828,
+                0.8946545720100403,
+                0.894494891166687,
+                0.8937442898750305
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80953",
+        "avsnittsrubrik": "Säkerhetspolitisk inriktning - Totalförsvaret 2021-2025",
+        "dok_datum": "2020-12-14 00:00:00",
+        "anforande_id": "e94f430d-276d-eb11-914e-901b0e9b71a0",
+        "anforandetext": "<p>Herr talman! Jag får det inte riktigt att gå ihop. Jag hör ju hur utrikesministern talar om ett försämrat säkerhetspolitiskt läge och att mycket har förändrats. Jag förstår inte varför det då inte skulle vara naturligt att ta steget. Vi tycks ju vara överens om att det är bra för Finland och att det höjer tröskeln för dem. Det borde vara självklart. Det är dubbelmoral. Jag har en åttaåring hemma. Hon skulle nog säga att detta är som kejsarens nya kläder.</p><p>Det hänger inte ihop. Å ena sidan finner vi inte ord att förklara hur viktigt samarbetet är, att vi ska utveckla det och att Amerika är vår viktigaste partner, men när det å andra sidan kommer till att förstå och förklara vad det är som gör att en Nato-option är bra för Finland blir det under av klarhet. Då är det något som stärker tryggheten, men för Sverige blir det för hemskt, som jag tror att utrikesministern uttryckte det i <em>Rapport</em>. Jag får det inte att gå ihop. Jag tycker inte att det överensstämmer med verkligheten.</p><p>Det här var något som vi diskuterade väldigt tydligt i Försvarsberedningen. Nu finns det, visar det sig, en tydlig majoritet. Statsrådet får en chans till att besvara frågan: På vilket sätt skulle en Nato-option vara skadlig för Sverige men tydligen fullt okej för Finland? Jag undrar också: Hur tänker regeringen förhålla sig till att det, sannolikt i morgon, kommer att bli en klar majoritet i Sveriges riksdag för en Nato-option?</p>",
+        "talare": "Mikael Oscarsson",
+        "parti": "KD",
+        "qa_pair": {
+            "question": "Hur argumenterar Mikael Oscarsson för att Sverige bör överväga en Nato-option?",
+            "answer": "Mikael Oscarsson argumenterar för att Sverige bör överväga en Nato-option eftersom han anser att det försämrade säkerhetspolitiska läget och förändringarna i omvärlden gör det naturligt att ta detta steg. Han påpekar att det finns en dubbelmoral i att anse att en Nato-option är bra för Finland men inte för Sverige, och han ifrågasätter varför det skulle vara skadligt för Sverige när det uppenbarligen stärker tryggheten för Finland. Oscarsson betonar också att det finns en tydlig majoritet i Sveriges riksdag som stödjer en Nato-option, vilket han menar regeringen bör ta hänsyn till."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Oscarsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Oscarsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Mikael Oscarsson argumenterar för att Sverige bör överväga en Nato-option av flera skäl. Han framhäver att ett svenskt Natomedlemskap skulle stärka både Sveriges och våra grannländers trygghet och förutsägbarhet. Oscarsson påpekar att Sverige redan ses som en nära allierad till Nato utan att ha det formella skyddet av artikel 5, vilket innebär ett säkerhetspolitiskt vakuum som bara gynnar Ryssland. Dessutom menar han att bilaterala försvarsavtal inte är tillräckliga och att Sverige behöver fördragsfästa försvarsgarantier som endast Nato kan erbjuda. Han påpekar också att ett Natomedlemskap skulle kraftigt stärka Baltikums säkerhet och underlätta hjälp från väst i händelse av en rysk attack. Slutligen betonar han att de baltiska staterna är tacksamma för sitt medlemskap i Nato, vilket minskat risken för angrepp mot deras länder och även mot Sverige.",
+            "context": [
+                "afd5362f-e14f-e911-911c-0090facf175a",
+                "1761f154-2f43-ed11-9177-901b0eac4c70",
+                "ac927693-7606-ec11-9160-901b0e9b71a0",
+                "1961f154-2f43-ed11-9177-901b0eac4c70",
+                "ed002102-7ea7-eb11-914f-901b0eac4c78",
+                "add5362f-e14f-e911-911c-0090facf175a"
+            ],
+            "scores": [
+                0.9112975597381592,
+                0.9054980278015137,
+                0.9005379676818848,
+                0.8968106508255005,
+                0.8963941931724548,
+                0.8959579467773438
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H9097",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:868 om Säkerhetspolisens utredningar om personer med kurdiskt ursprung",
+        "dok_datum": "2021-09-21 00:00:00",
+        "anforande_id": "3d45d9bd-bf2d-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Det finns någonting som är märkligt. Jag vill återigen referera till Dagens ETC. De har talat med några av de personer som har varit hos Säpo. En person säger: De frågade mig vad jag har för åsikter om PKK. Ser jag den som en terrororganisation? Har jag haft någon relation till PKK? Anser jag att PKK och HDP har ett samröre, och har jag deltagit i några kurdiska aktiviteter i Sverige? Jag blev helt chockad av de frågorna, för de påminde så mycket om den turkiska säkerhetspolisens frågor.</p><p> STYLEREF Kantrubrik \\* MERGEFORMAT Svar på interpellationer</p><p>Det vi kan se, enligt de personer som har varit hos Säpo när de berättar vad de har fått för frågor, är att det är frågor som helt och hållet är kopplade till situationen i Turkiet och relationen mellan HDP och PKK och egentligen ingenting om Sverige. Nu vet vi även här inte vad som egentligen har sagts eftersom allting är hemligstämplat. De får inte heller själva se vad det är för grund.</p><p>Rozerin och Kawa, som jag nämnde tidigare, är två verkliga personer, men de har inte de namn som jag nu säger. När det gäller dem har dessutom Säpo inte haft någonting att invända mot Kawa, som är den som söker uppehållstillstånd. Man menar att Rozerin genom det engagemang som hon har haft i NCDK gör att hon skulle kunna bli ett säkerhetshot om Kawa får uppehållstillstånd. Om han får leva tillsammans med sin fru och sina två barn här i Sverige kan hon bli ett säkerhetshot mot Sverige. Det är i sig en väldigt konstig grund, skulle jag vilja säga.</p><p>I det här fallet är det också så att Kawa, som är turkisk medborgare, inte får återinträda i Schengen under tio år. Det innebär att enda sättet som Rozerin, Kawa och deras barn kan träffas hela familjen är i Turkiet eller i ett land utanför Schengen. Jag anser inte att det är särskilt barnvänligt eller till barnens bästa.</p><p>Migrationsverket menar att Rozerin kan resa till Turkiet. De kan leva där. Men om Säpo gör bedömningen att hon har deltagit i NCDK:s arrangemang och därmed är vad hon nu är - att hon stöttar en terrororganisation, som PKK anses vara - riskerar hon ett fängelsestraff om hon kommer till Turkiet.</p><p>Dessutom vet vi att personer från Kurdistan eller från Turkiet som har växt upp i Sverige oftast inte talar turkiska. De har kurdiska som hemspråk, och de får undervisning i kurdiska som modersmålsundervisning i skolan. Det gör att de kommer till ett land där de riskerar att fängslas och alltså inte talar språket. Jag tycker att det är synnerligen allvarligt att man gör den här typen av bedömning.</p><p>Jag håller dock med statsrådet om att vi inte ska diskutera enskilda personer, utan här handlar det om ett system. När över 30 personer med ursprung i Kurdistan får den här typen av frågor om samröre med HDP och PKK blir det ett mönster som visar att det är någonting väldigt konstigt i detta. Det är också väldigt konstigt att det hela är hemligstämplat och att de inte får försvara sig. De vet inte ens varför de inte får uppehållstillstånd utan bara att de eller deras partner ses som ett säkerhetshot kopplat till frågan om PKK.</p>",
+        "talare": "Ilona Szatmari Waldau",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur argumenterar Ilona Szatmari Waldau för att Säpos frågor till personer med kurdiskt ursprung är problematiska?",
+            "answer": "Ilona Szatmari Waldau anser att Säpos frågor till personer med kurdiskt ursprung är problematiska eftersom de liknar den turkiska säkerhetspolisens frågor och är kopplade till situationen i Turkiet snarare än till Sverige. Hon menar att det är oroväckande att dessa frågor är hemligstämplade och att de berörda personerna inte får veta varför de ses som säkerhetshot. Hon kritiserar också att detta påverkar familjer negativt, särskilt när det gäller möjligheten för barn att leva med sina föräldrar."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Ilona Szatmari Waldau\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Ilona Szatmari Waldau\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Ilona Szatmari Waldau argumenterar för att Säpos frågor till personer med kurdiskt ursprung är problematiska av flera skäl. För det första pekar hon på att de frågor som dessa personer får hos Säpo påminner starkt om den turkiska säkerhetspolisens frågor, vilket hon finner märkligt och problematiskt. Frågorna handlar ofta om personens åsikter om PKK och deras eventuella deltagande i kurdiska aktiviteter, vilket verkar vara kopplat till situationen i Turkiet snarare än något konkret hot mot Sverige. \n\nVidare framhåller hon att de som blir kallade till Säpo ofta är personer som sympatiserar med den kurdiska vänsteroppositionen i Turkiet och som har uttryckt stöd för det kurdiska självstyret i nordöstra Syrien. Detta pekar på ett mönster där kurdiska individer stämplas eller ifrågasätts för sina politiska åsikter och engagemang.\n\nSzatmari Waldau är också kritisk till att Säpo:s yttranden är hemligstämplade och att de berörda individerna inte får veta vad de anklagas för eller ges möjlighet att försvara sig. Detta strider enligt henne mot principerna om rättssäkerhet och proportionalitet. Hon menar att det är viktigt att personer som nekas uppehållstillstånd på grund av Säpo:s utlåtanden får veta vilka anklagelser som riktas mot dem och ges möjlighet att bemöta dessa i en rättsprocess.",
+            "context": [
+                "3b45d9bd-bf2d-ec11-915b-901b0eac4c78",
+                "3d45d9bd-bf2d-ec11-915b-901b0eac4c78",
+                "3f45d9bd-bf2d-ec11-915b-901b0eac4c78",
+                "3a45d9bd-bf2d-ec11-915b-901b0eac4c78",
+                "b1340042-3516-ec11-9160-901b0e9b71a0",
+                "34fde4a9-3cd0-eb11-9153-901b0eac4c78"
+            ],
+            "scores": [
+                0.8964521884918213,
+                0.8934985399246216,
+                0.8862175345420837,
+                0.8811492919921875,
+                0.8772576451301575,
+                0.8765450716018677
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H80986",
+        "avsnittsrubrik": "Svar på interpellation 2020/21:418 om prioritetsordningen vid vaccination mot covid-19",
+        "dok_datum": "2021-03-02 00:00:00",
+        "anforande_id": "c1093633-6cb2-eb11-914f-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Nu blev det tydligt att det är principen att man ska göra rätt för sig som ska styra. Då ska man ha tillträde till systemet.</p><p>Jag kan väl förstå den principen. Den frångår ändå delvis det som svensk hälso- och sjukvård bygger på, nämligen att vård ska ges efter behov. Jag har precis som ledamoten en mamma som har levt isolerad under väldigt lång tid och sitter hemma och väntar på att få den här vaccindosen. Jag förstår att det är ett problem. Det är ett problem för alla, för det har varit jättejobbigt under jättelång tid.</p><p>Om vi ser på papperslösa som grupp och på det som jag beskrev som de olika lagren är det ändå så att de är mer utsatta. De har en större risk att själv bli smittade, och de har en större risk att smitta andra. Det är ju det som är själva grunden till att jag tycker att Folkhälsomyndigheten egentligen tänker rätt: att man måste identifiera och jobba proaktivt och uppsökande med grupper för att minska smittan. Det är ju det som det handlar om ifall vi ska få bukt med pandemin.</p><p>När man läser ledamotens Twitterflöde verkar det, apropå att slå in kilar, även finnas andra frågor som är viktigare. Det handlar om \"vi och dom\". Det handlar om dem som inte har rätten.</p>",
+        "talare": "Nicklas Attefjord",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Hur argumenterar Nicklas Attefjord för att papperslösa bör prioriteras i vaccinationsprogrammet?",
+            "answer": "Nicklas Attefjord anser att papperslösa är en särskilt utsatt grupp med högre risk att både bli smittade och smitta andra. Därför menar han att det är viktigt att Folkhälsomyndigheten arbetar proaktivt och uppsökande med dessa grupper för att minska smittspridningen och därmed effektivt bekämpa pandemin."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Nicklas Attefjord\"})-[:HALLER]->(a:Anforande)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Nicklas Attefjord\"})-[:HALLER]->(a:Anforande)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Nicklas Attefjord argumenterar för att papperslösa bör prioriteras i vaccinationsprogrammet baserat på humanitära, medicinska och mänskliga grunder. Han påpekar att papperslösa ofta arbetar inom kontaktyrken där risken för smitta är högre och att de på grund av sin situation inte har möjlighet att följa rekommendationerna om att stanna hemma vid symtom. De lever ofta i trånga bostäder och reser med kollektivtrafik, vilket ytterligare ökar risken för smitta. Attefjord framhåller att viruset inte tar hänsyn till legal status, hudfärg eller medborgarskap och därför bör alla som löper hög risk för smitta identifieras och vaccineras för att få bukt med pandemin. Han betonar att vård ska ges efter behov, snarare än legal status.",
+            "context": [
+                "be093633-6cb2-eb11-914f-901b0eac4c78",
+                "c1093633-6cb2-eb11-914f-901b0eac4c78",
+                "c0093633-6cb2-eb11-914f-901b0eac4c78",
+                "bc093633-6cb2-eb11-914f-901b0eac4c78",
+                "ed8dccab-a0ad-eb11-914f-901b0eac4c78",
+                "ec8dccab-a0ad-eb11-914f-901b0eac4c78"
+            ],
+            "scores": [
+                0.9005733132362366,
+                0.8864734768867493,
+                0.8811095952987671,
+                0.8744646906852722,
+                0.8678485155105591,
+                0.8650304079055786
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90951",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2022-01-12 00:00:00",
+        "anforande_id": "c565139e-2ab4-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Det centrala för Centerpartiet är att värna den biologiska mångfalden, att öka artrikedomen och att värna och vårda våra skogar. Vår grundläggande ideologiska uppfattning är att det är alla de enskilda markägarna som gör detta på bäst sätt. De har vårdat och värnat den svenska skogen i generationer. Det är också därför vi ser så mycket värdefull artrikedom i just den svenska skogen.</p><p>Sedan är det viktigt, tycker jag, att Per Bolund inte vilseleder dem som lyssnar nu. Det är ju faktiskt så att det fattades beslut om mer pengar till värdefull natur för kommande år jämfört med innevarande år. Det beror på att vi tillsammans i förra årets budgetförslag såg till att det fanns en trappa för att öka stödet till det värdefulla skyddsarbetet i skogen.</p><p>För Centerpartiets del kommer vi att värna skogspropositionen, som det nu har fattats beslut om i regeringen. Vi tycker att det är viktigt att stärka svensk äganderätt. Vi tycker att det är viktigt att man får ersättning när man värnar och vårdar sin skog. Det är också viktigt att det finns medel, vilket det gör, i den svenska statsbudgeten.</p>",
+        "talare": "Annie Lööf",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Hur argumenterar Annie Lööf för vikten av enskilda markägares roll i skogsvården?",
+            "answer": "Annie Lööf betonar att enskilda markägare är bäst lämpade att vårda och skydda den svenska skogen, eftersom de har gjort det i generationer. Hon anser att deras arbete har lett till den rika biologiska mångfalden i skogarna. Centerpartiet förespråkar också att markägare ska få ersättning för sitt skyddsarbete och att det finns tillräckliga medel i statsbudgeten för detta ändamål."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Annie Lööf\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Annie Lööf\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Annie Lööf argumenterar för vikten av enskilda markägares roll i skogsvården genom att betona betydelsen av äganderätten för skogsägare. Hon kritiserar Vänsterpartiets politik som hon menar försämrar äganderätten för skogsägare och försvårar för människor att bo och bygga på landsbygden. Lööf betonar att skogsägare bör ha friheten att bestämma över sin egen skog, vilket enligt henne är avgörande för friheten och utvecklingen på den svenska landsbygden. Hon framhäver också vikten av att kunna utveckla lantbruksföretag och naturturism samt att skapa incitament för att sköta skogen på ett sätt som bevarar den biologiska mångfalden och möjliggör för människor att nyttja naturen.",
+            "context": [
+                "7eb9bf8e-782b-ec11-915b-901b0eac4c78",
+                "81b9bf8e-782b-ec11-915b-901b0eac4c78",
+                "7cb9bf8e-782b-ec11-915b-901b0eac4c78",
+                "a4521f3c-2fe0-ec11-916f-901b0eac4c70",
+                "529f6f9f-bce1-e811-910f-901b0eac4c70",
+                "629f6f9f-bce1-e811-910f-901b0eac4c70"
+            ],
+            "scores": [
+                0.9033743739128113,
+                0.8879481554031372,
+                0.8876517415046692,
+                0.886439859867096,
+                0.8836628198623657,
+                0.8835583925247192
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H8094",
+        "avsnittsrubrik": "Partiledardebatt",
+        "dok_datum": "2020-09-09 00:00:00",
+        "anforande_id": "2ec661ee-2d03-eb11-9146-901b0e9b71a8",
+        "anforandetext": "<p>Fru talman! Jag noterar att Ebba Busch inte svarade på min fråga. På vilket sätt hjälper det integrationen, och på vilket sätt löser det de problem som vi ser i de utsatta områdena att införa en reform på drygt 1 miljard kronor, en så kallad barnomsorgspeng, som vi vet till största delen kommer att användas av utrikes födda kvinnor som är lågutbildade och som har svårt att komma in på arbetsmarknaden? De får 6 000 kronor per barn, enligt ert förslag, för att stanna hemma och ta hand om så kallad barnomsorg i hemmet. Detta är ingen valfrihetsreform, Ebba Busch. Detta är ingenting för välutbildade svenska kvinnor som vill stanna hemma. Detta är en reform som kommer att kedja fast kvinnor i hemmet, kvinnor som behöver komma ut på arbetsmarknaden och som också behöver få andra visioner och ett annat perspektiv så att integrationen förbättras i de mest utsatta områdena. </p><p>Detta är en politik som går rakt emot det som vi behöver göra, och det är en otrolig egoism att välutbildade KD-kvinnor tycker att detta är en valfrihetsreform när den leder till att kvinnor stannar hemma i utsatta områden. </p><p>(Applåder)</p>",
+        "talare": "Miljö- och klimatministern Isabella Lövin",
+        "parti": "MP",
+        "qa_pair": {
+            "question": "Hur ser Miljö- och klimatministern Isabella Lövin på förslaget om barnomsorgspeng och dess påverkan på integrationen?",
+            "answer": "Miljö- och klimatministern Isabella Lövin är kritisk till förslaget om barnomsorgspeng, då hon anser att det inte främjar integrationen. Hon menar att reformen främst kommer att användas av lågutbildade utrikes födda kvinnor, vilket riskerar att hålla dem borta från arbetsmarknaden och försvåra deras integration. Lövin ser det som en politik som motverkar de åtgärder som behövs för att förbättra situationen i utsatta områden."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Miljö- och klimatministern Isabella Lövin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Miljö- och klimatministern Isabella Lövin\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Isabella Lövin, som var Miljö- och klimatminister, kritiserade förslaget om barnomsorgspeng starkt. Hon argumenterade att en sådan reform, som skulle innebära att ge 6 000 kronor per barn för att stanna hemma och ta hand om barnomsorg i hemmet, främst skulle användas av lågutbildade kvinnor med utländsk bakgrund. Lövin såg detta som en åtgärd som skulle kedja fast dessa kvinnor i hemmet, vilket skulle motverka deras möjligheter att komma ut på arbetsmarknaden och förbättra integrationen. Hon ansåg att detta inte var en valfrihetsreform utan snarare en politik som motverkade integration och hindrade kvinnor från att få andra visioner och perspektiv.",
+            "context": [
+                "2ec661ee-2d03-eb11-9146-901b0e9b71a8",
+                "484d126b-fa53-ea11-912e-901b0eac4c78",
+                "2cc661ee-2d03-eb11-9146-901b0e9b71a8",
+                "4a0441f9-dcff-e911-9126-901b0eac4c70",
+                "4723fc02-a4e3-ea11-913b-901b0eac4c70",
+                "070441f9-dcff-e911-9126-901b0eac4c70"
+            ],
+            "scores": [
+                0.9145898818969727,
+                0.9000260829925537,
+                0.8981521129608154,
+                0.8949902057647705,
+                0.8938212990760803,
+                0.8924223780632019
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809147",
+        "avsnittsrubrik": "Extra ändringsbudget för 2021 - Förlängda ersättningar på sjukförsäkringsområdet, stöd till företag, kultur, idrott och civilsamhälle samt andra åtgärder med anledning av coronaviruset",
+        "dok_datum": "2021-06-23 00:00:00",
+        "anforande_id": "718f5a42-3428-ec11-915b-901b0eac4c78",
+        "anforandetext": "<p>Herr talman! Jag tycker att Edward Riedl besvarar sin egen fråga. Såväl Centerpartiet som hela finansutskottet ser problem i utförandet, kanske framför allt av beslut som riksdagen fattat. Då är vi tydliga gentemot regeringen om att det här inte duger. På ett antal punkter det senaste året har finansutskottet, oftast i total enighet, sagt att det måste bli bättre, att det måste gå snabbare, att det måste gå att kombinera de olika stödsystemen med varandra och att man måste ha ett tydligare företagarperspektiv i detta.</p><p>Jag skäms inte över huvud taget över att Centerpartiet i många fall så att säga har suttit i bägge rummen. Vi har suttit och förhandlat fram historiskt stora krisstöd. Sedan har vi konstaterat att genomförandet av samma krispolitik inte är tillräckligt bra. Då har vi varit med och format majoriteter i finansutskottet som säger att det här inte duger, att regeringen måste ligga på sina myndigheter bättre och att regeringen kanske även måste ligga på sig själv lite bättre och ta det här på ett större allvar.</p><p>Den rollen som mittenparti i politiken är jag helt övertygad om att Centerpartiet kommer att fortsätta ha. Vi är med och formar majoriteter för Sveriges bästa. Ibland är det lite olika partier som ingår. I vissa skeden är vi med om såväl att förhandla fram politiken i regeringsförhandlingar som att i finansutskottet och riksdagen senare konstatera att det här inte duger och att det behöver bli bättre - då är vi med och formar majoriteter där. Den rollen tycker jag har tjänat såväl Centerpartiet som Sverige väl. Jag ser ingen anledning att upphöra med det arbetet.</p>",
+        "talare": "Emil Källström",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Hur ser Emil Källström på Centerpartiets roll i politiken och deras arbete med att förbättra genomförandet av riksdagens beslut?",
+            "answer": "Emil Källström anser att Centerpartiet spelar en viktig roll som mittenparti i politiken genom att forma majoriteter för Sveriges bästa. Han betonar att partiet har varit delaktigt i att förhandla fram stora krisstöd och att de också kritiserar genomförandet av dessa när det inte fungerar tillräckligt bra. Källström menar att Centerpartiet har tjänat både partiet och Sverige väl genom att vara tydliga mot regeringen och arbeta för att förbättra utförandet av riksdagens beslut."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Emil Källström\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Emil Källström\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Emil Källström verkar se Centerpartiets roll i politiken som en kraft för att driva fram sakpolitiska framgångar som för Sverige framåt. Han uttrycker att Centerpartiet har haft fullt fokus på att genomföra politiska reformer och resultat som är nödvändiga för landet. Källström betonar vikten av att ha en väl avvägd ekonomisk politik som är anpassad till det ekonomiska läget och att Centerpartiet kan fungera som en brygga för att bygga breda ansvarstagande majoriteter i riksdagen. Han ser också att det finns en potential för att rätta till felaktigheter i tidigare beslut genom nya budgetförslag och reformer. \n\nNär det kommer till genomförandet av riksdagens beslut, verkar det finnas en medvetenhet om utmaningar, men inget direkt uttalande om specifika förbättringsåtgärder för detta i de tillgängliga texterna. Det är dock tydligt att Källström och Centerpartiet strävar efter att vara en aktiv part i att forma och genomföra politik som svarar på aktuella samhällsutmaningar.",
+            "context": [
+                "ab6ed504-f720-ea11-912c-901b0e9b71a8",
+                "4ab377b8-bfe9-e911-9128-901b0e9b71a0",
+                "834c6077-006d-e911-911b-901b0eac4c78",
+                "57c2708f-630d-eb11-9146-901b0e9b71a8",
+                "4477301b-e66d-ea11-9134-0090facf175a",
+                "44b377b8-bfe9-e911-9128-901b0e9b71a0"
+            ],
+            "scores": [
+                0.8979976177215576,
+                0.8914397358894348,
+                0.8889087438583374,
+                0.888163149356842,
+                0.8874099850654602,
+                0.8864656686782837
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90952",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2022-01-13 00:00:00",
+        "anforande_id": "a32c89b4-2bb4-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p>Fru talman! Det här är en jätteviktig fråga. Hur kan svensk ekonomi ta sig framåt efter pandemin så att vi får en stark arbetsmarknad?</p><p>Vi ser nu att arbetslösheten sjunker kraftigt generellt sett i Sverige. Prognoserna, anställningsplanerna och varslen ser väl ut. Nu är det osäkert med pandemin igen. Vart tar den vägen? Men generellt sett ser det bra ut.</p><p>Det finns dock några områden som riskerar att bita sig fast om vi inte gör ytterligare insatser. Ett sådant är långtidsarbetslösheten. Den stora budgeten på 74 miljarder kronor innebär ytterligare anställda i sjukvården, i äldreomsorgen, hos polisen och så vidare. Efter finanskrisen lärde vi oss att man måste våga satsa ekonomiskt för att ta sig ur krisen. Det är viktigt. Men det är också fråga om riktade insatser; extratjänster, arbetsmarknadsutbildningar. Tyvärr skärs dessa ned i den budget som riksdagen har fattat beslut om. Detta riskerar att det blir en något högre långtidsarbetslöshet än vad som annars skulle vara fallet. Men regeringen kommer att jobba hårt för att även de långtidsarbetslösa ska få jobb när vi tar oss ur pandemin.</p>",
+        "talare": "n Mikael Damberg",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Hur ser n Mikael Damberg på behovet av ekonomiska satsningar och riktade insatser för att hantera långtidsarbetslösheten efter pandemin?",
+            "answer": "N Mikael Damberg anser att det är avgörande att våga göra ekonomiska satsningar för att ta sig ur krisen, likt lärdomarna från finanskrisen. Han betonar vikten av riktade insatser som extratjänster och arbetsmarknadsutbildningar för att motverka långtidsarbetslöshet. Trots nedskärningar i den beslutade budgeten, menar han att regeringen kommer att arbeta hårt för att hjälpa långtidsarbetslösa att få jobb efter pandemin."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Damberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Damberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Mikael Damberg ser behovet av ekonomiska satsningar och riktade insatser som mycket viktigt för att hantera långtidsarbetslösheten efter pandemin. Han betonar att vi har lärt oss från finanskrisen att det är nödvändigt att våga satsa ekonomiskt för att komma ur en kris. En av de stora utmaningarna är långtidsarbetslösheten, och regeringen planerar att arbeta hårt för att även de långtidsarbetslösa ska få jobb när pandemin är över. Damberg nämner specifika åtgärder som extratjänster och arbetsmarknadsutbildningar som viktiga, men påpekar att dessa riskerar att minskas i den budget som riksdagen har beslutat om. Han framhåller också vikten av etableringsjobb som är utformade för att hjälpa långtidsarbetslösa och nyanlända att komma in på arbetsmarknaden under stabila villkor.",
+            "context": [
+                "a32c89b4-2bb4-ec11-9167-901b0eac4c78",
+                "80d97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "596f07f4-3a1d-ec11-915b-901b0eac4c78",
+                "8ad97b48-d9fe-ec11-9174-901b0e9b71a0",
+                "b500fe8b-3b1d-ec11-915b-901b0eac4c78",
+                "7f2c89b4-2bb4-ec11-9167-901b0eac4c78"
+            ],
+            "scores": [
+                0.9220779538154602,
+                0.8996293544769287,
+                0.8972470760345459,
+                0.8947725296020508,
+                0.8927143812179565,
+                0.8909388780593872
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90999",
+        "avsnittsrubrik": "Folkbildning och spelfrågor",
+        "dok_datum": "2022-04-20 00:00:00",
+        "anforande_id": "9f6e4c8d-d9fe-ec11-9174-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! Jag tror att jag och Vasiliki Tsouplaki i grund och botten inte är så oense i frågan om den stora roll som både folkhögskolor och studieförbund spelar när det gäller bildning, utbildning och kultur i Sverige.</p><p>Jag måste ändå ta tillfället i akt och fråga ledamoten hur hon ser på de väldigt graverande uppgifter som har kommit fram. Hon talade tidigare om de stora nedskärningar som vi skulle vilja göra. Det handlar inte om några stora nedskärningar utan snarare om en återgång till de anslagsnivåer som gällde för ett par år sedan. Man kan alltid tycka att studieförbunden ska ha mer pengar, men det viktiga måste ju trots allt vara vilken verksamhet som kommer ut genom de bidrag som betalas ut till studieförbunden.</p><p>Nu tittar Riksrevisionen på detta och gör en fördjupad granskning av hur den här medelstilldelningen har gått till och hur det egentligen står till med studietimmarna - det är ju framför allt studieförbunden som är ämne för granskningen.</p><p>Det kan handla om uppgifter från Folkbildningsrådets egen granskning eller om det otroligt allvarliga bidragsfusk som har skett om man får tro de forskare som har varit ute i frågan; det pratas om uppblåsta siffror i kanske hälften av all verksamhet. Som ett exempel kan vi ta att alla studieförbund i Göteborg - en stad med 580 000 invånare - mellan 2017 och 2019 redovisade 4 ½ miljon deltagare i kulturevenemang och studiecirklar. Jag tror inte att man behöver vara raketforskare för att inse att detta inte kan stämma.</p><p>Jag skulle vilja fråga Vasiliki: Vilken lösning ser Vänsterpartiet för att ta itu med de här problemen om vi inte ska ha en granskning som är myndighetsbaserad utan fortsätta med det system som vi har i dag?</p>",
+        "talare": "John E Weinerhall",
+        "parti": "M",
+        "qa_pair": {
+            "question": "Hur argumenterar John E Weinerhall för att hantera bidragsfusket inom studieförbunden?",
+            "answer": "John E Weinerhall argumenterar för att det är viktigt att fokusera på vilken verksamhet som faktiskt bedrivs med de bidrag som studieförbunden får. Han anser att det inte handlar om stora nedskärningar utan om att återgå till tidigare anslagsnivåer. Weinerhall betonar vikten av en grundlig granskning av medelstilldelningen och studietimmarna, och han uttrycker oro över de uppblåsta siffrorna som har rapporterats, vilket tyder på allvarligt bidragsfusk."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"John E Weinerhall\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"John E Weinerhall\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "John E Weinerhall argumenterar för att hantera bidragsfusket inom studieförbunden genom att föreslå kraftfullare åtgärder och en extern revision. Han uttrycker skepsis mot den nuvarande tillitsstyrningen där studieförbunden själva granskar och kontrollerar sin verksamhet, vilket han ser som en intressekonflikt. Weinerhall förespråkar istället att en oberoende aktör bör utföra granskningen för att säkerställa att statsbidragen används korrekt och inte missbrukas. Han betonar också behovet av skärpta demokrativillkor för att förhindra att medel går till antidemokratiska verksamheter. Weinerhall vill se åtgärder där ansvar och kontroll kan flyttas till en statlig myndighet som MUCF för att bättre hantera och övervaka bidragsgivningen.",
+            "context": [
+                "9f6e4c8d-d9fe-ec11-9174-901b0e9b71a0",
+                "bfe0c032-879c-eb11-9152-901b0e9b71a8",
+                "a16e4c8d-d9fe-ec11-9174-901b0e9b71a0",
+                "bae0c032-879c-eb11-9152-901b0e9b71a8",
+                "bee0c032-879c-eb11-9152-901b0e9b71a8",
+                "bde0c032-879c-eb11-9152-901b0e9b71a8"
+            ],
+            "scores": [
+                0.8876125812530518,
+                0.8872286081314087,
+                0.883583128452301,
+                0.882975697517395,
+                0.8823539614677429,
+                0.8807079195976257
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90963",
+        "avsnittsrubrik": "Livsmedelspolitik",
+        "dok_datum": "2022-02-02 00:00:00",
+        "anforande_id": "c4ebd02a-f6bf-ec11-9167-901b0eac4c78",
+        "anforandetext": "<p></p><p>Fru talman! Ledamoten avslutade med en fråga: Hur ska vi då lösa detta? Det är alltid lätt att ställa frågor. Men vad blir svaren?</p><p>Ledamoten säger att de fortfarande har samma plan att nå målen till 2030. Men om de först backar, hur mycket mer radikala tänker de sedan vara? Är det samma mål som gäller, eller innebär detta faktiskt att sänka målsättningen?</p><p>Det finns mycket mer träffsäkra förslag på sätt att lösa lantbrukets situation. Om jag förstår det rätt vill ni vill sänka reduktionsplikten för all inblandning. Det är ett ganska stort steg tillbaka ni tar från den klimatsatsning som många partier har varit stolta över att vi kan ha.</p><p>Frågan om biodrivmedel finns också och om att bli betydligt bättre på att se den produktionen i Sverige som en viktig väg framåt. Därför blir jag lite nyfiken på hur Kristdemokraterna tänker när det gäller helheten. Jag kan jämföra med de förslag som Centerpartiet har lagt fram om att öka återbetalningen på dieselskatten till jordbruket, att förändra reseavdraget och att satsa mer på inhemsk produktion. Det finns andra vägar att gå. Skulle det vara intressant för Kristdemokraterna att titta också på andra delar än att enbart faktiskt ta ett antal kliv tillbaka?</p><p>När ni säger att ni har samma mål framåt kommer ansträngningen sedan att bli mycket större för att kunna nå målet. Jag förstår det inte riktigt. Om ni tror att det 2030 kommer att kosta 30 kronor per liter, ska ni då minska ännu mer? Man kommer in i en återvändsgränd. Jag är nyfiken på att höra ytterligare resonemang om detta.</p>",
+        "talare": "Ulrika Heie",
+        "parti": "C",
+        "qa_pair": {
+            "question": "Hur ser Ulrika Heie på Kristdemokraternas förslag att sänka reduktionsplikten och deras strategi för att nå klimatmålen till 2030?",
+            "answer": "Ulrika Heie är kritisk till Kristdemokraternas förslag att sänka reduktionsplikten, då hon anser att det är ett steg tillbaka från tidigare klimatsatsningar. Hon ifrågasätter hur de planerar att nå klimatmålen till 2030 om de först backar i sina åtgärder. Heie föreslår istället att man bör överväga andra lösningar, som att öka återbetalningen på dieselskatten för jordbruket och satsa mer på inhemsk produktion av biodrivmedel."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Ulrika Heie\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Ulrika Heie\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Ulrika Heie från Centerpartiet har uttryckt oro och förvåning över Kristdemokraternas förslag att sänka reduktionsplikten. Hon ifrågasätter hur detta förslag stämmer överens med Kristdemokraternas påstående att de fortfarande har samma klimatmål till 2030. Heie verkar se förslaget som ett steg tillbaka från de klimatåtaganden som tidigare varit viktiga för flera partier, inklusive Kristdemokraterna. Hon undrar hur Kristdemokraterna planerar att uppnå klimatmålen om de minskar ambitionerna nu, och ifrågasätter om förslaget innebär att sänka målsättningarna snarare än att stärka dem. Heie verkar också nyfiken på om Kristdemokraterna är öppna för att överväga andra lösningar, som exempelvis att öka återbetalningen på dieselskatten för jordbruket eller satsa mer på inhemsk biodrivmedelsproduktion, istället för att ta steg tillbaka i klimatpolitiken.",
+            "context": [
+                "c4ebd02a-f6bf-ec11-9167-901b0eac4c78",
+                "c2ebd02a-f6bf-ec11-9167-901b0eac4c78",
+                "274e4fc8-7542-ea11-9130-901b0e9b71a0",
+                "6f761e44-3148-ea11-9130-901b0e9b71a0",
+                "72137898-37ee-ec11-916f-901b0eac4c70",
+                "c2d97b48-d9fe-ec11-9174-901b0e9b71a0"
+            ],
+            "scores": [
+                0.9037964344024658,
+                0.9017975330352783,
+                0.8926188945770264,
+                0.8916934728622437,
+                0.8911590576171875,
+                0.8895145654678345
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H809112",
+        "avsnittsrubrik": "Frågestund",
+        "dok_datum": "2021-04-22 00:00:00",
+        "anforande_id": "3748d815-7706-ec11-9160-901b0e9b71a0",
+        "anforandetext": "<p>Fru talman! Också min fråga går till utrikesministern.</p><p>Nu på måndag börjar en rättegång i Ankara mot 108 folkvalda politiker från partiet HDP. I dag har vi redan hört en fråga från Liberalerna om det här. Det visar hur många vi är, från olika partier, som tycker att det är en väldigt viktig fråga.</p><p>Det handlar om folkvalda politiker och partiledare som grips och ställs inför rätta, helt enkelt för att de är folkvalda politiker. Det är otroligt allvarligt för ett demokratiskt samhälle och för mänskliga rättigheter. Men det hamnar också ganska nära oss som folkvalda ledamöter; det finns kollegor till oss i andra länder som grips just för att de är folkvalda politiker.</p><p>Därför vill även jag fråga utrikesministern hur Sverige kan agera för att stötta folkvalda politiker och mänskliga rättigheter i andra länder.</p>",
+        "talare": "Hanna Gunnarsson",
+        "parti": "V",
+        "qa_pair": {
+            "question": "Hur ser Hanna Gunnarsson på situationen med rättegången mot HDP-politiker i Turkiet och vad anser hon att Sverige bör göra?",
+            "answer": "Hanna Gunnarsson anser att rättegången mot de folkvalda HDP-politikerna i Turkiet är en allvarlig fråga som hotar demokratiska värden och mänskliga rättigheter. Hon betonar vikten av att Sverige agerar för att stödja folkvalda politiker och mänskliga rättigheter internationellt."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Hanna Gunnarsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Hanna Gunnarsson\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Hanna Gunnarsson (V) uttrycker allvarlig oro över situationen med rättegången mot HDP-politiker i Turkiet. Hon anser att det är otroligt allvarligt för ett demokratiskt samhälle och för mänskliga rättigheter när folkvalda politiker grips och ställs inför rätta enbart för att de är folkvalda. Gunnarsson har också frågat utrikesministern hur Sverige kan agera för att stötta folkvalda politiker och mänskliga rättigheter i andra länder.",
+            "context": [
+                "3748d815-7706-ec11-9160-901b0e9b71a0",
+                "3848d815-7706-ec11-9160-901b0e9b71a0",
+                "1b5df076-f693-ec11-916c-901b0e9b71a0",
+                "31ddcf4e-3dc6-ec11-9170-0090facf175a",
+                "175df076-f693-ec11-916c-901b0e9b71a0",
+                "1a5df076-f693-ec11-916c-901b0e9b71a0"
+            ],
+            "scores": [
+                0.9127037525177002,
+                0.8957000374794006,
+                0.886978805065155,
+                0.8850975036621094,
+                0.88287353515625,
+                0.8816965818405151
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    },
+    {
+        "dok_id": "H90914",
+        "avsnittsrubrik": "Svar på interpellation 2021/22:20 om kriminaliteten i landet",
+        "dok_datum": "2021-10-12 00:00:00",
+        "anforande_id": "a3a850f7-7b40-ec11-9164-0090facf175a",
+        "anforandetext": "<p>Fru talman! Jag har redan svarat att hela intervjun handlade om vilka beslut som Socialdemokraterna skulle fatta på vår kongress. Jag kan inte vara mycket tydligare i artikeln än så.</p><p>Jag har också sagt väldigt tydligt att regeringen inte känner någon ängslan. Då skulle vi inte ha skärpt 60 straff. Då skulle vi inte vänta på Gängbrottsutredningen som lägger fram förslag om att skärpa straffen ytterligare inte minst för gängrelaterad brottslighet, med inspiration från Danmark. Då skulle vi inte ha skärpt straffen för de systematiska stölderna som vi talade om här tidigare eller inbrottsstöld. Det finns ingen ängslan hos oss.</p><p>Däremot finns en större diskussion om hur inte minst Sverigedemokraterna beskriver människor med utländsk bakgrund. Det är ganska återkommande. Jag skulle inte säga att Morell är värst i klassen. Men det kommer avslöjanden var och varannan vecka, och inte minst i dag, hur det finns kopplingar mellan tjänstemän hos Sverigedemokraterna och vitmaktmiljön i Sverige. Det är fruktansvärda avslöjanden. Detta är inte det första avslöjandet.</p><p>Jag menar att det finns en rasistisk agenda kopplad till Sverigedemokraterna som också människor i dessa områden känner av, tyvärr. Jag skulle önska att det inte var på det sättet. Jag skulle önska att alla partier i Sverige såg människor som de individer de här och att vi inte hade en sådan diskussion i Sverige. Tyvärr har vi det.</p><p>Det är Sverigedemokraterna som sprider det giftet i samhällsdebatten, och det beklagar jag. Det är också därför som vi socialdemokrater har sagt att vi inte vill samarbeta politiskt med Sverigedemokraterna.</p>",
+        "talare": "Mikael Damberg",
+        "parti": "S",
+        "qa_pair": {
+            "question": "Vad tycker Mikael Damberg om Sverigedemokraternas påverkan på samhällsdebatten och deras politiska agenda?",
+            "answer": "Mikael Damberg anser att Sverigedemokraterna sprider en rasistisk agenda och ett gift i samhällsdebatten. Han uttrycker oro över hur de beskriver människor med utländsk bakgrund och kopplingarna mellan deras tjänstemän och vitmaktmiljön. På grund av detta vill Socialdemokraterna inte samarbeta politiskt med Sverigedemokraterna."
+        },
+        "qa_type": "generate_qa_inference_person",
+        "human_annotator": {
+            "reasonable_question": "",
+            "context": []
+        },
+        "LLM_annotator": "",
+        "graph_RAG_cosine": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Damberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "graph_RAG_bm25": {
+            "answer": "",
+            "context": [],
+            "cypher_query": "MATCH (t:Talare {name: \"Mikael Damberg\"}) \nMATCH (t)-[:HALLER]->(a:Anforande) \nMATCH (a)-[:HAS_CHUNK]->(c:Chunk) \nMATCH (t)-[:DELTAR_I]->(d:Debatt)-[:DOCUMENTED_IN]->(p:Protokoll) \nRETURN DISTINCT a.anforande_text, c.text, c.chunk_id, c.embedding, a.anforande_id",
+            "number_of_nodes": "Node retrieval failed: Couldn't connect to localhost:7687 (resolved to ()):\nFailed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 111] Connection refused)"
+        },
+        "cosine_RAG": {
+            "answer": "Jag hittar ingen information om Mikael Dambergs åsikter om Sverigedemokraternas påverkan på samhällsdebatten och deras politiska agenda i min data.",
+            "context": [
+                "3e52ced4-7342-ea11-9130-901b0e9b71a0",
+                "aad350ca-aeb9-ec11-9167-901b0eac4c78",
+                "f0ffc269-2f40-e911-9116-901b0eac4c78",
+                "8d340042-3516-ec11-9160-901b0e9b71a0",
+                "0a97df6d-7542-ea11-9130-901b0e9b71a0",
+                "573eda10-791f-eb11-9143-901b0eac4c70"
+            ],
+            "scores": [
+                0.894993782043457,
+                0.8911303281784058,
+                0.8900746703147888,
+                0.8883203268051147,
+                0.888094425201416,
+                0.8862758874893188
+            ]
+        },
+        "bm25_RAG": {
+            "answer": "",
+            "context": []
+        },
+        "eval": {
+            "graph_RAG_cosine_response": "",
+            "graph_RAG_bm25_response": "",
+            "cosine_RAG_response": "",
+            "bm25_RAG_response": "",
+            "orig_answer": ""
+        }
+    }
+]

@@ -5,8 +5,9 @@ from llm_retrieval.full_pipeline_class import GraphRAG
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part2.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part3.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part3.json
+#/mnt/c/Users/User/thesis/data_import/data_small_size/data/null_queries.json
 graph_rag = GraphRAG()
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part4.json", "r", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/null_queries.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
 # you forgot to do 50 :(
@@ -84,7 +85,7 @@ for idx, entry in enumerate(dataset):
         print(traceback.format_exc())
 
 
-with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/result_qa_dataset_part4.json", "w", encoding="utf-8") as f:
+with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/result_qa_dataset_null.json", "w", encoding="utf-8") as f:
     json.dump(dataset, f, ensure_ascii=False, indent=4)
 
 print("\nProcessing complete!")

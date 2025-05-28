@@ -1,62 +1,54 @@
 import json
 from pydantic import BaseModel, field_validator
 import re
+from typing import Optional
 
 class Speaker(BaseModel):
-    talare: str
-    parti: str
+    talare: Optional[str] = None
+    parti: Optional[str] = None
 
     @field_validator('talare')
     def clean_talare(cls, value):
-        # List of titles to remove from 'talare'
-        titles = ["Statsrådet", "Utbildningsminister", "Kultur- och idrottsminister",
-                  "Socialminister", "Finansminister", "Justitieminister", "Försvarsminister",
-                  "Minister", "Kulturministern", "Justitie- och inrikesministern", "Statsministern", 
-                  "Infrastrukturministern", "Klimat- och miljöministern", "Näringsministern",
-                  "Arbetsmarknadsminister", "Hälso- och sjukvårdsminister", "Bostadsminister", 
-                  "Jämställdhetsminister", "Landshövding", "Europaminister", "Digitaliseringsminister",
-                  "Skogsminister", "Livsmedelsminister", "Utrikesminister", "Samhällsbyggnadsminister", 
-                  "Tullminister", "Socialförsäkringsminister", "Pensionsminister", "Flyktingminister",
-                  "Arbetsmarknadsministern"]
+        if not value or value.strip() == "":
+            return "Unknown"
 
-        # Loop over titles and remove any occurrence of the title within 'value'
+        titles = [
+            "Statsrådet", "Utbildningsminister", "Kultur- och idrottsminister",
+            "Socialminister", "Finansminister", "Justitieminister", "Försvarsminister",
+            "Minister", "Kulturministern", "Justitie- och inrikesministern", "Statsministern", 
+            "Infrastrukturministern", "Klimat- och miljöministern", "Näringsministern",
+            "Arbetsmarknadsminister", "Hälso- och sjukvårdsminister", "Bostadsminister", 
+            "Jämställdhetsminister", "Landshövding", "Europaminister", "Digitaliseringsminister",
+            "Skogsminister", "Livsmedelsminister", "Utrikesminister", "Samhällsbyggnadsminister", 
+            "Tullminister", "Socialförsäkringsminister", "Pensionsminister", "Flyktingminister",
+            "Arbetsmarknadsministern"
+        ]
+
         for title in titles:
-            if title in value:
-                value = value.replace(title, "")
+            value = value.replace(title, "")
 
-        # Remove " replik" at the end if present
         value = re.sub(r'\s*replik$', '', value)
-
-        # Remove anything inside parentheses at the end of the name
         value = re.sub(r'\s*\(.*\)$', '', value)
-
-        # Strip any leading or trailing whitespace after removal
-        value = value.strip()
-
-        return value
+        return value.strip() or "Unknown"
 
     @field_validator('parti')
     def clean_parti(cls, value):
-        # Remove the party affiliation (inside parentheses)
-        value = re.sub(r'\s*\(.*\)$', '', value)
-        return value
+        if not value or value.strip() == "":
+            return "Unknown"
+        return re.sub(r'\s*\(.*\)$', '', value).strip() or "Unknown"
+    
+if __name__ == "__main__":
+    input_file = "/mnt/c/Users/User/thesis/data_import/data_large_size/unfiltered_riksdag.json"
+    output_file = "/mnt/c/Users/User/thesis/data_import/data_large_size/filtered_riksdag.json"
 
-if __name__ =="__main__":
-    # Input and Output file paths
-    input_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
-    output_file = "/mnt/c/Users/User/thesis/data_import/filtered_riksdag.json"
-
-    # Reading the input JSON file
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    # Processing each item in the data
     for item in data:
-        if 'talare' in item:
-            # Clean 'talare' and 'parti' fields using Speaker model
-            item['talare'] = Speaker(**item).talare
+        speaker = Speaker(**item)
+        item['talare'] = speaker.talare
+        item['parti'] = speaker.parti
 
-    # Saving the cleaned data back to a file
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
