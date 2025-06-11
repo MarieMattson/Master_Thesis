@@ -2,15 +2,21 @@ import json
 import os
 import traceback
 import numpy as np
-from llm_retrieval.retrieve_from_faiss import FaissRetriever
+from llm_retrieval.FAISS_full_pipeline import FaissRetriever
 
+# For small data size, you can use the following paths:
+# faiss_rag = FaissRetriever(index_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/faiss_index.bin",
+#                            anforande_ids_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/anforande_ids.npy",
+#                            documents_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/documents.npy"
+#                        )
 
 # Paths 
-chunk_dir = "/mnt/c/Users/User/thesis/data_import/data_large_size/index/chunked_documents"
+chunk_dir = "/mnt/c/Users/User/thesis/data_import/data_large_size/index/chunked_documents" # only needed for large dataset
 input_path = "/mnt/c/Users/User/thesis/data_import/data_small_size/data/null_queries.json"
 output_path = "/mnt/c/Users/User/thesis/data_import/data_large_size/data/result_faiss_null_queries.jsonl"
 output_path_json = "/mnt/c/Users/User/thesis/data_import/data_large_size/data/result_faiss_null_queries.json"
 
+# skip to initialize FaissRetriever with for small data size (copy paths above)
 documents_chunks = []
 for i, filename in enumerate(sorted(os.listdir(chunk_dir))):
     # load each chunk and append to documents_chunks list (not concatenated)
@@ -25,7 +31,6 @@ faiss_rag = FaissRetriever(
 )
 print("✅ Retriever initialized")
 
-# Load dataset
 with open(input_path, "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
@@ -33,7 +38,6 @@ print(f"📦 Number of entries in dataset: {len(dataset)}")
 print("\n🚀 Script started...")
 print(f"📦 Number of entries in dataset: {len(dataset)}")
 
-# Process entries
 written_lines = 0
 with open(output_path, "w", encoding="utf-8") as out_file:
     for i, entry in enumerate(dataset):

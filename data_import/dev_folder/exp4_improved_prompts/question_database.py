@@ -1,6 +1,6 @@
 import json
 import traceback
-from llm_retrieval.full_pipeline_class import GraphRAG
+from llm_retrieval.KGRAG_full_pipeline import GraphRAG
 
 graph_rag = GraphRAG()
 with open("/mnt/c/Users/User/thesis/data_import/exp4_improved_prompts/formatted_qa_dataset_2.json", "r", encoding="utf-8") as f:

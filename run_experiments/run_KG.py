@@ -1,6 +1,7 @@
 import json
 import traceback
-from llm_retrieval.full_pipeline_class import GraphRAG
+from llm_retrieval.KGRAG_full_pipeline import GraphRAG
+# Change paths to large dataset if needed
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part1.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part2.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part3.json
@@ -10,7 +11,6 @@ graph_rag = GraphRAG()
 with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/null_queries.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 
-# you forgot to do 50 :(
 for idx, entry in enumerate(dataset):
     try:
         question = entry["qa_pair"]["question"]

@@ -1,6 +1,6 @@
 import json
 import traceback
-from llm_retrieval.retrieve_from_faiss import FaissRetriever
+from llm_retrieval.FAISS_full_pipeline import FaissRetriever
 
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part1.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part2.json
@@ -8,10 +8,7 @@ from llm_retrieval.retrieve_from_faiss import FaissRetriever
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/qa_dataset_part4.json
 #/mnt/c/Users/User/thesis/data_import/data_small_size/data/null_queries.json
 
-faiss_rag = FaissRetriever(index_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/faiss_index.bin",
-                            anforande_ids_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/anforande_ids.npy",
-                            documents_path="/mnt/c/Users/User/thesis/data_import/data_small_size/data/index/documents.npy"
-                        )
+
 with open("/mnt/c/Users/User/thesis/data_import/data_small_size/data/divided_datasets_for_processing/qa_dataset_part1.json", "r", encoding="utf-8") as f:
     dataset = json.load(f)
 print("Script started...")

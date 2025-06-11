@@ -1,4 +1,4 @@
-from llm_retrieval.full_pipeline_class import GraphRAG
+from llm_retrieval.KGRAG_full_pipeline import GraphRAG
 from datasets import load_dataset
 
 graph_rag = GraphRAG()
